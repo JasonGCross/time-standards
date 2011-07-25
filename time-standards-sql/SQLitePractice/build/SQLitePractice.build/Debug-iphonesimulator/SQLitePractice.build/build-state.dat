@@ -1,0 +1,676 @@
+TSQLitePractice
+v7
+r0
+t302405781.387128
+cCheck dependencies
+cProcessInfoPlistFile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Info.plist SQLitePractice-Info.plist
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/SwimTimes SwimTimes
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/Standard.table.sql Standard.table.sql
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/Format.table.sql Format.table.sql
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/Event.table.sql Event.table.sql
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/AgeGroup.table.sql AgeGroup.table.sql
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_17-18.txt TimeStandard_17-18.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_work_file.xlsx TimeStandard_work_file.xlsx
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_15-16.txt TimeStandard_15-16.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_13-14.txt TimeStandard_13-14.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_11-12.txt TimeStandard_11-12.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_10Under.txt TimeStandard_10Under.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard.table.sql TimeStandard.table.sql
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/Event.data.txt Event.data.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/Stroke.data.txt Stroke.data.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/Stroke.table.sql Stroke.table.sql
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard.data.txt TimeStandard.data.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/Standard.data.txt Standard.data.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/Swimmer.table.txt Swimmer.table.txt
+cCpResource build/Debug-iphonesimulator/SQLitePractice.app/AgeGroup.data.txt AgeGroup.data.txt
+cCompileXIB /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/MainWindow.xib
+cProcessPCH /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch.gch SQLitePractice_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/main.o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/SQLitePracticeAppDelegate.o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/SQLitePracticeAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardObject.o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardDataAccess.o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardDataAccess.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice normal i386
+cGenerateDSYMFile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app.dSYM /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice
+cTouch /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib/libsqlite3.dylib
+c000000004BD1FDBD00000000000E1D70
+t1272053181
+s925040
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C4076770000000000000132
+t1279293047
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h
+c000000004BFDFE6E0000000000006506
+t1274936942
+s25862
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/lib/libsqlite3.dylib
+c000000004BFDFA0A0000000000079480
+t1274935818
+s496768
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/AgeGroup.data.txt
+c000000004C4D0E5E0000000000000134
+t1280118366
+s308
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/AgeGroup.table.sql
+c000000004C4E4B2E000000000000008D
+t1280199470
+s141
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/SQLitePracticeAppDelegate.h
+c000000004C54355C00000000000001C7
+t1280587100
+s455
+i<UIKit/UIKit.h>
+i"/usr/include/sqlite3.h"
+i"TimeStandardDataAccess.h"
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/SQLitePracticeAppDelegate.m
+c000000004C561F7E0000000000000B28
+t1280712574
+s2856
+i"SQLitePracticeAppDelegate.h"
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardDataAccess.h
+c000000004C561DD80000000000000222
+t1280712152
+s546
+i<Foundation/Foundation.h>
+i"/usr/include/sqlite3.h"
+i"TimeStandardObject.h"
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardDataAccess.m
+c000000004C5621130000000000000B96
+t1280712979
+s2966
+i"TimeStandardDataAccess.h"
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardObject.h
+c000000004C5433AE00000000000004B6
+t1280586670
+s1206
+i<Foundation/NSString.h>
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardObject.m
+c000000004C5431DD00000000000001CD
+t1280586205
+s461
+i"TimeStandardObject.h"
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Event.data.txt
+c000000004C4E41DE0000000000000133
+t1280197086
+s307
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Event.table.sql
+c000000004C4E4B400000000000000120
+t1280199488
+s288
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Format.table.sql
+c000000004C4E4B4C000000000000011F
+t1280199500
+s287
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Format.table.txt.sql
+c000000004C50154E0000000000000117
+t1280316750
+s279
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/MainWindow.xib
+c000000004C5014CE000000000000212B
+t1280316622
+s8491
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/SQLitePractice_Prefix.pch
+c000000004C5014CE00000000000000C5
+t1280316622
+s197
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Standard.data.txt
+c000000004C4E3D8C0000000000000023
+t1280195980
+s35
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Standard.table.sql
+c000000004C4E4B6000000000000000CF
+t1280199520
+s207
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Stroke.data.txt
+c000000004C4E40160000000000000078
+t1280196630
+s120
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Stroke.table.sql
+c000000004C4E3FCC0000000000000072
+t1280196556
+s114
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Stroke.table.txt.sql
+c000000004C50154E00000000000000C8
+t1280316750
+s200
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/SwimTimes
+c000000004C52A9FE0000000000009800
+t1280485886
+s38912
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Swimmer.table.txt
+c000000004C4D121A00000000000000A4
+t1280119322
+s164
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard.data.txt
+c000000004C4E3E560000000000000088
+t1280196182
+s136
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard.table.sql
+c000000004C4E44980000000000000314
+t1280197784
+s788
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_10Under.txt
+c000000004C4E46D4000000000000058C
+t1280198356
+s1420
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_11-12.txt
+c000000004C4E46F40000000000000658
+t1280198388
+s1624
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_13-14.txt
+c000000004C4E48720000000000000810
+t1280198770
+s2064
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_15-16.txt
+c000000004C4E48EA0000000000000810
+t1280198890
+s2064
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_17-18.txt
+c000000004C4E495C0000000000000810
+t1280199004
+s2064
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_work_file.xlsx
+c000000004C4E492C0000000000005E28
+t1280198956
+s24104
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app
+t1280712980
+s850
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app.dSYM
+t1280712980
+s102
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/AgeGroup.data.txt
+t1280351808
+s308
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/AgeGroup.table.sql
+t1280351808
+s141
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Event.data.txt
+t1280351808
+s307
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Event.table.sql
+t1280351808
+s288
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Format.table.sql
+t1280351808
+s287
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Format.table.txt.sql
+t2
+s0
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Info.plist
+t1280351808
+s619
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/MainWindow.nib
+t1280351808
+s991
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/PkgInfo
+t1280351808
+s8
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice
+t1280712980
+s27060
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Standard.data.txt
+t1280351808
+s35
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Standard.table.sql
+t1280351808
+s207
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Stroke.data.txt
+t1280351808
+s120
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Stroke.table.sql
+t1280351808
+s114
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Stroke.table.txt.sql
+t2
+s0
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SwimTimes
+t1280586212
+s38912
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Swimmer.table.txt
+t1280351808
+s164
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard.data.txt
+t1280351808
+s136
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard.table.sql
+t1280351808
+s788
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_10Under.txt
+t1280351808
+s1420
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_11-12.txt
+t1280351808
+s1624
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_13-14.txt
+t1280351808
+s2064
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_15-16.txt
+t1280351808
+s2064
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_17-18.txt
+t1280351808
+s2064
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_work_file.xlsx
+t1280351808
+s24104
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/SQLitePractice.LinkFileList
+c000000004C54337900000000000002D1
+t1280586617
+s721
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/SQLitePracticeAppDelegate.o
+t1280712574
+s48684
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardDataAccess.o
+t1280712980
+s16900
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardObject.o
+t1280586686
+s16752
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/main.o
+t1280351809
+s6364
+
+N/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/main.m
+c000000004C5014CE000000000000016F
+t1280316622
+s367
+i<UIKit/UIKit.h>
+
+N/usr/include/sqlite3.h
+c000000004B90CDD1000000000003D86F
+t1267781073
+s252015
+
+N/var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch.gch
+t1280351809
+s15232016
+
+NSQLitePractice-Info.plist
+c000000004C5014CE000000000000038D
+t1280316622
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies302405781#302405781#0(0"0(0#1#0"8641895136#0"0#
+
+CCompileC build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/SQLitePracticeAppDelegate.o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/SQLitePracticeAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302405374.829170
+e302405374.896289
+r1
+xCompileC
+xbuild/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/SQLitePracticeAppDelegate.o
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/SQLitePracticeAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@113"Compile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/SQLitePracticeAppDelegate.m302405374#302405374#0(0"0(0#0#105"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/SQLitePracticeAppDelegate.m8618414272#2432"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-generated-files.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-own-target-headers.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-all-target-headers.hmap -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-project-headers.hmap -F/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/include -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources/i386 -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch -c /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/SQLitePracticeAppDelegate.m -o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/SQLitePracticeAppDelegate.o0#
+
+CCompileC build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardDataAccess.o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardDataAccess.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302405780.157405
+e302405780.222257
+r1
+xCompileC
+xbuild/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardDataAccess.o
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardDataAccess.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@110"Compile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardDataAccess.m302405780#302405780#0(0"0(0#0#102"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardDataAccess.m8632711776#2426"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-generated-files.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-own-target-headers.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-all-target-headers.hmap -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-project-headers.hmap -F/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/include -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources/i386 -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch -c /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardDataAccess.m -o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardDataAccess.o0#
+
+CCompileC build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardObject.o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302279486.608045
+e302279486.673228
+r1
+xCompileC
+xbuild/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardObject.o
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardObject.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@106"Compile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardObject.m302279486#302279486#0(0"0(0#0#98"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardObject.m8614957408#2418"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-generated-files.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-own-target-headers.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-all-target-headers.hmap -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-project-headers.hmap -F/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/include -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources/i386 -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch -c /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Classes/TimeStandardObject.m -o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/TimeStandardObject.o0#
+
+CCompileC build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/main.o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302044609.351916
+e302044609.401732
+r1
+xCompileC
+xbuild/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/main.o
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/main.m302044609#302044609#0(0"0(0#0#76"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/main.m8611547200#2382"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-generated-files.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-own-target-headers.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-all-target-headers.hmap -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-project-headers.hmap -F/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/include -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources/i386 -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch -c /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/main.m -o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/MainWindow.xib
+s302044608.407354
+e302044608.745417
+r1
+xCompileXIB
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib302044608#302044608#0(0"0(0#0#84"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/MainWindow.xib8603513952#670"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/MainWindow.nib /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/AgeGroup.data.txt AgeGroup.data.txt
+s302044608.406811
+e302044608.413952
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/AgeGroup.data.txt
+xAgeGroup.data.txt
+lSLF07#2@22"Copy AgeGroup.data.txt302044608#302044608#0(0"0(0#0#87"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/AgeGroup.data.txt8610894112#561"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/AgeGroup.data.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/AgeGroup.table.sql AgeGroup.table.sql
+s302044608.376070
+e302044608.390997
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/AgeGroup.table.sql
+xAgeGroup.table.sql
+lSLF07#2@23"Copy AgeGroup.table.sql302044608#302044608#0(0"0(0#0#88"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/AgeGroup.table.sql8611550432#562"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/AgeGroup.table.sql /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Event.data.txt Event.data.txt
+s302044608.394705
+e302044608.410709
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/Event.data.txt
+xEvent.data.txt
+lSLF07#2@19"Copy Event.data.txt302044608#302044608#0(0"0(0#0#84"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Event.data.txt8604277248#558"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Event.data.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Event.table.sql Event.table.sql
+s302044608.375469
+e302044608.390909
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/Event.table.sql
+xEvent.table.sql
+lSLF07#2@20"Copy Event.table.sql302044608#302044608#0(0"0(0#0#85"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Event.table.sql8611779072#559"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Event.table.sql /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Format.table.sql Format.table.sql
+s302044608.374428
+e302044608.390817
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/Format.table.sql
+xFormat.table.sql
+lSLF07#2@21"Copy Format.table.sql302044608#302044608#0(0"0(0#0#86"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Format.table.sql8611866560#560"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Format.table.sql /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Format.table.txt.sql Format.table.txt.sql
+r0
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Standard.data.txt Standard.data.txt
+s302044608.401374
+e302044608.414051
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/Standard.data.txt
+xStandard.data.txt
+lSLF07#2@22"Copy Standard.data.txt302044608#302044608#0(0"0(0#0#87"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Standard.data.txt8602947680#561"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Standard.data.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Standard.table.sql Standard.table.sql
+s302044608.373836
+e302044608.390723
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/Standard.table.sql
+xStandard.table.sql
+lSLF07#2@23"Copy Standard.table.sql302044608#302044608#0(0"0(0#0#88"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Standard.table.sql8612119360#562"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Standard.table.sql /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Stroke.data.txt Stroke.data.txt
+s302044608.396370
+e302044608.405605
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/Stroke.data.txt
+xStroke.data.txt
+lSLF07#2@20"Copy Stroke.data.txt302044608#302044608#0(0"0(0#0#85"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Stroke.data.txt8604017408#559"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Stroke.data.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Stroke.table.sql Stroke.table.sql
+s302044608.396934
+e302044608.405697
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/Stroke.table.sql
+xStroke.table.sql
+lSLF07#2@21"Copy Stroke.table.sql302044608#302044608#0(0"0(0#0#86"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Stroke.table.sql8603874400#560"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Stroke.table.sql /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Stroke.table.txt.sql Stroke.table.txt.sql
+r0
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/SwimTimes SwimTimes
+s302279012.025121
+e302279012.032866
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/SwimTimes
+xSwimTimes
+lSLF07#2@14"Copy SwimTimes302279012#302279012#0(0"0(0#0#79"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/SwimTimes27303536605069420#553"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/SwimTimes /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/Swimmer.table.txt Swimmer.table.txt
+s302044608.406160
+e302044608.413840
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/Swimmer.table.txt
+xSwimmer.table.txt
+lSLF07#2@22"Copy Swimmer.table.txt302044608#302044608#0(0"0(0#0#87"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Swimmer.table.txt8599759040#561"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/Swimmer.table.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard.data.txt TimeStandard.data.txt
+s302044608.398057
+e302044608.410809
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/TimeStandard.data.txt
+xTimeStandard.data.txt
+lSLF07#2@26"Copy TimeStandard.data.txt302044608#302044608#0(0"0(0#0#91"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard.data.txt8603515712#565"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard.data.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard.table.sql TimeStandard.table.sql
+s302044608.393975
+e302044608.405498
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/TimeStandard.table.sql
+xTimeStandard.table.sql
+lSLF07#2@27"Copy TimeStandard.table.sql302044608#302044608#0(0"0(0#0#92"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard.table.sql8610183904#566"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard.table.sql /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_10Under.txt TimeStandard_10Under.txt
+s302044608.391692
+e302044608.405352
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_10Under.txt
+xTimeStandard_10Under.txt
+lSLF07#2@29"Copy TimeStandard_10Under.txt302044608#302044608#0(0"0(0#0#94"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_10Under.txt8610316416#568"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_10Under.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_11-12.txt TimeStandard_11-12.txt
+s302044608.389509
+e302044608.406103
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_11-12.txt
+xTimeStandard_11-12.txt
+lSLF07#2@27"Copy TimeStandard_11-12.txt302044608#302044608#0(0"0(0#0#92"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_11-12.txt8610521696#566"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_11-12.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_13-14.txt TimeStandard_13-14.txt
+s302044608.383970
+e302044608.406009
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_13-14.txt
+xTimeStandard_13-14.txt
+lSLF07#2@27"Copy TimeStandard_13-14.txt302044608#302044608#0(0"0(0#0#92"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_13-14.txt8610729504#566"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_13-14.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_15-16.txt TimeStandard_15-16.txt
+s302044608.380187
+e302044608.405912
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_15-16.txt
+xTimeStandard_15-16.txt
+lSLF07#2@27"Copy TimeStandard_15-16.txt302044608#302044608#0(0"0(0#0#92"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_15-16.txt8610779200#566"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_15-16.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_17-18.txt TimeStandard_17-18.txt
+s302044608.376998
+e302044608.391088
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_17-18.txt
+xTimeStandard_17-18.txt
+lSLF07#2@27"Copy TimeStandard_17-18.txt302044608#302044608#0(0"0(0#0#92"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_17-18.txt8611382592#566"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_17-18.txt /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CCpResource build/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_work_file.xlsx TimeStandard_work_file.xlsx
+s302044608.378000
+e302044608.391500
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SQLitePractice.app/TimeStandard_work_file.xlsx
+xTimeStandard_work_file.xlsx
+lSLF07#2@32"Copy TimeStandard_work_file.xlsx302044608#302044608#0(0"0(0#0#97"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_work_file.xlsx8611105536#571"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/TimeStandard_work_file.xlsx /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+
+CGenerateDSYMFile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app.dSYM /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice
+s302405780.242034
+e302405780.254199
+r1
+xGenerateDSYMFile
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app.dSYM
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice
+lSLF07#2@130"GenerateDSYMFile build/Debug-iphonesimulator/SQLitePractice.app.dSYM build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice302405780#302405780#0(0"0(0#0#131"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice8656269504#497"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice -o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app.dSYM0#
+
+CLd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice normal i386
+s302405780.222350
+e302405780.241941
+r1
+xLd
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice
+xnormal
+xi386
+lSLF07#2@136"Link /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice302405780#302405780#0(0"0(0#0#0"8656940992#1194"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator -L/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib -F/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator -filelist /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/Objects-normal/i386/SQLitePractice.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3 -o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/SQLitePractice0#
+
+CProcessInfoPlistFile /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Info.plist SQLitePractice-Info.plist
+s302044608.360144
+e302044608.373103
+r1
+xProcessInfoPlistFile
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Info.plist
+xSQLitePractice-Info.plist
+lSLF07#2@33"Process SQLitePractice-Info.plist302044608#302044608#0(0"0(0#0#95"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/SQLitePractice-Info.plist8612093248#593"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility SQLitePractice-Info.plist -genpkginfo /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app/Info.plist0#
+
+CProcessPCH /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch.gch SQLitePractice_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s302044608.745521
+e302044609.351820
+r1
+xProcessPCH
+x/var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch.gch
+xSQLitePractice_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Precompile SQLitePractice_Prefix.pch302044608#302044609#0(0"0(0#0#95"/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/SQLitePractice_Prefix.pch8610581824#2236"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-generated-files.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-own-target-headers.hmap -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-all-target-headers.hmap -iquote /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/SQLitePractice-project-headers.hmap -F/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/include -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources/i386 -I/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/SQLitePractice.build/Debug-iphonesimulator/SQLitePractice.build/DerivedSources -c /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/SQLitePractice_Prefix.pch -o /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SQLitePractice_Prefix-cedddmznqpfjuyafsjpaizvqdxxz/SQLitePractice_Prefix.pch.gch0#
+
+CTouch /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app
+s302405780.254272
+e302405780.256328
+r1
+xTouch
+x/Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app
+lSLF07#2@122"Touch /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app302405780#302405780#0(0"0(0#0#0"8654468064#347"    cd /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jasoncross/Documents/XCodeFiles/TimeStandardApp/SQLitePractice/build/Debug-iphonesimulator/SQLitePractice.app0#
+

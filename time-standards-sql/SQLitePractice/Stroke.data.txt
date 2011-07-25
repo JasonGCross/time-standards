@@ -1,0 +1,7 @@
+Fly|Butter Fly
+Back|Backstroke
+Breast|Breastroke
+Free|Freestyle
+IM|Individual Medley
+MR|Medley Relay
+FR|Free Relay

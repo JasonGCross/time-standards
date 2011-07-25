@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSManagedObjectModel_CurrentVersionName</key>
+	<string>CoreDataPractice</string>
+	<key>NSManagedObjectModel_VersionHashes</key>
+	<dict>
+		<key>CoreDataPractice</key>
+		<dict>
+			<key>HomeScreenValues</key>
+			<data>
+			xop5oZxNCA99yJh49sn+Z+XyyynePS9AK5FteblEYO8=
+			</data>
+			<key>Photo</key>
+			<data>
+			X+cuos8WYTgoQ+0mYkjmKUBTfW8konADQPQuYR5+TOY=
+			</data>
+			<key>PickerValues</key>
+			<data>
+			3wZQad9l1vpGPg/9fzr2853qd2n4mzoYS2r+IcJKLeo=
+			</data>
+			<key>Swimmer</key>
+			<data>
+			eKsK37+q+adAtSXH/7R2gEyUko8yW5X/W7hZJBvjHFI=
+			</data>
+		</dict>
+	</dict>
+</dict>
+</plist>

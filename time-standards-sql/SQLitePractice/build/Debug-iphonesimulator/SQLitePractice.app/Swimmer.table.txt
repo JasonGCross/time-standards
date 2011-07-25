@@ -1,0 +1,7 @@
+CREATE TABLE Swimmer
+(
+	  Name VARCHAR(100) PRIMARY KEY
+	, Gender CHAR(1) CHECK ( Gender IN ( 'M', 'F' ) )
+	, AgeGroupId INTEGER REFERENCES AgeGroup 	
+);
+GO

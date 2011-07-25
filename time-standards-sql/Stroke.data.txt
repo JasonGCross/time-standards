@@ -1,0 +1,7 @@
+1|Fly|Butterfly
+2|Back|Backstroke
+3|Breast|Breastroke
+4|Free|Freestyle
+5|IM|Individual Medley
+6|M.R.|Medley Relay
+7|F.R.|Free Relay

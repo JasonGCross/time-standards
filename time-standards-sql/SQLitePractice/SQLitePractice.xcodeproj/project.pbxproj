@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* SQLitePracticeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* SQLitePracticeAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		F6125AEB12004EE4006DEF2A /* SwimTimes in Resources */ = {isa = PBXBuildFile; fileRef = F6125AD812004EE4006DEF2A /* SwimTimes */; };
+		F6125AEC12004EE4006DEF2A /* Standard.table.sql in Resources */ = {isa = PBXBuildFile; fileRef = F6125AD912004EE4006DEF2A /* Standard.table.sql */; };
+		F6125AED12004EE4006DEF2A /* Format.table.sql in Resources */ = {isa = PBXBuildFile; fileRef = F6125ADA12004EE4006DEF2A /* Format.table.sql */; };
+		F6125AEE12004EE4006DEF2A /* Event.table.sql in Resources */ = {isa = PBXBuildFile; fileRef = F6125ADB12004EE4006DEF2A /* Event.table.sql */; };
+		F6125AEF12004EE4006DEF2A /* AgeGroup.table.sql in Resources */ = {isa = PBXBuildFile; fileRef = F6125ADC12004EE4006DEF2A /* AgeGroup.table.sql */; };
+		F6125AF012004EE4006DEF2A /* TimeStandard_17-18.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125ADD12004EE4006DEF2A /* TimeStandard_17-18.txt */; };
+		F6125AF112004EE4006DEF2A /* TimeStandard_work_file.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = F6125ADE12004EE4006DEF2A /* TimeStandard_work_file.xlsx */; };
+		F6125AF212004EE4006DEF2A /* TimeStandard_15-16.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125ADF12004EE4006DEF2A /* TimeStandard_15-16.txt */; };
+		F6125AF312004EE4006DEF2A /* TimeStandard_13-14.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE012004EE4006DEF2A /* TimeStandard_13-14.txt */; };
+		F6125AF412004EE4006DEF2A /* TimeStandard_11-12.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE112004EE4006DEF2A /* TimeStandard_11-12.txt */; };
+		F6125AF512004EE4006DEF2A /* TimeStandard_10Under.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE212004EE4006DEF2A /* TimeStandard_10Under.txt */; };
+		F6125AF612004EE4006DEF2A /* TimeStandard.table.sql in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE312004EE4006DEF2A /* TimeStandard.table.sql */; };
+		F6125AF712004EE4006DEF2A /* Event.data.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE412004EE4006DEF2A /* Event.data.txt */; };
+		F6125AF812004EE4006DEF2A /* Stroke.data.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE512004EE4006DEF2A /* Stroke.data.txt */; };
+		F6125AF912004EE4006DEF2A /* Stroke.table.sql in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE612004EE4006DEF2A /* Stroke.table.sql */; };
+		F6125AFA12004EE4006DEF2A /* TimeStandard.data.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE712004EE4006DEF2A /* TimeStandard.data.txt */; };
+		F6125AFB12004EE4006DEF2A /* Standard.data.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE812004EE4006DEF2A /* Standard.data.txt */; };
+		F6125AFC12004EE4006DEF2A /* Swimmer.table.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AE912004EE4006DEF2A /* Swimmer.table.txt */; };
+		F6125AFD12004EE4006DEF2A /* AgeGroup.data.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6125AEA12004EE4006DEF2A /* AgeGroup.data.txt */; };
+		F6125B3C120058BB006DEF2A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6125B3B120058BB006DEF2A /* libsqlite3.dylib */; };
+		F6125B4A12005938006DEF2A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6125B4912005938006DEF2A /* MainWindow.xib */; };
+		F6366717120465AA00A316A8 /* TimeStandardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F6366716120465AA00A316A8 /* TimeStandardObject.m */; };
+		F636672A120469B000A316A8 /* TimeStandardDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F6366729120469B000A316A8 /* TimeStandardDataAccess.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* SQLitePracticeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLitePracticeAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* SQLitePracticeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLitePracticeAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* SQLitePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLitePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* SQLitePractice_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLitePractice_Prefix.pch; sourceTree = "<group>"; };
+		F6125AD812004EE4006DEF2A /* SwimTimes */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwimTimes; sourceTree = "<group>"; };
+		F6125AD912004EE4006DEF2A /* Standard.table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Standard.table.sql; sourceTree = "<group>"; };
+		F6125ADA12004EE4006DEF2A /* Format.table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Format.table.sql; sourceTree = "<group>"; };
+		F6125ADB12004EE4006DEF2A /* Event.table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Event.table.sql; sourceTree = "<group>"; };
+		F6125ADC12004EE4006DEF2A /* AgeGroup.table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AgeGroup.table.sql; sourceTree = "<group>"; };
+		F6125ADD12004EE4006DEF2A /* TimeStandard_17-18.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TimeStandard_17-18.txt"; sourceTree = "<group>"; };
+		F6125ADE12004EE4006DEF2A /* TimeStandard_work_file.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = TimeStandard_work_file.xlsx; sourceTree = "<group>"; };
+		F6125ADF12004EE4006DEF2A /* TimeStandard_15-16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TimeStandard_15-16.txt"; sourceTree = "<group>"; };
+		F6125AE012004EE4006DEF2A /* TimeStandard_13-14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TimeStandard_13-14.txt"; sourceTree = "<group>"; };
+		F6125AE112004EE4006DEF2A /* TimeStandard_11-12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TimeStandard_11-12.txt"; sourceTree = "<group>"; };
+		F6125AE212004EE4006DEF2A /* TimeStandard_10Under.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeStandard_10Under.txt; sourceTree = "<group>"; };
+		F6125AE312004EE4006DEF2A /* TimeStandard.table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeStandard.table.sql; sourceTree = "<group>"; };
+		F6125AE412004EE4006DEF2A /* Event.data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Event.data.txt; sourceTree = "<group>"; };
+		F6125AE512004EE4006DEF2A /* Stroke.data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stroke.data.txt; sourceTree = "<group>"; };
+		F6125AE612004EE4006DEF2A /* Stroke.table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stroke.table.sql; sourceTree = "<group>"; };
+		F6125AE712004EE4006DEF2A /* TimeStandard.data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeStandard.data.txt; sourceTree = "<group>"; };
+		F6125AE812004EE4006DEF2A /* Standard.data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Standard.data.txt; sourceTree = "<group>"; };
+		F6125AE912004EE4006DEF2A /* Swimmer.table.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swimmer.table.txt; sourceTree = "<group>"; };
+		F6125AEA12004EE4006DEF2A /* AgeGroup.data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AgeGroup.data.txt; sourceTree = "<group>"; };
+		F6125B3B120058BB006DEF2A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F6125B4912005938006DEF2A /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		F6366715120465AA00A316A8 /* TimeStandardObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStandardObject.h; sourceTree = "<group>"; };
+		F6366716120465AA00A316A8 /* TimeStandardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStandardObject.m; sourceTree = "<group>"; };
+		F6366728120469B000A316A8 /* TimeStandardDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStandardDataAccess.h; sourceTree = "<group>"; };
+		F6366729120469B000A316A8 /* TimeStandardDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStandardDataAccess.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				F6125B3C120058BB006DEF2A /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* SQLitePracticeAppDelegate.h */,
+				1D3623250D0F684500981E51 /* SQLitePracticeAppDelegate.m */,
+				F6366715120465AA00A316A8 /* TimeStandardObject.h */,
+				F6366716120465AA00A316A8 /* TimeStandardObject.m */,
+				F6366728120469B000A316A8 /* TimeStandardDataAccess.h */,
+				F6366729120469B000A316A8 /* TimeStandardDataAccess.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* SQLitePractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* SQLitePractice_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6125B4912005938006DEF2A /* MainWindow.xib */,
+				F6125AD812004EE4006DEF2A /* SwimTimes */,
+				F6125AD912004EE4006DEF2A /* Standard.table.sql */,
+				F6125ADA12004EE4006DEF2A /* Format.table.sql */,
+				F6125ADB12004EE4006DEF2A /* Event.table.sql */,
+				F6125ADC12004EE4006DEF2A /* AgeGroup.table.sql */,
+				F6125ADD12004EE4006DEF2A /* TimeStandard_17-18.txt */,
+				F6125ADE12004EE4006DEF2A /* TimeStandard_work_file.xlsx */,
+				F6125ADF12004EE4006DEF2A /* TimeStandard_15-16.txt */,
+				F6125AE012004EE4006DEF2A /* TimeStandard_13-14.txt */,
+				F6125AE112004EE4006DEF2A /* TimeStandard_11-12.txt */,
+				F6125AE212004EE4006DEF2A /* TimeStandard_10Under.txt */,
+				F6125AE312004EE4006DEF2A /* TimeStandard.table.sql */,
+				F6125AE412004EE4006DEF2A /* Event.data.txt */,
+				F6125AE512004EE4006DEF2A /* Stroke.data.txt */,
+				F6125AE612004EE4006DEF2A /* Stroke.table.sql */,
+				F6125AE712004EE4006DEF2A /* TimeStandard.data.txt */,
+				F6125AE812004EE4006DEF2A /* Standard.data.txt */,
+				F6125AE912004EE4006DEF2A /* Swimmer.table.txt */,
+				F6125AEA12004EE4006DEF2A /* AgeGroup.data.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6125B3B120058BB006DEF2A /* libsqlite3.dylib */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* SQLitePractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SQLitePractice" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLitePractice;
+			productName = SQLitePractice;
+			productReference = 1D6058910D05DD3D006BFB54 /* SQLitePractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SQLitePractice" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* SQLitePractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6125AEB12004EE4006DEF2A /* SwimTimes in Resources */,
+				F6125AEC12004EE4006DEF2A /* Standard.table.sql in Resources */,
+				F6125AED12004EE4006DEF2A /* Format.table.sql in Resources */,
+				F6125AEE12004EE4006DEF2A /* Event.table.sql in Resources */,
+				F6125AEF12004EE4006DEF2A /* AgeGroup.table.sql in Resources */,
+				F6125AF012004EE4006DEF2A /* TimeStandard_17-18.txt in Resources */,
+				F6125AF112004EE4006DEF2A /* TimeStandard_work_file.xlsx in Resources */,
+				F6125AF212004EE4006DEF2A /* TimeStandard_15-16.txt in Resources */,
+				F6125AF312004EE4006DEF2A /* TimeStandard_13-14.txt in Resources */,
+				F6125AF412004EE4006DEF2A /* TimeStandard_11-12.txt in Resources */,
+				F6125AF512004EE4006DEF2A /* TimeStandard_10Under.txt in Resources */,
+				F6125AF612004EE4006DEF2A /* TimeStandard.table.sql in Resources */,
+				F6125AF712004EE4006DEF2A /* Event.data.txt in Resources */,
+				F6125AF812004EE4006DEF2A /* Stroke.data.txt in Resources */,
+				F6125AF912004EE4006DEF2A /* Stroke.table.sql in Resources */,
+				F6125AFA12004EE4006DEF2A /* TimeStandard.data.txt in Resources */,
+				F6125AFB12004EE4006DEF2A /* Standard.data.txt in Resources */,
+				F6125AFC12004EE4006DEF2A /* Swimmer.table.txt in Resources */,
+				F6125AFD12004EE4006DEF2A /* AgeGroup.data.txt in Resources */,
+				F6125B4A12005938006DEF2A /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* SQLitePracticeAppDelegate.m in Sources */,
+				F6366717120465AA00A316A8 /* TimeStandardObject.m in Sources */,
+				F636672A120469B000A316A8 /* TimeStandardDataAccess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SQLitePractice_Prefix.pch;
+				INFOPLIST_FILE = "SQLitePractice-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib\"",
+				);
+				PRODUCT_NAME = SQLitePractice;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SQLitePractice_Prefix.pch;
+				INFOPLIST_FILE = "SQLitePractice-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib\"",
+				);
+				PRODUCT_NAME = SQLitePractice;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SQLitePractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SQLitePractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

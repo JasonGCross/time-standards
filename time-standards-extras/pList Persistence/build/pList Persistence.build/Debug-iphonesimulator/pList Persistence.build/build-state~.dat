@@ -1,0 +1,225 @@
+TpList Persistence
+v7
+r0
+t305326179.627952
+cCheck dependencies
+cProcessInfoPlistFile "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/Info.plist" pList_Persistence-Info.plist
+cCompileXIB "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/MainWindow.xib"
+cProcessPCH /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pList_Persistence_Prefix-bxvparvniamdqjdbrzojeakdctme/pList_Persistence_Prefix.pch.gch pList_Persistence_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/main.o" "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/pList_PersistenceAppDelegate.o" "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/pList_PersistenceAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/Swimmer.o" "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C58DB1A0000000000000132
+t1280891674
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.h
+c000000004C82B0CD00000000000001CB
+t1283633357
+s459
+i<Cocoa/Cocoa.h>
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m
+c000000004C82B0E100000000000000FB
+t1283633377
+s251
+i"Swimmer.h"
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/pList_PersistenceAppDelegate.h
+c000000004C81E35600000000000001A0
+t1283580758
+s416
+i<UIKit/UIKit.h>
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/pList_PersistenceAppDelegate.m
+c000000004C81E35B0000000000000AE4
+t1283580763
+s2788
+i"pList_PersistenceAppDelegate.h"
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/MainWindow.xib
+c000000004C81E1E3000000000000213A
+t1283580387
+s8506
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app
+t2
+s0
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app.dSYM
+t2
+s0
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/Info.plist
+t1283633378
+s637
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/MainWindow.nib
+t1283633378
+s994
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/PkgInfo
+t1283633378
+s8
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/pList Persistence
+t2
+s0
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/Swimmer.o
+t2
+s0
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/main.o
+t1283633379
+s6360
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/pList Persistence.LinkFileList
+c000000004C82B0E2000000000000021C
+t1283633378
+s540
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/pList_PersistenceAppDelegate.o
+t1283633379
+s48416
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/main.m
+c000000004C81E1E30000000000000171
+t1283580387
+s369
+i<UIKit/UIKit.h>
+
+N/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/pList_Persistence_Prefix.pch
+c000000004C81E1E300000000000000CB
+t1283580387
+s203
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pList_Persistence_Prefix-bxvparvniamdqjdbrzojeakdctme/pList_Persistence_Prefix.pch.gch
+t1283633379
+s15232016
+
+NpList_Persistence-Info.plist
+c000000004C81E1E3000000000000038D
+t1283580387
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies305326178#305326178#0(0"0(0#1#0"8610240256#0"0#
+
+CCompileC "build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/Swimmer.o" "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s305326179.552506
+e305326179.606760
+r0
+xCompileC
+xbuild/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/Swimmer.o
+x/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:9:
+o/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.h:9:24: error: Cocoa/Cocoa.h: No such file or directory
+o/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:14: error: expected specifier-qualifier-list before 'swimmerName'
+o/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerName' requires method '-swimmerName' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerName' requires the method 'setSwimmerName:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerGender' requires method '-swimmerGender' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerGender' requires the method 'setSwimmerGender:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerAgeGroup' requires method '-swimmerAgeGroup' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerAgeGroup' requires the method 'setSwimmerAgeGroup:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@93"Compile /Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326179#305326179#0(1828"In file included from /Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:9:/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.h:9:24: error: Cocoa/Cocoa.h: No such file or directory/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:14: error: expected specifier-qualifier-list before 'swimmerName'/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerName' requires method '-swimmerName' to be defined - use @synthesize, @dynamic or provide a method implementation/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerName' requires the method 'setSwimmerName:' to be defined - use @synthesize, @dynamic or provide a method implementation/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerGender' requires method '-swimmerGender' to be defined - use @synthesize, @dynamic or provide a method implementation/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerGender' requires the method 'setSwimmerGender:' to be defined - use @synthesize, @dynamic or provide a method implementation/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerAgeGroup' requires method '-swimmerAgeGroup' to be defined - use @synthesize, @dynamic or provide a method implementation/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m:16: warning: property 'swimmerAgeGroup' requires the method 'setSwimmerAgeGroup:' to be defined - use @synthesize, @dynamic or provide a method implementation8(4@40"Cocoa/Cocoa.h: No such file or directory305326179#111#140#2(7@107"In file included from /Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326179#18446744073709551615#0#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326177#9#0#9#0#0"0(13@129"Cocoa/Cocoa.h: No such file or directory in /Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.h305326179#18446744073709551615#0#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.h305326157#9#0#9#0#0"0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.h305326157#9#0#9#0#28"*: No such file or directory0(4@54"Expected specifier-qualifier-list before 'swimmerName'305326179#251#152#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326177#14#0#14#0#19"expected * before *0(22@130"Property 'swimmerName' requires method '-swimmerName' to be defined - use @synthesize, @dynamic or provide a method implementation305326179#403#230#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326177#16#0#16#0#0"0(22@137"Property 'swimmerName' requires the method 'setSwimmerName:' to be defined - use @synthesize, @dynamic or provide a method implementation305326179#633#237#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326177#16#0#16#0#0"0(22@134"Property 'swimmerGender' requires method '-swimmerGender' to be defined - use @synthesize, @dynamic or provide a method implementation305326179#870#234#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326177#16#0#16#0#0"0(22@141"Property 'swimmerGender' requires the method 'setSwimmerGender:' to be defined - use @synthesize, @dynamic or provide a method implementation305326179#1104#241#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326177#16#0#16#0#0"0(22@138"Property 'swimmerAgeGroup' requires method '-swimmerAgeGroup' to be defined - use @synthesize, @dynamic or provide a method implementation305326179#1345#238#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326177#16#0#16#0#0"0(22@145"Property 'swimmerAgeGroup' requires the method 'setSwimmerAgeGroup:' to be defined - use @synthesize, @dynamic or provide a method implementation305326179#1583#245#0(6@85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m305326177#16#0#16#0#0"0(0#0#85"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m8614515328#2456"    cd "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/include" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/DerivedSources/i386" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/DerivedSources" -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pList_Persistence_Prefix-bxvparvniamdqjdbrzojeakdctme/pList_Persistence_Prefix.pch -c "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/Swimmer.m" -o "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/Swimmer.o"1#
+
+CCompileC "build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/main.o" "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s305326179.550303
+e305326179.614539
+r1
+xCompileC
+xbuild/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/main.o
+x/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/main.m305326179#305326179#0(0"0(0#0#74"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/main.m8615763744#2442"    cd "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/include" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/DerivedSources/i386" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/DerivedSources" -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pList_Persistence_Prefix-bxvparvniamdqjdbrzojeakdctme/pList_Persistence_Prefix.pch -c "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/main.m" -o "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/main.o"0#
+
+CCompileC "build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/pList_PersistenceAppDelegate.o" "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/pList_PersistenceAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s305326179.551497
+e305326179.627859
+r1
+xCompileC
+xbuild/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/pList_PersistenceAppDelegate.o
+x/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/pList_PersistenceAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/pList_PersistenceAppDelegate.m305326179#305326179#0(0"0(0#0#106"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/pList_PersistenceAppDelegate.m8615297376#2498"    cd "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/include" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/DerivedSources/i386" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/DerivedSources" -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pList_Persistence_Prefix-bxvparvniamdqjdbrzojeakdctme/pList_Persistence_Prefix.pch -c "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/Classes/pList_PersistenceAppDelegate.m" -o "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/Objects-normal/i386/pList_PersistenceAppDelegate.o"0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/MainWindow.xib"
+s305326178.417423
+e305326178.775832
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib305326178#305326178#0(0"0(0#0#82"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/MainWindow.xib8614934496#673"    cd "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/MainWindow.nib" "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CGenerateDSYMFile "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app.dSYM" "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/pList Persistence"
+r0
+
+CLd "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/pList Persistence" normal i386
+r0
+
+CProcessInfoPlistFile "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/Info.plist" pList_Persistence-Info.plist
+s305326178.410260
+e305326178.417309
+r1
+xProcessInfoPlistFile
+x/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/Info.plist
+xpList_Persistence-Info.plist
+lSLF07#2@36"Process pList_Persistence-Info.plist305326178#305326178#0(0"0(0#0#96"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/pList_Persistence-Info.plist8102047629311042560#602"    cd "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility pList_Persistence-Info.plist -genpkginfo "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app/Info.plist"0#
+
+CProcessPCH /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pList_Persistence_Prefix-bxvparvniamdqjdbrzojeakdctme/pList_Persistence_Prefix.pch.gch pList_Persistence_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s305326178.775961
+e305326179.550172
+r1
+xProcessPCH
+x/var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pList_Persistence_Prefix-bxvparvniamdqjdbrzojeakdctme/pList_Persistence_Prefix.pch.gch
+xpList_Persistence_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@39"Precompile pList_Persistence_Prefix.pch305326178#305326179#0(0"0(0#0#96"/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/pList_Persistence_Prefix.pch8318822857579983872#2293"    cd "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/pList Persistence-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/include" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/DerivedSources/i386" "-I/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/pList Persistence.build/Debug-iphonesimulator/pList Persistence.build/DerivedSources" -c "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/pList_Persistence_Prefix.pch" -o /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/pList_Persistence_Prefix-bxvparvniamdqjdbrzojeakdctme/pList_Persistence_Prefix.pch.gch0#
+
+CTouch "/Volumes/Documents/XCode Projects/TimeStandardApp/pList Persistence/build/Debug-iphonesimulator/pList Persistence.app"
+r0
+

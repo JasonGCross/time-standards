@@ -1,0 +1,6 @@
+1	Western Zone	2010	Western Zones 2010
+2	PNS Silver	2010-2011	PNS Silver 2010-2011
+3	PNS Gold	2010-2011	PNS Gold 2010-2011
+4	WA Sr Champs	2010-2011	Washington State Senior Championships
+5	NW Regionals	2010-2011	SC NW Age Group Regionals
+10	12 Olympic Tr	2012	2010 Olympic Trials

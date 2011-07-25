@@ -1,0 +1,1013 @@
+TSwimTimeStandards
+v7
+r0
+t330597133.488924
+cCheck dependencies
+cCpResource "build/Ad Hoc-iphoneos/SwimTimeStandards.app/ResourceRules.plist" /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+cProcessInfoPlistFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Info.plist" SwimmingTimeStandards-Info.plist
+cCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../MainWindow.xib"
+cCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../RootViewController.xib"
+cCpResource "build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimes.sqlite" Classes/../SwimTimes.sqlite
+cCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerTableCell.xib"
+cCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../StandardTableCell.xib"
+cCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCell.xib"
+cCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerDetailView.xib"
+cCopyPNGFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/headshot.png" Classes/../headshot.png
+cCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCellEditView.xib"
+cCopyPNGFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/appIcon.png" Classes/../appIcon.png
+cCopyPNGFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Default.png" Classes/../Default.png
+cCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerPhotoViewController.xib"
+cCpResource "build/Ad Hoc-iphoneos/SwimTimeStandards.app/iTunesArtwork" Classes/iTunesArtwork
+cCopyPNGFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/miniAppIcon.png" Classes/miniAppIcon.png
+cProcessPCH /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch.gch SwimmingTimeStandards_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch.gch SwimmingTimeStandards_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cDataModelVersionCompile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/HomeScreenValues.momd" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/HomeScreenValues.xcdatamodeld"
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/main.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmingTimeStandardsAppDelegate.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/RootViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardDataAccess.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerDetailViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerPhotoViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/UIImageToDataTransformer.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/main.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmingTimeStandardsAppDelegate.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/RootViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards" normal armv6
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardDataAccess.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerDetailViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerPhotoViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/UIImageToDataTransformer.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards" normal armv7
+cCreateUniversalBinary "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards" normal "armv6 armv7"
+cGenerateDSYMFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app.dSYM" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards"
+cProcessProductPackaging "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/45B9A353-FD71-4D6D-AE01-2E444866CCBD.mobileprovision" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/embedded.mobileprovision"
+cTouch "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"
+cProcessProductPackaging /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards.xcent"
+cCodeSign "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"
+cValidate "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+c000000004D7401890000000000000110
+t1299448201
+s272
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+c000000004D4F6A4700000000000001A7
+t1297050183
+s423
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+c000000004D4F6A4700000000000001E5
+t1297050183
+s485
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004D54D2640000000000303FF0
+t1297404516
+s3162096
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004D54D243000000000000046B
+t1297404483
+s1131
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54D18C00000000003532A0
+t1297404300
+s3486368
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54D1F500000000003E22F0
+t1297404405
+s4072176
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54D1DD0000000000001466
+t1297404381
+s5222
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5A28AB0000000000000AA1
+t1297754283
+s2721
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5A292A0000000000CA2AE0
+t1297754410
+s13249248
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/Availability.h
+c000000004D4F74C20000000000001B19
+t1297052866
+s6937
+
+N/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/lib/libsqlite3.dylib
+c000000004D54CC1100000000000D80B0
+t1297402897
+s884912
+
+N/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/45B9A353-FD71-4D6D-AE01-2E444866CCBD.mobileprovision
+c000000004D6340CB0000000000001BB9
+t1298350283
+s7097
+
+N/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/660350B8-AAEA-4A6D-9DF6-0F4A2C183726.mobileprovision
+c000000004E0449AF0000000000001DF4
+t1308903855
+s7668
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m
+c000000004E015969000000000000232B
+t1308711273
+s9003
+i"SwimmerPhotoViewController.h"
+i"SwimmingTimeStandardsAppDelegate.h"
+i"SwimmingTimesStandardsGlobals.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m
+c000000004E0159690000000000002CEE
+t1308711273
+s11502
+i"SwimmingTimeStandardsAppDelegate.h"
+i"RootViewController.h"
+i"TimeStandardDataAccess.h"
+i"SwimmingTimesStandardsGlobals.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Default.png
+c000000004E015969000000000000AC1B
+t1308711273
+s44059
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../MainWindow.xib
+c000000004E015969000000000000602C
+t1308711273
+s24620
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../RootViewController.xib
+c000000004E0159690000000000004326
+t1308711273
+s17190
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../StandardTableCell.xib
+c000000004E015969000000000000333B
+t1308711273
+s13115
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimTimes.sqlite
+c000000004E0411EF0000000000028400
+t1308889583
+s164864
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerDetailView.xib
+c000000004E0159690000000000005911
+t1308711273
+s22801
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerPhotoViewController.xib
+c000000004E0159690000000000005AA0
+t1308711273
+s23200
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerTableCell.xib
+c000000004E0159690000000000003995
+t1308711273
+s14741
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCell.xib
+c000000004E01596900000000000054CE
+t1308711273
+s21710
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCellEditView.xib
+c000000004E0159690000000000004137
+t1308711273
+s16695
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../appIcon.png
+c000000004E015969000000000006E900
+t1308711273
+s452864
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../headshot.png
+c000000004E0159690000000000000C86
+t1308711273
+s3206
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/HomeScreenValues.xcdatamodeld
+c000000004E0159690000000000000088
+t1308711273
+s136
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.h
+c000000004E015969000000000000081D
+t1308711273
+s2077
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m
+c000000004E01596900000000000049CB
+t1308711273
+s18891
+i"RootViewController.h"
+i"SwimmingTimesStandardsGlobals.h"
+i"SwimmingTimeStandardsAppDelegate.h"
+i"TimeStandardDataAccess.h"
+i"TimeStandardController.h"
+i"SwimmerController.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.h
+c000000004E01596900000000000004B5
+t1308711273
+s1205
+i<UIKit/UIKit.h>
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m
+c000000004E01596900000000000039CF
+t1308711273
+s14799
+i"SwimmerController.h"
+i"SwimmingTimesStandardsGlobals.h"
+i"SwimmingTimeStandardsAppDelegate.h"
+i"SwimmerDetailViewController.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.h
+c000000004E01596900000000000003DC
+t1308711273
+s988
+i<UIKit/UIKit.h>
+i"SwimmingTimesStandardsGlobals.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m
+c000000004E0159690000000000002BB6
+t1308711273
+s11190
+i"SwimmerDetailViewController.h"
+i"SwimmingTimeStandardsAppDelegate.h"
+i"TimeStandardDataAccess.h"
+i"SwimmerPhotoViewController.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerPhotoViewController.h
+c000000004E01596900000000000004C2
+t1308711273
+s1218
+i<UIKit/UIKit.h>
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmingTimeStandardsAppDelegate.h
+c000000004E015969000000000000067B
+t1308711273
+s1659
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmingTimesStandardsGlobals.h
+c000000004E0159690000000000000334
+t1308711273
+s820
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.h
+c000000004E015969000000000000023C
+t1308711273
+s572
+i<UIKit/UIKit.h>
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m
+c000000004E0159690000000000001A84
+t1308711273
+s6788
+i"TimeStandardController.h"
+i"TimeStandardDataAccess.h"
+i"SwimmingTimeStandardsAppDelegate.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.h
+c000000004E0159690000000000000722
+t1308711273
+s1826
+i<Foundation/Foundation.h>
+i"/usr/include/sqlite3.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m
+c000000004E0159690000000000004367
+t1308711273
+s17255
+i"TimeStandardDataAccess.h"
+i"SwimmingTimesStandardsGlobals.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.h
+c000000004E0159690000000000000A73
+t1308711273
+s2675
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m
+c000000004E0159690000000000000BB0
+t1308711273
+s2992
+i"UIImageToDataTransformer.h"
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/iTunesArtwork
+c000000004E015969000000000004E522
+t1308711273
+s320802
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/miniAppIcon.png
+c000000004E01596900000000000028D8
+t1308711273
+s10456
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/SwimmingTimeStandards_Prefix.pch
+c000000004E015969000000000000017F
+t1308711273
+s383
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app
+t1308904333
+s816
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app.dSYM
+t1308904333
+s102
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Default.png
+t1308904331
+s51293
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/HomeScreenValues.momd
+t1308904331
+s136
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Info.plist
+t1308904330
+s926
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/MainWindow.nib
+t1308904330
+s2470
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/PkgInfo
+t1308904330
+s8
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/ResourceRules.plist
+t1308904330
+s485
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/RootViewController.nib
+t1308904330
+s3336
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/StandardTableCell.nib
+t1308904330
+s3401
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards
+t1308904333
+s222388
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimes.sqlite
+t1308904330
+s164864
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmerDetailView.nib
+t1308904331
+s5071
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmerPhotoViewController.nib
+t1308904331
+s4969
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmerTableCell.nib
+t1308904330
+s3688
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmersListTableCell.nib
+t1308904331
+s4520
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmersListTableCellEditView.nib
+t1308904331
+s3808
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/appIcon.png
+t1308904331
+s542129
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/embedded.mobileprovision
+t1308904333
+s7097
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/headshot.png
+t1308904330
+s3741
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/iTunesArtwork
+t1308904331
+s320802
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/miniAppIcon.png
+t1308904331
+s11771
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/RootViewController.o
+t1308904332
+s106328
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards
+t1308904332
+s107796
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards.LinkFileList
+c000000004E044B8A00000000000006DE
+t1308904330
+s1758
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerController.o
+t1308904332
+s85244
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerDetailViewController.o
+t1308904332
+s78884
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerPhotoViewController.o
+t1308904332
+s75888
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmingTimeStandardsAppDelegate.o
+t1308904331
+s81016
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardController.o
+t1308904331
+s61864
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardDataAccess.o
+t1308904332
+s70768
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/UIImageToDataTransformer.o
+t1308904332
+s9936
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/main.o
+t1308904331
+s6668
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/RootViewController.o
+t1308904332
+s106024
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards
+t1308904333
+s107700
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards.LinkFileList
+c000000004E044B8A00000000000006DE
+t1308904330
+s1758
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerController.o
+t1308904332
+s85124
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerDetailViewController.o
+t1308904332
+s78936
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerPhotoViewController.o
+t1308904332
+s75624
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmingTimeStandardsAppDelegate.o
+t1308904332
+s80832
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardController.o
+t1308904332
+s61800
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardDataAccess.o
+t1308904332
+s70536
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/UIImageToDataTransformer.o
+t1308904333
+s9936
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/main.o
+t1308904332
+s6648
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards.xcent
+t1308904333
+s437
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m
+c000000004E0159690000000000000176
+t1308711273
+s374
+i<UIKit/UIKit.h>
+
+N/usr/include/sqlite3.h
+c000000004CC3EB2A000000000003D86F
+t1287908138
+s252015
+
+N/var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch.gch
+t1308903678
+s10549848
+
+N/var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch.gch
+t1308903678
+s11008600
+
+NSwimmingTimeStandards-Info.plist
+c000000004E015969000000000000038A
+t1308711273
+s906
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies330597129#330597130#0(0"0(0#1#0"7237954635114312704#0"0#
+
+CCodeSign "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"
+s330597133.133312
+e330597133.354864
+r1
+xCodeSign
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app
+lSLF07#2@54"CodeSign "build/Ad Hoc-iphoneos/SwimTimeStandards.app"330597133#330597133#0(0"0(0#0#119"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app8607956096#871"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Distribution: Jason CROSS" "--resource-rules=/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/ResourceRules.plist" --entitlements "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards.xcent" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/RootViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597131.619573
+e330597132.357738
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/RootViewController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m330597131#330597132#0(0"0(0#0#104"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m8606244064#2507"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/RootViewController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597131.881214
+e330597132.271060
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m330597131#330597132#0(0"0(0#0#103"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m8608872736#2505"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerDetailViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597131.919201
+e330597132.220226
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerDetailViewController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@121"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m330597131#330597132#0(0"0(0#0#113"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m8608439104#2525"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerDetailViewController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerPhotoViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597132.061148
+e330597132.356037
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerPhotoViewController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@131"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m330597132#330597132#0(0"0(0#0#123"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m8607912928#2534"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmerPhotoViewController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmingTimeStandardsAppDelegate.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597131.618608
+e330597131.919086
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmingTimeStandardsAppDelegate.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@137"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m330597131#330597131#0(0"0(0#0#129"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m8606545152#2546"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimmingTimeStandardsAppDelegate.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597131.699775
+e330597131.881102
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m330597131#330597131#0(0"0(0#0#108"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m8605914976#2515"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardDataAccess.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597131.698054
+e330597132.061032
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardDataAccess.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m330597131#330597132#0(0"0(0#0#108"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m8606206272#2515"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/TimeStandardDataAccess.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/UIImageToDataTransformer.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597132.220338
+e330597132.295687
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/UIImageToDataTransformer.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@118"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m330597132#330597132#0(0"0(0#0#110"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m8605954752#2519"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/UIImageToDataTransformer.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/main.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s330597131.617594
+e330597131.697083
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/main.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m330597131#330597131#0(0"0(0#0#82"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m8607950816#2471"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv6" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/main.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/RootViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.356173
+e330597132.981392
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/RootViewController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m330597132#330597132#0(0"0(0#0#104"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m8608214080#2507"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/RootViewController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/RootViewController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.580760
+e330597132.950301
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m330597132#330597132#0(0"0(0#0#103"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m8609270336#2505"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerDetailViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.605912
+e330597132.933881
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerDetailViewController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@121"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m330597132#330597132#0(0"0(0#0#113"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m8610978976#2525"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/SwimmerDetailViewController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerDetailViewController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerPhotoViewController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.727861
+e330597132.980074
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerPhotoViewController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@131"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m330597132#330597132#0(0"0(0#0#123"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m8608164320#2534"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmerPhotoViewController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmerPhotoViewController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmingTimeStandardsAppDelegate.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.295803
+e330597132.605795
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmingTimeStandardsAppDelegate.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@137"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m330597132#330597132#0(0"0(0#0#129"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m8606357728#2546"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Classes/SwimmingTimeStandardsAppDelegate.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimmingTimeStandardsAppDelegate.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardController.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.408012
+e330597132.580651
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardController.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m330597132#330597132#0(0"0(0#0#108"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m8613223136#2515"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardController.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardController.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardDataAccess.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.377960
+e330597132.727706
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardDataAccess.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m330597132#330597132#0(0"0(0#0#108"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m8604086016#2515"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/TimeStandardDataAccess.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/TimeStandardDataAccess.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/UIImageToDataTransformer.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.933992
+e330597133.005148
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/UIImageToDataTransformer.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@118"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m330597132#330597133#0(0"0(0#0#110"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m8608409696#2519"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/UIImageToDataTransformer.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/UIImageToDataTransformer.o"0#
+
+CCompileC "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/main.o" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s330597132.271203
+e330597132.377838
+r1
+xCompileC
+xbuild/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/main.o
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m330597132#330597132#0(0"0(0#0#82"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m8609220704#2471"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wunused-variable -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-generated-files.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-own-target-headers.hmap" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-all-target-headers.hmap" -iquote "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards-project-headers.hmap" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/include" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources/armv7" "-I/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/main.m" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/main.o"0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../MainWindow.xib"
+s330597130.126117
+e330597130.591997
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../MainWindow.xib
+lSLF07#2@36"CompileXIB Classes/../MainWindow.xib330597130#330597130#0(0"0(0#0#101"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../MainWindow.xib8605862784#709"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/MainWindow.nib" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../MainWindow.xib" --sdk /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../RootViewController.xib"
+s330597130.126786
+e330597130.712180
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../RootViewController.xib
+lSLF07#2@44"CompileXIB Classes/../RootViewController.xib330597130#330597130#0(0"0(0#0#109"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../RootViewController.xib8613232128#725"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/RootViewController.nib" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../RootViewController.xib" --sdk /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../StandardTableCell.xib"
+s330597130.133377
+e330597130.612539
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../StandardTableCell.xib
+lSLF07#2@43"CompileXIB Classes/../StandardTableCell.xib330597130#330597130#0(0"0(0#0#108"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../StandardTableCell.xib8609629056#723"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/StandardTableCell.nib" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../StandardTableCell.xib" --sdk /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerDetailView.xib"
+s330597130.612653
+e330597131.132112
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerDetailView.xib
+lSLF07#2@43"CompileXIB Classes/../SwimmerDetailView.xib330597130#330597131#0(0"0(0#0#108"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerDetailView.xib8609022208#723"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmerDetailView.nib" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerDetailView.xib" --sdk /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerPhotoViewController.xib"
+s330597131.149183
+e330597131.616290
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerPhotoViewController.xib
+lSLF07#2@52"CompileXIB Classes/../SwimmerPhotoViewController.xib330597131#330597131#0(0"0(0#0#117"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerPhotoViewController.xib8606426240#741"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmerPhotoViewController.nib" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerPhotoViewController.xib" --sdk /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerTableCell.xib"
+s330597130.127996
+e330597130.733566
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerTableCell.xib
+lSLF07#2@42"CompileXIB Classes/../SwimmerTableCell.xib330597130#330597130#0(0"0(0#0#107"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerTableCell.xib8611085920#721"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmerTableCell.nib" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmerTableCell.xib" --sdk /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCell.xib"
+s330597130.592098
+e330597131.149072
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCell.xib
+lSLF07#2@47"CompileXIB Classes/../SwimmersListTableCell.xib330597130#330597131#0(0"0(0#0#112"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCell.xib8600099456#731"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmersListTableCell.nib" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCell.xib" --sdk /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCellEditView.xib"
+s330597130.733678
+e330597131.221478
+r1
+xCompileXIB
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCellEditView.xib
+lSLF07#2@55"CompileXIB Classes/../SwimmersListTableCellEditView.xib330597130#330597131#0(0"0(0#0#120"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCellEditView.xib8608583840#747"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimmersListTableCellEditView.nib" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimmersListTableCellEditView.xib" --sdk /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCopyPNGFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Default.png" Classes/../Default.png
+s330597131.132225
+e330597131.432008
+r1
+xCopyPNGFile
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Default.png
+xClasses/../Default.png
+lSLF07#2@92"CopyPNGFile "build/Ad Hoc-iphoneos/SwimTimeStandards.app/Default.png" Classes/../Default.png330597131#330597131#0(0"0(0#0#98"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Default.png8606543808#622"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../Default.png" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Default.png"0#
+
+CCopyPNGFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/appIcon.png" Classes/../appIcon.png
+s330597130.754156
+e330597131.246633
+r1
+xCopyPNGFile
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/appIcon.png
+xClasses/../appIcon.png
+lSLF07#2@92"CopyPNGFile "build/Ad Hoc-iphoneos/SwimTimeStandards.app/appIcon.png" Classes/../appIcon.png330597130#330597131#0(0"0(0#0#98"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../appIcon.png8607955616#622"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../appIcon.png" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/appIcon.png"0#
+
+CCopyPNGFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/headshot.png" Classes/../headshot.png
+s330597130.712277
+e330597130.754059
+r1
+xCopyPNGFile
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/headshot.png
+xClasses/../headshot.png
+lSLF07#2@94"CopyPNGFile "build/Ad Hoc-iphoneos/SwimTimeStandards.app/headshot.png" Classes/../headshot.png330597130#330597130#0(0"0(0#0#99"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../headshot.png8608795200#624"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../headshot.png" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/headshot.png"0#
+
+CCopyPNGFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/miniAppIcon.png" Classes/miniAppIcon.png
+s330597131.222410
+e330597131.255322
+r1
+xCopyPNGFile
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/miniAppIcon.png
+xClasses/miniAppIcon.png
+lSLF07#2@97"CopyPNGFile "build/Ad Hoc-iphoneos/SwimTimeStandards.app/miniAppIcon.png" Classes/miniAppIcon.png330597131#330597131#0(0"0(0#0#99"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/miniAppIcon.png8606237664#627"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/miniAppIcon.png" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/miniAppIcon.png"0#
+
+CCpResource "build/Ad Hoc-iphoneos/SwimTimeStandards.app/ResourceRules.plist" /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+s330597130.117333
+e330597130.125776
+r1
+xCpResource
+xbuild/Ad Hoc-iphoneos/SwimTimeStandards.app/ResourceRules.plist
+x/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+lSLF07#2@101"Copy /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist330597130#330597130#0(0"0(0#0#96"/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist7382632807533532160#632"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"0#
+
+CCpResource "build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimes.sqlite" Classes/../SwimTimes.sqlite
+s330597130.127384
+e330597130.133270
+r1
+xCpResource
+xbuild/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimes.sqlite
+xClasses/../SwimTimes.sqlite
+lSLF07#2@32"Copy Classes/../SwimTimes.sqlite330597130#330597130#0(0"0(0#0#103"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimTimes.sqlite8611710944#641"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/../SwimTimes.sqlite" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"0#
+
+CCpResource "build/Ad Hoc-iphoneos/SwimTimeStandards.app/iTunesArtwork" Classes/iTunesArtwork
+s330597131.221575
+e330597131.232255
+r1
+xCpResource
+xbuild/Ad Hoc-iphoneos/SwimTimeStandards.app/iTunesArtwork
+xClasses/iTunesArtwork
+lSLF07#2@26"Copy Classes/iTunesArtwork330597131#330597131#0(0"0(0#0#97"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/iTunesArtwork8606318144#635"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/iTunesArtwork" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"0#
+
+CCreateUniversalBinary "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards" normal "armv6 armv7"
+s330597133.045364
+e330597133.049116
+r1
+xCreateUniversalBinary
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards
+xnormal
+xarmv6 armv7
+lSLF07#2@106"CreateUniversalBinary "build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards" normal "armv6 armv7"330597133#330597133#0(0"0(0#0#87"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/armv6 armv78606490944#779"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards" -output "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards"0#
+
+CDataModelVersionCompile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/HomeScreenValues.momd" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/HomeScreenValues.xcdatamodeld"
+s330597131.616651
+e330597131.699639
+r1
+xDataModelVersionCompile
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/HomeScreenValues.momd
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/HomeScreenValues.xcdatamodeld
+lSLF07#2@129"DataModelVersionCompile "build/Ad Hoc-iphoneos/SwimTimeStandards.app/HomeScreenValues.momd" Classes/HomeScreenValues.xcdatamodeld330597131#330597131#0(0"0(0#0#113"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/HomeScreenValues.xcdatamodeld8608868160#518"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/momc "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/Classes/HomeScreenValues.xcdatamodeld" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/HomeScreenValues.momd"0#
+
+CGenerateDSYMFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app.dSYM" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards"
+s330597133.049185
+e330597133.111376
+r1
+xGenerateDSYMFile
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app.dSYM
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards
+lSLF07#2@131"GenerateDSYMFile "build/Ad Hoc-iphoneos/SwimTimeStandards.app.dSYM" "build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards"330597133#330597133#0(0"0(0#0#137"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards8606349024#532"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/usr/bin/dsymutil "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/SwimTimeStandards" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app.dSYM"0#
+
+CLd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards" normal armv6
+s330597132.357825
+e330597132.407887
+r1
+xLd
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards
+xnormal
+xarmv6
+lSLF07#2@193"Link /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards330597132#330597132#0(0"0(0#0#0"8606511264#1193"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk "-L/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" -filelist "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards.LinkFileList" -dead_strip -miphoneos-version-min=3.0 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -lsqlite3 -prebind -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv6/SwimTimeStandards"0#
+
+CLd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards" normal armv7
+s330597133.005240
+e330597133.045240
+r1
+xLd
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards
+xnormal
+xarmv7
+lSLF07#2@193"Link /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards330597133#330597133#0(0"0(0#0#0"8606588928#1193"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk "-L/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" "-F/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos" -filelist "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards.LinkFileList" -dead_strip -miphoneos-version-min=3.0 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -lsqlite3 -prebind -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/Objects-normal/armv7/SwimTimeStandards"0#
+
+CProcessInfoPlistFile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Info.plist" SwimmingTimeStandards-Info.plist
+s330597130.121286
+e330597130.126028
+r1
+xProcessInfoPlistFile
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Info.plist
+xSwimmingTimeStandards-Info.plist
+lSLF07#2@40"Process SwimmingTimeStandards-Info.plist330597130#330597130#0(0"0(0#0#108"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/SwimmingTimeStandards-Info.plist8609000928#779"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility SwimmingTimeStandards-Info.plist -genpkginfo "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/ResourceRules.plist" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/Info.plist"0#
+
+CProcessPCH /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-fewlrujgxoghcneomfaqwnrxtsjg/SwimmingTimeStandards_Prefix.pch.gch SwimmingTimeStandards_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/O+/O+hv4FMUFkucKB4yGFEKDU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SwimmingTimeStandards_Prefix-gjeesyhrujlykzdlwetfkzbpsvsq/SwimmingTimeStandards_Prefix.pch.gch SwimmingTimeStandards_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessProductPackaging "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/45B9A353-FD71-4D6D-AE01-2E444866CCBD.mobileprovision" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/embedded.mobileprovision"
+s330597133.111499
+e330597133.113438
+r1
+xProcessProductPackaging
+x/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/45B9A353-FD71-4D6D-AE01-2E444866CCBD.mobileprovision
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/embedded.mobileprovision
+lSLF07#2@210"ProcessProductPackaging "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/45B9A353-FD71-4D6D-AE01-2E444866CCBD.mobileprovision" "build/Ad Hoc-iphoneos/SwimTimeStandards.app/embedded.mobileprovision"330597133#330597133#0(0"0(0#0#144"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/embedded.mobileprovision8611528960#531"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/45B9A353-FD71-4D6D-AE01-2E444866CCBD.mobileprovision" -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/embedded.mobileprovision"0#
+
+CProcessProductPackaging "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/660350B8-AAEA-4A6D-9DF6-0F4A2C183726.mobileprovision" "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app/embedded.mobileprovision"
+r0
+
+CProcessProductPackaging /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards.xcent"
+s330597133.117405
+e330597133.133237
+r1
+xProcessProductPackaging
+x/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards.xcent
+lSLF07#2@219"ProcessProductPackaging /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist "build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards.xcent"330597133#330597133#0(0"0(0#0#173"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards.xcent8608604544#566"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist -entitlements -format xml -o "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/SwimmingTimeStandards.build/Ad Hoc-iphoneos/SwimTimeStandards.build/SwimTimeStandards.xcent"0#
+
+CTouch "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"
+s330597133.113504
+e330597133.117291
+r1
+xTouch
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app
+lSLF07#2@125"Touch /Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app330597133#330597133#0(0"0(0#0#0"8609575296#367"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"0#
+
+CValidate "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"
+s330597133.355068
+e330597133.488856
+r1
+xValidate
+x/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app
+o2011-06-24 01:32:13.374 Validation[92416:607] *** Warning: Defaulting to the standard codesign tool
+lSLF07#2@54"Validate "build/Ad Hoc-iphoneos/SwimTimeStandards.app"330597133#330597133#0(100"2011-06-24 01:32:13.374 Validation[92416:607] *** Warning: Defaulting to the standard codesign tool0(0#0#119"/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app8606100128#483"    cd "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards"    setenv PATH "/Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/xCode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/xCode3/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation "/Volumes/Documents/XCode Projects/timestandards_xcode/SwimmingTimeStandards/build/Ad Hoc-iphoneos/SwimTimeStandards.app"0#
+

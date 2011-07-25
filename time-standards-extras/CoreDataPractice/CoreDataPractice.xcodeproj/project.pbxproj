@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* CoreDataPracticeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* CoreDataPracticeAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28193060112F816700ECF9B4 /* CoreDataPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819305F112F816700ECF9B4 /* CoreDataPractice.xcdatamodeld */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		F60FB55612DC06AB004A2789 /* UIImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F60FB55512DC06AB004A2789 /* UIImageToDataTransformer.m */; };
+		F61006D112D968CB00C79B4F /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61006D012D968CB00C79B4F /* RootViewController.xib */; };
+		F61006E512D96C3A00C79B4F /* SwimmerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61006E412D96C3A00C79B4F /* SwimmerTableCell.xib */; };
+		F610077812DA63A500C79B4F /* SwimmerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F610077612DA63A500C79B4F /* SwimmerController.m */; };
+		F61007FB12DA6DD300C79B4F /* headshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F61007FA12DA6DD300C79B4F /* headshot.png */; };
+		F610081212DB0B3B00C79B4F /* SwimmerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F610081112DB0B3B00C79B4F /* SwimmerDetailViewController.m */; };
+		F610081E12DB0C4200C79B4F /* SwimmerPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F610081D12DB0C4200C79B4F /* SwimmerPhotoViewController.m */; };
+		F610082012DB0C5900C79B4F /* SwimmerPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F610081F12DB0C5900C79B4F /* SwimmerPhotoViewController.xib */; };
+		F663996B12DB243900FDD5A9 /* StandardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F663996712DB243900FDD5A9 /* StandardTableCell.xib */; };
+		F663996C12DB243900FDD5A9 /* SwimmerDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F663996812DB243900FDD5A9 /* SwimmerDetailView.xib */; };
+		F663996D12DB243900FDD5A9 /* SwimmersListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F663996912DB243900FDD5A9 /* SwimmersListTableCell.xib */; };
+		F663996E12DB243900FDD5A9 /* SwimmersListTableCellEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F663996A12DB243900FDD5A9 /* SwimmersListTableCellEditView.xib */; };
+		F663999312DB262500FDD5A9 /* SwimmerNameTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F663999212DB262500FDD5A9 /* SwimmerNameTableCell.xib */; };
+		F665567512D47FAE00F3A9C4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F665567412D47FAE00F3A9C4 /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* CoreDataPracticeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataPracticeAppDelegate.h; path = Classes/CoreDataPracticeAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* CoreDataPracticeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataPracticeAppDelegate.m; path = Classes/CoreDataPracticeAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* CoreDataPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C3AD890F43EF2300507BA6 /* CoreDataPractice.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPractice.xcdatamodel; sourceTree = "<group>"; };
+		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* CoreDataPractice_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataPractice_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* CoreDataPractice-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CoreDataPractice-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F60FB55412DC06AB004A2789 /* UIImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageToDataTransformer.h; sourceTree = "<group>"; };
+		F60FB55512DC06AB004A2789 /* UIImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageToDataTransformer.m; sourceTree = "<group>"; };
+		F61006D012D968CB00C79B4F /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../RootViewController.xib; sourceTree = "<group>"; };
+		F61006E412D96C3A00C79B4F /* SwimmerTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerTableCell.xib; path = ../SwimmerTableCell.xib; sourceTree = "<group>"; };
+		F610077512DA63A500C79B4F /* SwimmerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmerController.h; sourceTree = "<group>"; };
+		F610077612DA63A500C79B4F /* SwimmerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimmerController.m; sourceTree = "<group>"; };
+		F610079E12DA6A7C00C79B4F /* SwimmingTimesStandardsGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmingTimesStandardsGlobals.h; path = Classes/SwimmingTimesStandardsGlobals.h; sourceTree = "<group>"; };
+		F61007FA12DA6DD300C79B4F /* headshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headshot.png; sourceTree = "<group>"; };
+		F610081012DB0B3B00C79B4F /* SwimmerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmerDetailViewController.h; sourceTree = "<group>"; };
+		F610081112DB0B3B00C79B4F /* SwimmerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimmerDetailViewController.m; sourceTree = "<group>"; };
+		F610081C12DB0C4200C79B4F /* SwimmerPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmerPhotoViewController.h; sourceTree = "<group>"; };
+		F610081D12DB0C4200C79B4F /* SwimmerPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimmerPhotoViewController.m; sourceTree = "<group>"; };
+		F610081F12DB0C5900C79B4F /* SwimmerPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerPhotoViewController.xib; path = ../SwimmerPhotoViewController.xib; sourceTree = "<group>"; };
+		F663996712DB243900FDD5A9 /* StandardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StandardTableCell.xib; path = ../StandardTableCell.xib; sourceTree = "<group>"; };
+		F663996812DB243900FDD5A9 /* SwimmerDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerDetailView.xib; path = ../SwimmerDetailView.xib; sourceTree = "<group>"; };
+		F663996912DB243900FDD5A9 /* SwimmersListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmersListTableCell.xib; path = ../SwimmersListTableCell.xib; sourceTree = "<group>"; };
+		F663996A12DB243900FDD5A9 /* SwimmersListTableCellEditView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmersListTableCellEditView.xib; path = ../SwimmersListTableCellEditView.xib; sourceTree = "<group>"; };
+		F663999212DB262500FDD5A9 /* SwimmerNameTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerNameTableCell.xib; path = ../SwimmerNameTableCell.xib; sourceTree = "<group>"; };
+		F665567312D47FAE00F3A9C4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F665567412D47FAE00F3A9C4 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F6F350DC12DD5192004E951E /* PhotoViewController */,
+				F6F350DB12DD517D004E951E /* SwimmerDetailController */,
+				F6F350DA12DD5169004E951E /* SwimmerController */,
+				F6F350DD12DD51B1004E951E /* RootViewController */,
+				F610081B12DB0B5000C79B4F /* Application */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* CoreDataPractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F60FB54712DC065E004A2789 /* Model */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* CoreDataPractice_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				28D801B30F44B63D00FB423F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F60FB54712DC065E004A2789 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2819305F112F816700ECF9B4 /* CoreDataPractice.xcdatamodeld */,
+				F60FB55412DC06AB004A2789 /* UIImageToDataTransformer.h */,
+				F60FB55512DC06AB004A2789 /* UIImageToDataTransformer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F610081B12DB0B5000C79B4F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* CoreDataPracticeAppDelegate.h */,
+				1D3623250D0F684500981E51 /* CoreDataPracticeAppDelegate.m */,
+				F61007FA12DA6DD300C79B4F /* headshot.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* CoreDataPractice-Info.plist */,
+				F610079E12DA6A7C00C79B4F /* SwimmingTimesStandardsGlobals.h */,
+			);
+			name = Application;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F6F350DA12DD5169004E951E /* SwimmerController */ = {
+			isa = PBXGroup;
+			children = (
+				F610077512DA63A500C79B4F /* SwimmerController.h */,
+				F610077612DA63A500C79B4F /* SwimmerController.m */,
+				F663996912DB243900FDD5A9 /* SwimmersListTableCell.xib */,
+				F663996A12DB243900FDD5A9 /* SwimmersListTableCellEditView.xib */,
+			);
+			name = SwimmerController;
+			sourceTree = "<group>";
+		};
+		F6F350DB12DD517D004E951E /* SwimmerDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				F610081012DB0B3B00C79B4F /* SwimmerDetailViewController.h */,
+				F610081112DB0B3B00C79B4F /* SwimmerDetailViewController.m */,
+				F663996812DB243900FDD5A9 /* SwimmerDetailView.xib */,
+				F663999212DB262500FDD5A9 /* SwimmerNameTableCell.xib */,
+			);
+			name = SwimmerDetailController;
+			sourceTree = "<group>";
+		};
+		F6F350DC12DD5192004E951E /* PhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F610081C12DB0C4200C79B4F /* SwimmerPhotoViewController.h */,
+				F610081D12DB0C4200C79B4F /* SwimmerPhotoViewController.m */,
+				F610081F12DB0C5900C79B4F /* SwimmerPhotoViewController.xib */,
+			);
+			name = PhotoViewController;
+			sourceTree = "<group>";
+		};
+		F6F350DD12DD51B1004E951E /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F665567312D47FAE00F3A9C4 /* RootViewController.h */,
+				F665567412D47FAE00F3A9C4 /* RootViewController.m */,
+				F61006D012D968CB00C79B4F /* RootViewController.xib */,
+				F663996712DB243900FDD5A9 /* StandardTableCell.xib */,
+				F61006E412D96C3A00C79B4F /* SwimmerTableCell.xib */,
+			);
+			name = RootViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* CoreDataPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CoreDataPractice" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataPractice;
+			productName = CoreDataPractice;
+			productReference = 1D6058910D05DD3D006BFB54 /* CoreDataPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CoreDataPractice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* CoreDataPractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				F61006D112D968CB00C79B4F /* RootViewController.xib in Resources */,
+				F61006E512D96C3A00C79B4F /* SwimmerTableCell.xib in Resources */,
+				F61007FB12DA6DD300C79B4F /* headshot.png in Resources */,
+				F610082012DB0C5900C79B4F /* SwimmerPhotoViewController.xib in Resources */,
+				F663996B12DB243900FDD5A9 /* StandardTableCell.xib in Resources */,
+				F663996C12DB243900FDD5A9 /* SwimmerDetailView.xib in Resources */,
+				F663996D12DB243900FDD5A9 /* SwimmersListTableCell.xib in Resources */,
+				F663996E12DB243900FDD5A9 /* SwimmersListTableCellEditView.xib in Resources */,
+				F663999312DB262500FDD5A9 /* SwimmerNameTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* CoreDataPracticeAppDelegate.m in Sources */,
+				28193060112F816700ECF9B4 /* CoreDataPractice.xcdatamodeld in Sources */,
+				F665567512D47FAE00F3A9C4 /* RootViewController.m in Sources */,
+				F610077812DA63A500C79B4F /* SwimmerController.m in Sources */,
+				F610081212DB0B3B00C79B4F /* SwimmerDetailViewController.m in Sources */,
+				F610081E12DB0C4200C79B4F /* SwimmerPhotoViewController.m in Sources */,
+				F60FB55612DC06AB004A2789 /* UIImageToDataTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CoreDataPractice_Prefix.pch;
+				INFOPLIST_FILE = "CoreDataPractice-Info.plist";
+				PRODUCT_NAME = CoreDataPractice;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CoreDataPractice_Prefix.pch;
+				INFOPLIST_FILE = "CoreDataPractice-Info.plist";
+				PRODUCT_NAME = CoreDataPractice;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CoreDataPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CoreDataPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2819305F112F816700ECF9B4 /* CoreDataPractice.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28C3AD890F43EF2300507BA6 /* CoreDataPractice.xcdatamodel */,
+			);
+			currentVersion = 28C3AD890F43EF2300507BA6 /* CoreDataPractice.xcdatamodel */;
+			path = CoreDataPractice.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,10 @@
+Commands I used included:
+sqlite3 SwimTimes
+.read AgeGroup.dat.txt 
+.import AgeGroup.data.txt AgeGroup
+select * from AgeGroup;
+PRAGMA foreign_keys = ON;
+INSERT INTO SWIMMER (Name, Gender, AgeGroupId) VALUES ('John', 'M', 180);
+.separator "	"
+
+Note to import files, the default separater is "|".  You can change it using .separator "," or equivalent.

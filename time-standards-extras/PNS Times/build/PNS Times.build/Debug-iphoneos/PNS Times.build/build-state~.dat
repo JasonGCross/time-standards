@@ -1,0 +1,435 @@
+TPNS Times
+v7
+r0
+t301282775.486984
+cCheck dependencies
+cCpResource "build/Debug-iphoneos/PNS Times.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+cProcessInfoPlistFile "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/Info.plist" PNS_Times-Info.plist
+cCompileXIB "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/MainWindow.xib"
+cCompileXIB "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/RootViewController.xib"
+cProcessPCH /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-einnnwciypddluhetfcxuulshhgr/PNS_Times_Prefix.pch.gch PNS_Times_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-bhqpezgiwxuhoiejjraoradoeyyk/PNS_Times_Prefix.pch.gch PNS_Times_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/main.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS_TimesAppDelegate.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/RootViewController.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/main.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS_TimesAppDelegate.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times" normal armv6
+cCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/RootViewController.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times" normal armv7
+cCreateUniversalBinary "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times" normal "armv6 armv7"
+cGenerateDSYMFile "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app.dSYM" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times"
+cProcessProductPackaging "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/4CAF64A7-F13E-4BF8-A826-0740144997F3.mobileprovision" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/embedded.mobileprovision"
+cTouch "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app"
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times.xcent"
+cCodeSign "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app"
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk
+c000000004C40766F0000000000000110
+t1279293039
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist
+c000000004C2A7DA700000000000001A7
+t1277853095
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+c000000004C2A7DA700000000000001E5
+t1277853095
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFE06FA000000000034A850
+t1274939130
+s3450960
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFE07D200000000003E1EB0
+t1274939346
+s4071088
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFE07B10000000000001466
+t1274939313
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C296E2A00000000000009CD
+t1277783594
+s2509
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C296F120000000002D563E0
+t1277783826
+s47539168
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/Availability.h
+c000000004BF4D50E0000000000001A3B
+t1274336526
+s6715
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.h
+c000000004C434BBF00000000000001D8
+t1279478719
+s472
+i<UIKit/UIKit.h>
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m
+c000000004C434BBF0000000000000AA4
+t1279478719
+s2724
+i"PNS_TimesAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.h
+c000000004C43B27D0000000000000321
+t1279505021
+s801
+i<UIKit/UIKit.h>
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m
+c000000004C43B4EA000000000000182A
+t1279505642
+s6186
+i"RootViewController.h"
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/MainWindow.xib
+c000000004C434BBF0000000000005FFC
+t1279478719
+s24572
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/PNS_Times_Prefix.pch
+c000000004C434BBF0000000000000144
+t1279478719
+s324
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/RootViewController.xib
+c000000004C43B7AC0000000000006183
+t1279506348
+s24963
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app
+t1279589975
+s374
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app.dSYM
+t1279589975
+s102
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/Info.plist
+t1279589973
+s734
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/MainWindow.nib
+t1279589974
+s1511
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times
+t1279589975
+s58044
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PkgInfo
+t1279589973
+s8
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/ResourceRules.plist
+t1279589973
+s485
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/RootViewController.nib
+t1279589974
+s1824
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/embedded.mobileprovision
+t1279589975
+s7186
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times
+t1279589975
+s25276
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times.LinkFileList
+c000000004C44FE5500000000000001CB
+t1279589973
+s459
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS_TimesAppDelegate.o
+t1279589975
+s48904
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/RootViewController.o
+t1279589975
+s56684
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/main.o
+t1279589975
+s6484
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times
+t1279589975
+s25276
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times.LinkFileList
+c000000004C44FE5500000000000001CB
+t1279589973
+s459
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS_TimesAppDelegate.o
+t1279589975
+s48820
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/RootViewController.o
+t1279589975
+s56236
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/main.o
+t1279589975
+s6468
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times.xcent
+t1279589975
+s424
+
+N/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m
+c000000004C434BBF000000000000016A
+t1279478719
+s362
+i<UIKit/UIKit.h>
+
+N/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/4CAF64A7-F13E-4BF8-A826-0740144997F3.mobileprovision
+c000000004C4085040000000000001C12
+t1279296772
+s7186
+
+N/var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-bhqpezgiwxuhoiejjraoradoeyyk/PNS_Times_Prefix.pch.gch
+t1279589974
+s10290736
+
+N/var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-einnnwciypddluhetfcxuulshhgr/PNS_Times_Prefix.pch.gch
+t1279589974
+s9831984
+
+NPNS_Times-Info.plist
+c000000004C434BBF000000000000038D
+t1279478719
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies301282773#301282773#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCodeSign "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app"
+s301282775.322700
+e301282775.486942
+r1
+xCodeSign
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app
+lSLF07#2@45"CodeSign "build/Debug-iphoneos/PNS Times.app"301282775#301282775#0(0"0(0#0#96"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app8603412960#757"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Jason CROSS (UXTFF4ENL3)" "--resource-rules=/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/ResourceRules.plist" --entitlements "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times.xcent" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app"0#
+
+CCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS_TimesAppDelegate.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s301282774.990654
+e301282775.072936
+r1
+xCompileC
+xbuild/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS_TimesAppDelegate.o
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m301282774#301282775#0(0"0(0#0#92"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m8603631008#2079"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-generated-files.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-own-target-headers.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-all-target-headers.hmap" -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-project-headers.hmap" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/include" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources/armv6" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources" -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-einnnwciypddluhetfcxuulshhgr/PNS_Times_Prefix.pch -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS_TimesAppDelegate.o"0#
+
+CCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/RootViewController.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s301282775.042380
+e301282775.148517
+r1
+xCompileC
+xbuild/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/RootViewController.o
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m301282775#301282775#0(0"0(0#0#90"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m8598496128#2075"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-generated-files.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-own-target-headers.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-all-target-headers.hmap" -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-project-headers.hmap" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/include" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources/armv6" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources" -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-einnnwciypddluhetfcxuulshhgr/PNS_Times_Prefix.pch -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/RootViewController.o"0#
+
+CCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/main.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s301282774.989746
+e301282775.042275
+r1
+xCompileC
+xbuild/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/main.o
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m301282774#301282775#0(0"0(0#0#68"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m8602861472#2039"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-generated-files.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-own-target-headers.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-all-target-headers.hmap" -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-project-headers.hmap" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/include" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources/armv6" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources" -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-einnnwciypddluhetfcxuulshhgr/PNS_Times_Prefix.pch -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/main.o"0#
+
+CCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS_TimesAppDelegate.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s301282775.132207
+e301282775.221488
+r1
+xCompileC
+xbuild/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS_TimesAppDelegate.o
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m301282775#301282775#0(0"0(0#0#92"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m8603486816#2079"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-generated-files.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-own-target-headers.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-all-target-headers.hmap" -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-project-headers.hmap" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/include" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources/armv7" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources" -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-bhqpezgiwxuhoiejjraoradoeyyk/PNS_Times_Prefix.pch -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/PNS_TimesAppDelegate.m" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS_TimesAppDelegate.o"0#
+
+CCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/RootViewController.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s301282775.185583
+e301282775.269082
+r1
+xCompileC
+xbuild/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/RootViewController.o
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m301282775#301282775#0(0"0(0#0#90"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m8600347232#2075"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-generated-files.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-own-target-headers.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-all-target-headers.hmap" -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-project-headers.hmap" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/include" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources/armv7" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources" -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-bhqpezgiwxuhoiejjraoradoeyyk/PNS_Times_Prefix.pch -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/Classes/RootViewController.m" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/RootViewController.o"0#
+
+CCompileC "build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/main.o" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s301282775.073034
+e301282775.132108
+r1
+xCompileC
+xbuild/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/main.o
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m301282775#301282775#0(0"0(0#0#68"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m8604193824#2039"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-generated-files.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-own-target-headers.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-all-target-headers.hmap" -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-project-headers.hmap" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/include" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources/armv7" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources" -include /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-bhqpezgiwxuhoiejjraoradoeyyk/PNS_Times_Prefix.pch -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/main.m" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/main.o"0#
+
+CCompileXIB "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/MainWindow.xib"
+s301282773.704407
+e301282774.230690
+r1
+xCompileXIB
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib301282773#301282774#0(0"0(0#0#76"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/MainWindow.xib8604144512#619"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/MainWindow.nib" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/MainWindow.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk0#
+
+CCompileXIB "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/RootViewController.xib"
+s301282773.704974
+e301282774.144001
+r1
+xCompileXIB
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib301282773#301282774#0(0"0(0#0#84"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/RootViewController.xib8603471488#635"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/RootViewController.nib" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/RootViewController.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk0#
+
+CCpResource "build/Debug-iphoneos/PNS Times.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+s301282773.685905
+e301282773.704323
+r1
+xCpResource
+xbuild/Debug-iphoneos/PNS Times.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist301282773#301282773#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist4923330986020728832#532"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app"0#
+
+CCreateUniversalBinary "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times" normal "armv6 armv7"
+s301282775.293259
+e301282775.295848
+r1
+xCreateUniversalBinary
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times
+xnormal
+xarmv6 armv7
+lSLF07#2@89"CreateUniversalBinary "build/Debug-iphoneos/PNS Times.app/PNS Times" normal "armv6 armv7"301282775#301282775#0(0"0(0#0#73"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/armv6 armv78593436512#634"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times" -output "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times"0#
+
+CGenerateDSYMFile "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app.dSYM" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times"
+s301282775.295913
+e301282775.317668
+r1
+xGenerateDSYMFile
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app.dSYM
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times
+lSLF07#2@105"GenerateDSYMFile "build/Debug-iphoneos/PNS Times.app.dSYM" "build/Debug-iphoneos/PNS Times.app/PNS Times"301282775#301282775#0(0"0(0#0#106"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times8604363552#443"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PNS Times" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app.dSYM"0#
+
+CLd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times" normal armv6
+s301282775.148606
+e301282775.185473
+r1
+xLd
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times
+xnormal
+xarmv6
+lSLF07#2@150"Link /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times301282775#301282775#0(0"0(0#0#0"8603106240#996"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk "-L/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" -filelist "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times.LinkFileList" -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv6/PNS Times"0#
+
+CLd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times" normal armv7
+s301282775.269166
+e301282775.293168
+r1
+xLd
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times
+xnormal
+xarmv7
+lSLF07#2@150"Link /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times301282775#301282775#0(0"0(0#0#0"8593680768#996"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk "-L/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" -filelist "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times.LinkFileList" -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/Objects-normal/armv7/PNS Times"0#
+
+CProcessInfoPlistFile "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/Info.plist" PNS_Times-Info.plist
+s301282773.696982
+e301282773.700226
+r1
+xProcessInfoPlistFile
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/Info.plist
+xPNS_Times-Info.plist
+lSLF07#2@28"Process PNS_Times-Info.plist301282773#301282773#0(0"0(0#0#82"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/PNS_Times-Info.plist8606876768#670"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility PNS_Times-Info.plist -genpkginfo "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/ResourceRules.plist" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/Info.plist"0#
+
+CProcessPCH /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-bhqpezgiwxuhoiejjraoradoeyyk/PNS_Times_Prefix.pch.gch PNS_Times_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s301282774.231686
+e301282774.989649
+r1
+xProcessPCH
+x/var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-bhqpezgiwxuhoiejjraoradoeyyk/PNS_Times_Prefix.pch.gch
+xPNS_Times_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile PNS_Times_Prefix.pch301282774#301282774#0(0"0(0#0#82"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/PNS_Times_Prefix.pch8604215552#1910"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-generated-files.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-own-target-headers.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-all-target-headers.hmap" -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-project-headers.hmap" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/include" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources/armv7" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources" -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/PNS_Times_Prefix.pch" -o /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-bhqpezgiwxuhoiejjraoradoeyyk/PNS_Times_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-einnnwciypddluhetfcxuulshhgr/PNS_Times_Prefix.pch.gch PNS_Times_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s301282774.230887
+e301282774.915512
+r1
+xProcessPCH
+x/var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-einnnwciypddluhetfcxuulshhgr/PNS_Times_Prefix.pch.gch
+xPNS_Times_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile PNS_Times_Prefix.pch301282774#301282774#0(0"0(0#0#82"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/PNS_Times_Prefix.pch8603417888#1910"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-generated-files.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-own-target-headers.hmap" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-all-target-headers.hmap" -iquote "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times-project-headers.hmap" "-F/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/include" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources/armv6" "-I/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/DerivedSources" -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/PNS_Times_Prefix.pch" -o /var/folders/Um/UmPz3FfpF8Crn+k56vaIiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PNS_Times_Prefix-einnnwciypddluhetfcxuulshhgr/PNS_Times_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/4CAF64A7-F13E-4BF8-A826-0740144997F3.mobileprovision" "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/embedded.mobileprovision"
+s301282775.317757
+e301282775.318718
+r1
+xProcessProductPackaging
+x/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/4CAF64A7-F13E-4BF8-A826-0740144997F3.mobileprovision
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/embedded.mobileprovision
+lSLF07#2@201"ProcessProductPackaging "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/4CAF64A7-F13E-4BF8-A826-0740144997F3.mobileprovision" "build/Debug-iphoneos/PNS Times.app/embedded.mobileprovision"301282775#301282775#0(0"0(0#0#121"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/embedded.mobileprovision8606623360#480"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/jasoncross/Library/MobileDevice/Provisioning Profiles/4CAF64A7-F13E-4BF8-A826-0740144997F3.mobileprovision" -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app/embedded.mobileprovision"0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times.xcent"
+s301282775.321134
+e301282775.322644
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times.xcent
+lSLF07#2@183"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist "build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times.xcent"301282775#301282775#0(0"0(0#0#130"/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times.xcent8603744672#488"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist -entitlements -format xml -o "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/PNS Times.build/Debug-iphoneos/PNS Times.build/PNS Times.xcent"0#
+
+CTouch "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app"
+s301282775.318766
+e301282775.321071
+r1
+xTouch
+x/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app
+lSLF07#2@102"Touch /Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app301282775#301282775#0(0"0(0#0#0"8604207872#316"    cd "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/jasoncross/Documents/XCodeFiles/MarkLaMarche/PNS Times/build/Debug-iphoneos/PNS Times.app"0#
+

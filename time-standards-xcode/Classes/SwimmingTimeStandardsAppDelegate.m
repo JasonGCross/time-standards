@@ -1,0 +1,329 @@
+//
+//  SwimmingTimeStandardsAppDelegate.m
+//  SwimmingTimeStandards
+//
+//  Created by JASON CROSS on 8/12/10.
+//  Copyright __MyCompanyName__ 2010. All rights reserved.
+//
+
+#import "SwimmingTimeStandardsAppDelegate.h"
+#import "RootViewController.h"
+#import "TimeStandardDataAccess.h"
+#import "SwimmingTimesStandardsGlobals.h"
+
+
+@implementation SwimmingTimeStandardsAppDelegate
+
+@synthesize window;
+@synthesize navigationController;
+@synthesize currentSwimmer;
+
+#pragma mark -
+#pragma mark Time Standard Data Access
+/**
+ Returns the time standard data access object for the application.
+ If the data access object doesn't already exist, it is created and hooked up to the data file.
+ */
+- (TimeStandardDataAccess *) timeStandardDataAccess {
+	if (timeStandardDataAccess_ != nil) {
+		return timeStandardDataAccess_;
+	}
+	timeStandardDataAccess_  = [[TimeStandardDataAccess alloc] init];
+	[timeStandardDataAccess_ openDataBase];
+	return timeStandardDataAccess_;
+}
+
+
+#pragma mark -
+#pragma mark Application's Documents directory
+
+/**
+ Returns the URL to the application's Documents directory.
+ */
+- (NSURL *)applicationDocumentsDirectory {
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (NSFetchedResultsController *) fetchedResultsController {
+	if (fetchedResultsController_ != nil) {
+		return fetchedResultsController_;
+	}
+	NSManagedObjectContext * context = [self managedObjectContext];
+	NSFetchRequest * fetchRequest = [[NSFetchRequest alloc] init];
+	
+	// Configure the request's entity, and optionally its predicate.
+	NSSortDescriptor *sortDescriptor = nil;
+	sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"swimmerName" ascending:YES];
+	NSArray *sortDescriptors = nil;
+	sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[sortDescriptor release], sortDescriptor = nil;
+	[fetchRequest setSortDescriptors:sortDescriptors];
+	[sortDescriptors release], sortDescriptors = nil;
+	NSEntityDescription * entity = [NSEntityDescription entityForName:@"Swimmer" 
+											   inManagedObjectContext:context];
+	[fetchRequest setEntity:entity];
+	[fetchRequest setFetchBatchSize:10];
+	NSFetchedResultsController * controller = [[NSFetchedResultsController alloc]
+											   initWithFetchRequest:fetchRequest
+											   managedObjectContext:context
+											   sectionNameKeyPath:nil
+											   cacheName:@"Swimmer"];
+	[fetchRequest release];
+	
+	NSError * error = nil;
+	BOOL success = [controller performFetch:&error];
+	if(!success) {
+		NSLog(@"Error fetching request %@", [error localizedDescription]);
+	}
+	fetchedResultsController_ = controller;
+	return fetchedResultsController_;
+}
+
+- (NSManagedObject *) getHomeScreenValues {
+	NSManagedObject *homeScreenValue = nil;
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	[request setEntity:[NSEntityDescription entityForName:@"HomeScreenValues"
+								   inManagedObjectContext:[self managedObjectContext]]];
+	NSError *error = nil;
+	NSArray *objects = [[self managedObjectContext] executeFetchRequest: request error:&error];
+
+	if(error) {
+		NSLog(@"Error fetching request %@", [error localizedDescription]);
+	}
+	if ([objects count] > 0) {
+		homeScreenValue = [objects objectAtIndex:0];
+	}
+	[request release];
+  return homeScreenValue;
+}
+
+- (NSManagedObject *) getHomeScreenSwimmer {
+	NSManagedObject * swimmer = nil;
+	NSManagedObject * homeScreenValue = [self getHomeScreenValues];
+	
+	if (homeScreenValue == nil) {
+		homeScreenValue = [NSEntityDescription insertNewObjectForEntityForName:@"HomeScreenValues" 
+														inManagedObjectContext:[self managedObjectContext]];
+		swimmer = [NSEntityDescription insertNewObjectForEntityForName:@"Swimmer" 
+												inManagedObjectContext:[self managedObjectContext]];
+		[swimmer setValue:@"name this swimmer" forKey:@"swimmerName"];
+		[homeScreenValue setValue:swimmer forKey:@"homeScreenSwimmer"];
+	}
+	else {
+		swimmer = [homeScreenValue valueForKey:@"homeScreenSwimmer"];
+	}
+	
+	NSError *error2;
+	[[self managedObjectContext] save:&error2];
+	return swimmer;
+}
+
+- (NSManagedObject *) currentSwimmer {
+    NSManagedObject * swimmer = nil;
+	NSManagedObject * homeScreenValue = [self getHomeScreenValues];
+	
+	if (homeScreenValue == nil) {
+		homeScreenValue = [NSEntityDescription insertNewObjectForEntityForName:@"HomeScreenValues" 
+														inManagedObjectContext:[self managedObjectContext]];
+		swimmer = [NSEntityDescription insertNewObjectForEntityForName:@"Swimmer" 
+												inManagedObjectContext:[self managedObjectContext]];
+		[swimmer setValue:@"name this swimmer" forKey:@"swimmerName"];
+		[homeScreenValue setValue:swimmer forKey:@"currentSwimmer"];
+	}
+	else {
+		swimmer = [homeScreenValue valueForKey:@"currentSwimmer"];
+	}
+	
+	NSError *error2;
+	[[self managedObjectContext] save:&error2];
+	return swimmer;
+
+}
+
+- (NSString *) getHomeScreenTimeStandard {
+	NSString * timeStandardName = @"";
+	NSManagedObject * homeScreenValue = [self getHomeScreenValues];
+
+	if (homeScreenValue != nil) {
+		timeStandardName = [homeScreenValue valueForKey:@"homeScreenStandardName"];
+	}
+	return timeStandardName;
+}
+
+#pragma mark -
+#pragma mark Application lifecycle
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    // Override point for customization after application launch.
+
+    // Add the navigation controller's view to the window and display.
+    RootViewController * rootViewController = [[RootViewController alloc] init];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    [rootViewController release];
+    [window addSubview:self.navigationController.view];
+    [window makeKeyAndVisible];
+    
+    return YES;
+}
+
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+    /*
+     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+     */
+}
+
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    /*
+     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
+     */
+    [self saveContext];
+}
+
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    /*
+     Called as part of the transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
+     */
+}
+
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    /*
+     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+     */
+}
+
+
+/**
+ applicationWillTerminate: saves changes in the application's managed object context before the application terminates.
+ */
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [self saveContext];
+	if (timeStandardDataAccess_ != nil) {
+		[timeStandardDataAccess_ closeDataBase];
+	}
+}
+
+- (void)saveContext {
+    
+    NSError *error = nil;
+	NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    if (managedObjectContext != nil) {
+        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
+            NSLog(@"Unresolved error while attempting to save Core Data context: %@, %@", error, [error userInfo]);
+			UIAlertView *alert = [[UIAlertView alloc]
+								  initWithTitle:@"Error saving Swim Time Standards data"
+								  message:@"There was an error saving the Swim Times app data. Please quit the application by pressing the Home button."
+								  delegate:nil
+								  cancelButtonTitle:@"OK"
+								  otherButtonTitles:nil];
+			[alert show];
+			[alert release];
+        } 
+    }
+}    
+
+
+#pragma mark -
+#pragma mark Core Data stack
+
+/**
+ Returns the managed object context for the application.
+ If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+ */
+- (NSManagedObjectContext *)managedObjectContext {
+    
+    if (managedObjectContext_ != nil) {
+        return managedObjectContext_;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        managedObjectContext_ = [[NSManagedObjectContext alloc] init];
+        [managedObjectContext_ setPersistentStoreCoordinator:coordinator];
+    }
+    return managedObjectContext_;
+}
+
+
+/**
+ Returns the managed object model for the application.
+ If the model doesn't already exist, it is created from the application's model.
+ */
+- (NSManagedObjectModel *)managedObjectModel {
+    
+    if (managedObjectModel_ != nil) {
+        return managedObjectModel_;
+    }
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"HomeScreenValues" withExtension:@"momd"];
+    managedObjectModel_ = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];    
+    return managedObjectModel_;
+}
+
+
+/**
+ Returns the persistent store coordinator for the application.
+ If the coordinator doesn't already exist, it is created and the application's store added to it.
+ */
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    
+    if (persistentStoreCoordinator_ != nil) {
+        return persistentStoreCoordinator_;
+    }
+    
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"HomeScreenValues.sqlite"];
+    
+    NSError *error = nil;
+    persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    if (![persistentStoreCoordinator_ addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+        NSLog(@"Unresolved error creating Persistent Store Coordinator: %@, %@", error, [error userInfo]);
+        UIAlertView *alert = [[UIAlertView alloc]
+							  initWithTitle:@"Error loading Swim Time Standards data"
+							  message:@"There was an error loading the swim times data. Please quit the application by pressing the Home button."
+							  delegate:nil
+							  cancelButtonTitle:@"OK"
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+    }    
+    
+    return persistentStoreCoordinator_;
+}
+
+
+
+#pragma mark -
+#pragma mark Memory management
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+    /*
+     Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
+     */
+	[timeStandardDataAccess_ closeDataBase];
+	[timeStandardDataAccess_ release], timeStandardDataAccess_ = nil;
+	[fetchedResultsController_ release], fetchedResultsController_ = nil;
+	[managedObjectContext_ release], managedObjectContext_ = nil;
+    [managedObjectModel_ release], managedObjectModel_ = nil;
+    [persistentStoreCoordinator_ release], persistentStoreCoordinator_ = nil;
+}
+
+
+- (void)dealloc {
+	[timeStandardDataAccess_ release];
+    [managedObjectContext_ release];
+    [managedObjectModel_ release];
+    [persistentStoreCoordinator_ release];
+	[fetchedResultsController_ release];
+    [window release];
+	[navigationController release];
+    [super dealloc];
+}
+
+
+
+@end
+

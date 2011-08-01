@@ -20,20 +20,20 @@
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent: STSDataBaseFileName];
     success = [fileManager fileExistsAtPath: writableDBPath];
-	if(success) {
-		// normally, comment out this section unless you want to explicity over-write the file
-		NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: STSDataBaseFileName];
-		BOOL hasBeenOverWritten = [fileManager removeItemAtPath:writableDBPath error:&error];
-		if (!hasBeenOverWritten) {
-			NSAssert1(0, @"Failed to overwrite database file with message: '%@'.", [error localizedDescription]);
-			return nil;
-		}
-		hasBeenOverWritten = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
-		if (!hasBeenOverWritten) {
-			NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
-			return nil;
-		}
-	}
+//	if(success) {
+//		// normally, comment out this section unless you want to explicity over-write the file
+//		NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: STSDataBaseFileName];
+//		BOOL hasBeenOverWritten = [fileManager removeItemAtPath:writableDBPath error:&error];
+//		if (!hasBeenOverWritten) {
+//			NSAssert1(0, @"Failed to overwrite database file with message: '%@'.", [error localizedDescription]);
+//			return nil;
+//		}
+//		hasBeenOverWritten = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+//		if (!hasBeenOverWritten) {
+//			NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
+//			return nil;
+//		}
+//	}
     if (!success) {
 		// The writable database does not exist, so copy the default to the appropriate location.
 		NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: STSDataBaseFileName];

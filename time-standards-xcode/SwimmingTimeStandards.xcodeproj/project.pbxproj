@@ -29,6 +29,12 @@
 		F683EDE812CC698E00D5588A /* SwimmerPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F683EDE612CC698E00D5588A /* SwimmerPhotoViewController.xib */; };
 		F6A3F2FD12E00457002806DF /* UIImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A3F2FC12E00457002806DF /* UIImageToDataTransformer.m */; };
 		F6A3F30212E00571002806DF /* HomeScreenValues.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6A3F30012E00571002806DF /* HomeScreenValues.xcdatamodeld */; };
+		F6C38B6C13E61D2400F0D62B /* appIcon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */; };
+		F6C38B6E13E61D2D00F0D62B /* appIcon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */; };
+		F6C38B7013E61D3E00F0D62B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6F13E61D3E00F0D62B /* Default@2x.png */; };
+		F6C38B7213E61D5D00F0D62B /* appIcon_72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */; };
+		F6C38B7413E61D6800F0D62B /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B7313E61D6800F0D62B /* Default-Portrait~ipad.png */; };
+		F6C38B7613E61D7000F0D62B /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B7513E61D7000F0D62B /* Default-Landscape~ipad.png */; };
 		F6C3D589124709B900A6897D /* SwimmerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C3D588124709B900A6897D /* SwimmerTableCell.xib */; };
 		F6C3D5A51247106A00A6897D /* StandardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C3D5A41247106A00A6897D /* StandardTableCell.xib */; };
 		F6C460D71273177B0037A3F2 /* headshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C460D61273177B0037A3F2 /* headshot.png */; };
@@ -71,6 +77,12 @@
 		F6A3F2FB12E00457002806DF /* UIImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageToDataTransformer.h; sourceTree = "<group>"; };
 		F6A3F2FC12E00457002806DF /* UIImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageToDataTransformer.m; sourceTree = "<group>"; };
 		F6A3F30112E00571002806DF /* HomeScreenValues.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValues.xcdatamodel; sourceTree = "<group>"; };
+		F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon-57x57.png"; sourceTree = "<group>"; };
+		F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon-114x114.png"; sourceTree = "<group>"; };
+		F6C38B6F13E61D3E00F0D62B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_72x72.png; sourceTree = "<group>"; };
+		F6C38B7313E61D6800F0D62B /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		F6C38B7513E61D7000F0D62B /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		F6C3D588124709B900A6897D /* SwimmerTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerTableCell.xib; path = ../SwimmerTableCell.xib; sourceTree = "<group>"; };
 		F6C3D5A41247106A00A6897D /* StandardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StandardTableCell.xib; path = ../StandardTableCell.xib; sourceTree = "<group>"; };
 		F6C460D61273177B0037A3F2 /* headshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headshot.png; path = ../headshot.png; sourceTree = "<group>"; };
@@ -126,6 +138,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F6C38B7513E61D7000F0D62B /* Default-Landscape~ipad.png */,
+				F6C38B7313E61D6800F0D62B /* Default-Portrait~ipad.png */,
+				F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */,
+				F6C38B6F13E61D3E00F0D62B /* Default@2x.png */,
+				F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */,
+				F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */,
 				F6D06DEB122CB35100E58473 /* Model */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -337,6 +355,12 @@
 				F66BF2DF1302916900612FFC /* miniAppIcon.png in Resources */,
 				F646BA7E13DCAEAB00124F9B /* MainWindow-iPad.xib in Resources */,
 				F646BA8013DCD4D200124F9B /* RootViewController-ipad.xib in Resources */,
+				F6C38B6C13E61D2400F0D62B /* appIcon-57x57.png in Resources */,
+				F6C38B6E13E61D2D00F0D62B /* appIcon-114x114.png in Resources */,
+				F6C38B7013E61D3E00F0D62B /* Default@2x.png in Resources */,
+				F6C38B7213E61D5D00F0D62B /* appIcon_72x72.png in Resources */,
+				F6C38B7413E61D6800F0D62B /* Default-Portrait~ipad.png in Resources */,
+				F6C38B7613E61D7000F0D62B /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,32 +432,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jason CROSS (UXTFF4ENL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason CROSS (UXTFF4ENL3)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "E51E49C3-F30D-47B1-8E36-70A489E071A1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E51E49C3-F30D-47B1-8E36-70A489E071A1";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos4.0;
-			};
-			name = Release;
-		};
-		F6CE852D13B47F320045FA4E /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -445,7 +457,27 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos4.0;
+				PROVISIONING_PROFILE = "45B9A353-FD71-4D6D-AE01-2E444866CCBD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "45B9A353-FD71-4D6D-AE01-2E444866CCBD";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		F6CE852D13B47F320045FA4E /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jason CROSS (UXTFF4ENL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason CROSS (UXTFF4ENL3)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "E51E49C3-F30D-47B1-8E36-70A489E071A1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E51E49C3-F30D-47B1-8E36-70A489E071A1";
+				SDKROOT = iphoneos;
 			};
 			name = "Ad Hoc";
 		};

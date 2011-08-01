@@ -359,8 +359,8 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 }
 
 - (IBAction) handleAddTapped {
-	NSManagedObject * swimmer = [NSEntityDescription insertNewObjectForEntityForName:@"Swimmer" 
-															  inManagedObjectContext:self.managedObjectContext];
+	NSManagedObject * swimmer = [[NSEntityDescription insertNewObjectForEntityForName:@"Swimmer" 
+															   inManagedObjectContext:self.managedObjectContext] autorelease];
 	[swimmer setValue:@"name this swimmer" forKey:@"swimmerName"];
 	
 	// immediately begin editing the newly created swimmer

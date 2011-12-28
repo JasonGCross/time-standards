@@ -1,0 +1,6 @@
+.DS_Store
+.hg/
+.hgignore
+Classes/.DS_Store
+.xcuserstate
+SwimmingTimeStandards.xcodeproj/project.xcworkspace/xcuserdata/jasoncross.xcuserdatad/UserInterfaceState.xcuserstate

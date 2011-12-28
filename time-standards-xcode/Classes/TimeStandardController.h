@@ -13,9 +13,9 @@
 @interface TimeStandardController : UITableViewController {
 	NSString 		* settingLabelText;
 	NSString		* settingValue;
-	NSMutableArray 	* settingList;
-	NSIndexPath		* lastIndexPath;
-	SwimmingTimeStandardsAppDelegate * appDelegate;
+	NSArray 	    * _settingList;
+	NSIndexPath		* _lastIndexPath;
+	SwimmingTimeStandardsAppDelegate * _appDelegate;
 }
 
 @property (nonatomic, retain) NSString * settingLabelText;

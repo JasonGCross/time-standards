@@ -472,10 +472,10 @@
 	}
 	sqlite3_finalize(statement);
 	
-	NSString * timeString;
+	NSString * timeString = nil;
 	if ((array != nil) && ([array count] > 0)) {
 		timeString = [array objectAtIndex:0];
-		[timeString retain];
+		[[timeString retain] autorelease];
 	}
 	return timeString;	
 }

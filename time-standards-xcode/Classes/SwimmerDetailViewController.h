@@ -14,14 +14,14 @@
 
 @interface SwimmerDetailViewController : UIViewController <UITextFieldDelegate, 
 UITableViewDelegate, UITableViewDataSource> {
-	NSManagedObject * swimmer;
-	NSArray			* genderList;
-	NSArray			* ageList;
-	NSIndexPath		* lastGenderPath;
-	NSIndexPath		* lastAgeGroupPath;
+	NSManagedObject * _swimmer;
+	NSArray			* _genderList;
+	NSArray			* _ageList;
+	NSIndexPath		* _lastGenderPath;
+	NSIndexPath		* _lastAgeGroupPath;
 	UITextField		* nameTextField;
 	UIImageView		* imageView;
-	SwimmingTimeStandardsAppDelegate * appDelegate;
+	SwimmingTimeStandardsAppDelegate * _appDelegate;
 }
 
 @property (nonatomic, retain) IBOutlet UITextField * nameTextField;

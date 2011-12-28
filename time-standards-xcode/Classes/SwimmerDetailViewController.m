@@ -24,11 +24,11 @@
 
 
 - (void) displaySwimmerPhoto {
-	if(swimmer == nil) {
+	if(_swimmer == nil) {
 		return;
 	}
 	
-	NSManagedObject * photo = [swimmer valueForKey:@"swimmerPhoto"];
+	NSManagedObject * photo = [_swimmer valueForKey:@"swimmerPhoto"];
 	if (photo == nil) {
 		return;
 	}
@@ -65,23 +65,25 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication]
+	_appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication]
 													   delegate];
-    swimmer = [appDelegate currentSwimmer];
+    _swimmer = [_appDelegate currentSwimmer];
     
 	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
 	// the ageList and genderList fields depend on the current TimeStandard
 	// so first find the current TimeStandard then create these lists
-	NSString * tempTimeStandardName = [appDelegate getHomeScreenTimeStandard];
+	NSString * tempTimeStandardName = [_appDelegate getHomeScreenTimeStandard];
 	tempTimeStandardName = (tempTimeStandardName != nil) ? tempTimeStandardName : @"";
 	
-	TimeStandardDataAccess * timeStandardDataAccess = [appDelegate timeStandardDataAccess];
-	ageList = [[timeStandardDataAccess getAllAgeGroupNames:tempTimeStandardName] retain];
-	genderList = [[NSArray alloc] initWithObjects: @"male", @"female", nil];
+	TimeStandardDataAccess * timeStandardDataAccess = [_appDelegate timeStandardDataAccess];
+    [_ageList release];
+	_ageList = [[timeStandardDataAccess getAllAgeGroupNames:tempTimeStandardName] retain];
+    [_genderList release];
+	_genderList = [[NSArray alloc] initWithObjects: @"male", @"female", nil];
 	
-	self.nameTextField.text = [swimmer valueForKey:@"swimmerName"];
+	self.nameTextField.text = [_swimmer valueForKey:@"swimmerName"];
 
 	[self displaySwimmerPhoto];
 }
@@ -89,7 +91,7 @@
 
  - (void)viewWillAppear:(BOOL)animated {
 	 [super viewWillAppear:animated];
-	 self.nameTextField.text = [swimmer valueForKey:@"swimmerName"];
+	 self.nameTextField.text = [_swimmer valueForKey:@"swimmerName"];
 	 [self displaySwimmerPhoto];
  }
 
@@ -124,12 +126,12 @@
 #pragma mark text field delegate
 
 - (IBAction) textFieldDoneEditing:(id)sender {
-	[swimmer setValue:nameTextField.text forKey:@"swimmerName"];
+	[_swimmer setValue:nameTextField.text forKey:@"swimmerName"];
 }
 
 - (IBAction) backgroundTapped:(id)sender {
 	[nameTextField resignFirstResponder];
-	[swimmer setValue: nameTextField.text forKey: @"swimmerName"];
+	[_swimmer setValue: nameTextField.text forKey: @"swimmerName"];
 }
 
 #pragma mark -
@@ -145,9 +147,9 @@
     // Return the number of rows in the section.
 	switch (section) {
 		case swimmerGenderSection:
-			return [genderList count];
+			return [_genderList count];
 		case swimmerAgeGroupSection:
-			return [ageList count];
+			return [_ageList count];
 		default:
 			return 0;
 	}
@@ -163,7 +165,7 @@
 			sectionTitle = @"Gender";
 			break;
 		case swimmerAgeGroupSection:
-			timeStandardName = [appDelegate getHomeScreenTimeStandard];
+			timeStandardName = [_appDelegate getHomeScreenTimeStandard];
 			if (timeStandardName == nil) {
 				sectionTitle = @"Please go back and select a Time Standard before you can pick an age group.";
 			}
@@ -197,18 +199,20 @@
 											   reuseIdentifier:CellIdentifier] autorelease];
 			}
 			// configure the cell.
-			cell.textLabel.text = [genderList objectAtIndex:row];
+			cell.textLabel.text = [_genderList objectAtIndex:row];
 			
 			// lastGenderPath is nil when the view loads for the first time.
 			// see if any gender has been saved; this will be pre-selected
-			if (lastGenderPath == nil) {
-				NSInteger savedGenderIndex = [genderList indexOfObject:[swimmer valueForKey:@"swimmerGender"]];
+			if (_lastGenderPath == nil) {
+				NSInteger savedGenderIndex = [_genderList indexOfObject:[_swimmer valueForKey:@"swimmerGender"]];
 				if (row == savedGenderIndex) {
-					lastGenderPath = indexPath;
+                    [indexPath retain];
+                    [_lastGenderPath release];
+					_lastGenderPath = indexPath;
 				}
 			}
-			oldRow = [lastGenderPath row];
-			cell.accessoryType = (lastGenderPath != nil && oldRow == row) ?
+			oldRow = [_lastGenderPath row];
+			cell.accessoryType = (_lastGenderPath != nil && oldRow == row) ?
 			UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
 			break;
 		case swimmerAgeGroupSection:
@@ -218,18 +222,20 @@
 											   reuseIdentifier:CellIdentifier] autorelease];
 			}
 			// configure the cell.
-			cell.textLabel.text = [ageList objectAtIndex:row];
+			cell.textLabel.text = [_ageList objectAtIndex:row];
 			
-			// lastAgeGroupPath is nil when the view loads for the first time.
+			// _lastAgeGroupPath is nil when the view loads for the first time.
 			// see if any Age Group has been saved; this will be pre-selected
-			if (lastAgeGroupPath == nil) {
-				NSInteger savedAgeGroupIndex = [ageList indexOfObject:[swimmer valueForKey:@"swimmerAgeGroup"]];
+			if (_lastAgeGroupPath == nil) {
+				NSInteger savedAgeGroupIndex = [_ageList indexOfObject:[_swimmer valueForKey:@"swimmerAgeGroup"]];
 				if (row == savedAgeGroupIndex) {
-					lastAgeGroupPath = indexPath;
+                    [indexPath retain];
+                    [_lastAgeGroupPath release];
+					_lastAgeGroupPath = indexPath;
 				}
 			}
-			oldRow = [lastAgeGroupPath row];
-			cell.accessoryType = (lastAgeGroupPath != nil && oldRow == row) ?
+			oldRow = [_lastAgeGroupPath row];
+			cell.accessoryType = (_lastAgeGroupPath != nil && oldRow == row) ?
 			UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
 			break;
 		default:
@@ -239,9 +245,6 @@
     return cell;
 }
 
-
-
-// Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSUInteger section = [indexPath section];
 	if (section == swimmerNameSection) {
@@ -257,38 +260,6 @@
 	return UITableViewCellEditingStyleNone;
 }
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView 
-commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
- forRowAtIndexPath:(NSIndexPath *)indexPath {
-	 
-	if (editingStyle == UITableViewCellEditingStyleDelete) {
-		// Delete the row from the data source
-		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-	}   
-	else if (editingStyle == UITableViewCellEditingStyleInsert) {
-		// Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-	}   
-}
-*/
-
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
 
 #pragma mark -
 #pragma mark Table view delegate
@@ -300,26 +271,30 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 	
 	switch (section) {
 		case swimmerGenderSection:
-			if (lastGenderPath != indexPath) {
+			if (_lastGenderPath != indexPath) {
 				UITableViewCell * newCell = [tableViewParam cellForRowAtIndexPath:indexPath];
 				newCell.accessoryType = UITableViewCellAccessoryCheckmark;
-				UITableViewCell * oldCell = [tableViewParam cellForRowAtIndexPath: lastGenderPath];
+				UITableViewCell * oldCell = [tableViewParam cellForRowAtIndexPath: _lastGenderPath];
 				oldCell.accessoryType = UITableViewCellAccessoryNone;
 				// remember to change the style of the old cell BEFORE resetting the old cell's path
-				lastGenderPath = indexPath;
-				[swimmer setValue:[genderList objectAtIndex:row] forKey:@"swimmerGender"];;
+                [indexPath retain];
+                [_lastGenderPath release];
+				_lastGenderPath = indexPath;
+				[_swimmer setValue:[_genderList objectAtIndex:row] forKey:@"swimmerGender"];;
 			}
 			[tableViewParam deselectRowAtIndexPath: indexPath animated: YES];
 			break;
 		case swimmerAgeGroupSection:
-			if (lastAgeGroupPath != indexPath) {
+			if (_lastAgeGroupPath != indexPath) {
 				UITableViewCell * newCell = [tableViewParam cellForRowAtIndexPath:indexPath];
 				newCell.accessoryType = UITableViewCellAccessoryCheckmark;
-				UITableViewCell * oldCell = [tableViewParam cellForRowAtIndexPath: lastAgeGroupPath];
+				UITableViewCell * oldCell = [tableViewParam cellForRowAtIndexPath: _lastAgeGroupPath];
 				oldCell.accessoryType = UITableViewCellAccessoryNone;
 				// remember to change the style of the old cell BEFORE resetting the old cell's path
-				lastAgeGroupPath = indexPath;
-				[swimmer setValue:[ageList objectAtIndex:row] forKey:@"swimmerAgeGroup"];
+                [indexPath retain];
+                [_lastAgeGroupPath release];
+				_lastAgeGroupPath = indexPath;
+				[_swimmer setValue:[_ageList objectAtIndex:row] forKey:@"swimmerAgeGroup"];
 			}
 			[tableViewParam deselectRowAtIndexPath: indexPath animated: YES];
 			break;
@@ -333,14 +308,14 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 
 - (IBAction) imageViewTapped:(id)sender {
 	// first, remember to save any un-saved changes from editing the swimmer's name
-	[swimmer setValue: nameTextField.text forKey: @"swimmerName"];
-	[appDelegate saveContext];
+	[_swimmer setValue: nameTextField.text forKey: @"swimmerName"];
+	[_appDelegate saveContext];
 	
 	// Navigation logic may go here. Create and push another view controller.
-	SwimmerPhotoViewController *swimmerPhotoViewController = [[SwimmerPhotoViewController alloc] 
-														 initWithNibName:@"SwimmerPhotoViewController"
-														 bundle:nil];
-    [appDelegate setCurrentSwimmer:swimmer];
+	SwimmerPhotoViewController *swimmerPhotoViewController = [[[SwimmerPhotoViewController alloc] 
+                                                              initWithNibName:@"SwimmerPhotoViewController"
+                                                              bundle:nil] autorelease];
+    [_appDelegate setCurrentSwimmer:_swimmer];
 	
     // Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:swimmerPhotoViewController animated:YES];
@@ -361,13 +336,19 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.nameTextField = nil;
+    self.tableView = nil;
 	self.imageView = nil;
 }
 
 
 - (void)dealloc {
-	[ageList release];
-	[genderList release];
+	[_ageList release];
+	[_genderList release];
+    [nameTextField release];
+    [tableView release];
+    [imageView release];
+    
     [super dealloc];
 }
 

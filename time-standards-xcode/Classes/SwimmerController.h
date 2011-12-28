@@ -14,7 +14,7 @@
 	NSString 		   * settingLabelText;
 	UITableViewCell    * nibLoadedSwimmerCell;
 	UITableViewCell    * nibLoadedSwimmerCellEditingView;
-	UIColor			   * defaultTintColor;
+	UIColor			   * _defaultTintColor;
 	UISegmentedControl * segmentedControl;
 	SwimmingTimeStandardsAppDelegate * appDelegate;
 	NSManagedObjectContext * managedObjectContext_;

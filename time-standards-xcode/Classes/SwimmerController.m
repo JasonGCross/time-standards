@@ -65,7 +65,7 @@
     [appDelegate saveContext];
 	
 	// Navigation logic may go here. Create and push another view controller.
-	SwimmerDetailViewController *detailViewController = [[SwimmerDetailViewController alloc] init];
+	SwimmerDetailViewController *detailViewController = [[[SwimmerDetailViewController alloc] init] autorelease];
 	
     // Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:detailViewController animated:YES];
@@ -148,7 +148,8 @@
 						 action:@selector(handleSegmentedControllerChanged:)
 			   forControlEvents:UIControlEventValueChanged];
 	
-	defaultTintColor = [segmentedControl.tintColor retain];	// keep track of this for later
+    [_defaultTintColor release];
+	_defaultTintColor = [segmentedControl.tintColor retain];	// keep track of this for later
 	
 	UIBarButtonItem *segmentBarItem = [[UIBarButtonItem alloc] initWithCustomView:segmentedControl];
     [segmentedControl release];
@@ -171,7 +172,7 @@
 	}
 	
 	else {
-		segmentedControl.tintColor = defaultTintColor;
+		segmentedControl.tintColor = _defaultTintColor;
 	}
 	
 	if (self.editing) {
@@ -322,7 +323,8 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 #pragma mark -
 #pragma mark Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableViewParam didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableViewParam deselectRowAtIndexPath:indexPath animated:YES];
     NSManagedObject * currentSwimmer = [self.fetchedResultsController objectAtIndexPath:indexPath];
 	
 	NSManagedObject * homeScreenValues = [appDelegate getHomeScreenValues];
@@ -359,8 +361,8 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 }
 
 - (IBAction) handleAddTapped {
-	NSManagedObject * swimmer = [[NSEntityDescription insertNewObjectForEntityForName:@"Swimmer" 
-															   inManagedObjectContext:self.managedObjectContext] autorelease];
+	NSManagedObject * swimmer = [NSEntityDescription insertNewObjectForEntityForName:@"Swimmer" 
+                                                              inManagedObjectContext:self.managedObjectContext];
 	[swimmer setValue:@"name this swimmer" forKey:@"swimmerName"];
 	
 	// immediately begin editing the newly created swimmer
@@ -456,13 +458,17 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
-	settingLabelText = nil;
+	nibLoadedSwimmerCell = nil;
+    nibLoadedSwimmerCellEditingView = nil;
 }
 
 
 - (void)dealloc {
 	[settingLabelText release];
-	[defaultTintColor release];
+	[_defaultTintColor release];
+    [nibLoadedSwimmerCell release];
+    [nibLoadedSwimmerCellEditingView release];
+    
     [super dealloc];
 }
 

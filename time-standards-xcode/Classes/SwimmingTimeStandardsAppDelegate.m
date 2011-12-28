@@ -20,6 +20,7 @@
 
 #pragma mark -
 #pragma mark Time Standard Data Access
+
 /**
  Returns the time standard data access object for the application.
  If the data access object doesn't already exist, it is created and hooked up to the data file.
@@ -158,45 +159,13 @@
 
     // Add the navigation controller's view to the window and display.
     RootViewController * rootViewController = [[RootViewController alloc] init];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:rootViewController] autorelease];
     [rootViewController release];
     [window addSubview:self.navigationController.view];
     [window makeKeyAndVisible];
     
     return YES;
 }
-
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    /*
-     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-     */
-}
-
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-     If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
-     */
-    [self saveContext];
-}
-
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    /*
-     Called as part of the transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
-     */
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     */
-}
-
 
 /**
  applicationWillTerminate: saves changes in the application's managed object context before the application terminates.
@@ -259,8 +228,9 @@
     if (managedObjectModel_ != nil) {
         return managedObjectModel_;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"HomeScreenValues" withExtension:@"momd"];
-    managedObjectModel_ = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];    
+//    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"HomeScreenValues" 
+//                                              withExtension:@"momd"];
+    managedObjectModel_ = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
     return managedObjectModel_;
 }
 
@@ -275,11 +245,32 @@
         return persistentStoreCoordinator_;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"HomeScreenValues.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:STSPersistentStoreFileName];
+    NSDictionary * options = [NSDictionary dictionaryWithObjectsAndKeys:
+                              [NSNumber numberWithBool:YES], 
+                              NSMigratePersistentStoresAutomaticallyOption, 
+                              nil];
     
     NSError *error = nil;
-    persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![persistentStoreCoordinator_ addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    NSManagedObjectModel * managedObjectModel = [self managedObjectModel];
+    if (nil == managedObjectModel) {
+        NSLog(@"The managed object model is null");
+        UIAlertView *alert = [[UIAlertView alloc]
+							  initWithTitle:@"Error loading Swim Time Standards data"
+							  message:@"There was an error loading the swim times data. Please quit the application by pressing the Home button."
+							  delegate:nil
+							  cancelButtonTitle:@"OK"
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+        exit(1);
+    }
+    persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
+    if (![persistentStoreCoordinator_ addPersistentStoreWithType:NSSQLiteStoreType 
+                                                   configuration:nil 
+                                                             URL:storeURL 
+                                                         options:options 
+                                                           error:&error]) {
         NSLog(@"Unresolved error creating Persistent Store Coordinator: %@, %@", error, [error userInfo]);
         UIAlertView *alert = [[UIAlertView alloc]
 							  initWithTitle:@"Error loading Swim Time Standards data"
@@ -289,10 +280,12 @@
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
+        exit(1);
     }    
     
     return persistentStoreCoordinator_;
 }
+
 
 
 

@@ -57,9 +57,18 @@
         [array release];
         
         // picker columns
-        self.strokes = [[NSArray alloc] init];
-        self.courses = [[NSArray alloc] init];
-        self.distances = [[NSArray alloc] init];
+        NSArray * tempArray = [[NSArray alloc] init];
+        self.strokes = tempArray;
+        [tempArray release];
+        tempArray = nil;
+        tempArray = [[NSArray alloc] init];
+        self.courses = tempArray;
+        [tempArray release];
+        tempArray = nil;
+        tempArray = [[NSArray alloc] init];
+        self.distances = tempArray;
+        [tempArray release];
+        tempArray = nil;
     }
     return self;
 }
@@ -100,6 +109,10 @@
 }
 
 - (NSString *) getSelectedOrPreviousStroke {
+    if ((nil == self.strokes) || ([self.strokes count] == 0)) {
+        return nil;
+    }
+    
 	// if there is no row currently selected, return the previous value
 	if ([self.pickerView selectedRowInComponent:STSStrokeComponent] < 0) {
 		// if there is no previous value, try to set it now
@@ -115,6 +128,9 @@
 }
 
 - (NSString *) getSelectedOrPreviousDistance {
+    if ((nil == self.distances) || ([self.distances count] == 0)) {
+        return nil;
+    }
 	// if there is no row currently selected, return the previous value
 	if ([self.pickerView selectedRowInComponent:STSDistanceComponent] < 0) {
 		// if there  is no previous value, try to set it now
@@ -130,10 +146,14 @@
 }
 
 - (NSString *) getSelectedOrPreviousCourse {
-	// if there is no row currently selected, return the previous value
+    if ((self.courses == nil) || ([self.courses count] == 0)) {
+        return nil;
+    }
+    
+    // if there is no row currently selected, return the previous value
 	if ([self.pickerView selectedRowInComponent:STSCourseComponent] < 0) {
 		// if there  is no previous value, try to set it now
-		if ((self.courses == nil) && ([self.courses count] > 0)) {
+		if ((self.previousCourse == nil) && ([self.courses count] > 0)) {
 			self.previousCourse = [self.courses objectAtIndex:0];
 		}
 		return self.previousCourse;
@@ -166,14 +186,16 @@
 	}
 	// only change the default (0) if the previous value 
 	// gives a good match in the existing set of values
-	for (NSString * nextVal in arrayToSearch) {
-		NSComparisonResult result = [nextVal compare: stringToMatch];
-		if (result == NSOrderedSame) {
-			newRow = [arrayToSearch indexOfObject:nextVal];
-			break;
-		}
-	}
-	return newRow;
+    if (stringToMatch != nil) {
+        for (NSString * nextVal in arrayToSearch) {
+            NSComparisonResult result = [nextVal compare: stringToMatch];
+            if (result == NSOrderedSame) {
+                newRow = [arrayToSearch indexOfObject:nextVal];
+                break;
+            }
+        }
+    }
+    return newRow;
 }
 
 - (void) reloadStrokeComponent {
@@ -297,17 +319,6 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-
-/*
-- (void)viewDidLoad {
-    [super viewDidLoad];
-	
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-*/
-
-// Implement viewWillAppear: to do additional setup before the view is presented.
 - (void)viewWillAppear:(BOOL)animated {
 	if ([self homeScreenValuesHaveChanged] == YES) {
 		[tableView reloadData];
@@ -317,25 +328,6 @@
     [super viewWillAppear:animated];
 }
 
-
-/*
- - (void)viewDidAppear:(BOOL)animated {
- [super viewDidAppear:animated];
- }
- */
-/*
- - (void)viewWillDisappear:(BOOL)animated {
- [super viewWillDisappear:animated];
- }
- */
-/*
- - (void)viewDidDisappear:(BOOL)animated {
- [super viewDidDisappear:animated];
- }
- */
-
-
-// Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 // Return YES for supported orientations.
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
@@ -444,7 +436,7 @@
 #pragma mark -
 #pragma mark Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableViewParam didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSUInteger row = [indexPath row];
     UITableViewController *detailViewController = [self.controllers 
                                                    objectAtIndex:row];
@@ -453,6 +445,7 @@
 	// Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController 
                                          animated:YES];
+    [tableViewParam deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark -
@@ -546,21 +539,21 @@
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
-	self.controllers = nil;
-	self.distances = nil;
-	self.courses = nil;
-	self.strokes = nil;
-	self.previousStroke = nil;
-	self.previousDistance = nil;
-	self.previousCourse = nil;
 	self.pickerView = nil;
 	self.label = nil;
 	self.tableView = nil;
+    self.nibLoadedSwimmerCell = nil;
+    self.nibLoadedStandardCell = nil;
 }
 
 
 - (void)dealloc {
 	[controllers release];
+    [pickerView release];
+	[label release];
+	[tableView release];
+    [nibLoadedSwimmerCell release];
+    [nibLoadedStandardCell release];
 	[timeStandardController release];
 	[swimmerController release];
 	[distances release];
@@ -569,9 +562,10 @@
 	[previousStroke release];
 	[previousDistance release];
 	[previousCourse release];
-	[pickerView release];
-	[label release];
-	[tableView release];
+    [previousTimeStandard release];
+    [previousAgeGroup release];
+    [previousGender release];
+    
     [super dealloc];
 }
 

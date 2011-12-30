@@ -16,7 +16,6 @@
 		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
-		F62DD8E814AB1C4B009E97B5 /* Model_v1_to_v2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = F62DD8E714AB1C4B009E97B5 /* Model_v1_to_v2.xcmappingmodel */; };
 		F63D159C12610FD1002DA8D1 /* SwimmerDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */; };
 		F646BA7E13DCAEAB00124F9B /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646BA7D13DCAEAB00124F9B /* MainWindow-iPad.xib */; };
 		F646BA8013DCD4D200124F9B /* RootViewController-ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646BA7F13DCD4D200124F9B /* RootViewController-ipad.xib */; };
@@ -28,6 +27,7 @@
 		F683EDC312CC30B600D5588A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F683EDC212CC30B600D5588A /* Default.png */; };
 		F683EDE712CC698E00D5588A /* SwimmerPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F683EDE512CC698E00D5588A /* SwimmerPhotoViewController.m */; };
 		F683EDE812CC698E00D5588A /* SwimmerPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F683EDE612CC698E00D5588A /* SwimmerPhotoViewController.xib */; };
+		F69A720114AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = F69A720014AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel */; };
 		F6A3F2FD12E00457002806DF /* UIImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A3F2FC12E00457002806DF /* UIImageToDataTransformer.m */; };
 		F6A3F30212E00571002806DF /* HomeScreenValues.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6A3F30012E00571002806DF /* HomeScreenValues.xcdatamodeld */; };
 		F6C38B6C13E61D2400F0D62B /* appIcon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */; };
@@ -62,8 +62,7 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SwimmingTimeStandards-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SwimmingTimeStandards-Info.plist"; path = "../SwimmingTimeStandards-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		F62DD8E614AAE914009E97B5 /* HomeScreenValuesv1.xcdatamodel */ = {isa = PBXFileReference; path = HomeScreenValuesv1.xcdatamodel; sourceTree = "<group>"; };
-		F62DD8E714AB1C4B009E97B5 /* Model_v1_to_v2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model_v1_to_v2.xcmappingmodel; sourceTree = "<group>"; };
+		F62DD8E614AAE914009E97B5 /* HomeScreenValuesv1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv1.xcdatamodel; sourceTree = "<group>"; };
 		F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerDetailView.xib; path = ../SwimmerDetailView.xib; sourceTree = "<group>"; };
 		F646BA7D13DCAEAB00124F9B /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		F646BA7F13DCD4D200124F9B /* RootViewController-ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "RootViewController-ipad.xib"; sourceTree = "<group>"; };
@@ -77,9 +76,10 @@
 		F683EDE412CC698E00D5588A /* SwimmerPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerPhotoViewController.h; path = Classes/SwimmerPhotoViewController.h; sourceTree = "<group>"; };
 		F683EDE512CC698E00D5588A /* SwimmerPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwimmerPhotoViewController.m; path = Classes/SwimmerPhotoViewController.m; sourceTree = "<group>"; };
 		F683EDE612CC698E00D5588A /* SwimmerPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmerPhotoViewController.xib; sourceTree = "<group>"; };
+		F69A720014AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model_v1_to_v2.xcmappingmodel; sourceTree = "<group>"; };
 		F6A3F2FB12E00457002806DF /* UIImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageToDataTransformer.h; sourceTree = "<group>"; };
 		F6A3F2FC12E00457002806DF /* UIImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageToDataTransformer.m; sourceTree = "<group>"; };
-		F6A3F30112E00571002806DF /* HomeScreenValuesv2.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; path = HomeScreenValuesv2.xcdatamodel; sourceTree = "<group>"; };
+		F6A3F30112E00571002806DF /* HomeScreenValuesv2.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv2.xcdatamodel; sourceTree = "<group>"; };
 		F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon-57x57.png"; sourceTree = "<group>"; };
 		F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon-114x114.png"; sourceTree = "<group>"; };
 		F6C38B6F13E61D3E00F0D62B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -265,7 +265,7 @@
 		F6D06DEB122CB35100E58473 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F62DD8E714AB1C4B009E97B5 /* Model_v1_to_v2.xcmappingmodel */,
+				F69A720014AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel */,
 				F6A3F30012E00571002806DF /* HomeScreenValues.xcdatamodeld */,
 				F6A3F2FB12E00457002806DF /* UIImageToDataTransformer.h */,
 				F6A3F2FC12E00457002806DF /* UIImageToDataTransformer.m */,
@@ -385,7 +385,7 @@
 				F683EDE712CC698E00D5588A /* SwimmerPhotoViewController.m in Sources */,
 				F6A3F2FD12E00457002806DF /* UIImageToDataTransformer.m in Sources */,
 				F6A3F30212E00571002806DF /* HomeScreenValues.xcdatamodeld in Sources */,
-				F62DD8E814AB1C4B009E97B5 /* Model_v1_to_v2.xcmappingmodel in Sources */,
+				F69A720114AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

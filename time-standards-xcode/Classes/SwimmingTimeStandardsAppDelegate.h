@@ -15,6 +15,7 @@
     
     UIWindow					* window;
     UINavigationController		* navigationController;
+    UISplitViewController       * splitVC;
     NSManagedObject             * currentSwimmer;
 	
 @private
@@ -27,6 +28,7 @@
 
 @property (nonatomic, retain) IBOutlet	UIWindow					* window;
 @property (nonatomic, retain) IBOutlet	UINavigationController		* navigationController;
+@property (nonatomic, retain) IBOutlet  UISplitViewController       * splitVC;
 @property (nonatomic, retain)           NSManagedObject             * currentSwimmer;
 @property (nonatomic, retain, readonly) TimeStandardDataAccess		* timeStandardDataAccess;
 @property (nonatomic, retain, readonly) NSManagedObjectContext		* managedObjectContext;

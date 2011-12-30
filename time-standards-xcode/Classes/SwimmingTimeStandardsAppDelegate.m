@@ -16,6 +16,7 @@
 
 @synthesize window;
 @synthesize navigationController;
+@synthesize splitVC;
 @synthesize currentSwimmer;
 
 #pragma mark -
@@ -156,14 +157,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     // Override point for customization after application launch.
-
-    // Add the navigation controller's view to the window and display.
-    RootViewController * rootViewController = [[RootViewController alloc] init];
-    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:rootViewController] autorelease];
-    [rootViewController release];
-    [window addSubview:self.navigationController.view];
-    [window makeKeyAndVisible];
     
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        [self.window addSubview:self.splitVC.view];
+    }
+    else {
+        // Add the navigation controller's view to the window and display.
+        RootViewController * rootViewController = [[RootViewController alloc] init];
+        self.navigationController = [[[UINavigationController alloc] initWithRootViewController:rootViewController] autorelease];
+        [rootViewController release];
+        [window addSubview:self.navigationController.view];
+    }
+    
+    [window makeKeyAndVisible];
     return YES;
 }
 
@@ -313,6 +319,7 @@
 	[fetchedResultsController_ release];
     [window release];
 	[navigationController release];
+    [splitVC release];
     [super dealloc];
 }
 

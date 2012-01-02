@@ -8,6 +8,8 @@
 
 #import "HomeScreenViewController.h"
 
+@class TimeStandardAndSwimmerController;
+
 @interface HomeScreenViewController_ipad : HomeScreenViewController {
     UIToolbar * toolbar;
     UILabel * timeStandardNameLabel;
@@ -15,6 +17,7 @@
     UILabel * swimmerGenderLabel;
     UILabel * swimmerAgeGroupLabel;
     UIImageView * photoImageView;
+    TimeStandardAndSwimmerController * timeStandardAndSwimmerVC;
 }
 
 @property (nonatomic, retain) IBOutlet UIToolbar * toolbar;
@@ -23,5 +26,6 @@
 @property (nonatomic, retain) IBOutlet UILabel * swimmerGenderLabel;
 @property (nonatomic, retain) IBOutlet UILabel * swimmerAgeGroupLabel;
 @property (nonatomic, retain) IBOutlet UIImageView * photoImageView;
+@property (nonatomic, assign) IBOutlet TimeStandardAndSwimmerController * timeStandardAndSwimmerVC;
 
 @end

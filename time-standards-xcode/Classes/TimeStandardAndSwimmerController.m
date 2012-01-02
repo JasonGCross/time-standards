@@ -23,14 +23,13 @@
 
 @implementation TimeStandardAndSwimmerController
 
-
+@synthesize homeScreenVC;
 @synthesize timeStandardSettingLabelText;
 @synthesize settingValue;
-
 @synthesize swimmerSettingLabelText;
 @synthesize nibLoadedSwimmerCell;
 @synthesize nibLoadedSwimmerCellEditingView;
-
+@synthesize addButton;
 
 #pragma mark - View lifecycle
 
@@ -65,33 +64,15 @@
 		NSLog(@"Time Standard Data Access is nil. Cannot load view properly");
 	}
 
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.editButtonItem setAction:@selector(handleEditTapped)];
     
-	// "Segmented" control to the right
-	NSArray *segmentTextContent = [NSArray arrayWithObjects:
-								   NSLocalizedString(@"Edit", @""),
-								   NSLocalizedString(@"+", @""),
-								   nil];
-	segmentedControl = [[UISegmentedControl alloc] initWithItems:segmentTextContent];
-	//segmentedControl.selectedSegmentIndex = 0;
-	segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-	segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
-	segmentedControl.frame = CGRectMake(0, 0, 90, STSCustomButtonHeight);
-	segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
-	segmentedControl.momentary = YES;
-	
-	[segmentedControl addTarget:self
-						 action:@selector(handleSegmentedControllerChanged:)
-			   forControlEvents:UIControlEventValueChanged];
-	
-    [_defaultTintColor release];
-	_defaultTintColor = [segmentedControl.tintColor retain];	// keep track of this for later
-	
-	UIBarButtonItem *segmentBarItem = [[UIBarButtonItem alloc] initWithCustomView:segmentedControl];
-    [segmentedControl release];
+    self.addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                   target:self 
+                                                                   action:@selector(handleAddTapped)];
+    self.addButton.tintColor = [UIColor colorWithRed:0.796 green:0.267 blue:0.298 alpha:1.000];
+    // don't display the add button until we are in edit mode
     
-	self.navigationItem.rightBarButtonItem = segmentBarItem;
-    [segmentBarItem release];
-	
 	[self setSettingLabelText: @"Swimmer"];	
 }
 
@@ -371,7 +352,6 @@
                 }
             }
             
-            // Configure the cell...
             // the fetched results controller is not expecting there to be two sections, so we must create
             // an indexPath which the fetched results controller can understand
             NSIndexPath * newIndexPath = [NSIndexPath indexPathForRow:indexPath.row 
@@ -413,7 +393,9 @@
     }
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)   tableView:(UITableView *)tableView 
+  commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
+   forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSUInteger section = [indexPath section];
     
@@ -423,8 +405,13 @@
             break;
         case swimmerSection: {
             if (editingStyle == UITableViewCellEditingStyleDelete) {
+                // the fetched results controller is not expecting there to be two sections, so we must create
+                // an indexPath which the fetched results controller can understand
+                NSIndexPath * newIndexPath = [NSIndexPath indexPathForRow:indexPath.row 
+                                                                inSection:0];
+
                 // Delete the object from Core Data
-                NSManagedObject * swimmer = [self.fetchedResultsController objectAtIndexPath:indexPath];
+                NSManagedObject * swimmer = [self.fetchedResultsController objectAtIndexPath:newIndexPath];
                 [self.managedObjectContext deleteObject:swimmer];
 				
                 // update the HomeScreenValues if needed
@@ -515,24 +502,30 @@
 #pragma mark -
 #pragma mark table editing
 
-- (IBAction) handleSegmentedControllerChanged: (id) sender {
-	NSInteger selectedSegment = [segmentedControl selectedSegmentIndex];
-	if (selectedSegment == 0) {
-		[self handleEditTapped];
-	}
-	else {
-		[self handleAddTapped];
-	}
-}
-
 - (IBAction) handleEditTapped {
 	if (self.editing) {
 		[self setEditing:NO animated:YES];
-		[segmentedControl setTitle:@"Edit" forSegmentAtIndex:0];
+		self.navigationItem.leftBarButtonItem = nil;
+        
+        NSUInteger timeStandardRows = [self tableView:self.tableView numberOfRowsInSection:timeStandardSection];
+        if (timeStandardRows > 0) {
+            NSIndexPath * firstTimeStandardIndexPath = [NSIndexPath indexPathForRow:0 inSection:timeStandardSection];
+            [self.tableView scrollToRowAtIndexPath:firstTimeStandardIndexPath
+                                  atScrollPosition:UITableViewScrollPositionTop
+                                          animated:YES];
+        }
 	}
 	else {
 		[self setEditing:YES animated:YES];
-		[segmentedControl setTitle:@"Done" forSegmentAtIndex:0];
+		self.navigationItem.leftBarButtonItem = self.addButton;
+        
+        NSUInteger swimmerRows = [self tableView:self.tableView numberOfRowsInSection:swimmerSection];
+        if (swimmerRows > 0) {
+            NSIndexPath * firstSwimmerIndexPath = [NSIndexPath indexPathForRow:0 inSection:swimmerSection];
+            [self.tableView scrollToRowAtIndexPath:firstSwimmerIndexPath 
+                                  atScrollPosition:UITableViewScrollPositionTop 
+                                          animated:YES];
+        }
 	}
 	[self.tableView reloadData];
 }
@@ -547,7 +540,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
-	NSManagedObject * swimmer = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    // the fetched results controller is not expecting there to be two sections, so we must create
+    // an indexPath which the fetched results controller can understand
+    NSIndexPath * newIndexPath = [NSIndexPath indexPathForRow:indexPath.row 
+                                                    inSection:0];
+
+	NSManagedObject * swimmer = [[self fetchedResultsController] objectAtIndexPath:newIndexPath];
 	[self pushDetailControllerForSwimmer:swimmer];
 }
 
@@ -567,30 +565,52 @@
       newIndexPath:(NSIndexPath*)newIndexPath 
 {
 	NSArray *array = nil;
-	NSIndexSet *section = [NSIndexSet indexSetWithIndex:[newIndexPath section]];
+    NSIndexSet *section = [NSIndexSet indexSetWithIndex:[newIndexPath section]];
 	
 	switch (type) {
-		case NSFetchedResultsChangeInsert:
-			array = [NSArray arrayWithObject:newIndexPath];
+		case NSFetchedResultsChangeInsert: {
+            // map from fetchedResultsController space to tableView space
+            NSIndexPath * mappedIndexPath = [NSIndexPath indexPathForRow:newIndexPath.row 
+                                                               inSection:swimmerSection];
+			array = [NSArray arrayWithObject:mappedIndexPath];
 			[[self tableView] insertRowsAtIndexPaths:array 
 									withRowAnimation:UITableViewRowAnimationFade];
 			break;
-		case NSFetchedResultsChangeDelete:
-			array = [NSArray arrayWithObject:indexPath];
+        }
+		case NSFetchedResultsChangeDelete: {
+            // map from fetchedResultsController space to tableView space
+            NSIndexPath * mappedIndexPath = [NSIndexPath indexPathForRow:indexPath.row 
+                                                               inSection:swimmerSection];
+			array = [NSArray arrayWithObject:mappedIndexPath];
 			[[self tableView] deleteRowsAtIndexPaths:array
 									withRowAnimation:UITableViewRowAnimationFade];
 			break;
-		case NSFetchedResultsChangeMove:
-			array = [NSArray arrayWithObject:newIndexPath];
+        }
+		case NSFetchedResultsChangeMove: {
+            // map from fetchedResultsController space to tableView space
+            NSIndexPath * mappedIndexPath = [NSIndexPath indexPathForRow:newIndexPath.row 
+                                                               inSection:swimmerSection];
+			array = [NSArray arrayWithObject:mappedIndexPath];
 			[[self tableView] deleteRowsAtIndexPaths:array
 									withRowAnimation:UITableViewRowAnimationFade];
+            
+            // map from fetchedResultsController space to tableView space
+            section = [NSIndexSet indexSetWithIndex:[mappedIndexPath section]];
 			[[self tableView] reloadSections:section
 							withRowAnimation:UITableViewRowAnimationFade];
 			break;
-		case NSFetchedResultsChangeUpdate:
-			[self updateCell:[[self tableView] cellForRowAtIndexPath:indexPath]
-				 fromSwimmer:[[self fetchedResultsController] objectAtIndexPath:indexPath]];
+        }
+		case NSFetchedResultsChangeUpdate: {
+            // map from fetchedResultsController space to tableView space
+            NSIndexPath * mappedIndexPath = [NSIndexPath indexPathForRow:indexPath.row 
+                                                               inSection:swimmerSection];
+            // map from tableView space to fetchedResultsController space
+            NSIndexPath * reverseMappedIdexPath = [NSIndexPath indexPathForRow:indexPath.row 
+                                                                     inSection:0];
+			[self updateCell:[[self tableView] cellForRowAtIndexPath:mappedIndexPath]
+				 fromSwimmer:[[self fetchedResultsController] objectAtIndexPath:reverseMappedIdexPath]];
 			break;
+        }
 	}
 }
 
@@ -634,10 +654,10 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-    nibLoadedSwimmerCell = nil;
-    nibLoadedSwimmerCellEditingView = nil;
+    
+    self.homeScreenVC = nil;
+    self.nibLoadedSwimmerCell = nil;
+    self.nibLoadedSwimmerCellEditingView = nil;
 }
 
 
@@ -651,6 +671,7 @@
 	[_defaultTintColor release];
     [nibLoadedSwimmerCell release];
     [nibLoadedSwimmerCellEditingView release];
+    [addButton release];
     
     [super dealloc];
 }

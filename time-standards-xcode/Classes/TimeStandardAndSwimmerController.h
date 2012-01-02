@@ -10,9 +10,12 @@
 
 
 @class SwimmingTimeStandardsAppDelegate;
+@class HomeScreenViewController_ipad;
 
 
 @interface TimeStandardAndSwimmerController : UITableViewController <NSFetchedResultsControllerDelegate> {
+    HomeScreenViewController_ipad * homeScreenVC;
+    
     // time standards
     NSString 		* timeStandardSettingLabelText;
 	NSString		* settingValue;
@@ -28,7 +31,10 @@
 	SwimmingTimeStandardsAppDelegate * appDelegate;
 	NSManagedObjectContext * managedObjectContext_;
 	NSFetchedResultsController * fetchedResultsController_;
+    UIBarButtonItem * addButton;
 }
+
+@property (nonatomic, assign) IBOutlet HomeScreenViewController_ipad * homeScreenVC;
 
 // time standards
 @property (nonatomic, retain) NSString * timeStandardSettingLabelText;
@@ -40,8 +46,8 @@
 @property (nonatomic, retain) IBOutlet UITableViewCell * nibLoadedSwimmerCellEditingView;
 @property (nonatomic, readonly) NSManagedObjectContext * managedObjectContext;
 @property (nonatomic, readonly) NSFetchedResultsController * fetchedResultsController;
+@property (nonatomic, retain) UIBarButtonItem * addButton;
 
-- (IBAction) handleSegmentedControllerChanged: (id) sender;
 - (IBAction) handleEditTapped;
 - (IBAction) handleAddTapped;
 

@@ -8,6 +8,7 @@
 
 #import "HomeScreenViewController_ipad.h"
 #import "STSAppDelegate_ipad.h"
+#import "TimeStandardAndSwimmerController.h"
 
 @implementation HomeScreenViewController_ipad
 
@@ -17,6 +18,7 @@
 @synthesize swimmerGenderLabel;
 @synthesize swimmerAgeGroupLabel;
 @synthesize photoImageView;
+@synthesize timeStandardAndSwimmerVC;
 
 static UIImage * defaultImage = nil;
 
@@ -111,6 +113,7 @@ static UIImage * defaultImage = nil;
     self.swimmerGenderLabel = nil;
     self.swimmerAgeGroupLabel = nil;
     self.photoImageView = nil;
+    self.timeStandardAndSwimmerVC = nil;
 }
 
 - (void) dealloc {

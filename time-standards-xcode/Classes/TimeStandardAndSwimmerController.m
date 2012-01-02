@@ -9,8 +9,8 @@
 #import "TimeStandardAndSwimmerController.h"
 #import "TimeStandardDataAccess.h"
 #import "SwimmingTimeStandardsAppDelegate.h"
-#import "SwimmerDetailViewController.h"
-
+#import "SwimmerDetailViewController_ipad.h"
+#import "HomeScreenViewController_ipad.h"
 
 @interface TimeStandardAndSwimmerController(private)
 - (void) setSettingLabelText:(NSString *) value;
@@ -48,7 +48,7 @@
     
     appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication] 
                                                        delegate];
-    self.title = @"";
+    self.title = @"Times & Swimmers";
     
 
     // time standards
@@ -161,10 +161,15 @@
     [appDelegate saveContext];
 	
 	// Navigation logic may go here. Create and push another view controller.
-	SwimmerDetailViewController *detailViewController = [[[SwimmerDetailViewController alloc] init] autorelease];
+	SwimmerDetailViewController_ipad *detailViewController = [[[SwimmerDetailViewController_ipad alloc] init] autorelease];
 	
     // Pass the selected object to the new view controller.
-	[self.navigationController pushViewController:detailViewController animated:YES];
+    UIPopoverController * popover = [[UIPopoverController alloc] initWithContentViewController:detailViewController];
+    [popover presentPopoverFromRect:self.view.bounds
+                             inView:homeScreenVC.view 
+           permittedArrowDirections:UIPopoverArrowDirectionLeft
+                           animated:YES];
+    
     return;
 }
 
@@ -213,8 +218,6 @@
 	[fetchedResultsController_ setDelegate:self];
 	return fetchedResultsController_;
 }
-
-
 
 #pragma mark - Table view data source
 
@@ -441,7 +444,6 @@
     }
 
 }
-
 
 #pragma mark - Table view delegate
 

@@ -19,6 +19,7 @@
 @synthesize swimmerAgeGroupLabel;
 @synthesize photoImageView;
 @synthesize timeStandardAndSwimmerVC;
+@synthesize popoverController;
 
 static UIImage * defaultImage = nil;
 
@@ -43,6 +44,7 @@ static UIImage * defaultImage = nil;
 - (void) viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Swim Time Standards";
     [[NSNotificationCenter defaultCenter] addObserver:self 
                                              selector:@selector(handleHomeScreenValueChange) 
                                                  name:STSHomeScreenValuesChangedKey
@@ -71,7 +73,6 @@ static UIImage * defaultImage = nil;
 	self.photoImageView.image = photoImage;
 }
 
-
 - (void) handleHomeScreenValueChange {
     NSString * timeStandardName = [appDelegate getHomeScreenTimeStandard];
     self.previousTimeStandard = timeStandardName;
@@ -86,8 +87,9 @@ static UIImage * defaultImage = nil;
     
     NSString * swimmerAgeGroup = [swimmer valueForKey:@"swimmerAgeGroup"];
     self.previousAgeGroup = swimmerAgeGroup;
+    swimmerAgeGroup = ((nil == swimmerAgeGroup) || ([swimmerAgeGroup length] < 1)) ? 
+        @"(re)select an age group" : swimmerAgeGroup;
     self.swimmerAgeGroupLabel.text = swimmerAgeGroup;
-    swimmerAgeGroup = (nil == swimmerAgeGroup) ? @"(re)select an age group" : swimmerAgeGroup;
     
     NSString * swimmerGender = [swimmer valueForKey:@"swimmerGender"];
     self.previousGender = swimmerGender;
@@ -96,10 +98,32 @@ static UIImage * defaultImage = nil;
     
     [self displaySwimmerPhoto: swimmer];
     
+    if (self.popoverController) {
+        [self.popoverController dismissPopoverAnimated:YES];
+    }
+    
     // takes care of loading the picker and the time label
     [super handleHomeScreenValueChange];
 }
 
+#pragma mark - split view delegate
+
+- (void) splitViewController:(UISplitViewController *)svc 
+      willHideViewController:(UIViewController *)aViewController 
+           withBarButtonItem:(UIBarButtonItem *)barButtonItem 
+        forPopoverController:(UIPopoverController *)pc {
+    barButtonItem.title = aViewController.title;
+    [self.toolbar setItems:[NSArray arrayWithObject:barButtonItem] 
+                  animated:YES];
+    self.popoverController = pc;
+}
+
+- (void) splitViewController:(UISplitViewController *)svc 
+      willShowViewController:(UIViewController *)aViewController 
+   invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
+    [self.toolbar setItems:[NSArray array] animated:YES];
+    self.popoverController = nil;
+}
 
 #pragma mark - memory management
 
@@ -123,6 +147,7 @@ static UIImage * defaultImage = nil;
     [swimmerGenderLabel release];
     [swimmerAgeGroupLabel release];
     [photoImageView release];
+    [popoverController release];
     
     [[NSNotificationCenter defaultCenter] removeObserver: self];
     [super dealloc];

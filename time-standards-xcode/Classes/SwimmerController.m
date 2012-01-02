@@ -7,7 +7,6 @@
 //
 
 #import "SwimmerController.h"
-#import "SwimmingTimesStandardsGlobals.h"
 #import "SwimmingTimeStandardsAppDelegate.h"
 #import "SwimmerDetailViewController.h"
 

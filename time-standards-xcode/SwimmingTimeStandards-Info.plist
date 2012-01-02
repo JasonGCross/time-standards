@@ -33,9 +33,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
-	<string>MainWindow</string>
+	<string>MainWindow_iphone</string>
 	<key>NSMainNibFile~ipad</key>
-	<string>MainWindow-iPad</string>
+	<string>MainWindow_ipad</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -7,16 +7,9 @@
 //
 
 #import "TimeStandardAndSwimmerController.h"
-#import "SwimmingTimesStandardsGlobals.h"
 #import "TimeStandardDataAccess.h"
 #import "SwimmingTimeStandardsAppDelegate.h"
 #import "SwimmerDetailViewController.h"
-
-typedef enum timeStandardSwimmerSections {
-    timeStandardSection,
-    swimmerSection,
-    sectionCount
-} TimeStandardSwimmerSections;
 
 
 @interface TimeStandardAndSwimmerController(private)
@@ -29,6 +22,7 @@ typedef enum timeStandardSwimmerSections {
 
 
 @implementation TimeStandardAndSwimmerController
+
 
 @synthesize timeStandardSettingLabelText;
 @synthesize settingValue;
@@ -55,7 +49,8 @@ typedef enum timeStandardSwimmerSections {
     
     appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication] 
                                                        delegate];
-    self.title = @"Standards and Swimmers";
+    self.title = @"";
+    
 
     // time standards
     [self setSettingLabelText: @"Time Standard"];
@@ -71,9 +66,6 @@ typedef enum timeStandardSwimmerSections {
 	}
 
     
-    // swimmer controller
-    self.tableView.rowHeight = 76;
-	
 	// "Segmented" control to the right
 	NSArray *segmentTextContent = [NSArray arrayWithObjects:
 								   NSLocalizedString(@"Edit", @""),
@@ -221,7 +213,6 @@ typedef enum timeStandardSwimmerSections {
 			image = [UIImage imageNamed:STSImageThumnailName];
 			photoImageView.image = image;
 		}
-        
 	}
 }
 
@@ -275,11 +266,57 @@ typedef enum timeStandardSwimmerSections {
     }
 }
 
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSUInteger section = indexPath.section;
+    switch (section) {
+        case timeStandardSection:
+            return 44.0f;
+            break;
+        case swimmerSection:
+            return 76.0f;
+        default:
+            return 44.0f;
+            break;
+    }
+}
+
+- (UIView *)tableView: (UITableView *) tableView viewForHeaderInSection:(NSInteger)section {
+    CGRect headerFrame = CGRectMake(0.0f, 0.0f, 300.0f, 36.0f);
+    CGRect labelFrame = CGRectMake(10.0f, 4.0f, 290.0f, 26.0f);
+    UIView * headerView = [[UIView alloc] initWithFrame: headerFrame];
+    [headerView setBackgroundColor:[UIColor colorWithRed:0.718 green:0.761 blue:0.851 alpha:1.000]];
+    UILabel * headerLabel = [[[UILabel alloc] initWithFrame:labelFrame] autorelease];
+    [headerLabel setBackgroundColor: [UIColor colorWithRed:0.718 green:0.761 blue:0.851 alpha:1.000]];
+    [headerView insertSubview: headerLabel atIndex:0];
+    UIFont * headerFont = [UIFont boldSystemFontOfSize:18.0f];
+    headerLabel.font = headerFont;
+    switch (section) {
+        case timeStandardSection:
+            headerLabel.text = @"Time Standards";
+            break;
+        case swimmerSection:
+            headerLabel.text = @"Swimmers";
+            break;
+        default:
+            break;
+    }
+    return [headerView autorelease];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 36.0f;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * timeStandardCellIdentifier = @"TimeStandardCell";
     static NSString *CellIdentifier = @"SwimmerListViewCell";
 	static NSString *EditingCellIdentifier = @"SwimmerListViewCellEditing";
+    
+    static NSManagedObject * homeScreenValues = nil;
+    if (homeScreenValues == nil) {
+        [appDelegate getHomeScreenValues];
+    }
     
     UITableViewCell *cell = nil;
     NSUInteger section = [indexPath section];
@@ -295,6 +332,7 @@ typedef enum timeStandardSwimmerSections {
             // Configure the cell...
             NSUInteger row = [indexPath row];
             cell.textLabel.text = [_settingList objectAtIndex:row];
+            cell.textLabel.font = [UIFont systemFontOfSize:14.0f];
             
             // lastIndexPath is nil when the view loads for the first time.
             // see if any time standard has been saved; this will be pre-selected
@@ -309,8 +347,8 @@ typedef enum timeStandardSwimmerSections {
             }
             
             NSUInteger oldRow = [_lastIndexPath row];
-            cell.accessoryType = (row == oldRow && _lastIndexPath != nil) ?
-            UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+            cell.accessoryType = (row == oldRow && _lastIndexPath != nil) ? 
+                UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
             break;
         }
         case swimmerSection: {
@@ -338,10 +376,14 @@ typedef enum timeStandardSwimmerSections {
             // an indexPath which the fetched results controller can understand
             NSIndexPath * newIndexPath = [NSIndexPath indexPathForRow:indexPath.row 
                                                             inSection:0];
-            NSManagedObject * currentSwimmer = [self.fetchedResultsController objectAtIndexPath:newIndexPath];
+            NSManagedObject * thisCellSwimmer = [self.fetchedResultsController objectAtIndexPath:newIndexPath];
             
-            [self updateCell: cell fromSwimmer: currentSwimmer];		
+            [self updateCell: cell fromSwimmer: thisCellSwimmer];		
             cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+            
+            // show this cell as highlighted if it matches the current swimmer
+            NSManagedObject * currentSwimmer = [homeScreenValues valueForKey:@"homeScreenSwimmer"];
+            cell.highlighted = (currentSwimmer == thisCellSwimmer) ? YES : NO;
             break;
         }
         default:
@@ -353,8 +395,6 @@ typedef enum timeStandardSwimmerSections {
     return cell;
 }
 
-
-// Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
@@ -373,9 +413,6 @@ typedef enum timeStandardSwimmerSections {
     }
 }
 
-
-
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSUInteger section = [indexPath section];
@@ -419,34 +456,60 @@ typedef enum timeStandardSwimmerSections {
 }
 
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableViewParam didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    NSUInteger section = indexPath.section;
+    switch (section) {
+        case timeStandardSection: {
+            int newRow = [indexPath row];
+            int oldRow = (_lastIndexPath != nil) ? [_lastIndexPath row] : -1;
+            
+            if (newRow != oldRow) {
+                UITableViewCell * newCell = [tableViewParam cellForRowAtIndexPath:indexPath];
+                newCell.accessoryType = UITableViewCellAccessoryCheckmark;
+                UITableViewCell * oldCell = [tableViewParam cellForRowAtIndexPath: _lastIndexPath];
+                oldCell.accessoryType = UITableViewCellAccessoryNone;
+                [indexPath retain];
+                [_lastIndexPath release];
+                _lastIndexPath = indexPath;
+                settingValue = [_settingList objectAtIndex:newRow];
+                
+                NSManagedObject * tempHomeScreenValues = [appDelegate getHomeScreenValues];
+                [tempHomeScreenValues setValue:settingValue forKey:@"homeScreenStandardName"];
+                
+                [appDelegate saveContext];
+                NSNotification * notification = [NSNotification notificationWithName:STSHomeScreenValuesChangedKey
+                                                                              object:nil];
+                [[NSNotificationCenter defaultCenter] postNotification:notification];		
+            }
+            
+            [tableViewParam deselectRowAtIndexPath: indexPath animated: YES];
+
+            break;
+        }
+        case swimmerSection: {
+            [tableViewParam deselectRowAtIndexPath:indexPath animated:YES];
+            
+            // the fetched results controller is not expecting there to be two sections, so we must create
+            // an indexPath which the fetched results controller can understand
+            NSIndexPath * newIndexPath = [NSIndexPath indexPathForRow:indexPath.row 
+                                                            inSection:0];
+            NSManagedObject * currentSwimmer = [self.fetchedResultsController objectAtIndexPath:newIndexPath];
+            
+            NSManagedObject * homeScreenValues = [appDelegate getHomeScreenValues];
+            [homeScreenValues setValue:currentSwimmer forKey:@"homeScreenSwimmer"];
+            
+            [appDelegate saveContext];
+            NSNotification * notification = [NSNotification notificationWithName:STSHomeScreenValuesChangedKey
+                                                                          object:nil];
+            [[NSNotificationCenter defaultCenter] postNotification:notification];	
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 #pragma mark -

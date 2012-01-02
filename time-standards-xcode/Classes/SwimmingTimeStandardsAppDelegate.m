@@ -7,26 +7,53 @@
 //
 
 #import "SwimmingTimeStandardsAppDelegate.h"
-#import "RootViewController.h"
 #import "TimeStandardDataAccess.h"
-#import "SwimmingTimesStandardsGlobals.h"
+
+
+@interface SwimmingTimeStandardsAppDelegate (STSAppDelegatePrivate) 
+- (TimeStandardDataAccess *) timeStandardDataAccess;
+- (NSURL *)applicationDocumentsDirectory;
+- (NSFetchedResultsController *) fetchedResultsController;
+- (NSManagedObject *) getHomeScreenValues;
+- (NSManagedObject *) getHomeScreenSwimmer;
+- (NSManagedObject *) currentSwimmer;
+- (NSString *) getHomeScreenTimeStandard;
+@end
 
 
 @implementation SwimmingTimeStandardsAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
-@synthesize splitVC;
 @synthesize currentSwimmer;
 
-#pragma mark -
+#pragma mark - Application lifecycle
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+/**
+ applicationWillTerminate: saves changes in the application's managed object context before the application terminates.
+ */
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [self saveContext];
+	if (timeStandardDataAccess_ != nil) {
+		[timeStandardDataAccess_ closeDataBase];
+	}
+}
+
+
+#pragma mark - private methods
 #pragma mark Time Standard Data Access
 
 /**
  Returns the time standard data access object for the application.
  If the data access object doesn't already exist, it is created and hooked up to the data file.
  */
-- (TimeStandardDataAccess *) timeStandardDataAccess {
+- (TimeStandardDataAccess *) timeStandardDataAccess; {
 	if (timeStandardDataAccess_ != nil) {
 		return timeStandardDataAccess_;
 	}
@@ -35,8 +62,6 @@
 	return timeStandardDataAccess_;
 }
 
-
-#pragma mark -
 #pragma mark Application's Documents directory
 
 /**
@@ -152,36 +177,7 @@
 	return timeStandardName;
 }
 
-#pragma mark -
-#pragma mark Application lifecycle
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    // Override point for customization after application launch.
-    
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        [self.window addSubview:self.splitVC.view];
-    }
-    else {
-        // Add the navigation controller's view to the window and display.
-        RootViewController * rootViewController = [[RootViewController alloc] init];
-        self.navigationController = [[[UINavigationController alloc] initWithRootViewController:rootViewController] autorelease];
-        [rootViewController release];
-        [window addSubview:self.navigationController.view];
-    }
-    
-    [window makeKeyAndVisible];
-    return YES;
-}
-
-/**
- applicationWillTerminate: saves changes in the application's managed object context before the application terminates.
- */
-- (void)applicationWillTerminate:(UIApplication *)application {
-    [self saveContext];
-	if (timeStandardDataAccess_ != nil) {
-		[timeStandardDataAccess_ closeDataBase];
-	}
-}
+#pragma mark - public methods
 
 - (void)saveContext {
     
@@ -203,7 +199,6 @@
 }    
 
 
-#pragma mark -
 #pragma mark Core Data stack
 
 /**
@@ -292,11 +287,7 @@
     return persistentStoreCoordinator_;
 }
 
-
-
-
-#pragma mark -
-#pragma mark Memory management
+#pragma mark - Memory management
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
     /*
@@ -319,7 +310,6 @@
 	[fetchedResultsController_ release];
     [window release];
 	[navigationController release];
-    [splitVC release];
     [super dealloc];
 }
 

@@ -8,7 +8,6 @@
 
 #import "SwimmerPhotoViewController.h"
 #import "SwimmingTimeStandardsAppDelegate.h"
-#import "SwimmingTimesStandardsGlobals.h"
 
 @implementation SwimmerPhotoViewController
 

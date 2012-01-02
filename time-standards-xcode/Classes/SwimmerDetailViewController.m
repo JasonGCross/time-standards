@@ -41,8 +41,7 @@
 	imageView.image = photoImage;
 }
 
-#pragma mark -
-#pragma mark View lifecycle
+#pragma mark - View lifecycle
 
 - (id) init {
     self = [super initWithNibName:@"SwimmerDetailView" bundle:nil];
@@ -51,18 +50,6 @@
     return self;
 }
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	_appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication]
@@ -88,31 +75,16 @@
 	[self displaySwimmerPhoto];
 }
 
-
  - (void)viewWillAppear:(BOOL)animated {
 	 [super viewWillAppear:animated];
 	 self.nameTextField.text = [_swimmer valueForKey:@"swimmerName"];
 	 [self displaySwimmerPhoto];
  }
 
-/*
- - (void)viewDidAppear:(BOOL)animated {
- [super viewDidAppear:animated];
- }
- */
-
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 }
 
-/*
- - (void)viewDidDisappear:(BOOL)animated {
- [super viewDidDisappear:animated];
- }
- */
-
-
-// Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations.
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
@@ -121,9 +93,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-
-#pragma mark -
-#pragma mark text field delegate
+#pragma mark - text field delegate
 
 - (IBAction) textFieldDoneEditing:(id)sender {
 	[_swimmer setValue:nameTextField.text forKey:@"swimmerName"];

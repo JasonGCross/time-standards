@@ -14,6 +14,7 @@
 #define STSPersistentStoreFileName      @"HomeScreenValues.sqlite"
 #define STSHomeScreenArchiveFileName	@"homeScreenValues.arch"
 #define STSImageThumnailName			@"headshot.png"
+#define STSHomeScreenValuesChangedKey   @"STSHomeScreenValuesChangedNotificationKey"
 #define STSDistanceComponent			1
 #define STSStrokeComponent				0
 #define STSCourseComponent				2
@@ -42,6 +43,13 @@ typedef enum {
 	SCY,
 	LCM
 } STSCourse;
+
+// timeStandards and Swimmers (iPad)
+typedef enum timeStandardSwimmerSections {
+    timeStandardSection,
+    swimmerSection,
+    sectionCount
+} TimeStandardSwimmerSections;
 
 
 

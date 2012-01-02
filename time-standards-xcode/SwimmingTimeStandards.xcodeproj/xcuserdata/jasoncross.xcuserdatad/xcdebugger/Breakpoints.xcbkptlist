@@ -9,12 +9,40 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/TimeStandardAndSwimmerController.m"
-         timestampString = "346973587.595745"
+         timestampString = "347158997.929216"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "56"
-         endingLineNumber = "56"
+         startingLineNumber = "50"
+         endingLineNumber = "50"
          landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "iPad/STSRootViewController_iPad.m"
+         timestampString = "347145309.524492"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "17"
+         endingLineNumber = "17"
+         landmarkName = "-init"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Classes/STSRootViewController_iPhone.m"
+         timestampString = "347146374.618304"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "22"
+         endingLineNumber = "22"
+         landmarkName = "-init"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -22,13 +50,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "Classes/TimeStandardAndSwimmerController.m"
-         timestampString = "346973788.278218"
+         filePath = "iPad/HomeScreenViewController_ipad.m"
+         timestampString = "347159284.004075"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "339"
-         endingLineNumber = "339"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         startingLineNumber = "98"
+         endingLineNumber = "98"
+         landmarkName = "-handleHomeScreenValueChange"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

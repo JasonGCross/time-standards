@@ -13,12 +13,16 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28860BE50F44EE6400985440 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28860BE40F44EE6400985440 /* CoreData.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
-		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
-		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		2899E5600DE3E45000AC0155 /* HomeScreenViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* HomeScreenViewController_iphone.xib */; };
+		28AD73600D9D9599002E5188 /* MainWindow_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow_iphone.xib */; };
+		F60C668B14B0F4F4006F77F9 /* STSAppDelegate_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C668A14B0F4F3006F77F9 /* STSAppDelegate_ipad.m */; };
+		F60C668E14B0F84A006F77F9 /* HomeScreenViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C668D14B0F84A006F77F9 /* HomeScreenViewController_iphone.m */; };
+		F60C669114B0F86E006F77F9 /* HomeScreenViewController_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669014B0F86E006F77F9 /* HomeScreenViewController_ipad.m */; };
+		F60C669314B10B68006F77F9 /* STSAppDelegate_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669214B10B67006F77F9 /* STSAppDelegate_iphone.m */; };
+		F60C669514B11A61006F77F9 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669414B11A61006F77F9 /* HomeScreenViewController.m */; };
 		F63D159C12610FD1002DA8D1 /* SwimmerDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */; };
-		F646BA7E13DCAEAB00124F9B /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646BA7D13DCAEAB00124F9B /* MainWindow-iPad.xib */; };
-		F646BA8013DCD4D200124F9B /* RootViewController-ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646BA7F13DCD4D200124F9B /* RootViewController-ipad.xib */; };
+		F646BA7E13DCAEAB00124F9B /* MainWindow_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646BA7D13DCAEAB00124F9B /* MainWindow_ipad.xib */; };
+		F646BA8013DCD4D200124F9B /* HomeScreenViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646BA7F13DCD4D200124F9B /* HomeScreenViewController_ipad.xib */; };
 		F65265B6122B2282007EDD0F /* SwimmerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65265B4122B2282007EDD0F /* SwimmerDetailViewController.m */; };
 		F667952F12C9D18400AA2CCB /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F667952E12C9D18400AA2CCB /* appIcon.png */; };
 		F66BF2DF1302916900612FFC /* miniAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F66BF2DE1302916900612FFC /* miniAppIcon.png */; };
@@ -56,17 +60,25 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E55F0DE3E45000AC0155 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../RootViewController.xib; sourceTree = "<group>"; };
+		2899E55F0DE3E45000AC0155 /* HomeScreenViewController_iphone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController_iphone.xib; sourceTree = "<group>"; };
 		28A0AAE50D9B0CCF005BE974 /* SwimmingTimeStandards_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmingTimeStandards_Prefix.pch; sourceTree = "<group>"; };
-		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow_iphone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iphone.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScreenViewController.h; path = Classes/HomeScreenViewController.h; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SwimmingTimeStandards-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SwimmingTimeStandards-Info.plist"; path = "../SwimmingTimeStandards-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F60C668614B0F4B6006F77F9 /* STSAppDelegate_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSAppDelegate_iphone.h; path = Classes/STSAppDelegate_iphone.h; sourceTree = "<group>"; };
+		F60C668914B0F4F3006F77F9 /* STSAppDelegate_ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSAppDelegate_ipad.h; path = iPad/STSAppDelegate_ipad.h; sourceTree = "<group>"; };
+		F60C668A14B0F4F3006F77F9 /* STSAppDelegate_ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSAppDelegate_ipad.m; path = iPad/STSAppDelegate_ipad.m; sourceTree = "<group>"; };
+		F60C668C14B0F84A006F77F9 /* HomeScreenViewController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScreenViewController_iphone.h; path = Classes/HomeScreenViewController_iphone.h; sourceTree = "<group>"; };
+		F60C668D14B0F84A006F77F9 /* HomeScreenViewController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController_iphone.m; path = Classes/HomeScreenViewController_iphone.m; sourceTree = "<group>"; };
+		F60C668F14B0F86E006F77F9 /* HomeScreenViewController_ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScreenViewController_ipad.h; path = iPad/HomeScreenViewController_ipad.h; sourceTree = "<group>"; };
+		F60C669014B0F86E006F77F9 /* HomeScreenViewController_ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController_ipad.m; path = iPad/HomeScreenViewController_ipad.m; sourceTree = "<group>"; };
+		F60C669214B10B67006F77F9 /* STSAppDelegate_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSAppDelegate_iphone.m; path = Classes/STSAppDelegate_iphone.m; sourceTree = "<group>"; };
+		F60C669414B11A61006F77F9 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController.m; path = Classes/HomeScreenViewController.m; sourceTree = "<group>"; };
 		F62DD8E614AAE914009E97B5 /* HomeScreenValuesv1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv1.xcdatamodel; sourceTree = "<group>"; };
 		F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerDetailView.xib; path = ../SwimmerDetailView.xib; sourceTree = "<group>"; };
-		F646BA7D13DCAEAB00124F9B /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		F646BA7F13DCD4D200124F9B /* RootViewController-ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "RootViewController-ipad.xib"; sourceTree = "<group>"; };
+		F646BA7D13DCAEAB00124F9B /* MainWindow_ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow_ipad.xib; path = iPad/MainWindow_ipad.xib; sourceTree = "<group>"; };
+		F646BA7F13DCD4D200124F9B /* HomeScreenViewController_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeScreenViewController_ipad.xib; path = Classes/HomeScreenViewController_ipad.xib; sourceTree = "<group>"; };
 		F65265B3122B2282007EDD0F /* SwimmerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmerDetailViewController.h; sourceTree = "<group>"; };
 		F65265B4122B2282007EDD0F /* SwimmerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimmerDetailViewController.m; sourceTree = "<group>"; };
 		F667952E12C9D18400AA2CCB /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appIcon.png; path = ../appIcon.png; sourceTree = "<group>"; };
@@ -89,8 +101,8 @@
 		F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_72x72.png; sourceTree = "<group>"; };
 		F6C38B7313E61D6800F0D62B /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		F6C38B7513E61D7000F0D62B /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		F6C3D588124709B900A6897D /* SwimmerTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerTableCell.xib; path = ../SwimmerTableCell.xib; sourceTree = "<group>"; };
-		F6C3D5A41247106A00A6897D /* StandardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StandardTableCell.xib; path = ../StandardTableCell.xib; sourceTree = "<group>"; };
+		F6C3D588124709B900A6897D /* SwimmerTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmerTableCell.xib; sourceTree = "<group>"; };
+		F6C3D5A41247106A00A6897D /* StandardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardTableCell.xib; sourceTree = "<group>"; };
 		F6C460D61273177B0037A3F2 /* headshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headshot.png; path = ../headshot.png; sourceTree = "<group>"; };
 		F6D2D93812E983450047647A /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		F6DE03AF1215234900F749F7 /* SwimmingTimesStandardsGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmingTimesStandardsGlobals.h; path = Classes/SwimmingTimesStandardsGlobals.h; sourceTree = "<group>"; };
@@ -123,12 +135,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F6A3F34112E00F64002806DF /* PhotoViewController */,
-				F6A3F34212E00F75002806DF /* SwimmerDetailController */,
-				F6A51EA5123332C10016A1A7 /* SwimmerController */,
-				F6A3F34412E00FDE002806DF /* TimeStandardController */,
-				F6A3F34312E00FB4002806DF /* RootViewController */,
-				F6A3F34512E0104C002806DF /* Application */,
+				F60C668414B0F296006F77F9 /* Shared */,
+				F60C668314B0F283006F77F9 /* iPhone */,
+				F646BA7C13DCAEAA00124F9B /* iPad */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -154,7 +163,6 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				F6D2D93512E983070047647A /* Resources */,
-				F646BA7C13DCAEAA00124F9B /* iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -182,14 +190,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F60C668314B0F283006F77F9 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				F60C668614B0F4B6006F77F9 /* STSAppDelegate_iphone.h */,
+				F60C669214B10B67006F77F9 /* STSAppDelegate_iphone.m */,
+				28AD735F0D9D9599002E5188 /* MainWindow_iphone.xib */,
+				F60C668C14B0F84A006F77F9 /* HomeScreenViewController_iphone.h */,
+				F60C668D14B0F84A006F77F9 /* HomeScreenViewController_iphone.m */,
+				2899E55F0DE3E45000AC0155 /* HomeScreenViewController_iphone.xib */,
+				F6A3F34412E00FDE002806DF /* TimeStandardController */,
+				F6A51EA5123332C10016A1A7 /* SwimmerController */,
+			);
+			name = iPhone;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F60C668414B0F296006F77F9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* SwimmingTimeStandardsAppDelegate.h */,
+				1D3623250D0F684500981E51 /* SwimmingTimeStandardsAppDelegate.m */,
+				F6DE03AF1215234900F749F7 /* SwimmingTimesStandardsGlobals.h */,
+				28C286DF0D94DF7D0034E888 /* HomeScreenViewController.h */,
+				F60C669414B11A61006F77F9 /* HomeScreenViewController.m */,
+				F6C3D5A41247106A00A6897D /* StandardTableCell.xib */,
+				F6C3D588124709B900A6897D /* SwimmerTableCell.xib */,
+				F6A3F34112E00F64002806DF /* PhotoViewController */,
+				F6A3F34212E00F75002806DF /* SwimmerDetailController */,
+			);
+			name = Shared;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		F646BA7C13DCAEAA00124F9B /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				F646BA7D13DCAEAB00124F9B /* MainWindow-iPad.xib */,
+				F60C668914B0F4F3006F77F9 /* STSAppDelegate_ipad.h */,
+				F60C668A14B0F4F3006F77F9 /* STSAppDelegate_ipad.m */,
+				F646BA7D13DCAEAB00124F9B /* MainWindow_ipad.xib */,
+				F60C668F14B0F86E006F77F9 /* HomeScreenViewController_ipad.h */,
+				F60C669014B0F86E006F77F9 /* HomeScreenViewController_ipad.m */,
+				F646BA7F13DCD4D200124F9B /* HomeScreenViewController_ipad.xib */,
 				F69A723614AE4CBB00D55127 /* TimeStandardAndSwimmerController.h */,
 				F69A723714AE4CBB00D55127 /* TimeStandardAndSwimmerController.m */,
 			);
 			name = iPad;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F682B600124EE5E200D1CA61 /* DataAccess */ = {
@@ -209,7 +256,6 @@
 				F683EDE612CC698E00D5588A /* SwimmerPhotoViewController.xib */,
 			);
 			name = PhotoViewController;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		F6A3F34212E00F75002806DF /* SwimmerDetailController */ = {
@@ -220,19 +266,7 @@
 				F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */,
 			);
 			name = SwimmerDetailController;
-			sourceTree = "<group>";
-		};
-		F6A3F34312E00FB4002806DF /* RootViewController */ = {
-			isa = PBXGroup;
-			children = (
-				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
-				28C286E00D94DF7D0034E888 /* RootViewController.m */,
-				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
-				F6C3D5A41247106A00A6897D /* StandardTableCell.xib */,
-				F6C3D588124709B900A6897D /* SwimmerTableCell.xib */,
-				F646BA7F13DCD4D200124F9B /* RootViewController-ipad.xib */,
-			);
-			name = RootViewController;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		F6A3F34412E00FDE002806DF /* TimeStandardController */ = {
@@ -242,18 +276,7 @@
 				F6DE03C61215277B00F749F7 /* TimeStandardController.m */,
 			);
 			name = TimeStandardController;
-			sourceTree = "<group>";
-		};
-		F6A3F34512E0104C002806DF /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				1D3623240D0F684500981E51 /* SwimmingTimeStandardsAppDelegate.h */,
-				1D3623250D0F684500981E51 /* SwimmingTimeStandardsAppDelegate.m */,
-				F6DE03AF1215234900F749F7 /* SwimmingTimesStandardsGlobals.h */,
-				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
-			);
-			name = Application;
-			path = ..;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		F6A51EA5123332C10016A1A7 /* SwimmerController */ = {
@@ -265,6 +288,7 @@
 				F677D0C1129978AE00E92069 /* SwimmersListTableCellEditView.xib */,
 			);
 			name = SwimmerController;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		F6D06DEB122CB35100E58473 /* Model */ = {
@@ -348,8 +372,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
-				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
+				28AD73600D9D9599002E5188 /* MainWindow_iphone.xib in Resources */,
+				2899E5600DE3E45000AC0155 /* HomeScreenViewController_iphone.xib in Resources */,
 				F6DE043F1215333200F749F7 /* SwimTimes_v2.sqlite in Resources */,
 				F6C3D589124709B900A6897D /* SwimmerTableCell.xib in Resources */,
 				F6C3D5A51247106A00A6897D /* StandardTableCell.xib in Resources */,
@@ -362,8 +386,8 @@
 				F683EDE812CC698E00D5588A /* SwimmerPhotoViewController.xib in Resources */,
 				F6D2D93912E983450047647A /* iTunesArtwork in Resources */,
 				F66BF2DF1302916900612FFC /* miniAppIcon.png in Resources */,
-				F646BA7E13DCAEAB00124F9B /* MainWindow-iPad.xib in Resources */,
-				F646BA8013DCD4D200124F9B /* RootViewController-ipad.xib in Resources */,
+				F646BA7E13DCAEAB00124F9B /* MainWindow_ipad.xib in Resources */,
+				F646BA8013DCD4D200124F9B /* HomeScreenViewController_ipad.xib in Resources */,
 				F6C38B6C13E61D2400F0D62B /* appIcon-57x57.png in Resources */,
 				F6C38B6E13E61D2D00F0D62B /* appIcon-114x114.png in Resources */,
 				F6C38B7013E61D3E00F0D62B /* Default@2x.png in Resources */,
@@ -382,7 +406,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* SwimmingTimeStandardsAppDelegate.m in Sources */,
-				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				F6DE03B21215234900F749F7 /* TimeStandardDataAccess.m in Sources */,
 				F6DE03C91215277B00F749F7 /* TimeStandardController.m in Sources */,
 				F6F84C3F122B1745006E1481 /* SwimmerController.m in Sources */,
@@ -392,6 +415,11 @@
 				F6A3F30212E00571002806DF /* HomeScreenValues.xcdatamodeld in Sources */,
 				F69A720114AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel in Sources */,
 				F69A723814AE4CBB00D55127 /* TimeStandardAndSwimmerController.m in Sources */,
+				F60C668B14B0F4F4006F77F9 /* STSAppDelegate_ipad.m in Sources */,
+				F60C668E14B0F84A006F77F9 /* HomeScreenViewController_iphone.m in Sources */,
+				F60C669114B0F86E006F77F9 /* HomeScreenViewController_ipad.m in Sources */,
+				F60C669314B10B68006F77F9 /* STSAppDelegate_iphone.m in Sources */,
+				F60C669514B11A61006F77F9 /* HomeScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

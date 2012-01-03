@@ -15,6 +15,7 @@
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		2899E5600DE3E45000AC0155 /* HomeScreenViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* HomeScreenViewController_iphone.xib */; };
 		28AD73600D9D9599002E5188 /* MainWindow_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow_iphone.xib */; };
+		F6017CEC14B2F96F006DEEBA /* SwimmerPhotoViewController_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F6017CEB14B2F96F006DEEBA /* SwimmerPhotoViewController_ipad.m */; };
 		F60C668B14B0F4F4006F77F9 /* STSAppDelegate_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C668A14B0F4F3006F77F9 /* STSAppDelegate_ipad.m */; };
 		F60C668E14B0F84A006F77F9 /* HomeScreenViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C668D14B0F84A006F77F9 /* HomeScreenViewController_iphone.m */; };
 		F60C669114B0F86E006F77F9 /* HomeScreenViewController_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669014B0F86E006F77F9 /* HomeScreenViewController_ipad.m */; };
@@ -67,6 +68,8 @@
 		28C286DF0D94DF7D0034E888 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScreenViewController.h; path = Classes/HomeScreenViewController.h; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SwimmingTimeStandards-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SwimmingTimeStandards-Info.plist"; path = "../SwimmingTimeStandards-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F6017CEA14B2F96F006DEEBA /* SwimmerPhotoViewController_ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerPhotoViewController_ipad.h; path = iPad/SwimmerPhotoViewController_ipad.h; sourceTree = "<group>"; };
+		F6017CEB14B2F96F006DEEBA /* SwimmerPhotoViewController_ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwimmerPhotoViewController_ipad.m; path = iPad/SwimmerPhotoViewController_ipad.m; sourceTree = "<group>"; };
 		F60C668614B0F4B6006F77F9 /* STSAppDelegate_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSAppDelegate_iphone.h; path = Classes/STSAppDelegate_iphone.h; sourceTree = "<group>"; };
 		F60C668914B0F4F3006F77F9 /* STSAppDelegate_ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSAppDelegate_ipad.h; path = iPad/STSAppDelegate_ipad.h; sourceTree = "<group>"; };
 		F60C668A14B0F4F3006F77F9 /* STSAppDelegate_ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSAppDelegate_ipad.m; path = iPad/STSAppDelegate_ipad.m; sourceTree = "<group>"; };
@@ -77,17 +80,17 @@
 		F60C669214B10B67006F77F9 /* STSAppDelegate_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSAppDelegate_iphone.m; path = Classes/STSAppDelegate_iphone.m; sourceTree = "<group>"; };
 		F60C669414B11A61006F77F9 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController.m; path = Classes/HomeScreenViewController.m; sourceTree = "<group>"; };
 		F62DD8E614AAE914009E97B5 /* HomeScreenValuesv1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv1.xcdatamodel; sourceTree = "<group>"; };
-		F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmerDetailView.xib; path = ../SwimmerDetailView.xib; sourceTree = "<group>"; };
+		F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmerDetailView.xib; sourceTree = "<group>"; };
 		F63F70F714B19DB000E85DD0 /* SwimmerDetailViewController_ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerDetailViewController_ipad.h; path = iPad/SwimmerDetailViewController_ipad.h; sourceTree = "<group>"; };
 		F63F70F814B19DB000E85DD0 /* SwimmerDetailViewController_ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwimmerDetailViewController_ipad.m; path = iPad/SwimmerDetailViewController_ipad.m; sourceTree = "<group>"; };
 		F646BA7D13DCAEAB00124F9B /* MainWindow_ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow_ipad.xib; path = iPad/MainWindow_ipad.xib; sourceTree = "<group>"; };
 		F646BA7F13DCD4D200124F9B /* HomeScreenViewController_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeScreenViewController_ipad.xib; path = Classes/HomeScreenViewController_ipad.xib; sourceTree = "<group>"; };
-		F65265B3122B2282007EDD0F /* SwimmerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmerDetailViewController.h; sourceTree = "<group>"; };
-		F65265B4122B2282007EDD0F /* SwimmerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimmerDetailViewController.m; sourceTree = "<group>"; };
+		F65265B3122B2282007EDD0F /* SwimmerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerDetailViewController.h; path = Classes/SwimmerDetailViewController.h; sourceTree = "<group>"; };
+		F65265B4122B2282007EDD0F /* SwimmerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwimmerDetailViewController.m; path = Classes/SwimmerDetailViewController.m; sourceTree = "<group>"; };
 		F667952E12C9D18400AA2CCB /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appIcon.png; path = ../appIcon.png; sourceTree = "<group>"; };
 		F66BF2DE1302916900612FFC /* miniAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniAppIcon.png; sourceTree = "<group>"; };
-		F677D0C1129978AE00E92069 /* SwimmersListTableCellEditView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmersListTableCellEditView.xib; path = ../SwimmersListTableCellEditView.xib; sourceTree = "<group>"; };
-		F682B648124F06E100D1CA61 /* SwimmersListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SwimmersListTableCell.xib; path = ../SwimmersListTableCell.xib; sourceTree = "<group>"; };
+		F677D0C1129978AE00E92069 /* SwimmersListTableCellEditView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmersListTableCellEditView.xib; sourceTree = "<group>"; };
+		F682B648124F06E100D1CA61 /* SwimmersListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmersListTableCell.xib; sourceTree = "<group>"; };
 		F683EDC212CC30B600D5588A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		F683EDE412CC698E00D5588A /* SwimmerPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerPhotoViewController.h; path = Classes/SwimmerPhotoViewController.h; sourceTree = "<group>"; };
 		F683EDE512CC698E00D5588A /* SwimmerPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwimmerPhotoViewController.m; path = Classes/SwimmerPhotoViewController.m; sourceTree = "<group>"; };
@@ -112,11 +115,11 @@
 		F6DE03B01215234900F749F7 /* TimeStandardDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStandardDataAccess.h; sourceTree = "<group>"; };
 		F6DE03B11215234900F749F7 /* TimeStandardDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStandardDataAccess.m; sourceTree = "<group>"; };
 		F6DE03BF121524FC00F749F7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		F6DE03C51215277B00F749F7 /* TimeStandardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStandardController.h; sourceTree = "<group>"; };
-		F6DE03C61215277B00F749F7 /* TimeStandardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStandardController.m; sourceTree = "<group>"; };
+		F6DE03C51215277B00F749F7 /* TimeStandardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeStandardController.h; path = Classes/TimeStandardController.h; sourceTree = "<group>"; };
+		F6DE03C61215277B00F749F7 /* TimeStandardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeStandardController.m; path = Classes/TimeStandardController.m; sourceTree = "<group>"; };
 		F6DE043E1215333200F749F7 /* SwimTimes_v2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = SwimTimes_v2.sqlite; path = ../SwimTimes_v2.sqlite; sourceTree = "<group>"; };
-		F6F84C3D122B1745006E1481 /* SwimmerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmerController.h; sourceTree = "<group>"; };
-		F6F84C3E122B1745006E1481 /* SwimmerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimmerController.m; sourceTree = "<group>"; };
+		F6F84C3D122B1745006E1481 /* SwimmerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerController.h; path = Classes/SwimmerController.h; sourceTree = "<group>"; };
+		F6F84C3E122B1745006E1481 /* SwimmerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwimmerController.m; path = Classes/SwimmerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +205,12 @@
 				F60C668C14B0F84A006F77F9 /* HomeScreenViewController_iphone.h */,
 				F60C668D14B0F84A006F77F9 /* HomeScreenViewController_iphone.m */,
 				2899E55F0DE3E45000AC0155 /* HomeScreenViewController_iphone.xib */,
-				F6A3F34412E00FDE002806DF /* TimeStandardController */,
-				F6A51EA5123332C10016A1A7 /* SwimmerController */,
+				F6DE03C51215277B00F749F7 /* TimeStandardController.h */,
+				F6DE03C61215277B00F749F7 /* TimeStandardController.m */,
+				F6F84C3D122B1745006E1481 /* SwimmerController.h */,
+				F6F84C3E122B1745006E1481 /* SwimmerController.m */,
+				F682B648124F06E100D1CA61 /* SwimmersListTableCell.xib */,
+				F677D0C1129978AE00E92069 /* SwimmersListTableCellEditView.xib */,
 			);
 			name = iPhone;
 			path = ..;
@@ -219,8 +226,12 @@
 				F60C669414B11A61006F77F9 /* HomeScreenViewController.m */,
 				F6C3D5A41247106A00A6897D /* StandardTableCell.xib */,
 				F6C3D588124709B900A6897D /* SwimmerTableCell.xib */,
-				F6A3F34112E00F64002806DF /* PhotoViewController */,
-				F6A3F34212E00F75002806DF /* SwimmerDetailController */,
+				F683EDE412CC698E00D5588A /* SwimmerPhotoViewController.h */,
+				F683EDE512CC698E00D5588A /* SwimmerPhotoViewController.m */,
+				F683EDE612CC698E00D5588A /* SwimmerPhotoViewController.xib */,
+				F65265B3122B2282007EDD0F /* SwimmerDetailViewController.h */,
+				F65265B4122B2282007EDD0F /* SwimmerDetailViewController.m */,
+				F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */,
 			);
 			name = Shared;
 			path = ..;
@@ -239,6 +250,8 @@
 				F69A723714AE4CBB00D55127 /* TimeStandardAndSwimmerController.m */,
 				F63F70F714B19DB000E85DD0 /* SwimmerDetailViewController_ipad.h */,
 				F63F70F814B19DB000E85DD0 /* SwimmerDetailViewController_ipad.m */,
+				F6017CEA14B2F96F006DEEBA /* SwimmerPhotoViewController_ipad.h */,
+				F6017CEB14B2F96F006DEEBA /* SwimmerPhotoViewController_ipad.m */,
 			);
 			name = iPad;
 			path = ..;
@@ -251,49 +264,6 @@
 				F6DE03B11215234900F749F7 /* TimeStandardDataAccess.m */,
 			);
 			name = DataAccess;
-			sourceTree = "<group>";
-		};
-		F6A3F34112E00F64002806DF /* PhotoViewController */ = {
-			isa = PBXGroup;
-			children = (
-				F683EDE412CC698E00D5588A /* SwimmerPhotoViewController.h */,
-				F683EDE512CC698E00D5588A /* SwimmerPhotoViewController.m */,
-				F683EDE612CC698E00D5588A /* SwimmerPhotoViewController.xib */,
-			);
-			name = PhotoViewController;
-			sourceTree = "<group>";
-		};
-		F6A3F34212E00F75002806DF /* SwimmerDetailController */ = {
-			isa = PBXGroup;
-			children = (
-				F65265B3122B2282007EDD0F /* SwimmerDetailViewController.h */,
-				F65265B4122B2282007EDD0F /* SwimmerDetailViewController.m */,
-				F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */,
-			);
-			name = SwimmerDetailController;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		F6A3F34412E00FDE002806DF /* TimeStandardController */ = {
-			isa = PBXGroup;
-			children = (
-				F6DE03C51215277B00F749F7 /* TimeStandardController.h */,
-				F6DE03C61215277B00F749F7 /* TimeStandardController.m */,
-			);
-			name = TimeStandardController;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		F6A51EA5123332C10016A1A7 /* SwimmerController */ = {
-			isa = PBXGroup;
-			children = (
-				F6F84C3D122B1745006E1481 /* SwimmerController.h */,
-				F6F84C3E122B1745006E1481 /* SwimmerController.m */,
-				F682B648124F06E100D1CA61 /* SwimmersListTableCell.xib */,
-				F677D0C1129978AE00E92069 /* SwimmersListTableCellEditView.xib */,
-			);
-			name = SwimmerController;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		F6D06DEB122CB35100E58473 /* Model */ = {
@@ -426,6 +396,7 @@
 				F60C669314B10B68006F77F9 /* STSAppDelegate_iphone.m in Sources */,
 				F60C669514B11A61006F77F9 /* HomeScreenViewController.m in Sources */,
 				F63F70F914B19DB000E85DD0 /* SwimmerDetailViewController_ipad.m in Sources */,
+				F6017CEC14B2F96F006DEEBA /* SwimmerPhotoViewController_ipad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

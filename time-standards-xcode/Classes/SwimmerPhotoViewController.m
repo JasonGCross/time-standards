@@ -9,6 +9,15 @@
 #import "SwimmerPhotoViewController.h"
 #import "SwimmingTimeStandardsAppDelegate.h"
 
+
+
+@interface SwimmerPhotoViewController(STSSwimmerPhotoViewControllerPrivate)
+UIImage* resizedImage(UIImage *inImage, CGRect thumbRect);
+- (void) displaySwimmerPhoto;
+@end
+
+
+
 @implementation SwimmerPhotoViewController
 
 @synthesize takePictureButton;
@@ -16,9 +25,34 @@
 @synthesize imageView;
 @synthesize imagePicker;
 
-// private method, declare prototype (signature) here
-UIImage* resizedImage(UIImage *inImage, CGRect thumbRect);
 
+#pragma mark - view lifecycle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	
+	appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication] 
+													   delegate];
+    swimmer = [appDelegate currentSwimmer];
+	if(![UIImagePickerController isSourceTypeAvailable:
+		 UIImagePickerControllerSourceTypeCamera]) {
+		takePictureButton.hidden = YES;
+		selectFromCameraRollButton.hidden = YES;
+	}
+	self.imagePicker.allowsEditing = YES;
+	[self displaySwimmerPhoto];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark - private methods
 
 - (void) displaySwimmerPhoto {
 	if(swimmer == nil) {
@@ -38,67 +72,50 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect);
 	self.imageView.image = photoImage;
 }
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
+//	==============================================================
+//	resizedImage
+//	==============================================================
+// Return a scaled down copy of the image.  
 
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
+UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
+{
+	CGImageRef			imageRef = [inImage CGImage];
+	CGImageAlphaInfo	alphaInfo = CGImageGetAlphaInfo(imageRef);
 	
-	appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication] 
-													   delegate];
-    swimmer = [appDelegate currentSwimmer];
-	if(![UIImagePickerController isSourceTypeAvailable:
-		 UIImagePickerControllerSourceTypeCamera]) {
-		takePictureButton.hidden = YES;
-		selectFromCameraRollButton.hidden = YES;
-	}
-	self.imagePicker.allowsEditing = YES;
-	[self displaySwimmerPhoto];
+	// There's a wierdness with kCGImageAlphaNone and CGBitmapContextCreate
+	// see Supported Pixel Formats in the Quartz 2D Programming Guide
+	// Creating a Bitmap Graphics Context section
+	// only RGB 8 bit images with alpha of kCGImageAlphaNoneSkipFirst, kCGImageAlphaNoneSkipLast, kCGImageAlphaPremultipliedFirst,
+	// and kCGImageAlphaPremultipliedLast, with a few other oddball image kinds are supported
+	// The images on input here are likely to be png or jpeg files
+	if (alphaInfo == kCGImageAlphaNone)
+		alphaInfo = kCGImageAlphaNoneSkipLast;
+	
+	// Build a bitmap context that's the size of the thumbRect
+	CGContextRef bitmap = CGBitmapContextCreate(
+												NULL,
+												thumbRect.size.width,		// width
+												thumbRect.size.height,		// height
+												CGImageGetBitsPerComponent(imageRef),	// really needs to always be 8
+												4 * thumbRect.size.width,	// rowbytes
+												CGImageGetColorSpace(imageRef),
+												alphaInfo
+												);
+	
+	// Draw into the context, this scales the image
+	CGContextDrawImage(bitmap, thumbRect, imageRef);
+	
+	// Get an image from the context and a UIImage
+	CGImageRef	ref = CGBitmapContextCreateImage(bitmap);
+	UIImage*	result = [UIImage imageWithCGImage:ref];
+	
+	CGContextRelease(bitmap);	// ok if NULL
+	CGImageRelease(ref);
+	
+	return result;
 }
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
-}
-*/
-/*
- - (void)viewDidAppear:(BOOL)animated {
- [super viewDidAppear:animated];
- }
- */
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-
-/*
- - (void)viewDidDisappear:(BOOL)animated {
- [super viewDidDisappear:animated];
- }
- */
-
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        return YES;
-    }
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-
-#pragma mark mark - 
-#pragma mark image picking actions
+#pragma mark mark - image picking actions
 
 - (void) takeNewPicture {
 	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -182,53 +199,7 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect);
 	[self replaceSwimmerPhotoWith: image];
 }
 
-
-#pragma mark -
-#pragma mark ImagePicker Controller delegate
-
-//	==============================================================
-//	resizedImage
-//	==============================================================
-// Return a scaled down copy of the image.  
-
-UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
-{
-	CGImageRef			imageRef = [inImage CGImage];
-	CGImageAlphaInfo	alphaInfo = CGImageGetAlphaInfo(imageRef);
-	
-	// There's a wierdness with kCGImageAlphaNone and CGBitmapContextCreate
-	// see Supported Pixel Formats in the Quartz 2D Programming Guide
-	// Creating a Bitmap Graphics Context section
-	// only RGB 8 bit images with alpha of kCGImageAlphaNoneSkipFirst, kCGImageAlphaNoneSkipLast, kCGImageAlphaPremultipliedFirst,
-	// and kCGImageAlphaPremultipliedLast, with a few other oddball image kinds are supported
-	// The images on input here are likely to be png or jpeg files
-	if (alphaInfo == kCGImageAlphaNone)
-		alphaInfo = kCGImageAlphaNoneSkipLast;
-	
-	// Build a bitmap context that's the size of the thumbRect
-	CGContextRef bitmap = CGBitmapContextCreate(
-												NULL,
-												thumbRect.size.width,		// width
-												thumbRect.size.height,		// height
-												CGImageGetBitsPerComponent(imageRef),	// really needs to always be 8
-												4 * thumbRect.size.width,	// rowbytes
-												CGImageGetColorSpace(imageRef),
-												alphaInfo
-												);
-	
-	// Draw into the context, this scales the image
-	CGContextDrawImage(bitmap, thumbRect, imageRef);
-	
-	// Get an image from the context and a UIImage
-	CGImageRef	ref = CGBitmapContextCreateImage(bitmap);
-	UIImage*	result = [UIImage imageWithCGImage:ref];
-	
-	CGContextRelease(bitmap);	// ok if NULL
-	CGImageRelease(ref);
-	
-	return result;
-}
-
+#pragma mark - ImagePicker Controller delegate
 
 - (void) imagePickerController:(UIImagePickerController *)picker 
 		 didFinishPickingMediaWithInfo:(NSDictionary *)editingInfo {
@@ -260,6 +231,7 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 	[self.imagePicker dismissModalViewControllerAnimated:YES];
 }
 
+#pragma mark - memory management
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -267,7 +239,6 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
     
     // Release any cached data, images, etc. that aren't in use.
 }
-
 - (void)viewDidUnload {
 	[super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -277,7 +248,6 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 	self.selectFromCameraRollButton = nil;
 	self.imagePicker = nil;
 }
-
 
 - (void)dealloc {
 	[imageView release];

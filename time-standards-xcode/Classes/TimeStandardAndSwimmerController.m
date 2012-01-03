@@ -166,8 +166,8 @@
     // Pass the selected object to the new view controller.
     UIPopoverController * popover = [[UIPopoverController alloc] initWithContentViewController:detailViewController];
     [popover presentPopoverFromRect:self.view.bounds
-                             inView:homeScreenVC.view 
-           permittedArrowDirections:UIPopoverArrowDirectionLeft
+                             inView:self.view 
+           permittedArrowDirections:UIPopoverArrowDirectionAny
                            animated:YES];
     
     return;

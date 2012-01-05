@@ -6,13 +6,48 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
+/*
+ Here is the general strategy for using the data base of swim times
+ in cooperation with the UI Elements.
+ Note that calls to the DB are expensive and should be minimized
+ 1) upon view load, check to see if the critical home screen values have changed
+        The critical home screen values are defined as:
+        a) timeStandard
+        b) age
+        c) gender
+ 2) if home screen values have changed, make a call to the DB and get
+        a) a list of all the strokes (regardless of distance or course)
+        b) a list of all the courses (regardless of distance or stroke)
+ 3) populate the strokes array
+ 4) update the courses array and the switch which uses it
+ 5) select the "previousCourse" for the switch, or the first value
+        if the previousCourse does not match any course in the course array
+ 6) select the row in the stroke component of the picker using the 
+        "previousStroke", or the first row if the last used stroke doesn't 
+        match any strokes in the strokes array
+ 7) now we have 2/3 things needed to produce a time. The last thing we
+        need is an array of distances. Make a call to the DB, passing in
+        the selected stroke and the selected course.
+ 8) populate the distances array
+ 9) Select the distance row in the distance component of the picker using the
+        "previousDistance", or the first row if the last used distance
+        doesn't match any distances in the distance array
+ 10) Now we have 3/3 things needed to find out the time. Make a final
+        call to the DB to get the time matching the {stroke,course,distance}
+        tuple selected
+ 11) Update the display of the time label
+ 12) Any time the critical homeScreenValues have changed, go back to step 2 
+ 13) Any time the user changes the switch or the stroke, go back to step 7
+ 14) Any time the user changes the distance, go back to step 9
+ */
+
+
 #import "HomeScreenViewController.h"
 #import "SwimmingTimeStandardsAppDelegate.h"
 #import "TimeStandardDataAccess.h"
 
 
 @interface HomeScreenViewController(HomeScreenViewControllerPrivate)
-- (NSString *) ValidateOrResetCurrentSwimmerAgeGroup;
 - (BOOL) homeScreenValuesHaveChanged;
 - (NSString *) getSelectedOrPreviousStroke;
 - (NSString *) getSelectedOrPreviousDistance;
@@ -30,6 +65,7 @@
 
 @synthesize pickerView, timeLabel;
 @synthesize nibLoadedStandardCell, nibLoadedSwimmerCell;
+@synthesize segmentedControl;
 @synthesize strokes, courses, distances;
 @synthesize previousStroke, previousDistance, previousCourse;
 @synthesize previousTimeStandard, previousAgeGroup, previousGender;
@@ -41,6 +77,13 @@
     self.title = @"PNS Time Standards";
     appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication]
                                                        delegate];
+    
+    // we need to know when the critical home screen values change, so
+    // that we can change the picker appropriately
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(handleHomeScreenValueChange) 
+                                                 name:STSHomeScreenValuesChangedKey
+                                               object: nil];
     
     // picker columns
     NSArray * tempArray = [[NSArray alloc] init];
@@ -65,21 +108,6 @@
 }
 
 #pragma mark - Private helper methods
-
-- (NSString *) ValidateOrResetCurrentSwimmerAgeGroup {
-	NSManagedObject * tempSwimmer = [appDelegate getHomeScreenSwimmer];
-	if ((tempSwimmer == nil) || ([tempSwimmer valueForKey:@"swimmerAgeGroup"] == nil)) {
-		return nil;
-	}
-	
-	// the picker relies upon the current ageGroup existing in the picker rows
-	BOOL ageGroupIsValid = [[appDelegate timeStandardDataAccess] timeStandard:[appDelegate getHomeScreenTimeStandard] 
-                                                          doesContainAgeGroup:[tempSwimmer valueForKey:@"swimmerAgeGroup"]];
-	if (ageGroupIsValid == NO) {
-		[tempSwimmer setValue:nil forKey:@"swimmerAgeGroup"];
-	}
-	return [tempSwimmer valueForKey:@"swimmerAgeGroup"];
-}
 
 - (BOOL) homeScreenValuesHaveChanged {
 	if ((self.previousTimeStandard == nil) || (self.previousAgeGroup == nil) || (self.previousGender == nil)) {
@@ -295,15 +323,16 @@
 																		   andFormat:formatString];
 	}
 	if (timeStandardStr == nil) {
-		timeStr = @"Please select a time standard.";
+		timeStr = @"select time standard.";
 	}
 	else if (ageGroup == nil) {
-		timeStr = [NSString stringWithFormat:@"Please select an age group for %@.", timeStandardStr];
+		timeStr = [NSString stringWithFormat:@"(re) select age group"];
 	}
 	else if (timeStr == nil) {
-		timeStr = [NSString stringWithFormat:@"There is no age group %@ for %@.", ageGroup, timeStandardStr];
+		timeStr = [NSString stringWithFormat:@"No matching age group"];
 	}
 	self.timeLabel.text = timeStr;
+    //[self.timeLabel set
 }
 
 #pragma mark - public methods
@@ -406,6 +435,7 @@
 	self.timeLabel = nil;
     self.nibLoadedSwimmerCell = nil;
     self.nibLoadedStandardCell = nil;
+    self.segmentedControl = nil;
 }
 
 
@@ -414,6 +444,7 @@
 	[timeLabel release];
     [nibLoadedSwimmerCell release];
     [nibLoadedStandardCell release];
+    [segmentedControl release];
 	[distances release];
 	[courses release];
 	[strokes release];
@@ -424,6 +455,7 @@
     [previousAgeGroup release];
     [previousGender release];
     
+    [[NSNotificationCenter defaultCenter] removeObserver: self];
     [super dealloc];
 }
 

@@ -24,6 +24,7 @@
 	UILabel			* timeLabel;
 	UITableViewCell * nibLoadedStandardCell;
 	UITableViewCell * nibLoadedSwimmerCell;
+    UISegmentedControl * segmentedControl;
 	
 	NSArray			* strokes;
 	NSArray			* distances;
@@ -45,7 +46,7 @@
 @property (nonatomic, retain) IBOutlet		UILabel			* timeLabel;
 @property (nonatomic, retain) IBOutlet		UITableViewCell * nibLoadedStandardCell;
 @property (nonatomic, retain) IBOutlet		UITableViewCell * nibLoadedSwimmerCell;
-
+@property (nonatomic, retain) IBOutlet      UISegmentedControl * segmentedControl;
 
 @property (nonatomic, retain) NSArray		* strokes;
 @property (nonatomic, retain) NSArray		* distances;

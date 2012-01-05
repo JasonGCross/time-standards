@@ -21,6 +21,9 @@ UITableViewDelegate, UITableViewDataSource> {
 	UITextField		* nameTextField;
 	UIImageView		* imageView;
 	SwimmingTimeStandardsAppDelegate * _appDelegate;
+    
+    NSString        * _initialGender;
+    NSString        * _initialAge;
 }
 
 @property (nonatomic, retain) IBOutlet UITextField * nameTextField;

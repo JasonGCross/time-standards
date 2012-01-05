@@ -51,11 +51,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "iPad/HomeScreenViewController_ipad.m"
-         timestampString = "347185755.145958"
+         timestampString = "347433583.163553"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "106"
-         endingLineNumber = "106"
+         startingLineNumber = "103"
+         endingLineNumber = "103"
          landmarkName = "-handleHomeScreenValueChange"
          landmarkType = "5">
       </FileBreakpoint>
@@ -71,6 +71,20 @@
          startingLineNumber = "508"
          endingLineNumber = "508"
          landmarkName = "-handleEditTapped"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Classes/HomeScreenViewController.m"
+         timestampString = "347436291.732285"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "113"
+         endingLineNumber = "113"
+         landmarkName = "-homeScreenValuesHaveChanged"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

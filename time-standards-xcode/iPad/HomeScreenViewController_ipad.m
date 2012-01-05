@@ -45,10 +45,7 @@ static UIImage * defaultImage = nil;
     [super viewDidLoad];
     
     self.title = @"Swim Time Standards";
-    [[NSNotificationCenter defaultCenter] addObserver:self 
-                                             selector:@selector(handleHomeScreenValueChange) 
-                                                 name:STSHomeScreenValuesChangedKey
-                                               object: nil];
+
     defaultImage = [UIImage imageNamed:@"headshot.png"];
 }
 
@@ -148,8 +145,7 @@ static UIImage * defaultImage = nil;
     [swimmerAgeGroupLabel release];
     [photoImageView release];
     [popoverController release];
-    
-    [[NSNotificationCenter defaultCenter] removeObserver: self];
+
     [super dealloc];
 }
 

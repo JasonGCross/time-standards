@@ -11,12 +11,7 @@
 
 
 @interface SwimmingTimeStandardsAppDelegate (STSAppDelegatePrivate) 
-- (TimeStandardDataAccess *) timeStandardDataAccess;
 - (NSURL *)applicationDocumentsDirectory;
-- (NSFetchedResultsController *) fetchedResultsController;
-- (NSManagedObject *) getHomeScreenValues;
-- (NSManagedObject *) getHomeScreenSwimmer;
-- (NSManagedObject *) currentSwimmer;
 - (NSString *) getHomeScreenTimeStandard;
 @end
 
@@ -71,40 +66,7 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-- (NSFetchedResultsController *) fetchedResultsController {
-	if (fetchedResultsController_ != nil) {
-		return fetchedResultsController_;
-	}
-	NSManagedObjectContext * context = [self managedObjectContext];
-	NSFetchRequest * fetchRequest = [[NSFetchRequest alloc] init];
-	
-	// Configure the request's entity, and optionally its predicate.
-	NSSortDescriptor *sortDescriptor = nil;
-	sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"swimmerName" ascending:YES];
-	NSArray *sortDescriptors = nil;
-	sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-	[sortDescriptor release], sortDescriptor = nil;
-	[fetchRequest setSortDescriptors:sortDescriptors];
-	[sortDescriptors release], sortDescriptors = nil;
-	NSEntityDescription * entity = [NSEntityDescription entityForName:@"Swimmer" 
-											   inManagedObjectContext:context];
-	[fetchRequest setEntity:entity];
-	[fetchRequest setFetchBatchSize:10];
-	NSFetchedResultsController * controller = [[NSFetchedResultsController alloc]
-											   initWithFetchRequest:fetchRequest
-											   managedObjectContext:context
-											   sectionNameKeyPath:nil
-											   cacheName:@"Swimmer"];
-	[fetchRequest release];
-	
-	NSError * error = nil;
-	BOOL success = [controller performFetch:&error];
-	if(!success) {
-		NSLog(@"Error fetching request %@", [error localizedDescription]);
-	}
-	fetchedResultsController_ = controller;
-	return fetchedResultsController_;
-}
+#pragma mark - public methods
 
 - (NSManagedObject *) getHomeScreenValues {
 	NSManagedObject *homeScreenValue = nil;
@@ -177,8 +139,6 @@
 	return timeStandardName;
 }
 
-#pragma mark - public methods
-
 - (void)saveContext {
     
     NSError *error = nil;
@@ -201,6 +161,41 @@
 
 #pragma mark Core Data stack
 
+- (NSFetchedResultsController *) fetchedResultsController {
+	if (fetchedResultsController_ != nil) {
+		return fetchedResultsController_;
+	}
+	NSManagedObjectContext * context = [self managedObjectContext];
+	NSFetchRequest * fetchRequest = [[NSFetchRequest alloc] init];
+	
+	// Configure the request's entity, and optionally its predicate.
+	NSSortDescriptor *sortDescriptor = nil;
+	sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"swimmerName" ascending:YES];
+	NSArray *sortDescriptors = nil;
+	sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[sortDescriptor release], sortDescriptor = nil;
+	[fetchRequest setSortDescriptors:sortDescriptors];
+	[sortDescriptors release], sortDescriptors = nil;
+	NSEntityDescription * entity = [NSEntityDescription entityForName:@"Swimmer" 
+											   inManagedObjectContext:context];
+	[fetchRequest setEntity:entity];
+	[fetchRequest setFetchBatchSize:10];
+	NSFetchedResultsController * controller = [[NSFetchedResultsController alloc]
+											   initWithFetchRequest:fetchRequest
+											   managedObjectContext:context
+											   sectionNameKeyPath:nil
+											   cacheName:@"Swimmer"];
+	[fetchRequest release];
+	
+	NSError * error = nil;
+	BOOL success = [controller performFetch:&error];
+	if(!success) {
+		NSLog(@"Error fetching request %@", [error localizedDescription]);
+	}
+	fetchedResultsController_ = controller;
+	return fetchedResultsController_;
+}
+
 /**
  Returns the managed object context for the application.
  If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
@@ -219,7 +214,6 @@
     return managedObjectContext_;
 }
 
-
 /**
  Returns the managed object model for the application.
  If the model doesn't already exist, it is created from the application's model.
@@ -234,7 +228,6 @@
     managedObjectModel_ = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
     return managedObjectModel_;
 }
-
 
 /**
  Returns the persistent store coordinator for the application.

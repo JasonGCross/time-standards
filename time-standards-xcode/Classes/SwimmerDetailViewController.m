@@ -79,9 +79,25 @@
 	 [super viewWillAppear:animated];
 	 self.nameTextField.text = [_swimmer valueForKey:@"swimmerName"];
 	 [self displaySwimmerPhoto];
+     
+     _initialGender = [_swimmer valueForKey:@"swimmerGender"];
+     _initialAge = [_swimmer valueForKey:@"swimmerAgeGroup"];
  }
 
 - (void)viewWillDisappear:(BOOL)animated {
+    // we need to notify anyone who care is the critical home screen values have changed
+    NSString * finalGender = [_swimmer valueForKey:@"swimmerGender"];
+    NSString * finalAge = [_swimmer valueForKey:@"swimmerAgeGroup"];
+    
+    BOOL gendersEqual = [finalGender isEqualToString:_initialGender];
+    BOOL agesEqual = [finalAge isEqualToString:_initialAge];
+    
+    if ((gendersEqual == NO) || (agesEqual == NO)) {
+        NSNotification * notification = [NSNotification notificationWithName:STSHomeScreenValuesChangedKey
+                                                                      object:nil];
+        [[NSNotificationCenter defaultCenter] postNotification:notification];
+    }
+    
     [super viewWillDisappear:animated];
 }
 

@@ -65,7 +65,22 @@ AND Gender = 'M'
 AND AgeGroupName = '15 & Over'
 AND StrokeName = 'Free'
 AND Format = 'SCY'
-ORDER BY Distance
+ORDER BY Distance;
+
+
+SELECT DISTINCT EventId, Distance
+FROM  ReportTimeStandard
+WHERE KeyId IN
+(
+SELECT KeyID
+FROM ReportTimeStandard
+WHERE StandardName = 'PNS Silver'
+AND Gender = 'M'
+AND AgeGroupName = '15 & Over'
+AND StrokeName = 'Free'
+AND Format = 'SCY'
+)
+ORDER BY Distance;
 
 				
 				
@@ -84,6 +99,13 @@ AND Distance = '100'
 AND StrokeName = 'Free'
 ORDER BY Format
 
+SELECT DISTINCT EventId, Format
+FROM vwTimeStandard
+WHERE StandardName = 'PNS Silver'
+AND Gender = 'M'
+AND AgeGroupName = '13-14'
+GROUP BY Format
+ORDER BY Format DESC
 				
 --			- (NSString *) getTimeForStandardName:(NSString *) standardName
 --										andGender: (NSString *) gender
@@ -103,4 +125,20 @@ NSString * query = [[NSString alloc] initWithFormat:
 						"GROUP BY StrokeName\n"
 						"ORDER BY EventId\n"
 						";", standardName, convertedGender, ageGroupName, distance, strokeName, format];
-						
+
+SELECT EventId ,Time
+FROM  ReportTimeStandard
+WHERE KeyId =
+(
+SELECT KeyID
+FROM ReportTimeStandard
+WHERE StandardFriendly = 'Western Zone 2011'
+AND Gender = 'M'
+AND AgeGroupName = '11-12'
+AND Distance = '50'
+AND StrokeName = 'Free'
+AND Format = 'LCM'
+);
+
+
+

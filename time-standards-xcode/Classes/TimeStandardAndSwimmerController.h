@@ -15,6 +15,7 @@
 
 @interface TimeStandardAndSwimmerController : UITableViewController <NSFetchedResultsControllerDelegate> {
     HomeScreenViewController_ipad * homeScreenVC;
+    UIPopoverController           * popoverController;
     
     // time standards
     NSString 		* timeStandardSettingLabelText;
@@ -35,6 +36,7 @@
 }
 
 @property (nonatomic, assign) IBOutlet HomeScreenViewController_ipad * homeScreenVC;
+@property (nonatomic, retain) UIPopoverController * popoverController;
 
 // time standards
 @property (nonatomic, retain) NSString * timeStandardSettingLabelText;

@@ -45,7 +45,7 @@
 					<object class="IBUITableView" id="503155716">
 						<reference key="NSNextResponder" ref="155335824"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{320, 154}</string>
+						<string key="NSFrameSize">{320, 123}</string>
 						<reference key="NSSuperview" ref="155335824"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="46996111"/>
@@ -140,10 +140,10 @@ AAgACAAIAAEAAQABAAE</bytes>
 					<object class="IBUILabel" id="46996111">
 						<reference key="NSNextResponder" ref="155335824"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 151}, {180, 43}}</string>
+						<string key="NSFrame">{{20, 122}, {280, 35}}</string>
 						<reference key="NSSuperview" ref="155335824"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="317877646"/>
+						<reference key="NSNextKeyView" ref="935793559"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -157,6 +157,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">9</float>
+						<int key="IBUITextAlignment">1</int>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<string key="name">Helvetica-Bold</string>
 							<string key="family">Helvetica</string>
@@ -169,25 +170,28 @@ AAgACAAIAAEAAQABAAE</bytes>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUISegmentedControl" id="317877646">
+					<object class="IBUISegmentedControl" id="935793559">
 						<reference key="NSNextResponder" ref="155335824"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{208, 151}, {102, 44}}</string>
+						<string key="NSFrame">{{89, 165}, {143, 30}}</string>
 						<reference key="NSSuperview" ref="155335824"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="655357096"/>
 						<string key="NSReuseIdentifierKey">_NS:273</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBNumberOfSegments">2</int>
+						<int key="IBSegmentControlStyle">2</int>
+						<int key="IBNumberOfSegments">3</int>
 						<int key="IBSelectedSegmentIndex">0</int>
 						<object class="NSArray" key="IBSegmentTitles">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>scy</string>
-							<string>lcm</string>
+							<string>SCY</string>
+							<string>SCM</string>
+							<string>LCM</string>
 						</object>
 						<object class="NSMutableArray" key="IBSegmentWidths">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<real value="0.0"/>
 							<real value="0.0"/>
 							<real value="0.0"/>
 						</object>
@@ -195,15 +199,18 @@ AAgACAAIAAEAAQABAAE</bytes>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<boolean value="YES"/>
 							<boolean value="YES"/>
+							<boolean value="YES"/>
 						</object>
 						<object class="NSMutableArray" key="IBSegmentContentOffsets">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>{0, 0}</string>
 							<string>{0, 0}</string>
 							<string>{0, 0}</string>
 						</object>
 						<object class="NSMutableArray" key="IBSegmentImages">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="NSNull" id="4"/>
+							<reference ref="4"/>
 							<reference ref="4"/>
 						</object>
 					</object>
@@ -264,7 +271,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">segmentedControl</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="317877646"/>
+						<reference key="destination" ref="935793559"/>
 					</object>
 					<int key="connectionID">21</int>
 				</object>
@@ -300,6 +307,15 @@ AAgACAAIAAEAAQABAAE</bytes>
 					</object>
 					<int key="connectionID">12</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">segmentedControlDidChange:</string>
+						<reference key="source" ref="935793559"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">22</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -330,8 +346,8 @@ AAgACAAIAAEAAQABAAE</bytes>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="503155716"/>
 							<reference ref="655357096"/>
+							<reference ref="935793559"/>
 							<reference ref="46996111"/>
-							<reference ref="317877646"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -352,7 +368,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">20</int>
-						<reference key="object" ref="317877646"/>
+						<reference key="object" ref="935793559"/>
 						<reference key="parent" ref="155335824"/>
 					</object>
 				</object>
@@ -398,7 +414,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">21</int>
+			<int key="maxID">22</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -406,6 +422,17 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<object class="IBPartialClassDescription">
 					<string key="className">HomeScreenViewController</string>
 					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">segmentedControlDidChange:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">segmentedControlDidChange:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">segmentedControlDidChange:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">

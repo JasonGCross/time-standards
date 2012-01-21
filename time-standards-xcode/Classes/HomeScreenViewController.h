@@ -29,6 +29,7 @@
 	NSArray			* strokes;
 	NSArray			* distances;
 	NSArray			* courses;
+    NSDictionary    * keyIds;
 	
 	NSString		* previousStroke;
 	NSString		* previousDistance;
@@ -51,6 +52,7 @@
 @property (nonatomic, retain) NSArray		* strokes;
 @property (nonatomic, retain) NSArray		* distances;
 @property (nonatomic, retain) NSArray		* courses;
+@property (nonatomic, retain) NSDictionary  * keyIds;
 
 @property (nonatomic, retain) NSString		* previousStroke;
 @property (nonatomic, retain) NSString		* previousDistance;
@@ -62,5 +64,7 @@
 
 
 - (void) handleHomeScreenValueChange;
+
+- (IBAction)segmentedControlDidChange:(id)sender;
 
 @end

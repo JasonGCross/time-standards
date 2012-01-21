@@ -10,11 +10,13 @@
 // custom cel value tags
 #define	STSStandardRow					0
 #define STSSwimmerRow					1
-#define STSDataBaseFileName				@"SwimTimes_v2.sqlite"
+#define STSDataBaseFileName				@"SwimTimes_v3.sqlite"
 #define STSPersistentStoreFileName      @"HomeScreenValues.sqlite"
 #define STSHomeScreenArchiveFileName	@"homeScreenValues.arch"
 #define STSImageThumnailName			@"headshot.png"
 #define STSHomeScreenValuesChangedKey   @"STSHomeScreenValuesChangedNotificationKey"
+#define STSSwimmerPhotoChangedKey       @"STSSwimmerPhotoChangedNotificationKey"
+#define STSSwimmerNameChangedKey        @"STSSwimmerNameChangedNotificationKey"
 #define STSDistanceComponent			1
 #define STSStrokeComponent				0
 #define STSCourseComponent				2

@@ -12,11 +12,15 @@
 
 @implementation SwimmerDetailViewController_ipad
 
+@synthesize popoverController;
+
 #pragma mark - view lifecycle
 
-// save whatever was in the text field
+
 
 - (void) viewWillDisappear:(BOOL)animated {
+    // save whatever was in the text field. Don't make the user remove focus 
+    // from the text field before dismissing the popover.
     [self textFieldDoneEditing:nil];
     [super viewWillDisappear:YES];
 }
@@ -42,12 +46,19 @@
     [_appDelegate setCurrentSwimmer:_swimmer];
 	
     // Pass the selected object to the new view controller.
-    UIPopoverController * popover = [[UIPopoverController alloc] initWithContentViewController:swimmerPhotoViewController];
-    [popover presentPopoverFromRect:self.view.bounds
+    self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:swimmerPhotoViewController] autorelease];
+    [self.popoverController presentPopoverFromRect:self.view.bounds
                              inView:self.view 
            permittedArrowDirections:UIPopoverArrowDirectionAny
                            animated:YES];
 }
 
+#pragma mark - memory management
+
+- (void) dealloc {
+    [popoverController release];
+    
+    [super dealloc];
+}
 
 @end

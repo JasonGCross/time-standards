@@ -8,6 +8,10 @@
 
 #import "SwimmerPhotoViewController.h"
 
-@interface SwimmerPhotoViewController_ipad : SwimmerPhotoViewController 
+@interface SwimmerPhotoViewController_ipad : SwimmerPhotoViewController {
+    UIPopoverController * popoverController;
+}
+
+@property (nonatomic, retain) UIPopoverController * popoverController;
 
 @end

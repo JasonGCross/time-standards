@@ -189,6 +189,11 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 	
 	// Commit the change.
 	[appDelegate saveContext];
+    
+    // let anyone interested know the photo has changed
+    NSNotification * notification = [NSNotification notificationWithName:STSSwimmerPhotoChangedKey
+                                                                  object:nil];
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
 	
 	// Update the user interface appropriately.
 	self.imageView.image = theImage;

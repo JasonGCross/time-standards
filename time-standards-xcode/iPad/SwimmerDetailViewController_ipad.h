@@ -8,6 +8,10 @@
 
 #import "SwimmerDetailViewController.h"
 
-@interface SwimmerDetailViewController_ipad : SwimmerDetailViewController 
+@interface SwimmerDetailViewController_ipad : SwimmerDetailViewController {
+    UIPopoverController * popoverController;
+}
+
+@property (nonatomic, retain) UIPopoverController * popoverController;
 
 @end

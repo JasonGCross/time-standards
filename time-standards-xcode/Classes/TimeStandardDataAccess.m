@@ -80,7 +80,7 @@
 	if (databaseIsOpen == NO) {
 		return nil;
 	}
-	static char *query =  "SELECT DISTINCT standardId, StandardFriendly from vwTimeStandard";
+	static char *query =  "SELECT DISTINCT standardId, StandardFriendly from ReportTimeStandard";
 	
 	sqlite3_stmt *statement;
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
@@ -102,10 +102,12 @@
 	if (databaseIsOpen == NO) {
 		return nil;
 	}
-	static char *query =  "SELECT AgeGroupID, AgeGroupName from vwTimeStandard\n\
-						where StandardFriendly = ?\n\
-						GROUP BY AgeGroupName\n\
-						ORDER BY AgeGroupId;";
+	static char *query =  
+        "SELECT AgeGroupID, AgeGroupName\n\
+            FROM  ReportTimeStandard\n\
+            WHERE StandardFriendly = ?\n\
+        GROUP BY AgeGroupName\n\
+        ORDER BY AgeGroupId;";
 	
 	sqlite3_stmt *statement;
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
@@ -129,10 +131,12 @@
 	if (databaseIsOpen == NO) {
 		return NO;
 	}
-	static char *query =  "SELECT AgeGroupID, AgeGroupName from vwTimeStandard\n\
-						where StandardFriendly = ?\n\
-						AND AgeGroupName = ?\n\
-						ORDER BY AgeGroupId;";
+	static char *query =  
+        "SELECT AgeGroupID, AgeGroupName\n\
+            FROM  ReportTimeStandard\n\
+            WHERE StandardFriendly = ?\n\
+                AND AgeGroupName = ?\n\
+        ORDER BY AgeGroupId;";
 	
 	sqlite3_stmt *statement;
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
@@ -165,12 +169,13 @@
 		gender = @"male";
 	}
 	NSString * convertedGender = ([[gender lowercaseString] isEqualToString: @"male"]) ? @"M" : @"F";
-	static char * query = "SELECT DISTINCT StrokeId ,StrokeName\n\
-						FROM  vwTimeStandard\n\
-						WHERE StandardFriendly = ?\n\
-						AND  Gender = ?\n\
-						AND  AgeGroupName = ?\n\
-						ORDER BY EventId;";
+	static char * query = 
+        "SELECT DISTINCT StrokeId ,StrokeName\n\
+            FROM  ReportTimeStandard\n\
+            WHERE StandardFriendly = ?\n\
+                AND  Gender = ?\n\
+                AND  AgeGroupName = ?\n\
+        ORDER BY EventId;";
 	
 	sqlite3_stmt *statement;
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
@@ -203,14 +208,15 @@
 		gender = @"male";
 	}
 	NSString * convertedGender = ([[gender lowercaseString] isEqualToString: @"male"]) ? @"M" : @"F";
-	static char * query = "SELECT EventId ,StrokeName\n\
-						FROM  vwTimeStandard\n\
-						WHERE StandardFriendly = ?\n\
-						AND  Gender = ?\n\
-						AND  AgeGroupName = ?\n\
-						AND  Distance = ?\n\
-						AND Format = ?\n\
-						ORDER BY EventId;";
+	static char * query = 
+        "SELECT EventId ,StrokeName\n\
+            FROM  ReportTimeStandard\n\
+            WHERE StandardFriendly = ?\n\
+                AND  Gender = ?\n\
+                AND  AgeGroupName = ?\n\
+                AND  Distance = ?\n\
+                AND Format = ?\n\
+        ORDER BY EventId;";
 	
 	sqlite3_stmt *statement;
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
@@ -237,7 +243,8 @@
 								andGender: (NSString *) gender
 						  andAgeGroupName: (NSString *) ageGroupName
 							andStrokeName: (NSString *) strokeName
-								andFormat: (NSString *) format {
+								andFormat: (NSString *) format                       
+                    putKeysIntoDictionary: (NSDictionary **) outDictionary  {
 	if (databaseIsOpen == NO) {
 		return nil;
 	}
@@ -247,40 +254,41 @@
 	}
 	NSString * convertedGender = ([[gender lowercaseString] isEqualToString: @"male"]) ? @"M" : @"F";
 	
-	static char * query1 = "SELECT DISTINCT EventId, Distance\n\
-	FROM vwTimeStandard \n\
-	WHERE StandardFriendly = ?\n\
-	AND Gender = ?\n\
-	AND AgeGroupName = ?\n\
-	AND StrokeName = ?4\n\
+	static char * query1 = "SELECT DISTINCT EventId, Distance, KeyId\n\
+	FROM  ReportTimeStandard\n\
+    WHERE StandardFriendly = ?\n\
+        AND Gender = ?\n\
+        AND AgeGroupName = ?\n\
+        AND StrokeName = ?4\n\
 	ORDER BY Distance;";
 	
-	static char * query2 = "SELECT DISTINCT EventId, Distance\n\
-	FROM vwTimeStandard \n\
-	WHERE StandardFriendly = ?\n\
-	AND Gender = ?\n\
-	AND AgeGroupName = ?\n\
-	AND Format = ?5\n\
+	static char * query2 = "SELECT DISTINCT EventId, Distance, KeyId\n\
+	FROM  ReportTimeStandard\n\
+    WHERE StandardFriendly = ?\n\
+        AND Gender = ?\n\
+        AND AgeGroupName = ?\n\
+        AND Format = ?5\n\
 	ORDER BY Distance;";
 	
-	static char * query3 = "SELECT DISTINCT EventId, Distance\n\
-	FROM vwTimeStandard \n\
-	WHERE StandardFriendly = ?\n\
-	AND Gender = ?\n\
-	AND AgeGroupName = ?\n\
+	static char * query3 = "SELECT DISTINCT EventId, Distance, KeyId\n\
+	FROM  ReportTimeStandard\n\
+        WHERE StandardFriendly = ?\n\
+        AND Gender = ?\n\
+        AND AgeGroupName = ?\n\
 	ORDER BY Distance;";
 	
-	static char * query4 = "SELECT DISTINCT EventId, Distance\n\
-	FROM vwTimeStandard \n\
-	WHERE StandardFriendly = ?\n\
-	AND Gender = ?\n\
-	AND AgeGroupName = ?\n\
-	AND StrokeName = ?4\n\
-	AND Format = ?5\n\
+	static char * query4 = "SELECT DISTINCT EventId, Distance, KeyId\n\
+	FROM  ReportTimeStandard\n\
+        WHERE StandardFriendly = ?\n\
+        AND Gender = ?\n\
+        AND AgeGroupName = ?\n\
+        AND StrokeName = ?4\n\
+        AND Format = ?5\n\
 	ORDER BY Distance;";
 
 	sqlite3_stmt *statement;
-	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
+	NSMutableArray * array = [NSMutableArray arrayWithCapacity:6];
+    NSMutableDictionary * dictionary = [NSMutableDictionary dictionaryWithCapacity:6];
 	
 	
 	// must take into account that strokeName may be nil, or format may be nil, or both
@@ -296,7 +304,12 @@
 				char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 				NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 				[array addObject:valueObj];
-				[valueObj release];
+                
+                char * keyStr = (char*) sqlite3_column_text(statement, 2);
+                NSString * keyObj = [[NSString alloc] initWithUTF8String:keyStr];
+                [dictionary setObject:keyObj forKey:valueObj];
+                [valueObj release];
+                [keyObj release];
 			}
 		}
 	}
@@ -312,7 +325,12 @@
 				char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 				NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 				[array addObject:valueObj];
-				[valueObj release];
+                
+                char * keyStr = (char*) sqlite3_column_text(statement, 2);
+                NSString * keyObj = [[NSString alloc] initWithUTF8String:keyStr];
+                [dictionary setObject:keyObj forKey:valueObj];
+                [valueObj release];
+                [keyObj release];
 			}
 		}
 		
@@ -328,7 +346,12 @@
 				char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 				NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 				[array addObject:valueObj];
-				[valueObj release];
+                
+                char * keyStr = (char*) sqlite3_column_text(statement, 2);
+                NSString * keyObj = [[NSString alloc] initWithUTF8String:keyStr];
+                [dictionary setObject:keyObj forKey:valueObj];
+                [valueObj release];
+                [keyObj release];
 			}
 		}
 	}
@@ -345,13 +368,19 @@
 				char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 				NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 				[array addObject:valueObj];
-				[valueObj release];
+                
+                char * keyStr = (char*) sqlite3_column_text(statement, 2);
+                NSString * keyObj = [[NSString alloc] initWithUTF8String:keyStr];
+                [dictionary setObject:keyObj forKey:valueObj];
+                [valueObj release];
+                [keyObj release];
 			}
 		}
 	}
 	
 	sqlite3_finalize(statement);
 	
+    *outDictionary = [NSDictionary dictionaryWithDictionary:dictionary];
 	return array;
 }
 
@@ -369,21 +398,23 @@
 	}
 	NSString * convertedGender = ([[gender lowercaseString] isEqualToString: @"male"]) ? @"M" : @"F";
 	
-	static char * query1 = "SELECT EventId, Format\n\
-	FROM vwTimeStandard \n\
-	WHERE StandardFriendly = ?\n\
-	AND Gender = ?\n\
-	AND AgeGroupName = ?\n\
-	ORDER BY Format;";
+	static char * query1 = "SELECT DISTINCT EventId, Format\n\
+	FROM  ReportTimeStandard\n\
+    WHERE StandardFriendly = ?\n\
+        AND Gender = ?\n\
+        AND AgeGroupName = ?\n\
+    GROUP BY Format\n\
+	ORDER BY Format DESC;";
 	
-	static char * query2 = "SELECT EventId, Format\n\
-	FROM vwTimeStandard \n\
-	WHERE StandardFriendly = ?\n\
-	AND Gender = ?\n\
-	AND AgeGroupName = ?\n\
-	AND Distance = ?\n\
-	AND StrokeName = ?\n\
-	ORDER BY Format;";
+	static char * query2 = "SELECT DISTINCT EventId, Format\n\
+	FROM  ReportTimeStandard\n\
+    WHERE StandardFriendly = ?\n\
+        AND Gender = ?\n\
+        AND AgeGroupName = ?\n\
+        AND Distance = ?\n\
+        AND StrokeName = ?\n\
+    GROUP BY Format\n\
+	ORDER BY Format DESC;";
 	
 	sqlite3_stmt *statement;
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
@@ -431,11 +462,9 @@
 }
 
 - (NSString *) getTimeForStandardName:(NSString *) standardName
-							andGender: (NSString *) gender
-					  andAgeGroupName: (NSString *) ageGroupName
-						  andDistance: (NSString *) distance
-						andStrokeName: (NSString *) strokeName
-							andFormat: (NSString *) format {
+							andGender:(NSString *) gender
+					  andAgeGroupName:(NSString *) ageGroupName
+                             andKeyId:(NSString *) keyId {
 	if (databaseIsOpen == NO) {
 		return nil;
 	}
@@ -443,16 +472,16 @@
 		gender = @"male";
 	}
 	NSString * convertedGender = ([[gender lowercaseString] isEqualToString: @"male"]) ? @"M" : @"F";
-	static char * query = "SELECT EventId ,Time\n\
-						FROM  vwTimeStandard\n\
-						WHERE StandardFriendly = ?\n\
-						AND  Gender = ?\n\
-						AND  AgeGroupName = ?\n\
-						AND  Distance = ?\n\
-						AND StrokeName = ?\n\
-						AND  Format = ?\n\
-						ORDER BY EventId;";
-	
+    
+    static char * query = 
+    "SELECT EventId ,Time\n\
+    FROM  ReportTimeStandard\n\
+    WHERE StandardFriendly = ?\n\
+        AND Gender = ?\n\
+        AND AgeGroupName = ?\n\
+        AND keyId = ?\n\
+    ORDER BY EventId;";
+    
 	sqlite3_stmt *statement;
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
 	int returnCode = sqlite3_prepare_v2(database, query, -1, &statement, nil);
@@ -460,9 +489,7 @@
 		sqlite3_bind_text(statement, 1, [standardName UTF8String], -1, SQLITE_STATIC);
 		sqlite3_bind_text(statement, 2, [convertedGender UTF8String], -1, SQLITE_STATIC);
 		sqlite3_bind_text(statement, 3, [ageGroupName UTF8String], -1, SQLITE_STATIC);
-		sqlite3_bind_int(statement, 4, [distance intValue]);
-		sqlite3_bind_text(statement, 5, [strokeName UTF8String], -1, SQLITE_STATIC);
-		sqlite3_bind_text(statement, 6, [format UTF8String], -1, SQLITE_STATIC);
+		sqlite3_bind_int(statement, 4, [keyId intValue]);
 		while (sqlite3_step(statement) == SQLITE_ROW) {
 			char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 			NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];

@@ -47,6 +47,17 @@ static UIImage * defaultImage = nil;
     self.title = @"Swim Time Standards";
 
     defaultImage = [UIImage imageNamed:@"headshot.png"];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(handleSwimmerPhotoChanged) 
+                                                 name:STSSwimmerPhotoChangedKey
+                                               object: nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(handleSwimmerNameChanged) 
+                                                 name:STSSwimmerNameChangedKey
+                                               object: nil];
 }
 
 #pragma mark - private methods
@@ -56,18 +67,32 @@ static UIImage * defaultImage = nil;
 		return;
 	}
 	
+    UIImage * photoImage = nil;
 	NSManagedObject * photo = [_swimmer valueForKey:@"swimmerPhoto"];
 	if (photo == nil) {
-		return;
+		photoImage = defaultImage;
 	}
-	
-	UIImage * photoImage = [photo valueForKey:@"photoImage"];
-	if (photoImage == nil) {
-		// reset to the default; don't have an empty image
-        photoImage = defaultImage;
-	}
+	else {
+        photoImage = [photo valueForKey:@"photoImage"];
+        if (photoImage == nil) {
+            // reset to the default; don't have an empty image
+            photoImage = defaultImage;
+        }
+    }
 	
 	self.photoImageView.image = photoImage;
+}
+
+- (void) handleSwimmerPhotoChanged; {
+    NSManagedObject * currentSwimmer = [appDelegate getHomeScreenSwimmer];
+    
+    [self displaySwimmerPhoto: currentSwimmer];
+}
+
+- (void) handleSwimmerNameChanged; {
+    NSManagedObject * currentSwimmer = [appDelegate getHomeScreenSwimmer];
+    NSString * swimmerName = [currentSwimmer valueForKey:@"swimmerName"];
+    self.swimmerNameLabel.text = swimmerName;
 }
 
 - (void) handleHomeScreenValueChange {
@@ -76,12 +101,8 @@ static UIImage * defaultImage = nil;
     timeStandardName = ((nil == timeStandardName) || ([timeStandardName length] == 0)) ? 
         @"select a Time Standard" : timeStandardName;
     self.timeStandardNameLabel.text = timeStandardName;
-    
-    
+        
     NSManagedObject * swimmer = [appDelegate getHomeScreenSwimmer];
-    NSString * swimmerName = [swimmer valueForKey:@"swimmerName"];
-    self.swimmerNameLabel.text = swimmerName;
-    
     NSString * swimmerAgeGroup = [swimmer valueForKey:@"swimmerAgeGroup"];
     self.previousAgeGroup = swimmerAgeGroup;
     swimmerAgeGroup = ((nil == swimmerAgeGroup) || ([swimmerAgeGroup length] < 1)) ? 
@@ -93,6 +114,7 @@ static UIImage * defaultImage = nil;
     swimmerGender = (swimmerGender == nil) ? @"select gender" : swimmerGender;
     self.swimmerGenderLabel.text = swimmerGender;
     
+    [self handleSwimmerNameChanged];
     [self displaySwimmerPhoto: swimmer];
     
     if (self.popoverController) {
@@ -110,15 +132,18 @@ static UIImage * defaultImage = nil;
            withBarButtonItem:(UIBarButtonItem *)barButtonItem 
         forPopoverController:(UIPopoverController *)pc {
     barButtonItem.title = aViewController.title;
-    [self.toolbar setItems:[NSArray arrayWithObject:barButtonItem] 
-                  animated:YES];
+    NSMutableArray * items = [[self.toolbar items] mutableCopy];
+    [items insertObject:barButtonItem atIndex:0];
+    [self.toolbar setItems:items animated:YES];
     self.popoverController = pc;
 }
 
 - (void) splitViewController:(UISplitViewController *)svc 
       willShowViewController:(UIViewController *)aViewController 
    invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
-    [self.toolbar setItems:[NSArray array] animated:YES];
+    NSMutableArray * items = [[self.toolbar items] mutableCopy];
+    [items removeObject:barButtonItem];
+    [self.toolbar setItems:items animated:YES];
     self.popoverController = nil;
 }
 
@@ -146,6 +171,7 @@ static UIImage * defaultImage = nil;
     [photoImageView release];
     [popoverController release];
 
+    [[NSNotificationCenter defaultCenter] removeObserver: self];
     [super dealloc];
 }
 

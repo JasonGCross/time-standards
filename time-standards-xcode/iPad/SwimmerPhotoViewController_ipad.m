@@ -11,6 +11,8 @@
 
 @implementation SwimmerPhotoViewController_ipad
 
+@synthesize popoverController;
+
 #pragma mark - view lifecycle
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -24,11 +26,11 @@
 - (void) takeNewPicture {
 	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 		self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-		UIPopoverController * popover = [[UIPopoverController alloc] initWithContentViewController:self.imagePicker];
-        [popover presentPopoverFromRect:self.view.bounds
-                                 inView:self.view 
-               permittedArrowDirections:UIPopoverArrowDirectionAny
-                               animated:YES];
+		self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:self.imagePicker] autorelease];
+        [self.popoverController presentPopoverFromRect:self.view.bounds
+                                                inView:self.view 
+                              permittedArrowDirections:UIPopoverArrowDirectionAny
+                                              animated:YES];
 	}
 	else {
 		NSLog(@"Error accessing camera");
@@ -46,11 +48,11 @@
 - (void) getCameraRollPicture {
 	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
 		self.imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-        UIPopoverController * popover = [[UIPopoverController alloc] initWithContentViewController:self.imagePicker];
-        [popover presentPopoverFromRect:self.view.bounds
-                                 inView:self.view 
-               permittedArrowDirections:UIPopoverArrowDirectionAny
-                               animated:YES];
+        self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:self.imagePicker] autorelease];
+        [self.popoverController presentPopoverFromRect:self.view.bounds
+                                                inView:self.view 
+                              permittedArrowDirections:UIPopoverArrowDirectionAny
+                                              animated:YES];
 	}
 	else {
 		NSLog(@"Error accessing camera roll");
@@ -69,11 +71,11 @@
 	if ([UIImagePickerController isSourceTypeAvailable:
 		 UIImagePickerControllerSourceTypePhotoLibrary]) {
         self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        UIPopoverController * popover = [[UIPopoverController alloc] initWithContentViewController:self.imagePicker];
-        [popover presentPopoverFromRect:self.view.bounds
-                                 inView:self.view 
-               permittedArrowDirections:UIPopoverArrowDirectionAny
-                               animated:YES];
+        self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:self.imagePicker] autorelease];
+        [self.popoverController presentPopoverFromRect:self.view.bounds
+                                                inView:self.view 
+                              permittedArrowDirections:UIPopoverArrowDirectionAny
+                                              animated:YES];
     }
     else {
 		NSLog(@"Error accessing photo library");
@@ -115,5 +117,12 @@
 	[self replaceSwimmerPhotoWith: image];
 }
 
+#pragma mark - memory management
+
+- (void) dealloc {
+    [popoverController release];
+    
+    [super dealloc];
+}
 
 @end

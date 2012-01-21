@@ -24,6 +24,7 @@
 @implementation TimeStandardAndSwimmerController
 
 @synthesize homeScreenVC;
+@synthesize popoverController;
 @synthesize timeStandardSettingLabelText;
 @synthesize settingValue;
 @synthesize swimmerSettingLabelText;
@@ -67,9 +68,9 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self.editButtonItem setAction:@selector(handleEditTapped)];
     
-    self.addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+    self.addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                    target:self 
-                                                                   action:@selector(handleAddTapped)];
+                                                                   action:@selector(handleAddTapped)] autorelease];
     self.addButton.tintColor = [UIColor colorWithRed:0.796 green:0.267 blue:0.298 alpha:1.000];
     // don't display the add button until we are in edit mode
     
@@ -164,12 +165,11 @@
 	SwimmerDetailViewController_ipad *detailViewController = [[[SwimmerDetailViewController_ipad alloc] init] autorelease];
 	
     // Pass the selected object to the new view controller.
-    UIPopoverController * popover = [[UIPopoverController alloc] initWithContentViewController:detailViewController];
-    [popover presentPopoverFromRect:self.view.bounds
-                             inView:self.view 
-           permittedArrowDirections:UIPopoverArrowDirectionAny
-                           animated:YES];
-    
+    self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:detailViewController] autorelease];
+    [self.popoverController presentPopoverFromRect:self.view.bounds
+                                            inView:self.view 
+                          permittedArrowDirections:UIPopoverArrowDirectionAny
+                                          animated:YES];
     return;
 }
 
@@ -442,7 +442,9 @@
         default:
             break;
     }
-
+    NSNotification * notification = [NSNotification notificationWithName:STSHomeScreenValuesChangedKey
+                                                                  object:nil];
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
 }
 
 #pragma mark - Table view delegate
@@ -567,7 +569,6 @@
       newIndexPath:(NSIndexPath*)newIndexPath 
 {
 	NSArray *array = nil;
-    NSIndexSet *section = [NSIndexSet indexSetWithIndex:[newIndexPath section]];
 	
 	switch (type) {
 		case NSFetchedResultsChangeInsert: {
@@ -597,7 +598,7 @@
 									withRowAnimation:UITableViewRowAnimationFade];
             
             // map from fetchedResultsController space to tableView space
-            section = [NSIndexSet indexSetWithIndex:[mappedIndexPath section]];
+            NSIndexSet *section = [NSIndexSet indexSetWithIndex:[mappedIndexPath section]];
 			[[self tableView] reloadSections:section
 							withRowAnimation:UITableViewRowAnimationFade];
 			break;
@@ -664,6 +665,8 @@
 
 
 - (void)dealloc {
+    [popoverController release];
+    
     [timeStandardSettingLabelText release];
 	[settingValue release];
 	[_settingList release];

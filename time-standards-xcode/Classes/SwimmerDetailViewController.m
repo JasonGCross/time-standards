@@ -16,6 +16,17 @@
 #define swimmerAgeGroupSection 1
 
 
+@interface SwimmerDetailViewController(STSSwimmerViewControllerPrivate)
+- (void) setSwimmer: (NSManagedObject *) value;
+- (void) setAgeList: (NSArray *) value;
+- (void) setGenderList: (NSArray *) value;
+- (void) setInitialGender: (NSString *) value;
+- (void) setInitialAge: (NSString *) value;
+@end
+
+
+
+
 @implementation SwimmerDetailViewController
 
 @synthesize nameTextField;
@@ -54,7 +65,7 @@
 	[super viewDidLoad];
 	_appDelegate = (SwimmingTimeStandardsAppDelegate *)[[UIApplication sharedApplication]
 													   delegate];
-    _swimmer = [_appDelegate currentSwimmer];
+    [self setSwimmer: [_appDelegate currentSwimmer]];
     
 	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -65,10 +76,10 @@
 	tempTimeStandardName = (tempTimeStandardName != nil) ? tempTimeStandardName : @"";
 	
 	TimeStandardDataAccess * timeStandardDataAccess = [_appDelegate timeStandardDataAccess];
-    [_ageList release];
-	_ageList = [[timeStandardDataAccess getAllAgeGroupNames:tempTimeStandardName] retain];
-    [_genderList release];
-	_genderList = [[NSArray alloc] initWithObjects: @"male", @"female", nil];
+	[self setAgeList: [timeStandardDataAccess getAllAgeGroupNames:tempTimeStandardName]];
+    NSArray * tempGenderList = [[NSArray alloc] initWithObjects: @"male", @"female", nil];
+    [self setGenderList: tempGenderList];
+    [tempGenderList release];
 	
 	self.nameTextField.text = [_swimmer valueForKey:@"swimmerName"];
 
@@ -80,8 +91,8 @@
 	 self.nameTextField.text = [_swimmer valueForKey:@"swimmerName"];
 	 [self displaySwimmerPhoto];
      
-     _initialGender = [_swimmer valueForKey:@"swimmerGender"];
-     _initialAge = [_swimmer valueForKey:@"swimmerAgeGroup"];
+     [self setInitialGender: [_swimmer valueForKey:@"swimmerGender"]];
+     [self setInitialAge: [_swimmer valueForKey:@"swimmerAgeGroup"]];
  }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -105,15 +116,53 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark - private methods
+
+- (void) setSwimmer:(NSManagedObject *)value; {
+    [value retain];
+    [_swimmer release];
+    _swimmer = value;
+}
+
+- (void) setAgeList: (NSArray *) value; {
+    [value retain];
+    [_ageList release];
+    _ageList = value;
+}
+
+- (void) setGenderList: (NSArray *) value; {
+    [value retain];
+    [_genderList release];
+    _genderList = value;
+}
+
+- (void) setInitialGender: (NSString *) value; {
+    [value retain];
+    [_initialGender release];
+    _initialGender = value;
+}
+
+- (void) setInitialAge: (NSString *) value; {
+    [value retain];
+    [_initialAge release];
+    _initialAge = value;
+}
+
+
 #pragma mark - text field delegate
 
 - (IBAction) textFieldDoneEditing:(id)sender {
 	[_swimmer setValue:nameTextField.text forKey:@"swimmerName"];
+    
+    // let anyone interested know the name has changed
+    NSNotification * notification = [NSNotification notificationWithName:STSSwimmerNameChangedKey
+                                                                  object:nil];
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
 }
 
 - (IBAction) backgroundTapped:(id)sender {
 	[nameTextField resignFirstResponder];
-	[_swimmer setValue: nameTextField.text forKey: @"swimmerName"];
+	[self textFieldDoneEditing:sender];
 }
 
 #pragma mark -
@@ -325,8 +374,11 @@
 
 
 - (void)dealloc {
+    [_swimmer release];
 	[_ageList release];
 	[_genderList release];
+    [_initialAge release];
+    [_initialGender release];
     [nameTextField release];
     [tableView release];
     [imageView release];

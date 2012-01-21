@@ -21,6 +21,7 @@
 		F60C669114B0F86E006F77F9 /* HomeScreenViewController_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669014B0F86E006F77F9 /* HomeScreenViewController_ipad.m */; };
 		F60C669314B10B68006F77F9 /* STSAppDelegate_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669214B10B67006F77F9 /* STSAppDelegate_iphone.m */; };
 		F60C669514B11A61006F77F9 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669414B11A61006F77F9 /* HomeScreenViewController.m */; };
+		F62BAB0014CA88840065765D /* SwimTimes_v3.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F62BAAFF14CA88830065765D /* SwimTimes_v3.sqlite */; };
 		F63D159C12610FD1002DA8D1 /* SwimmerDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */; };
 		F63F70F914B19DB000E85DD0 /* SwimmerDetailViewController_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F70F814B19DB000E85DD0 /* SwimmerDetailViewController_ipad.m */; };
 		F646BA7E13DCAEAB00124F9B /* MainWindow_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646BA7D13DCAEAB00124F9B /* MainWindow_ipad.xib */; };
@@ -50,7 +51,6 @@
 		F6DE03B21215234900F749F7 /* TimeStandardDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DE03B11215234900F749F7 /* TimeStandardDataAccess.m */; };
 		F6DE03C0121524FC00F749F7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE03BF121524FC00F749F7 /* libsqlite3.dylib */; };
 		F6DE03C91215277B00F749F7 /* TimeStandardController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DE03C61215277B00F749F7 /* TimeStandardController.m */; };
-		F6DE043F1215333200F749F7 /* SwimTimes_v2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F6DE043E1215333200F749F7 /* SwimTimes_v2.sqlite */; };
 		F6F84C3F122B1745006E1481 /* SwimmerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F84C3E122B1745006E1481 /* SwimmerController.m */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +79,7 @@
 		F60C669014B0F86E006F77F9 /* HomeScreenViewController_ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController_ipad.m; path = iPad/HomeScreenViewController_ipad.m; sourceTree = "<group>"; };
 		F60C669214B10B67006F77F9 /* STSAppDelegate_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSAppDelegate_iphone.m; path = Classes/STSAppDelegate_iphone.m; sourceTree = "<group>"; };
 		F60C669414B11A61006F77F9 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController.m; path = Classes/HomeScreenViewController.m; sourceTree = "<group>"; };
+		F62BAAFF14CA88830065765D /* SwimTimes_v3.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwimTimes_v3.sqlite; sourceTree = "<group>"; };
 		F62DD8E614AAE914009E97B5 /* HomeScreenValuesv1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv1.xcdatamodel; sourceTree = "<group>"; };
 		F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmerDetailView.xib; sourceTree = "<group>"; };
 		F63F70F714B19DB000E85DD0 /* SwimmerDetailViewController_ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerDetailViewController_ipad.h; path = iPad/SwimmerDetailViewController_ipad.h; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		F6DE03BF121524FC00F749F7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		F6DE03C51215277B00F749F7 /* TimeStandardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeStandardController.h; path = Classes/TimeStandardController.h; sourceTree = "<group>"; };
 		F6DE03C61215277B00F749F7 /* TimeStandardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeStandardController.m; path = Classes/TimeStandardController.m; sourceTree = "<group>"; };
-		F6DE043E1215333200F749F7 /* SwimTimes_v2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = SwimTimes_v2.sqlite; path = ../SwimTimes_v2.sqlite; sourceTree = "<group>"; };
 		F6F84C3D122B1745006E1481 /* SwimmerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerController.h; path = Classes/SwimmerController.h; sourceTree = "<group>"; };
 		F6F84C3E122B1745006E1481 /* SwimmerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwimmerController.m; path = Classes/SwimmerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -282,13 +282,13 @@
 		F6D2D93512E983070047647A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F62BAAFF14CA88830065765D /* SwimTimes_v3.sqlite */,
 				F66BF2DE1302916900612FFC /* miniAppIcon.png */,
 				F667952E12C9D18400AA2CCB /* appIcon.png */,
 				F683EDC212CC30B600D5588A /* Default.png */,
 				F6C460D61273177B0037A3F2 /* headshot.png */,
 				F6D2D93812E983450047647A /* iTunesArtwork */,
 				8D1107310486CEB800E47090 /* SwimmingTimeStandards-Info.plist */,
-				F6DE043E1215333200F749F7 /* SwimTimes_v2.sqlite */,
 			);
 			name = Resources;
 			path = Classes;
@@ -349,7 +349,6 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow_iphone.xib in Resources */,
 				2899E5600DE3E45000AC0155 /* HomeScreenViewController_iphone.xib in Resources */,
-				F6DE043F1215333200F749F7 /* SwimTimes_v2.sqlite in Resources */,
 				F6C3D589124709B900A6897D /* SwimmerTableCell.xib in Resources */,
 				F6C3D5A51247106A00A6897D /* StandardTableCell.xib in Resources */,
 				F682B649124F06E100D1CA61 /* SwimmersListTableCell.xib in Resources */,
@@ -369,6 +368,7 @@
 				F6C38B7213E61D5D00F0D62B /* appIcon_72x72.png in Resources */,
 				F6C38B7413E61D6800F0D62B /* Default-Portrait~ipad.png in Resources */,
 				F6C38B7613E61D7000F0D62B /* Default-Landscape~ipad.png in Resources */,
+				F62BAB0014CA88840065765D /* SwimTimes_v3.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

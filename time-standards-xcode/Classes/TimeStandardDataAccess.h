@@ -35,18 +35,17 @@
 								andGender: (NSString *) gender
 						  andAgeGroupName: (NSString *) ageGroupName
 							andStrokeName: (NSString *) strokeName
-								andFormat: (NSString *) format;
+								andFormat: (NSString *) format 
+                    putKeysIntoDictionary: (NSDictionary **) dict;
 - (NSArray *) getFormatForStandardName: (NSString *) standardName
 							 andGender: (NSString *) gender
 					   andAgeGroupName: (NSString *) ageGroupName
 						   andDistance: (NSString *) distance
 						 andStrokeName: (NSString *) strokeName;
 - (NSString *) getTimeForStandardName:(NSString *) standardName
-							andGender: (NSString *) gender
-					  andAgeGroupName: (NSString *) ageGroupName
-						  andDistance: (NSString *) distance
-						andStrokeName: (NSString *) strokeName
-							andFormat: (NSString *) format;
+							andGender:(NSString *) gender
+					  andAgeGroupName:(NSString *) ageGroupName
+                             andKeyId:(NSString *) keyId;
 
 
 @end

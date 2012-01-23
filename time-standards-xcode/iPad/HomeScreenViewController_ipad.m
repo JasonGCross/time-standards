@@ -135,6 +135,7 @@ static UIImage * defaultImage = nil;
     NSMutableArray * items = [[self.toolbar items] mutableCopy];
     [items insertObject:barButtonItem atIndex:0];
     [self.toolbar setItems:items animated:YES];
+    [items release];
     self.popoverController = pc;
 }
 
@@ -144,6 +145,7 @@ static UIImage * defaultImage = nil;
     NSMutableArray * items = [[self.toolbar items] mutableCopy];
     [items removeObject:barButtonItem];
     [self.toolbar setItems:items animated:YES];
+    [items release];
     self.popoverController = nil;
 }
 

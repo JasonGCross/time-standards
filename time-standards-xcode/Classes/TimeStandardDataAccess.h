@@ -42,10 +42,7 @@
 					   andAgeGroupName: (NSString *) ageGroupName
 						   andDistance: (NSString *) distance
 						 andStrokeName: (NSString *) strokeName;
-- (NSString *) getTimeForStandardName:(NSString *) standardName
-							andGender:(NSString *) gender
-					  andAgeGroupName:(NSString *) ageGroupName
-                             andKeyId:(NSString *) keyId;
+- (NSString *) getTimeForKeyId:(NSString *) keyId;
 
 
 @end

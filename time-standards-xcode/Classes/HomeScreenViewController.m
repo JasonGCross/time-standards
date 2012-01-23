@@ -296,6 +296,7 @@
          "previousDistance", or the first row if the last used distance
          doesn't match any distances in the distance array
      */
+    NSString * standardName = [appDelegate getHomeScreenTimeStandard];
 	NSManagedObject * currentSwimmer = [appDelegate getHomeScreenSwimmer];
 	NSString * currentGender = [currentSwimmer valueForKey:@"swimmerGender"];
 	NSString * currentAgeGroup = [currentSwimmer valueForKey:@"swimmerAgeGroup"];
@@ -305,7 +306,7 @@
     
     NSDictionary * outDictionary = nil;
 	
-	self.distances = [[appDelegate timeStandardDataAccess]  getDistancesForStandardName:[appDelegate getHomeScreenTimeStandard]
+	self.distances = [[appDelegate timeStandardDataAccess]  getDistancesForStandardName:standardName
 																			  andGender:currentGender
 																		andAgeGroupName:currentAgeGroup
 																		  andStrokeName:selectedStroke
@@ -362,31 +363,18 @@
              which is stored in the keyID dictionary.
      11) Update the display of the time label
      */
+    NSManagedObject * currentSwimmer = [appDelegate getHomeScreenSwimmer];
+	NSString * ageGroup = [currentSwimmer valueForKey:@"swimmerAgeGroup"];
+    
 	NSString * timeStr = nil;
-	NSString * ageGroup = nil;
-	NSString * timeStandardStr = [appDelegate getHomeScreenTimeStandard];
-	if ((self.distances != nil) && ([self.distances count] != 0) &&
-		(self.strokes != nil) && ([self.strokes count] != 0) &&
-		(self.courses != nil) && ([self.courses count] != 0)) 
+    NSString * timeStandardStr = [appDelegate getHomeScreenTimeStandard];
+	if ((self.keyIds != nil) && ([self.keyIds count] != 0)) 
     {
-        
-        // core values
-		NSManagedObject * tempCurrentSwimmer = [appDelegate getHomeScreenSwimmer];
-		NSString * gender = [tempCurrentSwimmer valueForKey:@"swimmerGender"];
-		ageGroup = [tempCurrentSwimmer valueForKey:@"swimmerAgeGroup"];
-        
-        // key ID
         NSUInteger distanceRow = [self.pickerView selectedRowInComponent:STSDistanceComponent];
         NSString * distanceString = [self.distances objectAtIndex:distanceRow];
-        
         NSString * keyId = [self.keyIds objectForKey:distanceString];
         
-        timeStr = [[appDelegate timeStandardDataAccess] getTimeForStandardName:timeStandardStr
-                                                                     andGender:gender
-                                                               andAgeGroupName:ageGroup
-                                                                      andKeyId:keyId];
-
-
+        timeStr = [[appDelegate timeStandardDataAccess] getTimeForKeyId:keyId];
 	}
 	if (timeStandardStr == nil) {
 		timeStr = @"select time standard.";
@@ -398,7 +386,6 @@
 		timeStr = [NSString stringWithFormat:@"No matching age group"];
 	}
 	self.timeLabel.text = timeStr;
-    //[self.timeLabel set
 }
 
 #pragma mark - public methods

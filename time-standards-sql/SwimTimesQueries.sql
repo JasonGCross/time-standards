@@ -5,16 +5,19 @@ SELECT DISTINCT standardId, StandardFriendly from vwTimeStandard
 
 
 --getAgeGroupNames
-SELECT DISTINCT AgeGroupID, AgeGroupName from vwTimeStandard
-		where StandardName = 'PNS Silver'
-		GROUP BY AgeGroupName
-		ORDER BY AgeGroupId;
+SELECT DISTINCT AgeGroupID, AgeGroupName 
+FROM  ReportTimeStandard
+WHERE StandardName = 'PNS Silver'
+GROUP BY AgeGroupName
+ORDER BY AgeGroupId;
 		
 --	- (BOOL) timeStandard: (NSString *) timeStandardName 
 --	  doesContainAgeGroup: (NSString *) ageGroupName {		
--- (returns true if the query retuns at least one row)		
-SELECT AgeGroupID, AgeGroupName from vwTimeStandard
-where StandardName = 'PNS Silver'
+-- (returns true if the query retuns at least one row)	
+	
+SELECT DISTINCT AgeGroupID, AgeGroupName 
+FROM  ReportTimeStandard
+WHERE StandardName = 'PNS Silver'
 AND AgeGroupName = '10 & Under'
 ORDER BY AgeGroupId;
 		
@@ -22,7 +25,7 @@ ORDER BY AgeGroupId;
 --										 andGender: (NSString *) gender
 --								   andAgeGroupName: (NSString *) ageGroupName {
 SELECT DISTINCT StrokeID ,StrokeName
-FROM  vwTimeStandard
+FROM  ReportTimeStandard
 WHERE StandardName = 'PNS Silver'
 AND  Gender = 'M'
 AND  AgeGroupName = '10 & Under'
@@ -42,7 +45,7 @@ ORDER BY EventId;
 --
 
 SELECT EventId ,StrokeName
-FROM  vwTimeStandard
+FROM  ReportTimeStandard
 WHERE StandardName = 'PNS Silver'
 AND  Gender = 'M'
 AND  AgeGroupName = '15 & Over'
@@ -58,28 +61,14 @@ ORDER BY EventId
 --												andStrokeName: (NSString *) strokeName
 --													andFormat: (NSString *) format {
 
-SELECT DISTINCT EventId, Distance
-FROM vwTimeStandard
-WHERE StandardName = 'PNS Silver'
-AND Gender = 'M'
-AND AgeGroupName = '15 & Over'
-AND StrokeName = 'Free'
-AND Format = 'SCY'
-ORDER BY Distance;
 
-
-SELECT DISTINCT EventId, Distance
+SELECT DISTINCT EventId, Distance, KeyID
 FROM  ReportTimeStandard
-WHERE KeyId IN
-(
-SELECT KeyID
-FROM ReportTimeStandard
 WHERE StandardName = 'PNS Silver'
 AND Gender = 'M'
 AND AgeGroupName = '15 & Over'
 AND StrokeName = 'Free'
 AND Format = 'SCY'
-)
 ORDER BY Distance;
 
 				
@@ -91,7 +80,7 @@ ORDER BY Distance;
 --									 andStrokeName: (NSString *) strokeName {
 
 SELECT EventId, Format
-FROM vwTimeStandard
+FROM  ReportTimeStandard
 WHERE StandardName = 'PNS Silver'
 AND Gender = 'M'
 AND AgeGroupName = '13-14'
@@ -100,7 +89,7 @@ AND StrokeName = 'Free'
 ORDER BY Format
 
 SELECT DISTINCT EventId, Format
-FROM vwTimeStandard
+FROM  ReportTimeStandard
 WHERE StandardName = 'PNS Silver'
 AND Gender = 'M'
 AND AgeGroupName = '13-14'
@@ -126,19 +115,11 @@ NSString * query = [[NSString alloc] initWithFormat:
 						"ORDER BY EventId\n"
 						";", standardName, convertedGender, ageGroupName, distance, strokeName, format];
 
-SELECT EventId ,Time
+SELECT EventId ,Time, KeyId
 FROM  ReportTimeStandard
-WHERE KeyId =
-(
-SELECT KeyID
-FROM ReportTimeStandard
 WHERE StandardFriendly = 'Western Zone 2011'
 AND Gender = 'M'
 AND AgeGroupName = '11-12'
-AND Distance = '50'
-AND StrokeName = 'Free'
-AND Format = 'LCM'
-);
-
+AND KeyId = 2056;
 
 

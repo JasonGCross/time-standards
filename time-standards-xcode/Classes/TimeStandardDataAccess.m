@@ -461,35 +461,22 @@
 	return array;
 }
 
-- (NSString *) getTimeForStandardName:(NSString *) standardName
-							andGender:(NSString *) gender
-					  andAgeGroupName:(NSString *) ageGroupName
-                             andKeyId:(NSString *) keyId {
+- (NSString *) getTimeForKeyId:(NSString *) keyId {
 	if (databaseIsOpen == NO) {
 		return nil;
 	}
-	if (gender == nil) {
-		gender = @"male";
-	}
-	NSString * convertedGender = ([[gender lowercaseString] isEqualToString: @"male"]) ? @"M" : @"F";
     
     static char * query = 
     "SELECT EventId ,Time\n\
     FROM  ReportTimeStandard\n\
-    WHERE StandardFriendly = ?\n\
-        AND Gender = ?\n\
-        AND AgeGroupName = ?\n\
-        AND keyId = ?\n\
+    WHERE keyId = ?\n\
     ORDER BY EventId;";
     
 	sqlite3_stmt *statement;
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:5];
 	int returnCode = sqlite3_prepare_v2(database, query, -1, &statement, nil);
 	if (returnCode == SQLITE_OK) {
-		sqlite3_bind_text(statement, 1, [standardName UTF8String], -1, SQLITE_STATIC);
-		sqlite3_bind_text(statement, 2, [convertedGender UTF8String], -1, SQLITE_STATIC);
-		sqlite3_bind_text(statement, 3, [ageGroupName UTF8String], -1, SQLITE_STATIC);
-		sqlite3_bind_int(statement, 4, [keyId intValue]);
+		sqlite3_bind_int(statement, 1, [keyId intValue]);
 		while (sqlite3_step(statement) == SQLITE_ROW) {
 			char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 			NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];

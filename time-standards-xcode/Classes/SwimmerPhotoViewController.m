@@ -217,7 +217,7 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 		theImage = [editingInfo objectForKey:UIImagePickerControllerOriginalImage];
 	}
 	if (theImage != nil) {		
-		CGRect rect = CGRectMake(0.0, 0.0, 264.0, 264.0);
+		CGRect rect = CGRectMake(0.0, 0.0, 300.0, 300.0);
 		theImage = resizedImage(theImage, rect);
         
         // important! when the image picker finishes picking media, the app may have received

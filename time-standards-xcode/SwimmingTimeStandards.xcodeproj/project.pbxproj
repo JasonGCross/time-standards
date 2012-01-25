@@ -21,7 +21,6 @@
 		F60C669114B0F86E006F77F9 /* HomeScreenViewController_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669014B0F86E006F77F9 /* HomeScreenViewController_ipad.m */; };
 		F60C669314B10B68006F77F9 /* STSAppDelegate_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669214B10B67006F77F9 /* STSAppDelegate_iphone.m */; };
 		F60C669514B11A61006F77F9 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C669414B11A61006F77F9 /* HomeScreenViewController.m */; };
-		F62BAB0014CA88840065765D /* SwimTimes_v3.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F62BAAFF14CA88830065765D /* SwimTimes_v3.sqlite */; };
 		F63D159C12610FD1002DA8D1 /* SwimmerDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */; };
 		F63F70F914B19DB000E85DD0 /* SwimmerDetailViewController_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F70F814B19DB000E85DD0 /* SwimmerDetailViewController_ipad.m */; };
 		F646BA7E13DCAEAB00124F9B /* MainWindow_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646BA7D13DCAEAB00124F9B /* MainWindow_ipad.xib */; };
@@ -30,6 +29,9 @@
 		F667952F12C9D18400AA2CCB /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F667952E12C9D18400AA2CCB /* appIcon.png */; };
 		F66BF2DF1302916900612FFC /* miniAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F66BF2DE1302916900612FFC /* miniAppIcon.png */; };
 		F677D0C2129978AE00E92069 /* SwimmersListTableCellEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F677D0C1129978AE00E92069 /* SwimmersListTableCellEditView.xib */; };
+		F67BE27F14CFC9180034D483 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F67BE27E14CFC9180034D483 /* Default@2x.png */; };
+		F67BE28114CFC93B0034D483 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F67BE28014CFC93A0034D483 /* Default-Portrait~ipad.png */; };
+		F67BE28314CFC9440034D483 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F67BE28214CFC9440034D483 /* Default-Landscape~ipad.png */; };
 		F682B649124F06E100D1CA61 /* SwimmersListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F682B648124F06E100D1CA61 /* SwimmersListTableCell.xib */; };
 		F683EDC312CC30B600D5588A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F683EDC212CC30B600D5588A /* Default.png */; };
 		F683EDE712CC698E00D5588A /* SwimmerPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F683EDE512CC698E00D5588A /* SwimmerPhotoViewController.m */; };
@@ -40,14 +42,12 @@
 		F6A3F30212E00571002806DF /* HomeScreenValues.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6A3F30012E00571002806DF /* HomeScreenValues.xcdatamodeld */; };
 		F6C38B6C13E61D2400F0D62B /* appIcon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */; };
 		F6C38B6E13E61D2D00F0D62B /* appIcon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */; };
-		F6C38B7013E61D3E00F0D62B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6F13E61D3E00F0D62B /* Default@2x.png */; };
 		F6C38B7213E61D5D00F0D62B /* appIcon_72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */; };
-		F6C38B7413E61D6800F0D62B /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B7313E61D6800F0D62B /* Default-Portrait~ipad.png */; };
-		F6C38B7613E61D7000F0D62B /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B7513E61D7000F0D62B /* Default-Landscape~ipad.png */; };
 		F6C3D589124709B900A6897D /* SwimmerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C3D588124709B900A6897D /* SwimmerTableCell.xib */; };
 		F6C3D5A51247106A00A6897D /* StandardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C3D5A41247106A00A6897D /* StandardTableCell.xib */; };
 		F6C460D71273177B0037A3F2 /* headshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C460D61273177B0037A3F2 /* headshot.png */; };
 		F6D2D93912E983450047647A /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = F6D2D93812E983450047647A /* iTunesArtwork */; };
+		F6D9612314CEAE8A005960B7 /* SwimTimes_v4.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F6D9612214CEAE8A005960B7 /* SwimTimes_v4.sqlite */; };
 		F6DE03B21215234900F749F7 /* TimeStandardDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DE03B11215234900F749F7 /* TimeStandardDataAccess.m */; };
 		F6DE03C0121524FC00F749F7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE03BF121524FC00F749F7 /* libsqlite3.dylib */; };
 		F6DE03C91215277B00F749F7 /* TimeStandardController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DE03C61215277B00F749F7 /* TimeStandardController.m */; };
@@ -79,7 +79,6 @@
 		F60C669014B0F86E006F77F9 /* HomeScreenViewController_ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController_ipad.m; path = iPad/HomeScreenViewController_ipad.m; sourceTree = "<group>"; };
 		F60C669214B10B67006F77F9 /* STSAppDelegate_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSAppDelegate_iphone.m; path = Classes/STSAppDelegate_iphone.m; sourceTree = "<group>"; };
 		F60C669414B11A61006F77F9 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController.m; path = Classes/HomeScreenViewController.m; sourceTree = "<group>"; };
-		F62BAAFF14CA88830065765D /* SwimTimes_v3.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwimTimes_v3.sqlite; sourceTree = "<group>"; };
 		F62DD8E614AAE914009E97B5 /* HomeScreenValuesv1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv1.xcdatamodel; sourceTree = "<group>"; };
 		F63D159B12610FD1002DA8D1 /* SwimmerDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmerDetailView.xib; sourceTree = "<group>"; };
 		F63F70F714B19DB000E85DD0 /* SwimmerDetailViewController_ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerDetailViewController_ipad.h; path = iPad/SwimmerDetailViewController_ipad.h; sourceTree = "<group>"; };
@@ -91,6 +90,9 @@
 		F667952E12C9D18400AA2CCB /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appIcon.png; path = ../appIcon.png; sourceTree = "<group>"; };
 		F66BF2DE1302916900612FFC /* miniAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniAppIcon.png; sourceTree = "<group>"; };
 		F677D0C1129978AE00E92069 /* SwimmersListTableCellEditView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmersListTableCellEditView.xib; sourceTree = "<group>"; };
+		F67BE27E14CFC9180034D483 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F67BE28014CFC93A0034D483 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		F67BE28214CFC9440034D483 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		F682B648124F06E100D1CA61 /* SwimmersListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmersListTableCell.xib; sourceTree = "<group>"; };
 		F683EDC212CC30B600D5588A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		F683EDE412CC698E00D5588A /* SwimmerPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmerPhotoViewController.h; path = Classes/SwimmerPhotoViewController.h; sourceTree = "<group>"; };
@@ -104,14 +106,12 @@
 		F6A3F30112E00571002806DF /* HomeScreenValuesv2.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv2.xcdatamodel; sourceTree = "<group>"; };
 		F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon-57x57.png"; sourceTree = "<group>"; };
 		F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon-114x114.png"; sourceTree = "<group>"; };
-		F6C38B6F13E61D3E00F0D62B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_72x72.png; sourceTree = "<group>"; };
-		F6C38B7313E61D6800F0D62B /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		F6C38B7513E61D7000F0D62B /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		F6C3D588124709B900A6897D /* SwimmerTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwimmerTableCell.xib; sourceTree = "<group>"; };
 		F6C3D5A41247106A00A6897D /* StandardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardTableCell.xib; sourceTree = "<group>"; };
 		F6C460D61273177B0037A3F2 /* headshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headshot.png; path = ../headshot.png; sourceTree = "<group>"; };
 		F6D2D93812E983450047647A /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		F6D9612214CEAE8A005960B7 /* SwimTimes_v4.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwimTimes_v4.sqlite; sourceTree = "<group>"; };
 		F6DE03AF1215234900F749F7 /* SwimmingTimesStandardsGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwimmingTimesStandardsGlobals.h; path = Classes/SwimmingTimesStandardsGlobals.h; sourceTree = "<group>"; };
 		F6DE03B01215234900F749F7 /* TimeStandardDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStandardDataAccess.h; sourceTree = "<group>"; };
 		F6DE03B11215234900F749F7 /* TimeStandardDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStandardDataAccess.m; sourceTree = "<group>"; };
@@ -159,10 +159,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				F6C38B7513E61D7000F0D62B /* Default-Landscape~ipad.png */,
-				F6C38B7313E61D6800F0D62B /* Default-Portrait~ipad.png */,
+				F67BE28214CFC9440034D483 /* Default-Landscape~ipad.png */,
+				F67BE28014CFC93A0034D483 /* Default-Portrait~ipad.png */,
+				F67BE27E14CFC9180034D483 /* Default@2x.png */,
 				F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */,
-				F6C38B6F13E61D3E00F0D62B /* Default@2x.png */,
 				F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */,
 				F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */,
 				F6D06DEB122CB35100E58473 /* Model */,
@@ -282,7 +282,7 @@
 		F6D2D93512E983070047647A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F62BAAFF14CA88830065765D /* SwimTimes_v3.sqlite */,
+				F6D9612214CEAE8A005960B7 /* SwimTimes_v4.sqlite */,
 				F66BF2DE1302916900612FFC /* miniAppIcon.png */,
 				F667952E12C9D18400AA2CCB /* appIcon.png */,
 				F683EDC212CC30B600D5588A /* Default.png */,
@@ -364,11 +364,11 @@
 				F646BA8013DCD4D200124F9B /* HomeScreenViewController_ipad.xib in Resources */,
 				F6C38B6C13E61D2400F0D62B /* appIcon-57x57.png in Resources */,
 				F6C38B6E13E61D2D00F0D62B /* appIcon-114x114.png in Resources */,
-				F6C38B7013E61D3E00F0D62B /* Default@2x.png in Resources */,
 				F6C38B7213E61D5D00F0D62B /* appIcon_72x72.png in Resources */,
-				F6C38B7413E61D6800F0D62B /* Default-Portrait~ipad.png in Resources */,
-				F6C38B7613E61D7000F0D62B /* Default-Landscape~ipad.png in Resources */,
-				F62BAB0014CA88840065765D /* SwimTimes_v3.sqlite in Resources */,
+				F6D9612314CEAE8A005960B7 /* SwimTimes_v4.sqlite in Resources */,
+				F67BE27F14CFC9180034D483 /* Default@2x.png in Resources */,
+				F67BE28114CFC93B0034D483 /* Default-Portrait~ipad.png in Resources */,
+				F67BE28314CFC9440034D483 /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>SwimTimesQueries.sql</string>
+	<string>2011-2012/2012PNSRegionals/PNSRegionals_2012_11.data.txt</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,6 +21,20 @@
 	<integer>339</integer>
 	<key>metaData</key>
 	<dict>
+		<key>2011-2012/2012PNSRegionals/PNSRegionals_2012_11.data.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>19</integer>
+				<key>line</key>
+				<integer>83</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>58</integer>
+		</dict>
 		<key>FrequentCommands.txt</key>
 		<dict>
 			<key>caret</key>
@@ -28,21 +42,21 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>ReportTimeStandard.data.sql</key>
+		<key>Standard.data.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>9</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -53,31 +67,17 @@
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>20</integer>
+				<integer>5</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>9</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
-		</dict>
-		<key>ReportTimeStandard.table.sql</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>6</integer>
-				<key>line</key>
-				<integer>18</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
 		</dict>
 		<key>SwimTimesQueries.sql</key>
 		<dict>
@@ -93,17 +93,46 @@
 			<key>firstVisibleLine</key>
 			<integer>58</integer>
 		</dict>
+		<key>WesternZones2010/TimeStandard_10Under.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>WesternZones2010/TimeStandard_11-12.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>10</integer>
+				<key>line</key>
+				<integer>50</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>SwimTimesQueries.sql</string>
-		<string>ReportTimeStandard.table.sql</string>
-		<string>ReportTimeStandard.data.sql</string>
 		<string>FrequentCommands.txt</string>
+		<string>Standard.data.txt</string>
+		<string>WesternZones2010/TimeStandard_11-12.txt</string>
+		<string>2011-2012/2012PNSRegionals/PNSRegionals_2012_11.data.txt</string>
+		<string>WesternZones2010/TimeStandard_10Under.txt</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1517, 236}, {789, 1252}}</string>
+	<string>{{1509, 280}, {889, 1195}}</string>
 </dict>
 </plist>

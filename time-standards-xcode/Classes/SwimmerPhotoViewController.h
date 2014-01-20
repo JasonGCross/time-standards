@@ -20,10 +20,10 @@ UIImagePickerControllerDelegate> {
 	SwimmingTimeStandardsAppDelegate * appDelegate;
 }
 
-@property (nonatomic, retain) IBOutlet UIButton * takePictureButton;
-@property (nonatomic, retain) IBOutlet UIButton * selectFromCameraRollButton;
-@property (nonatomic, retain) IBOutlet UIImageView * imageView;
-@property (nonatomic, retain) IBOutlet UIImagePickerController * imagePicker;
+@property (nonatomic, strong) IBOutlet UIButton * takePictureButton;
+@property (nonatomic, strong) IBOutlet UIButton * selectFromCameraRollButton;
+@property (nonatomic, strong) IBOutlet UIImageView * imageView;
+@property (nonatomic, strong) IBOutlet UIImagePickerController * imagePicker;
 
 - (IBAction) takeNewPicture;
 - (IBAction) getCameraRollPicture;

@@ -24,10 +24,5 @@
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
-- (void) dealloc {
-    [splitVC release];
-    
-    [super dealloc];
-}
 
 @end

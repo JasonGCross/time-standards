@@ -44,8 +44,7 @@
 	TimeStandardDataAccess * timeStandardDataAccess = [_appDelegate timeStandardDataAccess];
 	
 	if (timeStandardDataAccess != nil) {
-        [_settingList release];
-        _settingList = [[timeStandardDataAccess getAllTimeStandardNames] retain];
+        _settingList = [timeStandardDataAccess getAllTimeStandardNames];
 	}
 	else {
 		NSLog(@"Time Standard Data Access is nil. Cannot load view properly");
@@ -73,13 +72,13 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
-									   reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
+									   reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell...
 	NSUInteger row = [indexPath row];
-	cell.textLabel.text = [_settingList objectAtIndex:row];
+	cell.textLabel.text = _settingList[row];
 	
 	// lastIndexPath is nil when the view loads for the first time.
 	// see if any time standard has been saved; this will be pre-selected
@@ -87,8 +86,6 @@
 		NSString * tempStandardName = [_appDelegate getHomeScreenTimeStandard];
 		NSInteger savedTimeStandard = [_settingList indexOfObject:tempStandardName];
 		if (savedTimeStandard == row) {
-            [indexPath retain];
-            [_lastIndexPath release];
 			_lastIndexPath = indexPath;
 		}
 	}
@@ -113,10 +110,8 @@
 		newCell.accessoryType = UITableViewCellAccessoryCheckmark;
 		UITableViewCell * oldCell = [tableViewParam cellForRowAtIndexPath: _lastIndexPath];
 		oldCell.accessoryType = UITableViewCellAccessoryNone;
-        [indexPath retain];
-        [_lastIndexPath release];
 		_lastIndexPath = indexPath;
-		settingValue = [_settingList objectAtIndex:newRow];
+		settingValue = _settingList[newRow];
 		
 		NSManagedObject * tempHomeScreenValues = [_appDelegate getHomeScreenValues];
 		[tempHomeScreenValues setValue:settingValue forKey:@"homeScreenStandardName"];
@@ -141,13 +136,6 @@
 }
 
 
-- (void)dealloc {
-	[settingLabelText release];
-	[settingValue release];
-	[_settingList release];
-	[_lastIndexPath release];	
-    [super dealloc];
-}
 
 
 @end

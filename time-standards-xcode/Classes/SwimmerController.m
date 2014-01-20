@@ -44,7 +44,6 @@
 	if(error) {
 		NSLog(@"Error fetching request %@", [error localizedDescription]);
 	}
-	[request release];
 	
 	NSManagedObject * homeScreenValue = nil;
 	if ([objects count] == 0) {
@@ -52,7 +51,7 @@
 														inManagedObjectContext:self.managedObjectContext];
 	}
 	else {
-		homeScreenValue = [objects objectAtIndex:0];
+		homeScreenValue = objects[0];
 	}
 	if(homeScreenValue != nil) {
 		[homeScreenValue setValue:swimmer forKey:@"homeScreenSwimmer"];
@@ -66,7 +65,7 @@
     [appDelegate saveContext];
 	
 	// Navigation logic may go here. Create and push another view controller.
-	SwimmerDetailViewController *detailViewController = [[[SwimmerDetailViewController alloc] init] autorelease];
+	SwimmerDetailViewController *detailViewController = [[SwimmerDetailViewController alloc] init];
 	
     // Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:detailViewController animated:YES];
@@ -133,10 +132,8 @@
 	self.tableView.rowHeight = 76;
 	
 	// "Segmented" control to the right
-	NSArray *segmentTextContent = [NSArray arrayWithObjects:
-								   NSLocalizedString(@"Edit", @""),
-								   NSLocalizedString(@"+", @""),
-								   nil];
+	NSArray *segmentTextContent = @[NSLocalizedString(@"Edit", @""),
+								   NSLocalizedString(@"+", @"")];
 	segmentedControl = [[UISegmentedControl alloc] initWithItems:segmentTextContent];
 	//segmentedControl.selectedSegmentIndex = 0;
 	segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -149,14 +146,11 @@
 						 action:@selector(handleSegmentedControllerChanged:)
 			   forControlEvents:UIControlEventValueChanged];
 	
-    [_defaultTintColor release];
-	_defaultTintColor = [segmentedControl.tintColor retain];	// keep track of this for later
+	_defaultTintColor = segmentedControl.tintColor;	// keep track of this for later
 	
 	UIBarButtonItem *segmentBarItem = [[UIBarButtonItem alloc] initWithCustomView:segmentedControl];
-    [segmentedControl release];
     
 	self.navigationItem.rightBarButtonItem = segmentBarItem;
-    [segmentBarItem release];
 	
 	[self setSettingLabelText: @"Swimmer"];	
 }
@@ -207,7 +201,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     id <NSFetchedResultsSectionInfo> sectionInfo = nil;
-	sectionInfo = [[[self fetchedResultsController] sections] objectAtIndex:section];
+	sectionInfo = [[self fetchedResultsController] sections][section];
 	return [sectionInfo numberOfObjects];
 }
 
@@ -274,7 +268,7 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 			// try to replace the missing swimmer with another
 			NSArray * swimmers = [self.fetchedResultsController fetchedObjects];
 			if ([swimmers count] > 0) {
-				NSManagedObject * newSwimmer = (NSManagedObject *)[swimmers objectAtIndex:0];
+				NSManagedObject * newSwimmer = (NSManagedObject *)swimmers[0];
 				[homeScreenValues setValue:newSwimmer forKey:@"homeScreenSwimmer"];
 			}
 		}
@@ -381,17 +375,17 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 	
 	switch (type) {
 		case NSFetchedResultsChangeInsert:
-			array = [NSArray arrayWithObject:newIndexPath];
+			array = @[newIndexPath];
 			[[self tableView] insertRowsAtIndexPaths:array 
 									withRowAnimation:UITableViewRowAnimationFade];
 			break;
 		case NSFetchedResultsChangeDelete:
-			array = [NSArray arrayWithObject:indexPath];
+			array = @[indexPath];
 			[[self tableView] deleteRowsAtIndexPaths:array
 									withRowAnimation:UITableViewRowAnimationFade];
 			break;
 		case NSFetchedResultsChangeMove:
-			array = [NSArray arrayWithObject:newIndexPath];
+			array = @[newIndexPath];
 			[[self tableView] deleteRowsAtIndexPaths:array
 									withRowAnimation:UITableViewRowAnimationFade];
 			[[self tableView] reloadSections:section
@@ -449,14 +443,6 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 }
 
 
-- (void)dealloc {
-	[settingLabelText release];
-	[_defaultTintColor release];
-    [nibLoadedSwimmerCell release];
-    [nibLoadedSwimmerCellEditingView release];
-    
-    [super dealloc];
-}
 
 
 @end

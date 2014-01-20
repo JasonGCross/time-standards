@@ -12,6 +12,6 @@
     UIPopoverController * popoverController;
 }
 
-@property (nonatomic, retain) UIPopoverController * popoverController;
+@property (nonatomic, strong) UIPopoverController * popoverController;
 
 @end

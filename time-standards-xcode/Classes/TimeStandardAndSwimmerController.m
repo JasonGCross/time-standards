@@ -58,8 +58,7 @@
 	TimeStandardDataAccess * timeStandardDataAccess = [appDelegate timeStandardDataAccess];
 	
 	if (timeStandardDataAccess != nil) {
-        [_settingList release];
-        _settingList = [[timeStandardDataAccess getAllTimeStandardNames] retain];
+        _settingList = [timeStandardDataAccess getAllTimeStandardNames];
 	}
 	else {
 		NSLog(@"Time Standard Data Access is nil. Cannot load view properly");
@@ -68,9 +67,9 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self.editButtonItem setAction:@selector(handleEditTapped)];
     
-    self.addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+    self.addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                    target:self 
-                                                                   action:@selector(handleAddTapped)] autorelease];
+                                                                   action:@selector(handleAddTapped)];
     self.addButton.tintColor = [UIColor colorWithRed:0.796 green:0.267 blue:0.298 alpha:1.000];
     // don't display the add button until we are in edit mode
     
@@ -140,7 +139,6 @@
 	if(error) {
 		NSLog(@"Error fetching request %@", [error localizedDescription]);
 	}
-	[request release];
 	
 	NSManagedObject * homeScreenValue = nil;
 	if ([objects count] == 0) {
@@ -148,7 +146,7 @@
 														inManagedObjectContext:self.managedObjectContext];
 	}
 	else {
-		homeScreenValue = [objects objectAtIndex:0];
+		homeScreenValue = objects[0];
 	}
 	if(homeScreenValue != nil) {
 		[homeScreenValue setValue:swimmer forKey:@"homeScreenSwimmer"];
@@ -162,10 +160,10 @@
     [appDelegate saveContext];
 	
 	// Navigation logic may go here. Create and push another view controller.
-	SwimmerDetailViewController_ipad *detailViewController = [[[SwimmerDetailViewController_ipad alloc] init] autorelease];
+	SwimmerDetailViewController_ipad *detailViewController = [[SwimmerDetailViewController_ipad alloc] init];
 	
     // Pass the selected object to the new view controller.
-    self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:detailViewController] autorelease];
+    self.popoverController = [[UIPopoverController alloc] initWithContentViewController:detailViewController];
     [self.popoverController presentPopoverFromRect:self.view.bounds
                                             inView:self.view 
                           permittedArrowDirections:UIPopoverArrowDirectionAny
@@ -240,7 +238,7 @@
             // note that the fetched results controller doesn't know about any other
             // sections in this table (i.e. the time standards), so we must explicitly
             // tell the fetched results controller to only look in the first position
-            sectionInfo = [sections objectAtIndex:0];
+            sectionInfo = sections[0];
             return [sectionInfo numberOfObjects];
             break;
         }
@@ -269,7 +267,7 @@
     CGRect labelFrame = CGRectMake(10.0f, 4.0f, 290.0f, 26.0f);
     UIView * headerView = [[UIView alloc] initWithFrame: headerFrame];
     [headerView setBackgroundColor:[UIColor colorWithRed:0.718 green:0.761 blue:0.851 alpha:1.000]];
-    UILabel * headerLabel = [[[UILabel alloc] initWithFrame:labelFrame] autorelease];
+    UILabel * headerLabel = [[UILabel alloc] initWithFrame:labelFrame];
     [headerLabel setBackgroundColor: [UIColor colorWithRed:0.718 green:0.761 blue:0.851 alpha:1.000]];
     [headerView insertSubview: headerLabel atIndex:0];
     UIFont * headerFont = [UIFont boldSystemFontOfSize:18.0f];
@@ -284,7 +282,7 @@
         default:
             break;
     }
-    return [headerView autorelease];
+    return headerView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -309,13 +307,13 @@
         case timeStandardSection: {
             cell = [tableView dequeueReusableCellWithIdentifier:timeStandardCellIdentifier];
             if (cell == nil) {
-                cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
-                                               reuseIdentifier:timeStandardCellIdentifier] autorelease];
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
+                                               reuseIdentifier:timeStandardCellIdentifier];
             }
             
             // Configure the cell...
             NSUInteger row = [indexPath row];
-            cell.textLabel.text = [_settingList objectAtIndex:row];
+            cell.textLabel.text = _settingList[row];
             cell.textLabel.font = [UIFont systemFontOfSize:14.0f];
             
             // lastIndexPath is nil when the view loads for the first time.
@@ -324,8 +322,6 @@
                 NSString * tempStandardName = [appDelegate getHomeScreenTimeStandard];
                 NSInteger savedTimeStandard = [_settingList indexOfObject:tempStandardName];
                 if (savedTimeStandard == row) {
-                    [indexPath retain];
-                    [_lastIndexPath release];
                     _lastIndexPath = indexPath;
                 }
             }
@@ -370,8 +366,8 @@
             break;
         }
         default:
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
-                                           reuseIdentifier:CellIdentifier] autorelease];
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
+                                           reuseIdentifier:CellIdentifier];
             break;
     }
     
@@ -424,7 +420,7 @@
                     // try to replace the missing swimmer with another
                     NSArray * swimmers = [self.fetchedResultsController fetchedObjects];
                     if ([swimmers count] > 0) {
-                        NSManagedObject * newSwimmer = (NSManagedObject *)[swimmers objectAtIndex:0];
+                        NSManagedObject * newSwimmer = (NSManagedObject *)swimmers[0];
                         [homeScreenValues setValue:newSwimmer forKey:@"homeScreenSwimmer"];
                     }
                 }
@@ -462,10 +458,8 @@
                 newCell.accessoryType = UITableViewCellAccessoryCheckmark;
                 UITableViewCell * oldCell = [tableViewParam cellForRowAtIndexPath: _lastIndexPath];
                 oldCell.accessoryType = UITableViewCellAccessoryNone;
-                [indexPath retain];
-                [_lastIndexPath release];
                 _lastIndexPath = indexPath;
-                settingValue = [_settingList objectAtIndex:newRow];
+                settingValue = _settingList[newRow];
                 
                 NSManagedObject * tempHomeScreenValues = [appDelegate getHomeScreenValues];
                 [tempHomeScreenValues setValue:settingValue forKey:@"homeScreenStandardName"];
@@ -575,7 +569,7 @@
             // map from fetchedResultsController space to tableView space
             NSIndexPath * mappedIndexPath = [NSIndexPath indexPathForRow:newIndexPath.row 
                                                                inSection:swimmerSection];
-			array = [NSArray arrayWithObject:mappedIndexPath];
+			array = @[mappedIndexPath];
 			[[self tableView] insertRowsAtIndexPaths:array 
 									withRowAnimation:UITableViewRowAnimationFade];
 			break;
@@ -584,7 +578,7 @@
             // map from fetchedResultsController space to tableView space
             NSIndexPath * mappedIndexPath = [NSIndexPath indexPathForRow:indexPath.row 
                                                                inSection:swimmerSection];
-			array = [NSArray arrayWithObject:mappedIndexPath];
+			array = @[mappedIndexPath];
 			[[self tableView] deleteRowsAtIndexPaths:array
 									withRowAnimation:UITableViewRowAnimationFade];
 			break;
@@ -593,7 +587,7 @@
             // map from fetchedResultsController space to tableView space
             NSIndexPath * mappedIndexPath = [NSIndexPath indexPathForRow:newIndexPath.row 
                                                                inSection:swimmerSection];
-			array = [NSArray arrayWithObject:mappedIndexPath];
+			array = @[mappedIndexPath];
 			[[self tableView] deleteRowsAtIndexPaths:array
 									withRowAnimation:UITableViewRowAnimationFade];
             
@@ -664,22 +658,6 @@
 }
 
 
-- (void)dealloc {
-    [popoverController release];
-    
-    [timeStandardSettingLabelText release];
-	[settingValue release];
-	[_settingList release];
-	[_lastIndexPath release];
-    
-	[swimmerSettingLabelText release];
-	[_defaultTintColor release];
-    [nibLoadedSwimmerCell release];
-    [nibLoadedSwimmerCellEditingView release];
-    [addButton release];
-    
-    [super dealloc];
-}
 
 
 @end

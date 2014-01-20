@@ -18,7 +18,7 @@
 	SwimmingTimeStandardsAppDelegate * _appDelegate;
 }
 
-@property (nonatomic, retain) NSString * settingLabelText;
-@property (nonatomic, retain) NSString * settingValue;
+@property (nonatomic, strong) NSString * settingLabelText;
+@property (nonatomic, strong) NSString * settingValue;
 
 @end

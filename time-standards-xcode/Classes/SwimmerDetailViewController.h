@@ -26,9 +26,9 @@ UITableViewDelegate, UITableViewDataSource> {
     NSString        * _initialAge;
 }
 
-@property (nonatomic, retain) IBOutlet UITextField * nameTextField;
-@property (nonatomic, retain) IBOutlet UITableView * tableView;
-@property (nonatomic, retain) IBOutlet UIImageView * imageView;
+@property (nonatomic, strong) IBOutlet UITextField * nameTextField;
+@property (nonatomic, strong) IBOutlet UITableView * tableView;
+@property (nonatomic, strong) IBOutlet UIImageView * imageView;
 
 - (IBAction) backgroundTapped:(id)sender;
 - (IBAction) imageViewTapped:(id)sender;

@@ -19,8 +19,7 @@
     // Add the navigation controller's view to the window and display.
     // for some reason, setting the NavController in the NIB is not working, so do it programatically
     HomeScreenViewController_iphone * rootViewController = [[HomeScreenViewController_iphone alloc] init];
-    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:rootViewController] autorelease];
-    [rootViewController release];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
     [self.window addSubview:self.navigationController.view];
     
     return [super application:application didFinishLaunchingWithOptions:launchOptions];

@@ -12,6 +12,6 @@
     UISplitViewController       * splitVC;
 }
 
-@property (nonatomic, retain) IBOutlet  UISplitViewController       * splitVC;
+@property (nonatomic, strong) IBOutlet  UISplitViewController       * splitVC;
 
 @end

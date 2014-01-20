@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0A1D9829-9E03-435B-B1A8-EEE68FACC8AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwimmingTimeStandards</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>35658F15-C2DE-495E-BE3E-8703CCFD32DC</key>
+		<string>https://github.com/JasonGCross/time-standards.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>time-standards-xcode/SwimmingTimeStandards.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>35658F15-C2DE-495E-BE3E-8703CCFD32DC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JasonGCross/time-standards.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>35658F15-C2DE-495E-BE3E-8703CCFD32DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>35658F15-C2DE-495E-BE3E-8703CCFD32DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>timestandards_git</string>
+		</dict>
+	</array>
+</dict>
+</plist>

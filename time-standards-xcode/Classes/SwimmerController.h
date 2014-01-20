@@ -21,11 +21,11 @@
 	NSFetchedResultsController * fetchedResultsController_;
 }
 
-@property (nonatomic, retain) NSString * settingLabelText;
-@property (nonatomic, retain) IBOutlet UITableViewCell * nibLoadedSwimmerCell;
-@property (nonatomic, retain) IBOutlet UITableViewCell * nibLoadedSwimmerCellEditingView;
-@property (nonatomic, readonly) NSManagedObjectContext * managedObjectContext;
-@property (nonatomic, readonly) NSFetchedResultsController * fetchedResultsController;
+@property (nonatomic, strong) NSString * settingLabelText;
+@property (nonatomic, strong) IBOutlet UITableViewCell * nibLoadedSwimmerCell;
+@property (nonatomic, strong) IBOutlet UITableViewCell * nibLoadedSwimmerCellEditingView;
+@property (weak, nonatomic, readonly) NSManagedObjectContext * managedObjectContext;
+@property (weak, nonatomic, readonly) NSFetchedResultsController * fetchedResultsController;
 
 - (IBAction) handleSegmentedControllerChanged: (id) sender;
 - (IBAction) handleEditTapped;

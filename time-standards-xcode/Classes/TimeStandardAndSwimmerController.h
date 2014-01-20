@@ -14,7 +14,7 @@
 
 
 @interface TimeStandardAndSwimmerController : UITableViewController <NSFetchedResultsControllerDelegate> {
-    HomeScreenViewController_ipad * homeScreenVC;
+    HomeScreenViewController_ipad * __weak homeScreenVC;
     UIPopoverController           * popoverController;
     
     // time standards
@@ -35,20 +35,20 @@
     UIBarButtonItem * addButton;
 }
 
-@property (nonatomic, assign) IBOutlet HomeScreenViewController_ipad * homeScreenVC;
-@property (nonatomic, retain) UIPopoverController * popoverController;
+@property (nonatomic, weak) IBOutlet HomeScreenViewController_ipad * homeScreenVC;
+@property (nonatomic, strong) UIPopoverController * popoverController;
 
 // time standards
-@property (nonatomic, retain) NSString * timeStandardSettingLabelText;
-@property (nonatomic, retain) NSString * settingValue;
+@property (nonatomic, strong) NSString * timeStandardSettingLabelText;
+@property (nonatomic, strong) NSString * settingValue;
 
 // swimmer controller
-@property (nonatomic, retain) NSString * swimmerSettingLabelText;
-@property (nonatomic, retain) IBOutlet UITableViewCell * nibLoadedSwimmerCell;
-@property (nonatomic, retain) IBOutlet UITableViewCell * nibLoadedSwimmerCellEditingView;
-@property (nonatomic, readonly) NSManagedObjectContext * managedObjectContext;
-@property (nonatomic, readonly) NSFetchedResultsController * fetchedResultsController;
-@property (nonatomic, retain) UIBarButtonItem * addButton;
+@property (nonatomic, strong) NSString * swimmerSettingLabelText;
+@property (nonatomic, strong) IBOutlet UITableViewCell * nibLoadedSwimmerCell;
+@property (nonatomic, strong) IBOutlet UITableViewCell * nibLoadedSwimmerCellEditingView;
+@property (weak, nonatomic, readonly) NSManagedObjectContext * managedObjectContext;
+@property (weak, nonatomic, readonly) NSFetchedResultsController * fetchedResultsController;
+@property (nonatomic, strong) UIBarButtonItem * addButton;
 
 - (IBAction) handleEditTapped;
 - (IBAction) handleAddTapped;

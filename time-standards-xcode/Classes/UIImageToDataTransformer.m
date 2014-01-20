@@ -66,7 +66,7 @@ Both Event and Photograph contain image data stored as a transformable attribute
 }
 
 - (id)reverseTransformedValue:(id)value {
-	return [[[UIImage alloc] initWithData:value] autorelease];
+	return [[UIImage alloc] initWithData:value];
 }
 
 @end

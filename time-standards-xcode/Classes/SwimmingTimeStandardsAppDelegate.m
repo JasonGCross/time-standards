@@ -80,9 +80,8 @@
 		NSLog(@"Error fetching request %@", [error localizedDescription]);
 	}
 	if ([objects count] > 0) {
-		homeScreenValue = [objects objectAtIndex:0];
+		homeScreenValue = objects[0];
 	}
-	[request release];
   return homeScreenValue;
 }
 
@@ -153,7 +152,6 @@
 								  cancelButtonTitle:@"OK"
 								  otherButtonTitles:nil];
 			[alert show];
-			[alert release];
         } 
     }
 }    
@@ -172,10 +170,10 @@
 	NSSortDescriptor *sortDescriptor = nil;
 	sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"swimmerName" ascending:YES];
 	NSArray *sortDescriptors = nil;
-	sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-	[sortDescriptor release], sortDescriptor = nil;
+	sortDescriptors = @[sortDescriptor];
+	sortDescriptor = nil;
 	[fetchRequest setSortDescriptors:sortDescriptors];
-	[sortDescriptors release], sortDescriptors = nil;
+	sortDescriptors = nil;
 	NSEntityDescription * entity = [NSEntityDescription entityForName:@"Swimmer" 
 											   inManagedObjectContext:context];
 	[fetchRequest setEntity:entity];
@@ -185,7 +183,6 @@
 											   managedObjectContext:context
 											   sectionNameKeyPath:nil
 											   cacheName:@"Swimmer"];
-	[fetchRequest release];
 	
 	NSError * error = nil;
 	BOOL success = [controller performFetch:&error];
@@ -225,7 +222,7 @@
     }
 //    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"HomeScreenValues" 
 //                                              withExtension:@"momd"];
-    managedObjectModel_ = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
+    managedObjectModel_ = [NSManagedObjectModel mergedModelFromBundles:nil];    
     return managedObjectModel_;
 }
 
@@ -240,10 +237,7 @@
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:STSPersistentStoreFileName];
-    NSDictionary * options = [NSDictionary dictionaryWithObjectsAndKeys:
-                              [NSNumber numberWithBool:YES], 
-                              NSMigratePersistentStoresAutomaticallyOption, 
-                              nil];
+    NSDictionary * options = @{NSMigratePersistentStoresAutomaticallyOption: @YES};
     
     NSError *error = nil;
     NSManagedObjectModel * managedObjectModel = [self managedObjectModel];
@@ -256,7 +250,6 @@
 							  cancelButtonTitle:@"OK"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
         exit(1);
     }
     persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
@@ -273,7 +266,6 @@
 							  cancelButtonTitle:@"OK"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
         exit(1);
     }    
     
@@ -287,24 +279,14 @@
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
 	[timeStandardDataAccess_ closeDataBase];
-	[timeStandardDataAccess_ release], timeStandardDataAccess_ = nil;
-	[fetchedResultsController_ release], fetchedResultsController_ = nil;
-	[managedObjectContext_ release], managedObjectContext_ = nil;
-    [managedObjectModel_ release], managedObjectModel_ = nil;
-    [persistentStoreCoordinator_ release], persistentStoreCoordinator_ = nil;
+	timeStandardDataAccess_ = nil;
+	fetchedResultsController_ = nil;
+	managedObjectContext_ = nil;
+    managedObjectModel_ = nil;
+    persistentStoreCoordinator_ = nil;
 }
 
 
-- (void)dealloc {
-	[timeStandardDataAccess_ release];
-    [managedObjectContext_ release];
-    [managedObjectModel_ release];
-    [persistentStoreCoordinator_ release];
-	[fetchedResultsController_ release];
-    [window release];
-	[navigationController release];
-    [super dealloc];
-}
 
 
 

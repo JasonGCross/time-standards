@@ -131,7 +131,6 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 							  cancelButtonTitle:@"Acknowledge!"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
     }
 }
 
@@ -149,7 +148,6 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 							  cancelButtonTitle:@"acknowledge"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
     }
 }
 
@@ -168,7 +166,6 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 							  cancelButtonTitle:@"acknowledge"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
     }
 }
 
@@ -209,12 +206,12 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 - (void) imagePickerController:(UIImagePickerController *)picker 
 		 didFinishPickingMediaWithInfo:(NSDictionary *)editingInfo {
 	UIImage * theImage = nil;
-	theImage = [editingInfo objectForKey:UIImagePickerControllerEditedImage];
+	theImage = editingInfo[UIImagePickerControllerEditedImage];
 	
 	// try to see if the image was edited first. the camera roll will
 	// always return nil for edited images
 	if(theImage == nil) {
-		theImage = [editingInfo objectForKey:UIImagePickerControllerOriginalImage];
+		theImage = editingInfo[UIImagePickerControllerOriginalImage];
 	}
 	if (theImage != nil) {		
 		CGRect rect = CGRectMake(0.0, 0.0, 300.0, 300.0);
@@ -254,13 +251,6 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 	self.imagePicker = nil;
 }
 
-- (void)dealloc {
-	[imageView release];
-	[takePictureButton release];
-	[selectFromCameraRollButton release];
-	[imagePicker release];
-    [super dealloc];
-}
 
 
 @end

@@ -91,15 +91,12 @@
     // picker columns
     NSArray * tempArray = [[NSArray alloc] init];
     self.strokes = tempArray;
-    [tempArray release];
     tempArray = nil;
     tempArray = [[NSArray alloc] init];
     self.courses = tempArray;
-    [tempArray release];
     tempArray = nil;
     tempArray = [[NSArray alloc] init];
     self.distances = tempArray;
-    [tempArray release];
     tempArray = nil;
 }
 
@@ -147,13 +144,12 @@
 	if ([self.pickerView selectedRowInComponent:STSStrokeComponent] < 0) {
 		// if there is no previous value, try to set it now
 		if ((self.previousStroke == nil) && ([self.strokes count] > 0)) {
-			self.previousStroke = [self.strokes objectAtIndex:0];
+			self.previousStroke = (self.strokes)[0];
 		}
 		return self.previousStroke;
 	}
 	else {
-		return [self.strokes objectAtIndex:
-				[self.pickerView selectedRowInComponent:STSStrokeComponent]];
+		return (self.strokes)[[self.pickerView selectedRowInComponent:STSStrokeComponent]];
 	}
 }
 
@@ -165,13 +161,12 @@
 	if ([self.pickerView selectedRowInComponent:STSDistanceComponent] < 0) {
 		// if there  is no previous value, try to set it now
 		if ((self.previousDistance == nil) && ([self.distances count] > 0)) {
-			self.previousDistance = [self.distances objectAtIndex:0];
+			self.previousDistance = (self.distances)[0];
 		}
 		return self.previousDistance;
 	}
 	else {
-		return [self.distances objectAtIndex:
-				[self.pickerView selectedRowInComponent:STSDistanceComponent]];
+		return (self.distances)[[self.pickerView selectedRowInComponent:STSDistanceComponent]];
 	}
 }
 
@@ -184,13 +179,12 @@
     if ([self.segmentedControl selectedSegmentIndex] < 0) {
         // if there  is no previous value, try to set it now
 		if ((self.previousCourse == nil) && ([self.courses count] > 0)) {
-			self.previousCourse = [self.courses objectAtIndex:0];
+			self.previousCourse = (self.courses)[0];
 		}
 		return self.previousCourse;
     }
 	else {
-		return [self.courses objectAtIndex:
-				[self.segmentedControl selectedSegmentIndex]];
+		return (self.courses)[[self.segmentedControl selectedSegmentIndex]];
 	}
 }
 
@@ -247,7 +241,7 @@
 		// very important to have new row selected without animation so that the time
 		// timeLabel will update properly
 		[self.pickerView selectRow:newRow inComponent:STSStrokeComponent animated:NO];
-		self.previousStroke = [self.strokes objectAtIndex:newRow];
+		self.previousStroke = (self.strokes)[newRow];
 	}
 }
 
@@ -274,7 +268,7 @@
     for (int i=0; i < [self.courses count]; i++) {
         // very important to have new segments created without animation so that the time
 		// timeLabel will update properly
-        [self.segmentedControl insertSegmentWithTitle:[self.courses objectAtIndex:i] atIndex:i animated:NO];
+        [self.segmentedControl insertSegmentWithTitle:(self.courses)[i] atIndex:i animated:NO];
         self.segmentedControl.frame = segmentedRectangle;
     }
     
@@ -282,7 +276,7 @@
     if ([self.courses count] > 0) {
 		NSUInteger newRow = [self getRowWhichComponentShouldSelect:STSCourseComponent];
         [self.segmentedControl setSelectedSegmentIndex:newRow];
-		self.previousCourse = [self.courses objectAtIndex:newRow];
+		self.previousCourse = (self.courses)[newRow];
 	}
 }
 
@@ -320,7 +314,7 @@
 		// very important to have new row selected without animation so that the time
 		// timeLabel will update properly
 		[self.pickerView selectRow:newRow inComponent:STSDistanceComponent animated:NO];
-		self.previousDistance = [self.distances objectAtIndex:newRow];
+		self.previousDistance = (self.distances)[newRow];
 	}
 }
 
@@ -346,9 +340,9 @@
         // 2 - courses
         static NSArray * defaultCourses = nil;
         if (defaultCourses == nil) {
-            defaultCourses = [[NSArray arrayWithObjects:@"scy", @"lcm", nil] retain];
+            defaultCourses = @[@"scy", @"lcm"];
         }
-        self.segmentedControl = [[[UISegmentedControl alloc] initWithItems:defaultCourses] autorelease];
+        self.segmentedControl = [[UISegmentedControl alloc] initWithItems:defaultCourses];
         
         // 3 - distances
         [self.pickerView reloadComponent:STSDistanceComponent];
@@ -371,8 +365,8 @@
 	if ((self.keyIds != nil) && ([self.keyIds count] != 0)) 
     {
         NSUInteger distanceRow = [self.pickerView selectedRowInComponent:STSDistanceComponent];
-        NSString * distanceString = [self.distances objectAtIndex:distanceRow];
-        NSString * keyId = [self.keyIds objectForKey:distanceString];
+        NSString * distanceString = (self.distances)[distanceRow];
+        NSString * keyId = (self.keyIds)[distanceString];
         
         timeStr = [[appDelegate timeStandardDataAccess] getTimeForKeyId:keyId];
 	}
@@ -431,10 +425,10 @@
 			 forComponent:(NSInteger)component {
 	switch (component) {
 		case STSStrokeComponent:
-			return ([self.strokes count] > 0) ? [self.strokes objectAtIndex:row] : @"";
+			return ([self.strokes count] > 0) ? (self.strokes)[row] : @"";
 			break;
 		case STSDistanceComponent:
-			return ([self.distances count] > 0) ? [self.distances objectAtIndex:row] : @"";
+			return ([self.distances count] > 0) ? (self.distances)[row] : @"";
 			break;
 		default:
 			return @"";
@@ -453,7 +447,7 @@
 			[self reloadDistanceComponent];
 			[self updateTimeLabel];
 			if ([self.strokes count] > 0) {
-				self.previousStroke = [self.strokes objectAtIndex: row];
+				self.previousStroke = (self.strokes)[row];
 			}
 			break;
 		case STSDistanceComponent:
@@ -462,7 +456,7 @@
              */
 			[self updateTimeLabel];
 			if ([self.distances count] > 0) {
-				self.previousDistance = [self.distances objectAtIndex: row];
+				self.previousDistance = (self.distances)[row];
 			}
 			break;
 		default:
@@ -481,7 +475,7 @@
     [self reloadDistanceComponent];
     [self updateTimeLabel];
     if ([self.courses count] > 0) {
-        self.previousCourse = [self.courses objectAtIndex:selectedIndex];
+        self.previousCourse = (self.courses)[selectedIndex];
     }
 }
 
@@ -508,24 +502,8 @@
 
 
 - (void)dealloc {
-    [pickerView release];
-	[timeLabel release];
-    [nibLoadedSwimmerCell release];
-    [nibLoadedStandardCell release];
-    [segmentedControl release];
-	[distances release];
-	[courses release];
-	[strokes release];
-    [keyIds release];
-	[previousStroke release];
-	[previousDistance release];
-	[previousCourse release];
-    [previousTimeStandard release];
-    [previousAgeGroup release];
-    [previousGender release];
     
     [[NSNotificationCenter defaultCenter] removeObserver: self];
-    [super dealloc];
 }
 
 

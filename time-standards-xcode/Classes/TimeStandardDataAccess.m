@@ -17,7 +17,7 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *documentsDirectory = paths[0];
     NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent: STSDataBaseFileName];
     success = [fileManager fileExistsAtPath: writableDBPath];
 //	if(success) {
@@ -47,7 +47,6 @@
 								  cancelButtonTitle:@"Acknowledge"
 								  otherButtonTitles:nil];
 			[alert show];
-			[alert release];
 			return nil;
 		}
 	}
@@ -72,7 +71,6 @@
 							  cancelButtonTitle:@"Acknowledge"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
 	}
 }
 
@@ -90,7 +88,6 @@
 			char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 			NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 			[array addObject:valueObj];
-			[valueObj release];
 		}
 	}
 	sqlite3_finalize(statement);
@@ -118,7 +115,6 @@
 			char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 			NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 			[array addObject:valueObj];
-			[valueObj release];
 		}
 	}
 	sqlite3_finalize(statement);
@@ -148,7 +144,6 @@
 			char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 			NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 			[array addObject:valueObj];
-			[valueObj release];
 		}
 	}
 	sqlite3_finalize(statement);
@@ -188,7 +183,6 @@
 			char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 			NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 			[array addObject:valueObj];
-			[valueObj release];
 		}
 	}
 	sqlite3_finalize(statement);
@@ -231,7 +225,6 @@
 			char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 			NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 			[array addObject:valueObj];
-			[valueObj release];
 		}
 	}
 	sqlite3_finalize(statement);
@@ -307,9 +300,7 @@
                 
                 char * keyStr = (char*) sqlite3_column_text(statement, 2);
                 NSString * keyObj = [[NSString alloc] initWithUTF8String:keyStr];
-                [dictionary setObject:keyObj forKey:valueObj];
-                [valueObj release];
-                [keyObj release];
+                dictionary[valueObj] = keyObj;
 			}
 		}
 	}
@@ -328,9 +319,7 @@
                 
                 char * keyStr = (char*) sqlite3_column_text(statement, 2);
                 NSString * keyObj = [[NSString alloc] initWithUTF8String:keyStr];
-                [dictionary setObject:keyObj forKey:valueObj];
-                [valueObj release];
-                [keyObj release];
+                dictionary[valueObj] = keyObj;
 			}
 		}
 		
@@ -349,9 +338,7 @@
                 
                 char * keyStr = (char*) sqlite3_column_text(statement, 2);
                 NSString * keyObj = [[NSString alloc] initWithUTF8String:keyStr];
-                [dictionary setObject:keyObj forKey:valueObj];
-                [valueObj release];
-                [keyObj release];
+                dictionary[valueObj] = keyObj;
 			}
 		}
 	}
@@ -371,9 +358,7 @@
                 
                 char * keyStr = (char*) sqlite3_column_text(statement, 2);
                 NSString * keyObj = [[NSString alloc] initWithUTF8String:keyStr];
-                [dictionary setObject:keyObj forKey:valueObj];
-                [valueObj release];
-                [keyObj release];
+                dictionary[valueObj] = keyObj;
 			}
 		}
 	}
@@ -433,7 +418,6 @@
 				char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 				NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 				[array addObject:valueObj];
-				[valueObj release];
 			}
 		}
 		
@@ -451,7 +435,6 @@
 				char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 				NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 				[array addObject:valueObj];
-				[valueObj release];
 			}
 		}
 	}
@@ -481,15 +464,13 @@
 			char * valueStr		= (char*) sqlite3_column_text(statement, 1);
 			NSString * valueObj = [[NSString alloc] initWithUTF8String: valueStr];
 			[array addObject:valueObj];
-			[valueObj release];
 		}
 	}
 	sqlite3_finalize(statement);
 	
 	NSString * timeString = nil;
 	if ((array != nil) && ([array count] > 0)) {
-		timeString = [array objectAtIndex:0];
-		[[timeString retain] autorelease];
+		timeString = array[0];
 	}
 	return timeString;	
 }
@@ -498,9 +479,6 @@
 	sqlite3_close(database);
 }
 
-- (void) dealloc {
-	[super dealloc];
-}
 
 
 @end

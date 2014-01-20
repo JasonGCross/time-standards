@@ -26,7 +26,7 @@
 - (void) takeNewPicture {
 	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 		self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-		self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:self.imagePicker] autorelease];
+		self.popoverController = [[UIPopoverController alloc] initWithContentViewController:self.imagePicker];
         [self.popoverController presentPopoverFromRect:self.view.bounds
                                                 inView:self.view 
                               permittedArrowDirections:UIPopoverArrowDirectionAny
@@ -41,14 +41,13 @@
 							  cancelButtonTitle:@"Acknowledge!"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
     }
 }
 
 - (void) getCameraRollPicture {
 	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
 		self.imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-        self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:self.imagePicker] autorelease];
+        self.popoverController = [[UIPopoverController alloc] initWithContentViewController:self.imagePicker];
         [self.popoverController presentPopoverFromRect:self.view.bounds
                                                 inView:self.view 
                               permittedArrowDirections:UIPopoverArrowDirectionAny
@@ -63,7 +62,6 @@
 							  cancelButtonTitle:@"acknowledge"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
     }
 }
 
@@ -71,7 +69,7 @@
 	if ([UIImagePickerController isSourceTypeAvailable:
 		 UIImagePickerControllerSourceTypePhotoLibrary]) {
         self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:self.imagePicker] autorelease];
+        self.popoverController = [[UIPopoverController alloc] initWithContentViewController:self.imagePicker];
         [self.popoverController presentPopoverFromRect:self.view.bounds
                                                 inView:self.view 
                               permittedArrowDirections:UIPopoverArrowDirectionAny
@@ -86,7 +84,6 @@
 							  cancelButtonTitle:@"acknowledge"
 							  otherButtonTitles:nil];
 		[alert show];
-		[alert release];
     }
 }
 
@@ -119,10 +116,5 @@
 
 #pragma mark - memory management
 
-- (void) dealloc {
-    [popoverController release];
-    
-    [super dealloc];
-}
 
 @end

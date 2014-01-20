@@ -25,14 +25,14 @@
 	NSFetchedResultsController	* fetchedResultsController_;
 }
 
-@property (nonatomic, retain) IBOutlet	UIWindow					* window;
-@property (nonatomic, retain) IBOutlet	UINavigationController		* navigationController;
-@property (nonatomic, retain)           NSManagedObject             * currentSwimmer;
-@property (nonatomic, retain, readonly) TimeStandardDataAccess		* timeStandardDataAccess;
-@property (nonatomic, retain, readonly) NSManagedObjectContext		* managedObjectContext;
-@property (nonatomic, retain, readonly) NSManagedObjectModel		* managedObjectModel;
-@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator* persistentStoreCoordinator;
-@property (nonatomic, retain, readonly) NSFetchedResultsController	* fetchedResultsController;
+@property (nonatomic, strong) IBOutlet	UIWindow					* window;
+@property (nonatomic, strong) IBOutlet	UINavigationController		* navigationController;
+@property (nonatomic, strong)           NSManagedObject             * currentSwimmer;
+@property (nonatomic, strong, readonly) TimeStandardDataAccess		* timeStandardDataAccess;
+@property (nonatomic, strong, readonly) NSManagedObjectContext		* managedObjectContext;
+@property (nonatomic, strong, readonly) NSManagedObjectModel		* managedObjectModel;
+@property (nonatomic, strong, readonly) NSPersistentStoreCoordinator* persistentStoreCoordinator;
+@property (nonatomic, strong, readonly) NSFetchedResultsController	* fetchedResultsController;
 
 - (NSManagedObject *)	getHomeScreenValues;
 - (NSManagedObject *)	getHomeScreenSwimmer;

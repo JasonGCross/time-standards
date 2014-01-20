@@ -40,7 +40,6 @@
         [array addObject: swimmerController];
         
         self.controllers = array;
-        [array release];
         
     }
     return self;
@@ -75,7 +74,7 @@
 	UITableViewCell *cell = nil;
 	
 	switch (row) {
-		case STSStandardRow:
+		case STSStandardRow: {
 			cell = [tableViewParam dequeueReusableCellWithIdentifier:StandardCellIdentifier];
 			if (cell == nil) {
 				[[NSBundle mainBundle] loadNibNamed:@"StandardTableCell" 
@@ -90,7 +89,8 @@
 			self.previousTimeStandard = timeStandardName;
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 			break;
-		case STSSwimmerRow:
+		}
+		case STSSwimmerRow: {
 			cell = [tableViewParam dequeueReusableCellWithIdentifier:SwimmerCellIdentifier];
 			if (cell == nil) {
 				
@@ -122,6 +122,7 @@
 			
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;	
 			break;
+		}
 		default:
 			break;
 	}
@@ -137,8 +138,7 @@
 
 - (void)tableView:(UITableView *)tableViewParam didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSUInteger row = [indexPath row];
-    UITableViewController *detailViewController = [self.controllers 
-                                                   objectAtIndex:row];
+    UITableViewController *detailViewController = (self.controllers)[row];
 	
 	// ...
 	// Pass the selected object to the new view controller.
@@ -155,14 +155,6 @@
 	self.tableView = nil;
 }
 
-- (void)dealloc {
-	[controllers release];
-    [tableView release];
-    [timeStandardController release];
-	[swimmerController release];
-    
-    [super dealloc];
-}
 
 @end
 

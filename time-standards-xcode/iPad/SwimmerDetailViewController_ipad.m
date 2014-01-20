@@ -38,15 +38,15 @@
 	[_appDelegate saveContext];
 	
 	// Navigation logic may go here. Create and push another view controller.
-	SwimmerPhotoViewController_ipad *swimmerPhotoViewController = [[[SwimmerPhotoViewController_ipad alloc] 
+	SwimmerPhotoViewController_ipad *swimmerPhotoViewController = [[SwimmerPhotoViewController_ipad alloc] 
                                                                     initWithNibName:@"SwimmerPhotoViewController"
-                                                                    bundle:nil] autorelease];
+                                                                    bundle:nil];
     // we don't want it to take up the whole screen; that's way too big
     [swimmerPhotoViewController setModalPresentationStyle:UIModalPresentationFormSheet];
     [_appDelegate setCurrentSwimmer:_swimmer];
 	
     // Pass the selected object to the new view controller.
-    self.popoverController = [[[UIPopoverController alloc] initWithContentViewController:swimmerPhotoViewController] autorelease];
+    self.popoverController = [[UIPopoverController alloc] initWithContentViewController:swimmerPhotoViewController];
     [self.popoverController presentPopoverFromRect:self.view.bounds
                              inView:self.view 
            permittedArrowDirections:UIPopoverArrowDirectionAny
@@ -55,10 +55,5 @@
 
 #pragma mark - memory management
 
-- (void) dealloc {
-    [popoverController release];
-    
-    [super dealloc];
-}
 
 @end

@@ -135,7 +135,6 @@ static UIImage * defaultImage = nil;
     NSMutableArray * items = [[self.toolbar items] mutableCopy];
     [items insertObject:barButtonItem atIndex:0];
     [self.toolbar setItems:items animated:YES];
-    [items release];
     self.popoverController = pc;
 }
 
@@ -145,7 +144,6 @@ static UIImage * defaultImage = nil;
     NSMutableArray * items = [[self.toolbar items] mutableCopy];
     [items removeObject:barButtonItem];
     [self.toolbar setItems:items animated:YES];
-    [items release];
     self.popoverController = nil;
 }
 
@@ -165,16 +163,8 @@ static UIImage * defaultImage = nil;
 }
 
 - (void) dealloc {
-    [toolbar release];
-    [timeStandardNameLabel release];
-    [swimmerNameLabel release];
-    [swimmerGenderLabel release];
-    [swimmerAgeGroupLabel release];
-    [photoImageView release];
-    [popoverController release];
 
     [[NSNotificationCenter defaultCenter] removeObserver: self];
-    [super dealloc];
 }
 
 

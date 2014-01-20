@@ -15,7 +15,7 @@
 	SwimmerController					* swimmerController;
 }
 
-@property (nonatomic, retain) NSArray		* controllers;
-@property (nonatomic, retain) IBOutlet		UITableView		* tableView;
+@property (nonatomic, strong) NSArray		* controllers;
+@property (nonatomic, strong) IBOutlet		UITableView		* tableView;
 
 @end

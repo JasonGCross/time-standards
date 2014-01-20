@@ -17,17 +17,17 @@
     UILabel * swimmerGenderLabel;
     UILabel * swimmerAgeGroupLabel;
     UIImageView * photoImageView;
-    TimeStandardAndSwimmerController * timeStandardAndSwimmerVC;
+    TimeStandardAndSwimmerController * __weak timeStandardAndSwimmerVC;
     UIPopoverController * popoverController;
 }
 
-@property (nonatomic, retain) IBOutlet UIToolbar * toolbar;
-@property (nonatomic, retain) IBOutlet UILabel * timeStandardNameLabel;
-@property (nonatomic, retain) IBOutlet UILabel * swimmerNameLabel;
-@property (nonatomic, retain) IBOutlet UILabel * swimmerGenderLabel;
-@property (nonatomic, retain) IBOutlet UILabel * swimmerAgeGroupLabel;
-@property (nonatomic, retain) IBOutlet UIImageView * photoImageView;
-@property (nonatomic, assign) IBOutlet TimeStandardAndSwimmerController * timeStandardAndSwimmerVC;
-@property (nonatomic, retain) UIPopoverController * popoverController;
+@property (nonatomic, strong) IBOutlet UIToolbar * toolbar;
+@property (nonatomic, strong) IBOutlet UILabel * timeStandardNameLabel;
+@property (nonatomic, strong) IBOutlet UILabel * swimmerNameLabel;
+@property (nonatomic, strong) IBOutlet UILabel * swimmerGenderLabel;
+@property (nonatomic, strong) IBOutlet UILabel * swimmerAgeGroupLabel;
+@property (nonatomic, strong) IBOutlet UIImageView * photoImageView;
+@property (nonatomic, weak) IBOutlet TimeStandardAndSwimmerController * timeStandardAndSwimmerVC;
+@property (nonatomic, strong) UIPopoverController * popoverController;
 
 @end

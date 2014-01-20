@@ -43,24 +43,24 @@
 }
 
 
-@property (nonatomic, retain) IBOutlet		UIPickerView	* pickerView;
-@property (nonatomic, retain) IBOutlet		UILabel			* timeLabel;
-@property (nonatomic, retain) IBOutlet		UITableViewCell * nibLoadedStandardCell;
-@property (nonatomic, retain) IBOutlet		UITableViewCell * nibLoadedSwimmerCell;
-@property (nonatomic, retain) IBOutlet      UISegmentedControl * segmentedControl;
+@property (nonatomic, strong) IBOutlet		UIPickerView	* pickerView;
+@property (nonatomic, strong) IBOutlet		UILabel			* timeLabel;
+@property (nonatomic, strong) IBOutlet		UITableViewCell * nibLoadedStandardCell;
+@property (nonatomic, strong) IBOutlet		UITableViewCell * nibLoadedSwimmerCell;
+@property (nonatomic, strong) IBOutlet      UISegmentedControl * segmentedControl;
 
-@property (nonatomic, retain) NSArray		* strokes;
-@property (nonatomic, retain) NSArray		* distances;
-@property (nonatomic, retain) NSArray		* courses;
-@property (nonatomic, retain) NSDictionary  * keyIds;
+@property (nonatomic, strong) NSArray		* strokes;
+@property (nonatomic, strong) NSArray		* distances;
+@property (nonatomic, strong) NSArray		* courses;
+@property (nonatomic, strong) NSDictionary  * keyIds;
 
-@property (nonatomic, retain) NSString		* previousStroke;
-@property (nonatomic, retain) NSString		* previousDistance;
-@property (nonatomic, retain) NSString		* previousCourse;
+@property (nonatomic, strong) NSString		* previousStroke;
+@property (nonatomic, strong) NSString		* previousDistance;
+@property (nonatomic, strong) NSString		* previousCourse;
 
-@property (nonatomic, retain) NSString		* previousTimeStandard;
-@property (nonatomic, retain) NSString		* previousAgeGroup;
-@property (nonatomic, retain) NSString		* previousGender;
+@property (nonatomic, strong) NSString		* previousTimeStandard;
+@property (nonatomic, strong) NSString		* previousAgeGroup;
+@property (nonatomic, strong) NSString		* previousGender;
 
 
 - (void) handleHomeScreenValueChange;

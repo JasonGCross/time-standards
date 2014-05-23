@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uLv-xl-2ma">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hUF-Co-zKI">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="uLv-xl-2ma" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ipq-AT-4yP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="30l-r7-2jY" kind="relationship" relationship="rootViewController" id="gWe-Jr-rqH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTL-s7-XCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479" y="-183"/>
+        </scene>
+        <!--Root View Controller i Phone - PNS Time Standards-->
+        <scene sceneID="smR-iM-cle">
+            <objects>
+                <viewController title="PNS Time Standards" id="30l-r7-2jY" customClass="STSRootViewController_iPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z0M-rd-muz"/>
+                        <viewControllerLayoutGuide type="bottom" id="L4D-os-9lA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e4f-8f-7pv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="39" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-tC-AKG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="244"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="30l-r7-2jY" id="f8W-DD-iZb"/>
+                                    <outlet property="delegate" destination="30l-r7-2jY" id="s9M-Hw-ZaD"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sn-4F-A86">
+                                <rect key="frame" x="0.0" y="244" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="15" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Auy-gH-TBV">
+                                        <rect key="frame" x="20" y="40" width="280" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KOt-fM-vlb">
+                                        <rect key="frame" x="117" y="4" width="87" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="SCY"/>
+                                            <segment title="LCM"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Auy-gH-TBV" firstAttribute="top" secondItem="5Sn-4F-A86" secondAttribute="top" constant="40" id="4BG-VJ-CPH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Auy-gH-TBV" secondAttribute="trailing" constant="20" id="9R8-Tp-BSO"/>
+                                    <constraint firstItem="Auy-gH-TBV" firstAttribute="leading" secondItem="5Sn-4F-A86" secondAttribute="leading" constant="20" id="ACp-Pd-mLO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Auy-gH-TBV" secondAttribute="bottom" id="Sbb-JB-yBc"/>
+                                    <constraint firstAttribute="height" constant="100" id="oUn-kO-uqs"/>
+                                </constraints>
+                            </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOZ-Th-hsb">
+                                <rect key="frame" x="0.0" y="352" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="ShA-qX-MZx"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="30l-r7-2jY" id="EXP-F0-UEn"/>
+                                    <outlet property="delegate" destination="30l-r7-2jY" id="bZz-9h-5cS"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WOZ-Th-hsb" firstAttribute="leading" secondItem="e4f-8f-7pv" secondAttribute="leading" id="85T-nU-W7c"/>
+                            <constraint firstItem="5Sn-4F-A86" firstAttribute="leading" secondItem="e4f-8f-7pv" secondAttribute="leading" id="Pjj-Ow-lwr"/>
+                            <constraint firstItem="lsl-tC-AKG" firstAttribute="leading" secondItem="e4f-8f-7pv" secondAttribute="leading" id="VBs-KX-MMb"/>
+                            <constraint firstItem="5Sn-4F-A86" firstAttribute="top" secondItem="lsl-tC-AKG" secondAttribute="bottom" id="cfY-FO-Ric"/>
+                            <constraint firstAttribute="trailing" secondItem="5Sn-4F-A86" secondAttribute="trailing" id="gcS-o8-Kl4"/>
+                            <constraint firstAttribute="trailing" secondItem="lsl-tC-AKG" secondAttribute="trailing" id="h9z-5e-I3v"/>
+                            <constraint firstItem="L4D-os-9lA" firstAttribute="top" secondItem="WOZ-Th-hsb" secondAttribute="bottom" id="iSU-AQ-McX"/>
+                            <constraint firstItem="WOZ-Th-hsb" firstAttribute="top" secondItem="5Sn-4F-A86" secondAttribute="bottom" constant="8" id="oir-tu-FIg"/>
+                            <constraint firstItem="lsl-tC-AKG" firstAttribute="top" secondItem="e4f-8f-7pv" secondAttribute="top" id="tjf-Dk-yph"/>
+                            <constraint firstAttribute="trailing" secondItem="WOZ-Th-hsb" secondAttribute="trailing" id="tqr-Jz-H2v"/>
+                        </constraints>
+                        <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nfN-PI-1Hn"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="label" destination="Auy-gH-TBV" id="3TH-rs-ZGu"/>
+                        <outlet property="pickerView" destination="WOZ-Th-hsb" id="bRp-YW-1MN"/>
+                        <outlet property="segmentedControl" destination="KOt-fM-vlb" id="E7c-j8-x6G"/>
+                        <outlet property="tableView" destination="lsl-tC-AKG" id="Oc2-BI-foc"/>
+                        <segue destination="zUD-yH-nPP" kind="push" identifier="SwimmerDetailSegueue" id="zzp-4V-wnA"/>
+                        <segue destination="Tea-cg-0z5" kind="push" identifier="TimeStandardSegueue" id="OJS-Uv-raK"/>
+                        <segue destination="x0n-8z-q5S" kind="push" identifier="SwimmerListSegueue" id="iW8-2q-GGW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjy-lw-ANT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="Gl8-Wd-Dxh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="PNS Time Standards" id="Esu-fD-URL"/>
+                    </items>
+                </navigationBar>
+            </objects>
+            <point key="canvasLocation" x="44" y="-183"/>
+        </scene>
+        <!--Swimmer Controller-->
+        <scene sceneID="63U-0W-1Ba">
+            <objects>
+                <tableViewController storyboardIdentifier="STSSwimmerController" id="x0n-8z-q5S" customClass="STSSwimmerController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fvh-f9-7b7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="x0n-8z-q5S" id="TxP-p1-Nqt"/>
+                            <outlet property="delegate" destination="x0n-8z-q5S" id="lU3-s9-qeB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MFW-NS-qHz"/>
+                    <connections>
+                        <segue destination="zUD-yH-nPP" kind="push" identifier="SwimmerListToSwimmerDetailSegueue" id="XQX-BS-unU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guP-8f-vCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="320"/>
+        </scene>
+        <!--Swimmer Photo View Controller-->
+        <scene sceneID="45V-rA-vwo">
+            <objects>
+                <viewController id="mhn-lm-hIC" customClass="STSSwimmerPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yid-wN-51K"/>
+                        <viewControllerLayoutGuide type="bottom" id="ie9-Io-ryH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ezs-Nm-JLy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="headshot.png" translatesAutoresizingMaskIntoConstraints="NO" id="qnn-ie-8uH">
+                                <rect key="frame" x="127" y="88" width="66" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOK-9r-ife">
+                                <rect key="frame" x="61" y="209" width="198" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Take new picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeNewPicture" destination="mhn-lm-hIC" eventType="touchUpInside" id="P2N-gK-dCQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgR-d3-uW3">
+                                <rect key="frame" x="61" y="254" width="198" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Pick from Camera Roll">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCameraRollPicture" destination="mhn-lm-hIC" eventType="touchUpInside" id="Sqr-L7-lcG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EQ-33-xe8">
+                                <rect key="frame" x="61" y="299" width="198" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Pick from Library">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectExistingPicture" destination="mhn-lm-hIC" eventType="touchUpInside" id="S8J-FF-zov"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhQ-4P-qOD">
+                                <rect key="frame" x="61" y="344" width="198" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Delete Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePictureButton" destination="mhn-lm-hIC" eventType="touchUpInside" id="VAH-qu-q9b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kg0-mL-W4S"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="qnn-ie-8uH" id="7Go-2N-o8U"/>
+                        <outlet property="selectFromCameraRollButton" destination="UgR-d3-uW3" id="lk0-RP-QTN"/>
+                        <outlet property="takePictureButton" destination="sOK-9r-ife" id="tLF-lJ-rRF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYY-Gn-5IE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605" y="-183"/>
+        </scene>
+        <!--Swimmer Detail View Controller-->
+        <scene sceneID="sCm-GY-QHJ">
+            <objects>
+                <viewController storyboardIdentifier="STSSwimmerDetailViewController" id="zUD-yH-nPP" customClass="STSSwimmerDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5TE-hD-LyA"/>
+                        <viewControllerLayoutGuide type="bottom" id="B1z-4u-kq5"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mhq-Oe-AOd" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bv-aH-uFy" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="65" width="320" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="headshot.png" translatesAutoresizingMaskIntoConstraints="NO" id="dvZ-OT-pfL">
+                                        <rect key="frame" x="20" y="20" width="66" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLh-Rq-7Oy">
+                                        <rect key="frame" x="94" y="49" width="118" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                        <state key="normal" title="change image">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mhn-lm-hIC" kind="push" identifier="SwimmerDetailViewToSwimmerPhotoViewSegue" id="Ldr-m9-7ZZ"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Swimmer Name" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="c2B-m1-daO">
+                                        <rect key="frame" x="94" y="94" width="206" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="textFieldDoneEditing:" destination="zUD-yH-nPP" eventType="editingDidEndOnExit" id="HkO-Uq-rCD"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="J5Q-dU-4oI"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="backgroundTapped:" destination="zUD-yH-nPP" eventType="touchUpInside" id="r5V-iX-AUe"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="OXp-2o-ILL">
+                                <rect key="frame" x="0.0" y="205" width="320" height="363"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zUD-yH-nPP" id="0xI-qF-LXq"/>
+                                    <outlet property="delegate" destination="zUD-yH-nPP" id="i5N-oB-TA2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OXp-2o-ILL" firstAttribute="top" secondItem="4bv-aH-uFy" secondAttribute="bottom" id="0cJ-ez-mMM"/>
+                            <constraint firstItem="B1z-4u-kq5" firstAttribute="top" secondItem="OXp-2o-ILL" secondAttribute="bottom" id="4HR-T0-01R"/>
+                            <constraint firstItem="4bv-aH-uFy" firstAttribute="top" secondItem="5TE-hD-LyA" secondAttribute="bottom" constant="1" id="7YP-eQ-cGz"/>
+                            <constraint firstItem="OXp-2o-ILL" firstAttribute="leading" secondItem="mhq-Oe-AOd" secondAttribute="leading" id="9Dp-M9-WMo"/>
+                            <constraint firstItem="4bv-aH-uFy" firstAttribute="leading" secondItem="mhq-Oe-AOd" secondAttribute="leading" id="KjI-11-X6z"/>
+                            <constraint firstAttribute="trailing" secondItem="OXp-2o-ILL" secondAttribute="trailing" id="dqA-cm-dYP"/>
+                            <constraint firstAttribute="trailing" secondItem="4bv-aH-uFy" secondAttribute="trailing" id="zgL-7J-rG1"/>
+                        </constraints>
+                        <connections>
+                            <action selector="backgroundTapped:" destination="zUD-yH-nPP" eventType="touchDown" id="1oY-i0-gL3"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="fTL-88-z4I"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="dvZ-OT-pfL" id="O7y-ek-iyo"/>
+                        <outlet property="nameTextField" destination="c2B-m1-daO" id="c46-st-U0E"/>
+                        <outlet property="tableView" destination="OXp-2o-ILL" id="V9r-V3-P2Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRe-0v-dnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="-183"/>
+        </scene>
+        <!--Time Standard Controller-->
+        <scene sceneID="e2f-p3-5Sp">
+            <objects>
+                <tableViewController id="Tea-cg-0z5" customClass="STSTimeStandardController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hcr-ni-UIH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Tea-cg-0z5" id="XlK-7B-UUv"/>
+                            <outlet property="delegate" destination="Tea-cg-0z5" id="13Y-Hu-7ga"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="9kJ-TA-UCr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kS8-vu-8fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589" y="-641"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="headshot.png" width="66" height="66"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="zzp-4V-wnA"/>
+    </inferredMetricsTieBreakers>
+</document>

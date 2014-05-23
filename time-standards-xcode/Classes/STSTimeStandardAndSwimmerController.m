@@ -431,8 +431,8 @@
     NSUInteger section = indexPath.section;
     switch (section) {
         case timeStandardSection: {
-            int newRow = [indexPath row];
-            int oldRow = (_lastIndexPath != nil) ? [_lastIndexPath row] : -1;
+            NSInteger newRow = [indexPath row];
+            NSInteger oldRow = (_lastIndexPath != nil) ? [_lastIndexPath row] : -1;
             
             if (newRow != oldRow) {
                 UITableViewCell * newCell = [tableViewParam cellForRowAtIndexPath:indexPath];

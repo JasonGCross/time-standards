@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwimTimeStandards.xcscheme</key>
+		<key>PNS Times.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -13,11 +13,6 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1D6058900D05DD3D006BFB54</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F68F616C19004FF800ED2EC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

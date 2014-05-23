@@ -1,14 +1,2 @@
-2|PNS Silver|2010-2011|PNS Silver 2010-2011
-3|PNS Gold|2010-2011|PNS Gold 2010-2011
-4|WA Sr Champs|2010-2011|Washington State Senior Championships
-5|NW Regionals|2010-2011|SC NW Age Group Regionals
-6|PNS LC Champs|2011|PNS Long Course Championships 2011
-7|Western Zone|2011|Western Zone Age Group Championships 2011
-8|Jr Nationals|2011|LCM Junior Championships 2011
-9|Jr Nationals (Bonus)|2011|LCM Junior Championships 2011
-10|Summer Nationals|2011|LCM National Championships 2011
-11|Summer Nationals (Bonus)|2011|LCM National Championships 2011
-12|Winter Nationals|2011|LCM National Championships 2011
-13|12 Olympic Tr|2012|2010 Olympic Trials
-14|2012 PNS Sectionals|2012|2012 Speedo Championship Series Northwest Section
-15|2012 PNS Regionals|2012|2012 PNS Age Group Regionals
+16|2014 PNS Silver|2014|2013-2014 PNS Silver Time Standards
+17|2014 PNS Gold|2014|2013-2014 PNS Gold Time Standards

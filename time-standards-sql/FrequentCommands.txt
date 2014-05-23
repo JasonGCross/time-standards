@@ -8,3 +8,10 @@ INSERT INTO SWIMMER (Name, Gender, AgeGroupId) VALUES ('John', 'M', 180);
 .separator "	"
 
 Note to import files, the default separater is "|".  You can change it using .separator "," or equivalent.
+
+Populate Tables in this order:
+1. AgeGroup | Format | Standard | Stroke
+2. Event
+3. TimeStandard (run individual queries for each TimeStandard, such as .import PNS_GOLD_2014/PnsSilver2014_Girls.txt TimeStandard
+)
+4. ReportTimeStandard  (.read ReportTimeStandard.data.sql)

@@ -5,8 +5,8 @@ SELECT DISTINCT standardId, StandardFriendly from vwTimeStandard
 
 
 --getAgeGroupNames
-SELECT DISTINCT AgeGroupID, AgeGroupName 
-FROM  ReportTimeStandard
+SELECT DISTINCT AgeGroupID, AgeGroupName          
+FROM  vwTimeStandard
 WHERE StandardName = 'PNS Silver'
 GROUP BY AgeGroupName
 ORDER BY AgeGroupId;
@@ -14,22 +14,30 @@ ORDER BY AgeGroupId;
 --	- (BOOL) timeStandard: (NSString *) timeStandardName 
 --	  doesContainAgeGroup: (NSString *) ageGroupName {		
 -- (returns true if the query retuns at least one row)	
-	
-SELECT DISTINCT AgeGroupID, AgeGroupName 
-FROM  ReportTimeStandard
-WHERE StandardName = 'PNS Silver'
+SELECT DISTINCT AgeGroupID, AgeGroupName
+FROM  vwTimeStandard 
+WHERE StandardName = '2014 PNS Gold'
 AND AgeGroupName = '10 & Under'
 ORDER BY AgeGroupId;
 		
 --	- (NSArray *) getAllStrokeNamesForStandardName: (NSString *) standardName 
 --										 andGender: (NSString *) gender
 --								   andAgeGroupName: (NSString *) ageGroupName {
-SELECT DISTINCT StrokeID ,StrokeName
-FROM  ReportTimeStandard
-WHERE StandardName = 'PNS Silver'
+SELECT DISTINCT StrokeName         
+FROM  vwTimeStandard
+WHERE StandardName = '2014 PNS Gold'
 AND  Gender = 'M'
 AND  AgeGroupName = '10 & Under'
 ORDER BY EventId;
+
+-- distance
+SELECT DISTINCT EventId, Distance, StandardId
+FROM  vwTimeStandard
+WHERE StandardName = '2014 PNS Gold'
+AND Gender = 'F'
+AND AgeGroupName = '10 & Under'
+AND StrokeName = 'Free'
+ORDER BY Distance;
 
 
 

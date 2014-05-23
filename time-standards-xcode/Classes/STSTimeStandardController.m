@@ -95,8 +95,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	int newRow = [indexPath row];
-	int oldRow = (_lastIndexPath != nil) ? [_lastIndexPath row] : -1;
+	NSInteger newRow = [indexPath row];
+	NSInteger oldRow = (_lastIndexPath != nil) ? [_lastIndexPath row] : -1;
 	
 	if (newRow != oldRow) {
 		UITableViewCell * newCell = [tableView cellForRowAtIndexPath:indexPath];

@@ -57,6 +57,9 @@
 		F6A3F30212E00571002806DF /* HomeScreenValues.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6A3F30012E00571002806DF /* HomeScreenValues.xcdatamodeld */; };
 		F6BB2A75193001D300B1C185 /* STSTimeStandardDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F68F611A19004B5500ED2EC1 /* STSTimeStandardDataAccess.m */; };
 		F6BB2A76193001F300B1C185 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE03BF121524FC00F749F7 /* libsqlite3.dylib */; };
+		F6BB2A791930074800B1C185 /* outdoor_pool.png in Resources */ = {isa = PBXBuildFile; fileRef = F6BB2A771930074800B1C185 /* outdoor_pool.png */; };
+		F6BB2A7A1930074800B1C185 /* outdoor_pool@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6BB2A781930074800B1C185 /* outdoor_pool@2x.png */; };
+		F6BB2A7E19300C2000B1C185 /* NSObject+STSGeneralizedNullCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BB2A7D19300C2000B1C185 /* NSObject+STSGeneralizedNullCheck.m */; };
 		F6C38B6C13E61D2400F0D62B /* appIcon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */; };
 		F6C38B6E13E61D2D00F0D62B /* appIcon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */; };
 		F6C38B7213E61D5D00F0D62B /* appIcon_72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */; };
@@ -152,6 +155,10 @@
 		F6A3F2FB12E00457002806DF /* UIImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageToDataTransformer.h; sourceTree = "<group>"; };
 		F6A3F2FC12E00457002806DF /* UIImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageToDataTransformer.m; sourceTree = "<group>"; };
 		F6A3F30112E00571002806DF /* HomeScreenValuesv2.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv2.xcdatamodel; sourceTree = "<group>"; };
+		F6BB2A771930074800B1C185 /* outdoor_pool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outdoor_pool.png; sourceTree = "<group>"; };
+		F6BB2A781930074800B1C185 /* outdoor_pool@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outdoor_pool@2x.png"; sourceTree = "<group>"; };
+		F6BB2A7C19300C2000B1C185 /* NSObject+STSGeneralizedNullCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+STSGeneralizedNullCheck.h"; path = "Classes/NSObject+STSGeneralizedNullCheck.h"; sourceTree = "<group>"; };
+		F6BB2A7D19300C2000B1C185 /* NSObject+STSGeneralizedNullCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+STSGeneralizedNullCheck.m"; path = "Classes/NSObject+STSGeneralizedNullCheck.m"; sourceTree = "<group>"; };
 		F6C38B6B13E61D2400F0D62B /* appIcon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appIcon-57x57.png"; path = "../appIcon-57x57.png"; sourceTree = "<group>"; };
 		F6C38B6D13E61D2D00F0D62B /* appIcon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appIcon-114x114.png"; path = "../appIcon-114x114.png"; sourceTree = "<group>"; };
 		F6C38B7113E61D5D00F0D62B /* appIcon_72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appIcon_72x72.png; path = ../appIcon_72x72.png; sourceTree = "<group>"; };
@@ -212,6 +219,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F6BB2A7B19300BF300B1C185 /* Categories */,
 				F6D06DEB122CB35100E58473 /* Model */,
 				F68F612719004CB300ED2EC1 /* TableViewCells */,
 				F68F614819004D9D00ED2EC1 /* ViewControllers */,
@@ -304,6 +312,8 @@
 				F667952E12C9D18400AA2CCB /* appIcon.png */,
 				F683EDC212CC30B600D5588A /* Default.png */,
 				F6C460D61273177B0037A3F2 /* headshot.png */,
+				F6BB2A771930074800B1C185 /* outdoor_pool.png */,
+				F6BB2A781930074800B1C185 /* outdoor_pool@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -371,6 +381,15 @@
 				F68F617A19004FF800ED2EC1 /* SwimTimeStandardsTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6BB2A7B19300BF300B1C185 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F6BB2A7C19300C2000B1C185 /* NSObject+STSGeneralizedNullCheck.h */,
+				F6BB2A7D19300C2000B1C185 /* NSObject+STSGeneralizedNullCheck.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		F6D06DEB122CB35100E58473 /* Model */ = {
@@ -484,6 +503,7 @@
 				F68F616719004F8C00ED2EC1 /* appIcon_50x50.png in Resources */,
 				F68F616819004F8C00ED2EC1 /* miniAppIcon.png in Resources */,
 				F6C38B6C13E61D2400F0D62B /* appIcon-57x57.png in Resources */,
+				F6BB2A791930074800B1C185 /* outdoor_pool.png in Resources */,
 				F68F614619004D7300ED2EC1 /* STSSwimmerListTableViewCell.xib in Resources */,
 				F68F614419004D7300ED2EC1 /* STSSwimmerHomeScreenTableViewCell.xib in Resources */,
 				F6C38B6E13E61D2D00F0D62B /* appIcon-114x114.png in Resources */,
@@ -491,6 +511,7 @@
 				F61D0AA4188C8C3500FBD394 /* Default-568h@2x.png in Resources */,
 				F6C38B7213E61D5D00F0D62B /* appIcon_72x72.png in Resources */,
 				F67BE27F14CFC9180034D483 /* Default@2x.png in Resources */,
+				F6BB2A7A1930074800B1C185 /* outdoor_pool@2x.png in Resources */,
 				F67BE28114CFC93B0034D483 /* Default-Portrait~ipad.png in Resources */,
 				F67BE28314CFC9440034D483 /* Default-Landscape~ipad.png in Resources */,
 				F68F615F19004F3E00ED2EC1 /* SwimTimes_v4.sqlite in Resources */,
@@ -524,6 +545,7 @@
 				F68F615019004E7400ED2EC1 /* STSSwimmerDetailViewController.m in Sources */,
 				F68F612A19004CD900ED2EC1 /* STSSmartTableViewCell.m in Sources */,
 				F68F613C19004D1000ED2EC1 /* STSSwimmerHomeScreenTableViewCell+Binding.m in Sources */,
+				F6BB2A7E19300C2000B1C185 /* NSObject+STSGeneralizedNullCheck.m in Sources */,
 				F69A720114AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel in Sources */,
 				F68F615619004EA300ED2EC1 /* STSTimeStandardAndSwimmerController.m in Sources */,
 				F68F611819004B1A00ED2EC1 /* STSSwimmerDataAccess.m in Sources */,

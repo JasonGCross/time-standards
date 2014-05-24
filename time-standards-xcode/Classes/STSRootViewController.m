@@ -18,9 +18,7 @@
 
 
 
-static NSString * const kSwimmerDetailSegueIdentifier = @"SwimmerDetailSegueue";
-static NSString * const kTimeStandardSegueIdentifier = @"TimeStandardSegueue";
-static NSString * const kSwimmerListSegueIdentifier = @"SwimmerListSegueue";
+
 
 typedef NS_ENUM(NSUInteger, STSHomeScreenRows) {
     STSHomeScreenRowTimeStandards,
@@ -42,7 +40,7 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 @property (nonatomic, strong) NSMutableDictionary       * previousPickerValues;
 @property (nonatomic, strong) NSDictionary              * keyIds;
 @property (nonatomic, strong) IBOutlet UISegmentedControl * segmentedControl;
-@property (nonatomic, weak) UILabel                     * timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel            * timeLabel;
 @end
 
 
@@ -71,6 +69,8 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 
 // Implement viewWillAppear: to do additional setup before the view is presented.
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     /*
      1) upon view will appear, check to see if the critical home screen values have changed
         The critical home screen values are defined as:
@@ -81,7 +81,6 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 	if ([self homeScreenValuesHaveChanged] == YES) {
         [self handleHomeScreenValueChange];
 	}
-    [super viewWillAppear:animated];
 }
 
 #pragma mark - Private helper methods
@@ -102,8 +101,6 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 	}
 	return YES;
 }
-
-    
 
 - (NSString *) getSelectedOrPreviousStroke {
     if ((nil == self.strokes) || ([self.strokes count] == 0)) {

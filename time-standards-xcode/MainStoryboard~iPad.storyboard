@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="e6y-GO-cpk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="e6y-GO-cpk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -65,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zU9-pl-qvU" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="412.00000000000006"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="412"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outdoor_pool.png" translatesAutoresizingMaskIntoConstraints="NO" id="H8j-3U-tWI">
@@ -244,13 +244,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="Q6O-Dh-wJr" id="b8Z-CQ-Y69"/>
                         <outlet property="photoImageView" destination="Crh-rv-WoW" id="zsf-XL-pQe"/>
                         <outlet property="pickerView" destination="jL9-Az-o9d" id="mpm-2r-HxW"/>
                         <outlet property="segmentedControl" destination="b7N-Yy-O6e" id="hUm-sG-x2Y"/>
                         <outlet property="swimmerAgeGroupLabel" destination="f8B-mI-qkB" id="gJa-je-jYx"/>
                         <outlet property="swimmerGenderLabel" destination="V8D-m3-svk" id="ArE-bP-Drf"/>
                         <outlet property="swimmerNameLabel" destination="EZg-iC-cPd" id="FWA-Kg-g2S"/>
+                        <outlet property="timeLabel" destination="Q6O-Dh-wJr" id="fOK-O3-BpS"/>
                         <outlet property="timeStandardNameLabel" destination="HQD-kf-LXB" id="2b4-K5-Rro"/>
                         <outlet property="toolBarCenterView" destination="BES-gL-2lD" id="pZ4-OE-F7x"/>
                         <outlet property="toolbar" destination="Yvu-Ak-45t" id="efu-fu-wYQ"/>
@@ -262,7 +262,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="headshot.png" width="300" height="300"/>
+        <image name="headshot.png" width="66" height="66"/>
         <image name="outdoor_pool.png" width="768" height="412"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

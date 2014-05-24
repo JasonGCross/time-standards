@@ -12,16 +12,18 @@
 
 
 - (void) bindToSwimmer:(NSManagedObject*)swimmer; {
-    self.swimmerNameLabel.text = [swimmer valueForKey:@"swimmerName"];
+    NSString * swimmerName = [swimmer valueForKey:@"swimmerName"];
+    swimmerName = ([NSString sts_isEmpty:swimmerName]) ? @"select a swimmer" : swimmerName;
+    self.swimmerNameLabel.text = swimmerName;
     
     NSMutableString * swimmerDescription = [NSMutableString stringWithCapacity:20];
     NSString * swimmerAgeGroup = [swimmer valueForKey:@"swimmerAgeGroup"];
-    swimmerAgeGroup = (swimmerAgeGroup == nil) ? @"(re)select age group" : swimmerAgeGroup;
+    swimmerAgeGroup = ([NSString sts_isEmpty:swimmerAgeGroup]) ? @"(re)select age group" : swimmerAgeGroup;
     [swimmerDescription appendString:swimmerAgeGroup];
     [swimmerDescription appendString:@" "];
     
     NSString * swimmerGender = [swimmer valueForKey:@"swimmerGender"];
-    swimmerGender = (swimmerGender == nil) ? @"select gender" : swimmerGender;
+    swimmerGender = ([NSString sts_isEmpty:swimmerGender]) ? @"select gender" : swimmerGender;
     [swimmerDescription appendString:swimmerGender];
     self.swimmerDescriptionLabel.text = swimmerDescription;
     

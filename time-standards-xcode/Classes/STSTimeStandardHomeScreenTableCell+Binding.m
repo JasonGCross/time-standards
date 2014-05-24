@@ -14,6 +14,7 @@
 
 - (void) bind; {
     NSString * timeStandardName = [[STSSwimmerDataAccess sharedDataAccess] getHomeScreenTimeStandard];
+    timeStandardName = ([NSString sts_isEmpty:timeStandardName]) ? @"select a Time Standard" : timeStandardName;
     self.standardNameLabel.text = timeStandardName;
     self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uLv-xl-2ma">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uLv-xl-2ma">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -31,14 +31,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="39" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-tC-AKG">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outdoor_pool.png" translatesAutoresizingMaskIntoConstraints="NO" id="vh0-Wt-WND">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-tC-AKG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="30l-r7-2jY" id="f8W-DD-iZb"/>
-                                    <outlet property="delegate" destination="30l-r7-2jY" id="s9M-Hw-ZaD"/>
+                                    <outlet property="dataSource" destination="30l-r7-2jY" id="llU-Zp-K2b"/>
+                                    <outlet property="delegate" destination="30l-r7-2jY" id="dM3-qW-RfK"/>
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sn-4F-A86">
@@ -61,7 +66,7 @@
                                         </segments>
                                     </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.98039221759999995" green="0.95294123890000004" blue="0.82745105029999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstItem="Auy-gH-TBV" firstAttribute="top" secondItem="5Sn-4F-A86" secondAttribute="top" constant="40" id="4BG-VJ-CPH"/>
                                     <constraint firstAttribute="trailing" secondItem="Auy-gH-TBV" secondAttribute="trailing" constant="20" id="9R8-Tp-BSO"/>
@@ -92,7 +97,7 @@
                             <constraint firstAttribute="trailing" secondItem="lsl-tC-AKG" secondAttribute="trailing" id="h9z-5e-I3v"/>
                             <constraint firstItem="L4D-os-9lA" firstAttribute="top" secondItem="WOZ-Th-hsb" secondAttribute="bottom" id="iSU-AQ-McX"/>
                             <constraint firstItem="WOZ-Th-hsb" firstAttribute="top" secondItem="5Sn-4F-A86" secondAttribute="bottom" constant="8" id="oir-tu-FIg"/>
-                            <constraint firstItem="lsl-tC-AKG" firstAttribute="top" secondItem="e4f-8f-7pv" secondAttribute="top" id="tjf-Dk-yph"/>
+                            <constraint firstItem="lsl-tC-AKG" firstAttribute="top" secondItem="e4f-8f-7pv" secondAttribute="top" constant="64" id="tjf-Dk-yph"/>
                             <constraint firstAttribute="trailing" secondItem="WOZ-Th-hsb" secondAttribute="trailing" id="tqr-Jz-H2v"/>
                         </constraints>
                         <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -104,10 +109,10 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="label" destination="Auy-gH-TBV" id="3TH-rs-ZGu"/>
                         <outlet property="pickerView" destination="WOZ-Th-hsb" id="bRp-YW-1MN"/>
                         <outlet property="segmentedControl" destination="KOt-fM-vlb" id="E7c-j8-x6G"/>
                         <outlet property="tableView" destination="lsl-tC-AKG" id="Oc2-BI-foc"/>
+                        <outlet property="timeLabel" destination="Auy-gH-TBV" id="bHT-W5-tyZ"/>
                         <segue destination="zUD-yH-nPP" kind="push" identifier="SwimmerDetailSegueue" id="zzp-4V-wnA"/>
                         <segue destination="Tea-cg-0z5" kind="push" identifier="TimeStandardSegueue" id="OJS-Uv-raK"/>
                         <segue destination="x0n-8z-q5S" kind="push" identifier="SwimmerListSegueue" id="iW8-2q-GGW"/>
@@ -337,6 +342,7 @@
     </scenes>
     <resources>
         <image name="headshot.png" width="66" height="66"/>
+        <image name="outdoor_pool.png" width="768" height="412"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

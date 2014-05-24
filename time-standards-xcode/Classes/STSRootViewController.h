@@ -15,12 +15,15 @@
 
 @class HomeScreenValues;
 
+static NSString * const kSwimmerDetailSegueIdentifier = @"SwimmerDetailSegueue";
+static NSString * const kTimeStandardSegueIdentifier = @"TimeStandardSegueue";
+static NSString * const kSwimmerListSegueIdentifier = @"SwimmerListSegueue";
+
 
 @interface STSRootViewController : UIViewController 
 <NSFetchedResultsControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (nonatomic, strong) IBOutlet		UIPickerView	* pickerView;
-@property (nonatomic, strong) IBOutlet		UILabel			* label;
 @property (nonatomic, strong) IBOutlet		UITableView		* tableView;
 
 

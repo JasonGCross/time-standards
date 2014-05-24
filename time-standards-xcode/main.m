@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "STSAppDelegate.h"
 
 int main(int argc, char *argv[]) {
     
     @autoreleasepool {
-        int retVal = UIApplicationMain(argc, argv, nil, nil);
+        int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([STSAppDelegate class]));
         return retVal;
     }
 }

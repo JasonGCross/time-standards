@@ -7,10 +7,16 @@
 //
 
 #import "STSRootViewController~iPhone.h"
+#import "STSSwimmerHomeScreenTableViewCell.h"
+#import "STSSwimmerHomeScreenTableViewCell+Binding.h"
+#import "STSTimeStandardHomeScreenTableCell.h"
+#import "STSTimeStandardHomeScreenTableCell+Binding.h"
+#import "STSSwimmerDataAccess.h"
+
 
 typedef NS_ENUM(NSUInteger, STSRootViewControlleriPhoneTableSections) {
-    STSRootViewControlleriPhoneTableSectionTimeStandard = 0,
-    STSRootViewControlleriPhoneTableSectionSwimmer = 1,
+    STSRootViewControlleriPhoneTableSectionTimeStandard  = 0,
+    STSRootViewControlleriPhoneTableSectionSwimmer       = 1,
     STSRootViewControlleriPhoneTableSectionTotal
 };
 
@@ -33,6 +39,8 @@ typedef NS_ENUM(NSUInteger, STSRootViewControlleriPhoneTableSections) {
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self.tableView registerNib:[STSTimeStandardHomeScreenTableCell nib] forCellReuseIdentifier:[STSTimeStandardHomeScreenTableCell cellIdentifier]];
+    [self.tableView registerNib:[STSSwimmerHomeScreenTableViewCell nib] forCellReuseIdentifier:[STSSwimmerHomeScreenTableViewCell cellIdentifier]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,10 +67,7 @@ typedef NS_ENUM(NSUInteger, STSRootViewControlleriPhoneTableSections) {
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableViewParam cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString * cellReuseIdentifier = @"detailViewCell";
-    [tableViewParam registerClass:[UITableViewCell class]
-           forCellReuseIdentifier:cellReuseIdentifier];
-    UITableViewCell *cell = [tableViewParam dequeueReusableCellWithIdentifier:cellReuseIdentifier];
+    UITableViewCell *cell = nil;
     
     // Configure the cell...
 	NSUInteger section = [indexPath section];
@@ -71,11 +76,19 @@ typedef NS_ENUM(NSUInteger, STSRootViewControlleriPhoneTableSections) {
 	switch (section) {
 		case STSRootViewControlleriPhoneTableSectionTimeStandard:
 			// configure the cell.
+        {
+            cell = [STSTimeStandardHomeScreenTableCell cellForTableView:tableViewParam];
+            [(STSTimeStandardHomeScreenTableCell*)cell bind];
+        }
 
 			break;
 		case STSRootViewControlleriPhoneTableSectionSwimmer:
 			// configure the cell.
-
+        {
+            NSManagedObject * currentSwimmer = [[STSSwimmerDataAccess sharedDataAccess] getHomeScreenSwimmer];
+            cell = [STSSwimmerHomeScreenTableViewCell cellForTableView:tableViewParam];
+            [(STSSwimmerHomeScreenTableViewCell *)cell bindToSwimmer:currentSwimmer];
+        }
 			break;
 		default:
 			break;
@@ -92,14 +105,21 @@ typedef NS_ENUM(NSUInteger, STSRootViewControlleriPhoneTableSections) {
 	
 	switch (section) {
 		case STSRootViewControlleriPhoneTableSectionTimeStandard:
-
+            [self performSegueWithIdentifier:kTimeStandardSegueIdentifier sender:self];
 			break;
 		case STSRootViewControlleriPhoneTableSectionSwimmer:
-
+            [self performSegueWithIdentifier:kSwimmerListSegueIdentifier sender:self];
 			break;
 		default:
 			break;
 	}
+}
+
+#pragma mark - public methods
+
+- (void) handleHomeScreenValueChange; {
+    [super handleHomeScreenValueChange];
+    [self.tableView reloadData];
 }
 
 

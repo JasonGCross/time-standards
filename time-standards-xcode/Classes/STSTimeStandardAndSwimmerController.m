@@ -13,7 +13,6 @@
 #import "STSSwimmerListEditTableViewCell.h"
 #import "STSSwimmerListTableViewCell+Binding.h"
 #import "STSTimeStandardDataAccess.h"
-#import "STSTimeStandardHomeScreenTableCell.h"
 
 
 
@@ -296,9 +295,9 @@
     forCellReuseIdentifier:[STSSwimmerListTableViewCell cellIdentifier]];
     [tableView registerNib:[STSSwimmerListEditTableViewCell nib]
     forCellReuseIdentifier:[STSSwimmerListEditTableViewCell cellIdentifier]];
-    [tableView registerNib:[STSTimeStandardHomeScreenTableCell nib]
-    forCellReuseIdentifier:[STSTimeStandardHomeScreenTableCell cellIdentifier]];
-    
+    static NSString * cellIdentifierTimeStandardSwimmer = @"cellIdentifierTimeStandardSwimmerIPad";
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifierTimeStandardSwimmer
+     ];
     static NSManagedObject * homeScreenValues = nil;
     if (homeScreenValues == nil) {
         [[STSSwimmerDataAccess sharedDataAccess] getHomeScreenValues];
@@ -309,7 +308,7 @@
     
     switch (section) {
         case timeStandardSection: {
-            cell = [STSTimeStandardHomeScreenTableCell cellForTableView:tableView];
+            cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifierTimeStandardSwimmer];
             // Configure the cell...
             NSUInteger row = [indexPath row];
             cell.textLabel.text = _settingList[row];

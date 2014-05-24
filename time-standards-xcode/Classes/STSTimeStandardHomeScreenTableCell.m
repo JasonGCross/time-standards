@@ -16,4 +16,9 @@
     return _cellIdentifier;
 }
 
+- (void)awakeFromNib
+{
+    NSLog(@"awake from nib");
+}
+
 @end

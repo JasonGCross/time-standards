@@ -202,6 +202,9 @@
                                             <segment title="SCY"/>
                                             <segment title="LCM"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="segmentedControlDidChange:" destination="Xhh-Zq-vHJ" eventType="valueChanged" id="3d9-ig-lNS"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9803922176361084" green="0.95294123888015747" blue="0.82745105028152466" alpha="1" colorSpace="deviceRGB"/>
@@ -251,9 +254,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="courseSegmentedControl" destination="b7N-Yy-O6e" id="Tos-fG-QCg"/>
                         <outlet property="photoImageView" destination="Crh-rv-WoW" id="zsf-XL-pQe"/>
                         <outlet property="pickerView" destination="jL9-Az-o9d" id="mpm-2r-HxW"/>
-                        <outlet property="segmentedControl" destination="b7N-Yy-O6e" id="hUm-sG-x2Y"/>
                         <outlet property="swimmerAgeGroupLabel" destination="f8B-mI-qkB" id="gJa-je-jYx"/>
                         <outlet property="swimmerGenderLabel" destination="V8D-m3-svk" id="ArE-bP-Drf"/>
                         <outlet property="swimmerNameLabel" destination="EZg-iC-cPd" id="FWA-Kg-g2S"/>
@@ -269,7 +272,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="headshot.png" width="66" height="66"/>
+        <image name="headshot.png" width="300" height="300"/>
         <image name="outdoor_pool.png" width="768" height="412"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

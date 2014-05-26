@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 @property (nonatomic, strong) STSSwimmerController      * swimmerController;
 @property (nonatomic, strong) NSMutableDictionary       * previousPickerValues;
 @property (nonatomic, strong) NSDictionary              * keyIds;
-@property (nonatomic, strong) IBOutlet UISegmentedControl * segmentedControl;
+@property (nonatomic, strong) IBOutlet UISegmentedControl * courseSegmentedControl;
 @property (nonatomic, weak) IBOutlet UILabel            * timeLabel;
 @end
 
@@ -102,6 +102,25 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 	return YES;
 }
 
+- (void) updateCourseSegmentedControlSegments {
+    static NSArray * defaultCourses = nil;
+    if (defaultCourses == nil) {
+        defaultCourses = @[@"scy", @"lcm"];
+    }
+    
+    NSArray * coursesToSet = [NSArray sts_isEmpty:self.courses] ? defaultCourses : self.courses;
+    [self.courseSegmentedControl removeAllSegments];
+    for (int i=0; i < [coursesToSet count]; i++) {
+        // very important to have new segments created without animation so that the time
+		// timeLabel will update properly
+        [self.courseSegmentedControl insertSegmentWithTitle:coursesToSet[i] atIndex:i animated:NO];
+        if ([self.previousCourse isEqualToString:coursesToSet[i]]) {
+            [self.courseSegmentedControl setSelectedSegmentIndex:i];
+        }
+    }
+
+}
+
 - (NSString *) getSelectedOrPreviousStroke {
     if ((nil == self.strokes) || ([self.strokes count] == 0)) {
         return nil;
@@ -143,7 +162,7 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
     }
     
     // if there is no segment currently selected, return the previous value
-    if ([self.segmentedControl selectedSegmentIndex] < 0) {
+    if ([self.courseSegmentedControl selectedSegmentIndex] < 0) {
         // if there  is no previous value, try to set it now
 		if ((self.previousCourse == nil) && ([self.courses count] > 0)) {
 			self.previousCourse = (self.courses)[0];
@@ -151,7 +170,7 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 		return self.previousCourse;
     }
 	else {
-		return (self.courses)[[self.segmentedControl selectedSegmentIndex]];
+		return (self.courses)[[self.courseSegmentedControl selectedSegmentIndex]];
 	}
 }
 
@@ -214,32 +233,29 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
      6) select the "previousCourse" for the switch, or the first value
          if the previousCourse does not match any course in the course array
      */
-    NSManagedObject * currentSwimmer = [[STSSwimmerDataAccess sharedDataAccess] getHomeScreenSwimmer];
+    STSSwimmerDataAccess* sharedSwimmerDataAccess = [STSSwimmerDataAccess sharedDataAccess];
+    NSManagedObject * currentSwimmer = [sharedSwimmerDataAccess getHomeScreenSwimmer];
 	NSString * currentGender = [currentSwimmer valueForKey:@"swimmerGender"];
 	NSString * currentAgeGroup = [currentSwimmer valueForKey:@"swimmerAgeGroup"];
     
 	NSString * selectedStroke = [self getSelectedOrPreviousStroke];
     NSString * selectedDistance = nil;
 	
-    self.courses =
-    [[STSTimeStandardDataAccess sharedDataAccess]					getFormatForStandardName:[[STSSwimmerDataAccess sharedDataAccess] getHomeScreenTimeStandard]
+    STSTimeStandardDataAccess* sharedTimeStandardDataAccess = [STSTimeStandardDataAccess sharedDataAccess];
+    NSString * timeStandardName = [sharedSwimmerDataAccess getHomeScreenTimeStandard];
+    
+    NSArray * courses = [sharedTimeStandardDataAccess getFormatForStandardName:timeStandardName
                                                                      andGender:currentGender
                                                                andAgeGroupName:currentAgeGroup
                                                                    andDistance:selectedDistance
                                                                  andStrokeName:selectedStroke];
-    CGRect segmentedRectangle = self.segmentedControl.frame;
-    [self.segmentedControl removeAllSegments];
-    for (int i=0; i < [self.courses count]; i++) {
-        // very important to have new segments created without animation so that the time
-		// timeLabel will update properly
-        [self.segmentedControl insertSegmentWithTitle:(self.courses)[i] atIndex:i animated:NO];
-        self.segmentedControl.frame = segmentedRectangle;
-    }
     
+    self.courses = courses;
+    [self updateCourseSegmentedControlSegments];
     
 //    if ([self.courses count] > 0) {
 //		NSUInteger newRow = [self getRowWhichComponentShouldSelect:STSPickerComponentsCourse];
-//        [self.segmentedControl setSelectedSegmentIndex:newRow];
+//        [self.courseSegmentedControl setSelectedSegmentIndex:newRow];
 //		self.previousCourse = (self.courses)[newRow];
 //	}
 }
@@ -291,7 +307,8 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 		[self reloadDistanceComponent];
 		return;
 	}
-	else {
+	else
+    {
 		self.strokes = nil;
 		self.courses = nil;
 		self.distances = nil;
@@ -300,15 +317,11 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
         [self.pickerView reloadComponent:STSPickerComponentStroke];
 			
         // 2 - courses
-        static NSArray * defaultCourses = nil;
-        if (defaultCourses == nil) {
-            defaultCourses = @[@"scy", @"lcm"];
-		}
-        self.segmentedControl = [[UISegmentedControl alloc] initWithItems:defaultCourses];
-			
+        [self updateCourseSegmentedControlSegments];
+        
         // 3 - distances
         [self.pickerView reloadComponent:STSPickerComponentDistance];
-}
+    }
 }
 
 - (void) updateTimeLabel {
@@ -433,7 +446,7 @@ typedef NS_ENUM(NSUInteger, STSPickerComponents) {
 		/*
                 13) Any time the user changes the switch or the stroke, go back to step 7
                 */
-    NSUInteger selectedIndex = [self.segmentedControl selectedSegmentIndex];
+    NSUInteger selectedIndex = [self.courseSegmentedControl selectedSegmentIndex];
 			[self reloadDistanceComponent];
 			[self updateTimeLabel];
 			if ([self.courses count] > 0) {

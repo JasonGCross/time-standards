@@ -28,15 +28,15 @@
                         <viewControllerLayoutGuide type="bottom" id="L4D-os-9lA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e4f-8f-7pv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outdoor_pool.png" translatesAutoresizingMaskIntoConstraints="NO" id="vh0-Wt-WND">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="244"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outdoor_pool.png" translatesAutoresizingMaskIntoConstraints="NO" id="vh0-Wt-WND">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-tC-AKG">
-                                <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                            <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-tC-AKG">
+                                <rect key="frame" x="0.0" y="32" width="320" height="132"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -47,7 +47,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sn-4F-A86">
-                                <rect key="frame" x="0.0" y="244" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="164" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="15" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Auy-gH-TBV">
@@ -64,6 +64,9 @@
                                             <segment title="SCY"/>
                                             <segment title="LCM"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="segmentedControlDidChange:" destination="30l-r7-2jY" eventType="valueChanged" id="fTO-Cq-2yI"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039221759999995" green="0.95294123890000004" blue="0.82745105029999999" alpha="1" colorSpace="deviceRGB"/>
@@ -75,8 +78,13 @@
                                     <constraint firstAttribute="height" constant="100" id="oUn-kO-uqs"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8CF-Ew-1DE">
+                                <rect key="frame" x="0.0" y="264" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8078432083" green="0.82352948189999997" blue="0.89411771299999998" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOZ-Th-hsb">
-                                <rect key="frame" x="0.0" y="352" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="264" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="ShA-qX-MZx"/>
@@ -89,15 +97,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vh0-Wt-WND" firstAttribute="leading" secondItem="e4f-8f-7pv" secondAttribute="leading" id="10u-gB-ngv"/>
+                            <constraint firstItem="L4D-os-9lA" firstAttribute="top" secondItem="8CF-Ew-1DE" secondAttribute="bottom" id="6dU-b4-UPY"/>
                             <constraint firstItem="WOZ-Th-hsb" firstAttribute="leading" secondItem="e4f-8f-7pv" secondAttribute="leading" id="85T-nU-W7c"/>
+                            <constraint firstItem="vh0-Wt-WND" firstAttribute="top" secondItem="e4f-8f-7pv" secondAttribute="top" id="Ak1-fo-qau"/>
                             <constraint firstItem="5Sn-4F-A86" firstAttribute="leading" secondItem="e4f-8f-7pv" secondAttribute="leading" id="Pjj-Ow-lwr"/>
+                            <constraint firstAttribute="trailing" secondItem="8CF-Ew-1DE" secondAttribute="trailing" id="R2G-Lv-lN5"/>
                             <constraint firstItem="lsl-tC-AKG" firstAttribute="leading" secondItem="e4f-8f-7pv" secondAttribute="leading" id="VBs-KX-MMb"/>
+                            <constraint firstItem="WOZ-Th-hsb" firstAttribute="width" secondItem="8CF-Ew-1DE" secondAttribute="width" id="Vrg-zW-nuF"/>
                             <constraint firstItem="5Sn-4F-A86" firstAttribute="top" secondItem="lsl-tC-AKG" secondAttribute="bottom" id="cfY-FO-Ric"/>
                             <constraint firstAttribute="trailing" secondItem="5Sn-4F-A86" secondAttribute="trailing" id="gcS-o8-Kl4"/>
                             <constraint firstAttribute="trailing" secondItem="lsl-tC-AKG" secondAttribute="trailing" id="h9z-5e-I3v"/>
                             <constraint firstItem="L4D-os-9lA" firstAttribute="top" secondItem="WOZ-Th-hsb" secondAttribute="bottom" id="iSU-AQ-McX"/>
-                            <constraint firstItem="WOZ-Th-hsb" firstAttribute="top" secondItem="5Sn-4F-A86" secondAttribute="bottom" constant="8" id="oir-tu-FIg"/>
-                            <constraint firstItem="lsl-tC-AKG" firstAttribute="top" secondItem="e4f-8f-7pv" secondAttribute="top" constant="64" id="tjf-Dk-yph"/>
+                            <constraint firstItem="5Sn-4F-A86" firstAttribute="top" secondItem="vh0-Wt-WND" secondAttribute="bottom" id="lcK-Zh-5pm"/>
+                            <constraint firstAttribute="trailing" secondItem="vh0-Wt-WND" secondAttribute="trailing" id="mRG-lz-CjU"/>
+                            <constraint firstItem="8CF-Ew-1DE" firstAttribute="leading" secondItem="e4f-8f-7pv" secondAttribute="leading" id="mot-vG-Pn5"/>
+                            <constraint firstItem="WOZ-Th-hsb" firstAttribute="top" secondItem="5Sn-4F-A86" secondAttribute="bottom" id="oir-tu-FIg"/>
+                            <constraint firstItem="WOZ-Th-hsb" firstAttribute="height" secondItem="8CF-Ew-1DE" secondAttribute="height" id="sFz-Dk-RQo"/>
+                            <constraint firstItem="lsl-tC-AKG" firstAttribute="top" secondItem="e4f-8f-7pv" secondAttribute="top" constant="32" id="tjf-Dk-yph"/>
                             <constraint firstAttribute="trailing" secondItem="WOZ-Th-hsb" secondAttribute="trailing" id="tqr-Jz-H2v"/>
                         </constraints>
                         <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -107,10 +124,10 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="courseSegmentedControl" destination="KOt-fM-vlb" id="ids-Pd-pFE"/>
                         <outlet property="pickerView" destination="WOZ-Th-hsb" id="bRp-YW-1MN"/>
-                        <outlet property="segmentedControl" destination="KOt-fM-vlb" id="E7c-j8-x6G"/>
                         <outlet property="tableView" destination="lsl-tC-AKG" id="Oc2-BI-foc"/>
                         <outlet property="timeLabel" destination="Auy-gH-TBV" id="bHT-W5-tyZ"/>
                         <segue destination="zUD-yH-nPP" kind="push" identifier="SwimmerDetailSegueue" id="zzp-4V-wnA"/>
@@ -134,7 +151,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="STSSwimmerController" id="x0n-8z-q5S" customClass="STSSwimmerController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fvh-f9-7b7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -325,7 +342,7 @@
             <objects>
                 <tableViewController id="Tea-cg-0z5" customClass="STSTimeStandardController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hcr-ni-UIH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>

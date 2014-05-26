@@ -55,9 +55,6 @@ static UIImage * defaultImage = nil;
 #pragma mark - private methods
 
 - (void) displaySwimmerPhoto: (NSManagedObject *) _swimmer {
-	if(_swimmer == nil) {
-		return;
-	}
 	
     UIImage * photoImage = nil;
 	NSManagedObject * photo = [_swimmer valueForKey:@"swimmerPhoto"];

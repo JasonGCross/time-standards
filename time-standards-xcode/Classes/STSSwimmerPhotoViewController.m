@@ -53,7 +53,7 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect);
 		return;
 	}
 	
-	NSManagedObject * photo = [_swimmer valueForKey:@"swimmerPhoto"];
+	NSManagedObject * photo = [_swimmer valueForKey:@"swimmerThumbnailPhoto"];
 	if (photo == nil) {
 		return;
 	}
@@ -73,7 +73,29 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect);
 
 UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 {
-	CGImageRef			imageRef = [inImage CGImage];
+    // first crop the image to maintain the aspect ratio
+    CGFloat originalWidth = inImage.size.width;
+    CGFloat originalHeight = inImage.size.height;
+    
+    CGFloat croppedWidth = fminf(originalWidth, originalHeight);
+    CGFloat posX = (originalWidth   - croppedWidth) / 2.0f;
+    CGFloat posY = (originalHeight  - croppedWidth) / 2.0f;
+    
+    CGRect cropSquare = CGRectMake(posX,
+                                   posY,
+                                   croppedWidth,
+                                   croppedWidth);
+    
+    if ((inImage.imageOrientation == UIImageOrientationLeft) ||
+        (inImage.imageOrientation == UIImageOrientationRight)) {
+        cropSquare = CGRectMake(posY,
+                                posX,
+                                croppedWidth,
+                                croppedWidth);
+    }
+    
+    // perform the cropping and use the imageRef for the resizing
+	CGImageRef			imageRef = CGImageCreateWithImageInRect([inImage CGImage], cropSquare);
 	CGImageAlphaInfo	alphaInfo = CGImageGetAlphaInfo(imageRef);
 	
 	// There's a wierdness with kCGImageAlphaNone and CGBitmapContextCreate
@@ -177,14 +199,25 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 	
 	// Commit the change.
     [[STSSwimmerDataAccess sharedDataAccess] saveContext];
-    
-    // let anyone interested know the photo has changed
-    NSNotification * notification = [NSNotification notificationWithName:STSSwimmerPhotoChangedKey
-                                                                  object:nil];
-    [[NSNotificationCenter defaultCenter] postNotification:notification];
+}
+
+- (IBAction) replaceSwimmerThumbnailPhotoWith: (UIImage *) theImage  {
+	NSManagedObjectContext * context = [_swimmer managedObjectContext];
 	
-	// Update the user interface appropriately.
-	self.imageView.image = theImage;
+	// if the swimmer already has a photo, delete it
+	NSManagedObject * oldPhoto = [_swimmer valueForKey:@"swimmerThumbnailPhoto"];
+	if (oldPhoto != nil) {
+		[context deleteObject:oldPhoto];
+	}
+	
+	// Create a new photo object and set the image.
+	NSManagedObject * photo = [NSEntityDescription insertNewObjectForEntityForName:@"Photo"
+															inManagedObjectContext:context];
+	[photo setValue:theImage forKey:@"photoImage"];
+	[_swimmer setValue:photo forKey:@"swimmerThumbnailPhoto"];
+	
+	// Commit the change.
+    [[STSSwimmerDataAccess sharedDataAccess] saveContext];
 }
 
 - (IBAction) deletePictureButton {
@@ -205,18 +238,35 @@ UIImage* resizedImage(UIImage *inImage, CGRect thumbRect)
 	if(theImage == nil) {
 		theImage = editingInfo[UIImagePickerControllerOriginalImage];
 	}
-	if (theImage != nil) {		
-		CGRect rect = CGRectMake(0.0, 0.0, 264.0, 264.0);
-		theImage = resizedImage(theImage, rect);
+	if (theImage != nil) {
+		
+        // the thumbnail images in the table view cells are 66x66 points
+		CGRect thumbnailRect = CGRectMake(0.0, 0.0, 132.0, 132.0);
+		UIImage * thumbnailImage = resizedImage(theImage, thumbnailRect);
         
         // important! when the image picker finishes picking media, the app may have received
-        // memory warnings and therefore the swimmer ManagedObject will contain an invalid reference 
+        // memory warnings and therefore the swimmer ManagedObject will contain an invalid reference
         // (all the Core data classes have been set to nil by the app delegate).
         // therefore, need to use the remembered swimmer name and get a fresh reference to the
         // swimmer who will own this photo
-        // when we return from picking an image, 
+        // when we return from picking an image
         self.swimmer = [[STSSwimmerDataAccess sharedDataAccess] currentSwimmer];
-		[self replaceSwimmerPhotoWith: theImage];
+		[self replaceSwimmerThumbnailPhotoWith:thumbnailImage];       
+        
+        // the iPad root view image is 300x300 points
+        CGRect fullSizeRect = CGRectMake(0.0, 0.0, 600, 600);
+        UIImage * fullSizeImage = resizedImage(theImage, fullSizeRect);
+        self.swimmer = [[STSSwimmerDataAccess sharedDataAccess] currentSwimmer];
+		[self replaceSwimmerPhotoWith: fullSizeImage];
+        
+        
+        // let anyone interested know the photo has changed
+        NSNotification * notification = [NSNotification notificationWithName:STSSwimmerPhotoChangedKey
+                                                                      object:nil];
+        [[NSNotificationCenter defaultCenter] postNotification:notification];
+        
+        // Update the user interface appropriately.
+        self.imageView.image = thumbnailImage;
 	}
     [picker dismissViewControllerAnimated:YES completion:^{
         //

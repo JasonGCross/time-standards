@@ -21,7 +21,7 @@
     self.swimmerAgeGroupLabel.text = (swimmerAgeGroup == nil) ? @"select age group" : swimmerAgeGroup;
     
     if(swimmer != nil) {
-		NSManagedObject * photo = [swimmer valueForKey:@"swimmerPhoto"];
+		NSManagedObject * photo = [swimmer valueForKey:@"swimmerThumbnailPhoto"];
 		UIImage * image;
 		if (photo != nil) {
 			image = [photo valueForKey:@"photoImage"];

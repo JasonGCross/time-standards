@@ -330,19 +330,21 @@
             break;
         }
         case swimmerSection: {
-            if (tableView.editing == NO) {
-                cell = [STSSwimmerListTableViewCell cellForTableView:tableView];
-            }
-            else {
-                cell = [STSSwimmerListEditTableViewCell cellForTableView:tableView];
-            }
-            
             // the fetched results controller is not expecting there to be two sections, so we must create
             // an indexPath which the fetched results controller can understand
             NSIndexPath * newIndexPath = [NSIndexPath indexPathForRow:indexPath.row
                                                             inSection:0];
             NSManagedObject * thisCellSwimmer = [self.fetchedResultsController objectAtIndexPath:newIndexPath];
-            [(STSSwimmerListTableViewCell*)cell bindToSwimmer:thisCellSwimmer];
+            
+            if (tableView.editing == NO) {
+                cell = [STSSwimmerListTableViewCell cellForTableView:tableView];
+                [(STSSwimmerListTableViewCell*)cell bindToSwimmer:thisCellSwimmer];
+            }
+            else {
+                cell = [STSSwimmerListEditTableViewCell cellForTableView:tableView];
+                [(STSSwimmerListEditTableViewCell*)cell bindToSwimmer:thisCellSwimmer];
+            }
+            
             break;
         }
         default:
@@ -361,7 +363,7 @@
     
     switch (section) {
         case timeStandardSection:
-            return NO;
+            return NO; 
             break;
         case swimmerSection:
             return YES;

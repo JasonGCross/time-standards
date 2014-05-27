@@ -72,6 +72,8 @@
 		F6BB2AA619329AA600B1C185 /* screen-shot-ipad-portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6BB2AA219329AA600B1C185 /* screen-shot-ipad-portrait@2x.png */; };
 		F6D2D93912E983450047647A /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = F6D2D93812E983450047647A /* iTunesArtwork */; };
 		F6DE03C0121524FC00F749F7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE03BF121524FC00F749F7 /* libsqlite3.dylib */; };
+		F6EB25721934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6EB25711934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel */; };
+		F6EB2575193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EB2574193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +178,10 @@
 		F6BB2AA219329AA600B1C185 /* screen-shot-ipad-portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "screen-shot-ipad-portrait@2x.png"; path = "images/screen-shot-ipad-portrait@2x.png"; sourceTree = SOURCE_ROOT; };
 		F6D2D93812E983450047647A /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		F6DE03BF121524FC00F749F7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F6EB256C1933F4F900E3B0F4 /* HomeScreenValuesv3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeScreenValuesv3.xcdatamodel; sourceTree = "<group>"; };
+		F6EB25711934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model_v2_to_v3.xcmappingmodel; sourceTree = "<group>"; };
+		F6EB2573193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "STSSwimmerListEditTableViewCell+Binding.h"; path = "Classes/STSSwimmerListEditTableViewCell+Binding.h"; sourceTree = "<group>"; };
+		F6EB2574193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "STSSwimmerListEditTableViewCell+Binding.m"; path = "Classes/STSSwimmerListEditTableViewCell+Binding.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +350,8 @@
 				F68F613119004D1000ED2EC1 /* STSSwimmerHomeScreenTableViewCell.h */,
 				F68F613219004D1000ED2EC1 /* STSSwimmerHomeScreenTableViewCell.m */,
 				F68F614019004D7300ED2EC1 /* STSSwimmerHomeScreenTableViewCell.xib */,
+				F6EB2573193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.h */,
+				F6EB2574193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.m */,
 				F68F613519004D1000ED2EC1 /* STSSwimmerListEditTableViewCell.h */,
 				F68F613619004D1000ED2EC1 /* STSSwimmerListEditTableViewCell.m */,
 				F68F614119004D7300ED2EC1 /* STSSwimmerListEditTableViewCell.xib */,
@@ -412,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				F69A720014AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel */,
+				F6EB25711934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel */,
 				F6A3F30012E00571002806DF /* HomeScreenValues.xcdatamodeld */,
 				F6A3F2FB12E00457002806DF /* UIImageToDataTransformer.h */,
 				F6A3F2FC12E00457002806DF /* UIImageToDataTransformer.m */,
@@ -559,10 +568,12 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				F68F613E19004D1000ED2EC1 /* STSSwimmerListTableViewCell.m in Sources */,
 				F68F612519004BDC00ED2EC1 /* STSRootViewController~iPhone.m in Sources */,
+				F6EB25721934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel in Sources */,
 				F68F612119004B9C00ED2EC1 /* STSAppDelegate.m in Sources */,
 				F68F615D19004F0200ED2EC1 /* STSSwimmerDetailViewController~iPad.m in Sources */,
 				F68F615719004EA300ED2EC1 /* STSTimeStandardController.m in Sources */,
 				F6A3F2FD12E00457002806DF /* UIImageToDataTransformer.m in Sources */,
+				F6EB2575193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.m in Sources */,
 				F6A3F30212E00571002806DF /* HomeScreenValues.xcdatamodeld in Sources */,
 				F68F615019004E7400ED2EC1 /* STSSwimmerDetailViewController.m in Sources */,
 				F68F612A19004CD900ED2EC1 /* STSSmartTableViewCell.m in Sources */,
@@ -902,10 +913,11 @@
 		F6A3F30012E00571002806DF /* HomeScreenValues.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				F6EB256C1933F4F900E3B0F4 /* HomeScreenValuesv3.xcdatamodel */,
 				F62DD8E614AAE914009E97B5 /* HomeScreenValuesv1.xcdatamodel */,
 				F6A3F30112E00571002806DF /* HomeScreenValuesv2.xcdatamodel */,
 			);
-			currentVersion = F6A3F30112E00571002806DF /* HomeScreenValuesv2.xcdatamodel */;
+			currentVersion = F6EB256C1933F4F900E3B0F4 /* HomeScreenValuesv3.xcdatamodel */;
 			path = HomeScreenValues.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

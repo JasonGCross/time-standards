@@ -120,7 +120,7 @@ static NSString * const kSwimmerDetailViewToSwimmerPhotoViewSegue = @"SwimmerDet
 		return;
 	}
 	
-	NSManagedObject * photo = [_swimmer valueForKey:@"swimmerPhoto"];
+	NSManagedObject * photo = [_swimmer valueForKey:@"swimmerThumbnailPhoto"];
 	if (photo == nil) {
 		return;
 	}

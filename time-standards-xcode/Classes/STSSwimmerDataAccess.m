@@ -221,10 +221,15 @@
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"HomeScreenValues.sqlite"];
-    
+    NSDictionary * dict = @{NSMigratePersistentStoresAutomaticallyOption : [NSNumber numberWithBool:YES]};
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                   configuration:nil
+                                                             URL:storeURL
+                                                         options:dict
+                                                           error:&error]) {
         NSLog(@"Unresolved error creating Persistent Store Coordinator: %@, %@", error, [error userInfo]);
         UIAlertView *alert = [[UIAlertView alloc]
 							  initWithTitle:@"Error loading Swim Time Standards data"

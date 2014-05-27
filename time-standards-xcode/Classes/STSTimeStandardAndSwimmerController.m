@@ -363,7 +363,7 @@
     
     switch (section) {
         case timeStandardSection:
-            return NO; 
+            return NO;
             break;
         case swimmerSection:
             return YES;

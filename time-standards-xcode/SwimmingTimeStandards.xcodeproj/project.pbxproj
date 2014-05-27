@@ -74,6 +74,8 @@
 		F6DE03C0121524FC00F749F7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE03BF121524FC00F749F7 /* libsqlite3.dylib */; };
 		F6EB25721934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6EB25711934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel */; };
 		F6EB2575193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EB2574193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.m */; };
+		F6EB25771934318C00E3B0F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EB25761934318C00E3B0F4 /* Default-568h@2x.png */; };
+		F6EB2579193437D300E3B0F4 /* Model_v1_to_v3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6EB2578193437D300E3B0F4 /* Model_v1_to_v3.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,8 @@
 		F6EB25711934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model_v2_to_v3.xcmappingmodel; sourceTree = "<group>"; };
 		F6EB2573193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "STSSwimmerListEditTableViewCell+Binding.h"; path = "Classes/STSSwimmerListEditTableViewCell+Binding.h"; sourceTree = "<group>"; };
 		F6EB2574193404CD00E3B0F4 /* STSSwimmerListEditTableViewCell+Binding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "STSSwimmerListEditTableViewCell+Binding.m"; path = "Classes/STSSwimmerListEditTableViewCell+Binding.m"; sourceTree = "<group>"; };
+		F6EB25761934318C00E3B0F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F6EB2578193437D300E3B0F4 /* Model_v1_to_v3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model_v1_to_v3.xcmappingmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +240,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F6EB25761934318C00E3B0F4 /* Default-568h@2x.png */,
 				F6BB2A7B19300BF300B1C185 /* Categories */,
 				F6D06DEB122CB35100E58473 /* Model */,
 				F68F612719004CB300ED2EC1 /* TableViewCells */,
@@ -421,6 +426,7 @@
 			children = (
 				F69A720014AB88C400D55127 /* Model_v1_to_v2.xcmappingmodel */,
 				F6EB25711934021000E3B0F4 /* Model_v2_to_v3.xcmappingmodel */,
+				F6EB2578193437D300E3B0F4 /* Model_v1_to_v3.xcmappingmodel */,
 				F6A3F30012E00571002806DF /* HomeScreenValues.xcdatamodeld */,
 				F6A3F2FB12E00457002806DF /* UIImageToDataTransformer.h */,
 				F6A3F2FC12E00457002806DF /* UIImageToDataTransformer.m */,
@@ -488,6 +494,9 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = ZT7E887Q9H;
+					};
 					F68F616C19004FF800ED2EC1 = {
 						TestTargetID = 1D6058900D05DD3D006BFB54;
 					};
@@ -525,6 +534,7 @@
 				F6BB2A881932979100B1C185 /* appIcon-40x40.png in Resources */,
 				F6BB2AA419329AA600B1C185 /* screen-shot-ipad-landscape@2x.png in Resources */,
 				F6BB2A971932979C00B1C185 /* headshot~iphone.png in Resources */,
+				F6EB25771934318C00E3B0F4 /* Default-568h@2x.png in Resources */,
 				F6D2D93912E983450047647A /* iTunesArtwork in Resources */,
 				F6BB2A8E1932979100B1C185 /* appIcon.png in Resources */,
 				F68F616319004F7000ED2EC1 /* MainStoryboard.storyboard in Resources */,
@@ -589,6 +599,7 @@
 				F68F613F19004D1000ED2EC1 /* STSSwimmerListTableViewCell+Binding.m in Sources */,
 				F68F612F19004CFB00ED2EC1 /* STSTimeStandardHomeScreenTableCell.m in Sources */,
 				F68F613D19004D1000ED2EC1 /* STSSwimmerListEditTableViewCell.m in Sources */,
+				F6EB2579193437D300E3B0F4 /* Model_v1_to_v3.xcmappingmodel in Sources */,
 				F68F611B19004B5500ED2EC1 /* STSTimeStandardDataAccess.m in Sources */,
 				F68F613019004CFB00ED2EC1 /* STSTimeStandardHomeScreenTableCell+Binding.m in Sources */,
 				F68F614B19004E4800ED2EC1 /* STSSwimmerController.m in Sources */,
@@ -663,8 +674,8 @@
 				INFOPLIST_FILE = "SwimmingTimeStandards-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = SwimTimeStandards;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "F2A30F65-88BD-4D38-B91F-553A22A601F1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F2A30F65-88BD-4D38-B91F-553A22A601F1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -680,7 +691,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -697,7 +708,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -843,7 +854,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -856,9 +867,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SwimmingTimeStandards_Prefix.pch;
@@ -866,6 +877,7 @@
 				INFOPLIST_FILE = "SwimmingTimeStandards-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = SwimTimeStandards;
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
